@@ -1,0 +1,188 @@
+# Configuration changes to bring source (config-postSetup.gz) to target (config.ldif)
+# Comparison options:
+#   Ignore differences in configuration that is part of the topology registry
+#   Ignore differences on shared host
+#   Ignore differences by instance
+
+dsconfig set-backend-prop \
+    --backend-name changelog  \
+    --set enabled:true  \
+    --set 'changelog-maximum-age:2 h' 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantClientId  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantExpires  \
+    --set index-type:ordering 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantGuid  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantHashedRefreshTokenValue  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantUniqueUserIdentifier  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name pf-connected-identity  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name pf-oauth-client-id  \
+    --set index-type:equality  \
+    --set index-type:ordering  \
+    --set index-type:substring 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name pf-oauth-client-last-modified  \
+    --set index-type:ordering 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name pf-oauth-client-name  \
+    --set index-type:equality  \
+    --set index-type:ordering  \
+    --set index-type:substring 
+
+dsconfig set-access-control-handler-prop \
+    --add 'global-aci:(targetcontrol="1.2.840.113556.1.4.319")(version 3.0; acl "Allow paging for pingfederate"; allow (read) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
+    --add 'global-aci:(targetcontrol="1.2.840.113556.1.4.473")(version 3.0; acl "Allow Server Sort for pingfederate"; allow (read) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
+    --add 'global-aci:(targetcontrol="1.3.6.1.1.13.2")(version 3.0; acl "Anonymous access to the post-read request control as described in RFC 4527"; allow (read) userdn="ldap:///anyone";)' 
+
+dsconfig set-backend-prop \
+    --backend-name userRoot  \
+    --set compact-common-parent-dn:ou=People,dc=bxfinancetest.org 
+
+dsconfig set-connection-handler-prop \
+    --handler-name 'HTTPS Connection Handler'  \
+    --remove http-servlet-extension:Consent  \
+    --remove 'http-servlet-extension:Directory REST API'  \
+    --remove http-servlet-extension:Documentation  \
+    --remove http-servlet-extension:SCIM2  \
+    --remove 'http-servlet-extension:Swagger UI' 
+
+dsconfig set-gauge-prop \
+    --gauge-name 'Available File Descriptors'  \
+    --set enabled:false 
+
+dsconfig set-gauge-prop \
+    --gauge-name 'CPU Usage (Percent)'  \
+    --set enabled:false 
+
+dsconfig set-gauge-prop \
+    --gauge-name 'License Expiration (Days)'  \
+    --set enabled:false 
+
+dsconfig set-log-publisher-prop \
+    --publisher-name 'Data Recovery Log'  \
+    --set enabled:false 
+
+dsconfig set-log-publisher-prop \
+    --publisher-name 'File-Based Debug Logger'  \
+    --set enabled:true 
+
+dsconfig create-debug-target \
+    --publisher-name 'File-Based Debug Logger'  \
+    --target-name com.unboundid.guitools.replicationcli  \
+    --set debug-level:verbose 
+
+dsconfig set-root-dn-user-prop \
+    --user-name 'Directory Manager'  \
+    --add alternate-bind-dn:cn=administrator 
+
+dsconfig create-root-dn-user \
+    --user-name pingdatagovernance  \
+    --set alternate-bind-dn:cn=datagov  \
+    --set alternate-bind-dn:cn=pingdatagovernance  \
+    --set password:{PBKDF2}ABA2kzqEQ5ssy2UAQXv4JqwpJxBpKXpwrp/9392zK1f0s3pdp5QbmmZmdndnHUO61jvR3Q==  \
+    --set inherit-default-root-privileges:false  \
+    --set privilege:password-reset  \
+    --set privilege:proxied-auth  \
+    --set privilege:unindexed-search  \
+    --set search-result-entry-limit:100000 
+
+dsconfig create-root-dn-user \
+    --user-name pingdatasync  \
+    --set alternate-bind-dn:cn=datasync  \
+    --set alternate-bind-dn:cn=sync  \
+    --set password:{PBKDF2}ABBc6feO5E6VObNJZuLqGUUdJxAD3WzfQ7szFhhxhT0lvNMpcqfoiUGixC8OpW9cFHs+Iw==  \
+    --set inherit-default-root-privileges:false  \
+    --set privilege:bypass-acl  \
+    --set privilege:bypass-pw-policy  \
+    --set privilege:config-read  \
+    --set privilege:password-reset  \
+    --set privilege:unindexed-search 
+
+dsconfig create-root-dn-user \
+    --user-name pingfederate  \
+    --set alternate-bind-dn:cn=fed  \
+    --set alternate-bind-dn:cn=pf  \
+    --set alternate-bind-dn:cn=pingfederate  \
+    --set password:{PBKDF2}ABC+0gocMPmE3gBwzqIBEySPJxCCBAXrclU703NQYXTxd0/s7xY5QIVZEkJDHJHn0ZGYAA==  \
+    --set inherit-default-root-privileges:false  \
+    --set privilege:config-read  \
+    --set privilege:password-reset  \
+    --set privilege:permit-get-password-policy-state-issues  \
+    --set privilege:proxied-auth  \
+    --set privilege:unindexed-search  \
+    --set is-proxyable:prohibited 
+
+dsconfig create-connection-handler \
+    --handler-name 'HTTPS Connection Handler - PD Services'  \
+    --type http  \
+    --set enabled:true  \
+    --set listen-port:2443  \
+    --set use-ssl:true  \
+    --set ssl-cert-nickname:server-cert  \
+    --set http-servlet-extension:Consent  \
+    --set 'http-servlet-extension:Delegated Admin'  \
+    --set 'http-servlet-extension:Directory REST API'  \
+    --set http-servlet-extension:SCIM2  \
+    --set web-application-extension:Console  \
+    --set 'http-operation-log-publisher:HTTP Detailed Access'  \
+    --set key-manager-provider:JKS  \
+    --set trust-manager-provider:JKS  \
+    --set correlation-id-request-header:Correlation-Id  \
+    --set correlation-id-request-header:X-Correlation-Id  \
+    --set correlation-id-request-header:X-CorrelationID  \
+    --set correlation-id-request-header:X-MS-Correlation-Id  \
+    --set correlation-id-request-header:X-Request-Id  \
+    --set correlation-id-request-header:X-Amzn-Trace 
+
+dsconfig create-plugin \
+    --plugin-name ExpiredSessionAutoPurge  \
+    --type purge-expired-data  \
+    --set enabled:true  \
+    --set datetime-attribute:pf-authn-session-group-expiry-time  \
+    --set 'expiration-offset:1 h'  \
+    --set purge-behavior:subtree-delete-entries  \
+    --set base-dn:ou=sessions,dc=bxfinancetest.org  \
+    --set filter:(objectClass=pf-authn-session-groups)  \
+    --set 'polling-interval:20 m' 
+
+dsconfig create-plugin \
+    --plugin-name IdleSessionAutoPurge  \
+    --type purge-expired-data  \
+    --set enabled:true  \
+    --set datetime-attribute:pf-authn-session-group-last-activity-time  \
+    --set 'expiration-offset:1 w'  \
+    --set purge-behavior:subtree-delete-entries  \
+    --set base-dn:ou=sessions,dc=bxfinancetest.org  \
+    --set filter:(objectClass=pf-authn-session-groups)  \
+    --set 'polling-interval:1 d' 
+
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<authnApiConfig>
+    <apiApplications>
+        <application id="DefaultAuthNAPIApp" name="Default AuthN API" url="https://pingfederate:9031/pf/ext/explorer"/>
+    </apiApplications>
+    <apiSettings apiEnabled="true" defaultApplicationId="DefaultAuthNAPIApp" enableApiDescriptions="true"/>
+</authnApiConfig>

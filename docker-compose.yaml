@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  pingfederate:
+    image: pingidentity/pingfederate:latest
+    command: wait-for pingdirectory:389 -t 300 -- entrypoint.sh start-server
+    env_file:
+      - ~/.pingidentity/devops
+      - ./env_vars
+    environment:
+    - SERVER_PROFILE_URL=https://github.com/Technical-Enablement-PingIdentity/BXFinance.git
+    - SERVER_PROFILE_PATH=pingfederate
+    ports:
+      - 9031:9031
+      - 9999:9999
+
+  pingdirectory:
+    image: pingidentity/pingdirectory:latest
+    env_file:
+      - ~/.pingidentity/devops
+      - ./env_vars
+    environment:
+    - SERVER_PROFILE_URL=https://github.com/Technical-Enablement-PingIdentity/BXFinance.git
+    - SERVER_PROFILE_PATH=pingdirectory
+    ports:
+      - 389:389
+      - 1636:636
+      - 1443:443
+      - 2443:2443
+  
+  pingdataconsole:
+    image: pingidentity/pingdataconsole:latest
+    ports:
+      - 8080:8080
+      - 8443:8443
+
+  

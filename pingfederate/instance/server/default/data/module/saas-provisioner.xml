@@ -1,0 +1,124 @@
+<saasProvisioner version="1.0" enableSaasProvisionerGUI="true" internalDataSourceId="ProvisionerDS" syncInterval="60" encryptDBSaasIdentities="true" xmlns="http://pingidentity.com/2008/06/saas-provisioner">
+  <saasProvisionerEntity>
+    <entityId>PingID SDK Connector</entityId>
+    <target id="PingIDForCustomers">
+      <parameter name="applicationId" value="2295d857-3615-4560-8cf5-f53dd3a51dc3"/>
+      <parameter name="pingIdSdkProperties" value="I0F1dG8tR2VuZXJhdGVkIGZyb20gUGluZ09uZSwgZG93bmxvYWRlZCBieSBpZD1bMTA4NDQ3Ml0gZW1haWw9W3JseWxlK3RlY2hzdW1taXQwMzIwQHBpbmdpZGVudGl0eS5jb21dCiNUaHUgSmFuIDA5IDExOjE3OjU5IE1TVCAyMDIwCmFwaV9rZXk9WVRkaU1qaGxabVl0T0RRd05TMDBOVGRoTFdJNFl6SXRPVGt6WlRNeU5ESXdaVEk1CnRva2VuPTBkMDMwNzhhZTFlMDRkNTg5MjFiNmZhNzY1MWQ2NzZhCnBpbmdpZHNka191cmw9aHR0cHM6Ly9zZGsucGluZ2lkLmNvbS9waW5naWQKYWNjb3VudF9pZD00NmFkZjQ3Zi02MjJmLTRhNDktYmJmYi0xODc2YWM4MTZlY2E="/>
+      <parameter name="primaryAuthenticationMethodUponCreation" value="SMS Number 1"/>
+      <parameter name="Provisioning Options" value=""/>
+      <parameter name="createNewUsers" value="true"/>
+      <parameter name="updateNewUsers" value="true"/>
+      <parameter name="disableNewUsers" value="true"/>
+      <parameter name="provisionDisabledUsers" value="false"/>
+      <parameter name="removeAction" value="Delete"/>
+    </target>
+    <channel id="1" name="SDK Provisioner" active="true">
+      <maxThreads>1</maxThreads>
+      <timeout>60</timeout>
+      <source dataSourceId="LDAP-PingDirectory">
+        <ldapGuidFormatter guidAttributeName="entryUUID" guidIsBinary="false"/>
+        <usersBaseDN>dc=bxfinancetest.org</usersBaseDN>
+        <filter>mobile=*</filter>
+        <groupMemberAttributeName>uniqueMember</groupMemberAttributeName>
+        <changedUsersAlgorithm>Timestamp No Negation</changedUsersAlgorithm>
+        <timestampAttributeName>modifyTimestamp</timestampAttributeName>
+        <userObjectClass>person</userObjectClass>
+        <groupObjectClass>groupOfUniqueNames</groupObjectClass>
+        <directoryIdentityAttributesMapper statusReader="Flag">
+          <attributeName>nsaccountlock</attributeName>
+          <default>true</default>
+          <comparisonValue>true</comparisonValue>
+          <comparisonValueStatus>false</comparisonValueStatus>
+        </directoryIdentityAttributesMapper>
+        <userNestedSearch>false</userNestedSearch>
+        <groupNestedSearch>false</groupNestedSearch>
+      </source>
+      <saasUsernameFieldCode>username</saasUsernameFieldCode>
+      <identityMappingField fieldName="username">
+        <fieldInfo code="username" label="Username">
+          <required>true</required>
+          <unique>true</unique>
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig>
+          <attributes>uid</attributes>
+        </fieldConfig>
+      </identityMappingField>
+      <identityMappingField fieldName="email1">
+        <fieldInfo code="email1" label="Email 1">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig>
+          <attributes>mail</attributes>
+        </fieldConfig>
+      </identityMappingField>
+      <identityMappingField fieldName="email2">
+        <fieldInfo code="email2" label="Email 2">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig/>
+      </identityMappingField>
+      <identityMappingField fieldName="email3">
+        <fieldInfo code="email3" label="Email 3">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig/>
+      </identityMappingField>
+      <identityMappingField fieldName="firstName">
+        <fieldInfo code="firstName" label="First Name">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig>
+          <attributes>givenName</attributes>
+        </fieldConfig>
+      </identityMappingField>
+      <identityMappingField fieldName="lastName">
+        <fieldInfo code="lastName" label="Last Name">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig>
+          <attributes>sn</attributes>
+        </fieldConfig>
+      </identityMappingField>
+      <identityMappingField fieldName="smsNumber1">
+        <fieldInfo code="smsNumber1" label="SMS Number 1">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig>
+          <attributes>mobile</attributes>
+        </fieldConfig>
+      </identityMappingField>
+      <identityMappingField fieldName="smsNumber2">
+        <fieldInfo code="smsNumber2" label="SMS Number 2">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig/>
+      </identityMappingField>
+      <identityMappingField fieldName="smsNumber3">
+        <fieldInfo code="smsNumber3" label="SMS Number 3">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig/>
+      </identityMappingField>
+      <identityMappingField fieldName="voiceNumber1">
+        <fieldInfo code="voiceNumber1" label="Voice Number 1">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig/>
+      </identityMappingField>
+      <identityMappingField fieldName="voiceNumber2">
+        <fieldInfo code="voiceNumber2" label="Voice Number 2">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig/>
+      </identityMappingField>
+      <identityMappingField fieldName="voiceNumber3">
+        <fieldInfo code="voiceNumber3" label="Voice Number 3">
+          <attributeGroup>false</attributeGroup>
+        </fieldInfo>
+        <fieldConfig/>
+      </identityMappingField>
+    </channel>
+    <Scim/>
+  </saasProvisionerEntity>
+</saasProvisioner>
