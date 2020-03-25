@@ -23,6 +23,10 @@ ADMIN_USER_PASSWORD_FILE=${ROOT_USER_PASSWORD_FILE}
 # The Java heap size may be provided
 # MAX_HEAP_SIZE=384m
 
+PING_LOCAL_HOST_NAME=pingdirectory
+
+PING_INSTANCE_NAME=pingdirectory
+
 # The server certificate alias to use
 # Customize this if you are providing a keystore in instance/config/keystore (for JKS)
 # or instance/config/keystore.p12 (for PKCS#12)
