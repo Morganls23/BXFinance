@@ -12,5 +12,5 @@
     <!--Data store id-->
     <c:item name="PingFederateDSJNDIName">LDAP-PingDirectory</c:item>
     <!--LDAP search base. This should point to your Authentication Session location. Eg. OU=AuthenticationSessions,DC=example,DC=global-->
-    <c:item name="SearchBase">ou=sessions,dc=bxfinancetest.org</c:item>
+    <c:item name="SearchBase">ou=sessions,dc=bxfinance.org</c:item>
 </c:config>

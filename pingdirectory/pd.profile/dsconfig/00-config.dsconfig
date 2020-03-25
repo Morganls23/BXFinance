@@ -65,7 +65,7 @@ dsconfig set-access-control-handler-prop \
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
-    --set compact-common-parent-dn:ou=People,dc=bxfinancetest.org 
+    --set compact-common-parent-dn:ou=People,dc=bxfinance.org 
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
@@ -108,7 +108,7 @@ dsconfig create-root-dn-user \
     --user-name pingdatagovernance  \
     --set alternate-bind-dn:cn=datagov  \
     --set alternate-bind-dn:cn=pingdatagovernance  \
-    --set password:{PBKDF2}ABA2kzqEQ5ssy2UAQXv4JqwpJxBpKXpwrp/9392zK1f0s3pdp5QbmmZmdndnHUO61jvR3Q==  \
+    --set password:{PBKDF2}ABCtjb+0ewKzy0DhLvbstJ5XJxBIQ4f43iVqF8voPUO1DS4aGXPmHibEgB3gdolodBtVBQ==  \
     --set inherit-default-root-privileges:false  \
     --set privilege:password-reset  \
     --set privilege:proxied-auth  \
@@ -119,7 +119,7 @@ dsconfig create-root-dn-user \
     --user-name pingdatasync  \
     --set alternate-bind-dn:cn=datasync  \
     --set alternate-bind-dn:cn=sync  \
-    --set password:{PBKDF2}ABBc6feO5E6VObNJZuLqGUUdJxAD3WzfQ7szFhhxhT0lvNMpcqfoiUGixC8OpW9cFHs+Iw==  \
+    --set password:{PBKDF2}ABCyo3QYZS0zH/K1cOX4HLsQJxC5ATQ9BzFEwi5GsNeeyXK+4d87DDh2e1fBvhMsI/6eoA==  \
     --set inherit-default-root-privileges:false  \
     --set privilege:bypass-acl  \
     --set privilege:bypass-pw-policy  \
@@ -132,7 +132,7 @@ dsconfig create-root-dn-user \
     --set alternate-bind-dn:cn=fed  \
     --set alternate-bind-dn:cn=pf  \
     --set alternate-bind-dn:cn=pingfederate  \
-    --set password:{PBKDF2}ABC+0gocMPmE3gBwzqIBEySPJxCCBAXrclU703NQYXTxd0/s7xY5QIVZEkJDHJHn0ZGYAA==  \
+    --set password:{PBKDF2}ABAFDU0XS2YMHsbAaLu7Dr5CJxCPKzgnoN+COMw43/VcdKgVmLYafqAmm4c9SKiovPQfpw==  \
     --set inherit-default-root-privileges:false  \
     --set privilege:config-read  \
     --set privilege:password-reset  \
@@ -170,7 +170,7 @@ dsconfig create-plugin \
     --set datetime-attribute:pf-authn-session-group-expiry-time  \
     --set 'expiration-offset:1 h'  \
     --set purge-behavior:subtree-delete-entries  \
-    --set base-dn:ou=sessions,dc=bxfinancetest.org  \
+    --set base-dn:ou=sessions,dc=bxfinance.org  \
     --set filter:(objectClass=pf-authn-session-groups)  \
     --set 'polling-interval:20 m' 
 
@@ -181,7 +181,7 @@ dsconfig create-plugin \
     --set datetime-attribute:pf-authn-session-group-last-activity-time  \
     --set 'expiration-offset:1 w'  \
     --set purge-behavior:subtree-delete-entries  \
-    --set base-dn:ou=sessions,dc=bxfinancetest.org  \
+    --set base-dn:ou=sessions,dc=bxfinance.org  \
     --set filter:(objectClass=pf-authn-session-groups)  \
     --set 'polling-interval:1 d' 
 
