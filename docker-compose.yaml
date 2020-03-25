@@ -8,7 +8,7 @@ services:
       - ~/.pingidentity/devops
       - ./env_vars
     environment:
-    - SERVER_PROFILE_URL=https://github.com/Technical-Enablement-PingIdentity/BXFinance.git
+    - SERVER_PROFILE_URL=https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
     - SERVER_PROFILE_PATH=pingfederate
     ports:
       - 9031:9031
@@ -20,8 +20,8 @@ services:
       - ~/.pingidentity/devops
       - ./env_vars
     environment:
-    - SERVER_PROFILE_URL=https://github.com/Technical-Enablement-PingIdentity/BXFinance.git
-    - SERVER_PROFILE_PATH=pingdirectory
+      - SERVER_PROFILE_URL=https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
+      - SERVER_PROFILE_PATH=pingdirectory
     ports:
       - 389:389
       - 1636:636
