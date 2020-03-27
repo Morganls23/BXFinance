@@ -1,7 +1,7 @@
 dn: ${USER_BASE_DN}
 objectClass: top
-objectClass: ${BASE_CLASS}
-${BASE_ATTRIBUTE}: ${BASE_VALUE}
+objectClass: domain
+dc: ${USER_BASE_DN}
 aci: (targetattr="userPassword")(version 3.0; acl "Allow users to update their own password"; allow (write) userdn="ldap:///self";)
 aci: (version 3.0; acl "PingFed Proxy Access"; allow(proxy) userdn="ldap:///cn=pingfederate,cn=root dns,cn=config";)
 aci: (targetattr!="userPassword")(version 3.0; acl "Allow the pingfederate user to do everything in this branch"; allow(all) userdn="ldap:///cn=pingfederate,cn=root dns,cn=config";)
