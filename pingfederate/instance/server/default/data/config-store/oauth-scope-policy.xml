@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:config xmlns:con="http://www.sourceid.org/2004/05/config">
-    <con:item name="lastUpdated">1585752968239</con:item>
+    <con:item name="lastUpdated">1585780556987</con:item>
     <con:map name="scope-descriptions">
         <con:item name="address">Used to access your postal address</con:item>
         <con:item name="phone">Used to access your phone number</con:item>
