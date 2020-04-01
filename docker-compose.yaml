@@ -39,6 +39,9 @@ services:
     env_file:
      - ~/.pingidentity/devops
      - ./env_vars
+    environment:
+     - SERVER_PROFILE_URL=https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
+     - SERVER_PROFILE_PATH=pingaccess
     ports:
      - 80:8080
      - 443:3000
