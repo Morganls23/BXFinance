@@ -5,8 +5,27 @@ PF_LOG_LEVEL=DEBUG
 
 # PD User BASE DN
 # Used when PD starts up to create the User Store
-USER_BASE_DN=dc=bxfinance.org
+USER_BASE_DN=dc=anycompany.co
 
 # PF Admin Password
 # Note - this should match `pfAdminPwd` in postman_vars.json
 PF_USER_PWD=2FederateM0re
+
+# Adding DelegatedAdmin
+  
+# BaseURL of the PingFed service - Used in the PD Email Notification
+PF_BASE_URL=https://sso.anycompany.co
+
+# PF details for the Delegated Admin OIDC app
+# PF_HOST && PF_PORT are used to construct the allowed `Issuer` of the id_token
+# Delegator will prepend "https://", you only need the port if if it's not `:443`
+PF_HOST=sso.anycompany.co
+PF_CLIENT_ID=Delegator
+
+# PD details for Delegator API calls
+PD_HOST=sso.anycompany.co
+PD_PORT=443
+
+# Base Hostname of the PingFed service being used for Delegated Admin
+PF_BASE_HOST=sso.anycompany.co
+
