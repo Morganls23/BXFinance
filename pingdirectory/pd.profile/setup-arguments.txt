@@ -7,7 +7,7 @@
 # '--licenseKeyFile ${PING_PROFILE_ROOT}/misc-files/PingDirectory.lic'
 --acceptLicense  \
     --licenseKeyFile /opt/out/instance/PingDirectory.lic  \
-    --baseDN dc=bxfinance.org  \
+    --baseDN dc=anycompany.co  \
     --addBaseEntry  \
     --localHostName '${PING_LOCAL_HOST_NAME}'  \
     --ldapPort 389  \

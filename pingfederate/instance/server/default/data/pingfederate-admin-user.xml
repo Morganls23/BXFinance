@@ -3,7 +3,7 @@
     <adm:user>
         <adm:user-name>api-admin</adm:user-name>
         <adm:salt/>
-        <adm:hash>MkEWU98JBUvoukBwVuYK04liK2Oubam8Cr_OviPS9Eo.yf40bdk5.2</adm:hash>
+        <adm:hash>sdNIMLZyV9g9sD7q3h_QjsNJJDG1rNJHQiPL1VLzBQM.6ctdyQfR.2</adm:hash>
         <adm:phone-number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         <adm:email-address xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         <adm:department xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>

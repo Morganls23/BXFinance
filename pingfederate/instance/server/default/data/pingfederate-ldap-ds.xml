@@ -6,7 +6,7 @@
         <ldap:use-ssl>false</ldap:use-ssl>
         <ldap:use-dns-srv-records>false</ldap:use-dns-srv-records>
         <ldap:ad-referral>false</ldap:ad-referral>
-        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiblRYbFpYOVdvUyIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..TAheLibNCfo3r_AdJdFgKQ.xOpBW-jmV-I8biLoXlk2IQ.fAyT7-DjeIVJDwCZtADHZg</ldap:credentials>
+        <ldap:credentials>eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoieUJHSnROWng1WCIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..7eNjgOVOSoX-u8bf1XloIg.5KuROcoABCbli1PXk4xd6Q.mRmDdFiwhKvcbz6M5ZHqkg</ldap:credentials>
         <ldap:authenticationMeth>simple</ldap:authenticationMeth>
         <ldap:description>pingdirectory</ldap:description>
         <ldap:name>PingDirectory</ldap:name>
