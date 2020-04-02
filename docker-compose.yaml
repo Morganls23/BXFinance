@@ -57,6 +57,35 @@ services:
   smtp:
     image: bytemark/smtp
     restart: always
-       
+
+  pingdatapap:
+    image: pingidentity/pingdatagovernancepap:edge
+    env_file:
+      - ~/.pingidentity/devops
+    environment:
+      - SERVER_PROFILE_URL=https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
+      - SERVER_PROFILE_PATH=pingdatagovernancepap
+      - PING_IDENTITY_ACCEPT_EULA=YES
+      - REST_API_HOSTNAME=pingdatapap
+      - HTTPS_PORT=9443
+      - DECISION_POINT_SHARED_SECRET=2Federate
+    ports:
+      - 9443:9443
+
+  pingdatagovernance:
+    image: pingidentity/pingdatagovernance:edge
+    env_file:
+      - ~/.pingidentity/devops
+    command: wait-for pingfederate:9031 -t 300 -- entrypoint.sh start-server
+    environment:
+      - SERVER_PROFILE_URL=https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
+      - SERVER_PROFILE_PATH=pingdatagovernance
+      - PING_IDENTITY_ACCEPT_EULA=YES
+    env_file:
+      - ~/.pingidentity/devops
+    ports:
+      - 2443:443
+
+  
 
   
