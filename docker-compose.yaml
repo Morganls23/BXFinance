@@ -84,7 +84,7 @@ services:
     env_file:
       - ~/.pingidentity/devops
     ports:
-      - 2443:443
+      - 3443:443
 
   
 
