@@ -1,0 +1,24 @@
+# Arguments requiring file values, such as --licenseKeyFile, will need to have
+# their values adjusted to be used in the server profile. Files such as
+# the license key file and any password files can be added to
+# the profile's misc-files directory, and then removed after they have
+# been used. For example, if the PingDataGovernance.lic file is placed in the
+# misc-files directory, it can be referred to in setup-arguments.txt using
+# '--licenseKeyFile ${PING_PROFILE_ROOT}/misc-files/PingDataGovernance.lic'
+--acceptLicense  \
+    --licenseKeyFile /opt/out/instance/PingDataGovernance.lic  \
+    --localHostName '${PING_LOCAL_HOST_NAME}'  \
+    --ldapPort 389  \
+    --rootUserDN cn=dmanager  \
+    --rootUserPasswordFile /opt/staging/pwd  \
+    --jvmTuningParameter AGGRESSIVE  \
+    --maxHeapSize 1g  \
+    --doNotStart  \
+    --ldapsPort 636  \
+    --httpsPort 443  \
+    --instanceName '${PING_INSTANCE_NAME}'  \
+    --location Docker  \
+    --enableStartTLS  \
+    --generateSelfSignedCertificate  \
+    --no-prompt  \
+    --verbose 

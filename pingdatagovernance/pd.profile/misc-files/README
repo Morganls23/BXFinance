@@ -1,5 +1,5 @@
 This profile was created with the manage-profile generate-profile subcommand.
-It was generated at 03/Apr/2020:22:44:37.260 +0000 by user root, from the
+It was generated at 03/Apr/2020:22:53:45.719 +0000 by user root, from the
 server in /opt/out/instance.
 
 Certain steps will always need to be taken to use this generated profile with
@@ -8,10 +8,7 @@ file that contains variables, such as ${PING_INSTANCE_NAME}. When using this
 profile with the manage-profile tool, values for those variables will need to
 be provided using either a profile variables file or environment variables. See
 manage-profile setup --help for more information on providing variable values.
-In addition, the generated profile does not include any LDIF files. Any desired
-LDIF data for the profile will need to be added to the correct backend's
-directory under the ldif/ directory (such as ldif/userRoot/ for the userRoot
-backend). File-based arguments in setup-arguments.txt, such as
+In addition, file-based arguments in setup-arguments.txt, such as
 --rootUserPasswordFile, must have the necessary files available when the
 profile is run. The provided PING_PROFILE_ROOT and PING_SERVER_ROOT variables
 can be used when referring to those files.

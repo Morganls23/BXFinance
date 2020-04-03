@@ -94,11 +94,23 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AAAu9zVDGgusQDuAW8qkDJt30SMPqGec9uU= 
+    --set client-secret:AAA3VRgsPDaRqO3ILkd1Z+yhBuLyBqPqS14= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
     --set compact-common-parent-dn:ou=People,dc=anycompany.co 
+
+dsconfig create-consent-definition \
+    --definition-name test-consent  \
+    --set display-name:TestConsents 
+
+dsconfig create-consent-definition-localization \
+    --definition-name test-consent  \
+    --localization-name en-US  \
+    --set version:0.1  \
+    --set title-text:TestConsent  \
+    --set data-text:TestConsent  \
+    --set purpose-text:TestConsent 
 
 dsconfig create-constructed-attribute \
     --attribute-name pf-connected-identity  \
@@ -326,6 +338,17 @@ dsconfig create-root-dn-user \
     --set privilege:unindexed-search  \
     --set is-proxyable:prohibited 
 
+dsconfig set-account-status-notification-handler-prop \
+    --handler-name 'Multi-Part Email'  \
+    --set enabled:true  \
+    --set asynchronous:false  \
+    --set 'account-creation-notification-request-criteria:Delegated Admin User Creation Request Criteria'  \
+    --set account-created-message-template:config/account-status-notification-email-templates/delegated-admin-account-created.template 
+
+dsconfig set-password-policy-prop \
+    --policy-name 'Default Password Policy'  \
+    --set 'account-status-notification-handler:Multi-Part Email' 
+
 dsconfig create-connection-handler \
     --handler-name 'HTTPS Connection Handler - PD Services'  \
     --type http  \
@@ -347,6 +370,19 @@ dsconfig create-connection-handler \
     --set correlation-id-request-header:X-MS-Correlation-Id  \
     --set correlation-id-request-header:X-Request-Id  \
     --set correlation-id-request-header:X-Amzn-Trace 
+
+dsconfig create-identity-mapper \
+    --mapper-name 'User ID Exact Match'  \
+    --type exact-match  \
+    --set enabled:true 
+
+dsconfig set-consent-service-prop \
+    --set enabled:true  \
+    --set base-dn:ou=consents,dc=anycompany.co  \
+    --set bind-dn:cn=dmanager  \
+    --set 'consent-record-identity-mapper:User ID Exact Match'  \
+    --set unprivileged-consent-scope:urn:pingdirectory:consent  \
+    --set privileged-consent-scope:urn:pingdirectory:consent_admin 
 
 dsconfig create-plugin \
     --plugin-name ExpiredSessionAutoPurge  \
