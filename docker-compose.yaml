@@ -54,9 +54,9 @@ services:
     ports:
      - 8088:80
    
-  smtp:
-    image: bytemark/smtp
-    restart: always
+  #smtp:
+   # image: bytemark/smtp
+   # restart: always
 
   pingdatapap:
     image: pingidentity/pingdatagovernancepap:edge
