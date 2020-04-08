@@ -17,7 +17,7 @@
 
 * Access [PingFederate] (https://pingfederate:9999/pingfederate/app)
   - administrator / 2FederateM0re
-* Access [PingAccess] (hhttps://pingaccess:9000/login)
+* Access [PingAccess] (https://pingaccess:9000/login)
   - administrator / 2FederateM0re
 * Access [PingDirectory] (http://pingdataconsole:8080/console/login)
   - pingdirectory:636
@@ -31,12 +31,22 @@
   - admin / password123
 
 ## Administrator Access - SaaS Services
-* Access [P14E-PID Administration](https://admin.pingone.com/web-portal/login)
+* Access [P14E-PID Administration] (https://admin.pingone.com/web-portal/login)
   - Use your own creds to login
 * Access [MailTrap] (https://mailtrap.io/)
   - rlyle+bxfinance@pingidentity.com / 2FederateM0re
 
 ## Basic User Testing 
+* Access [Delegated Administration] (https://sso.anycompany.co/delegator/)
+  - useradmin / 2FederateM0re
+* Access [Simple SP Connection] (https://sso.anycompany.co/idp/startSSO.ping?PartnerSpId=Dummy-SAML)
+  - user.0 / 2FederateM0re
+* Test out [PDG Pass-Through] (https://pingdatagovernance:3443/anything)
+  - user.0 / 2FederateM0re
+  - Obtain AT from PingFederate (https://sso.anycompany.co/as/authorization.oauth2?response_type=token&client_id=PingToken)
+* Test out [PD Consents]  (https://pingdirectory:2443/consent/v1/consents?definition=test-consent&subject=user.1)
+  - Obtain AT from PingFederate or use Basic Authorization
+  - Obtain AT from PingFederate (https://sso.anycompany.co/as/authorization.oauth2?response_type=token&client_id=PingToken&scope=urn:pingdirectory:consent)
 
 
 
