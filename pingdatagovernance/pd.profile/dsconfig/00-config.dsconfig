@@ -50,8 +50,7 @@ dsconfig set-store-adapter-prop \
     --adapter-name UserStoreAdapter  \
     --set enabled:true  \
     --set load-balancing-algorithm:dg-lba  \
-    --set auxiliary-ldap-objectclass:anycompanyUser  \
-    --set include-base-dn:ou=People,dc=anycompany.co 
+    --set include-base-dn:ou=People,dc=bxfinance.xyz 
 
 dsconfig create-scim-resource-type \
     --type-name Users  \

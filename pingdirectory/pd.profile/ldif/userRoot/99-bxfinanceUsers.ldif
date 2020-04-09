@@ -1,0 +1,737 @@
+# LDIF export started at 20200409222153.530Z
+# Included branch:  dc=bxfinance.xyz
+
+dn: dc=bxfinance.xyz
+objectClass: top
+objectClass: domain
+dc: bxfinance.xyz
+aci: (targetattr="userPassword")(version 3.0; acl "Allow users to update their own password"; allow (write) userdn="ldap:///self";)
+aci: (version 3.0; acl "PingFed Proxy Access"; allow(proxy) userdn="ldap:///cn=pingfederate,cn=root dns,cn=config";)
+aci: (targetattr!="userPassword")(version 3.0; acl "Allow the pingfederate user to do everything in this branch"; allow(all) userdn="ldap:///cn=pingfederate,cn=root dns,cn=config";)
+aci: (targetattr="userPassword")(version 3.0; acl "Allow the pingfederate user to update passwords"; allow (write) userdn="ldap:///cn=pingfederate,cn=root dns,cn=config";)
+aci: (targetattr="isMemberOf")(version 3.0; acl "Allow the pingfederate user to get memberships"; allow (read) userdn="ldap:///cn=pingfederate,cn=root dns,cn=config";)
+aci: (targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8")(version 3.0; acl "Access to the Account Usability Control"; allow (read) userdn="ldap:///cn=pingfederate,cn=root dns,cn=config";)
+aci: (targetcontrol="1.3.6.1.4.1.30221.2.5.40")(version 3.0; acl "Access to the Password Validation Details Request Control"; allow (read) userdn="ldap:///dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="userPassword")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=users admin-user=Super Admin"; allow (write,delete) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targattrfilters="add=objectclass:(|(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OBJECTCLASS - resource=users admin-user=Super Admin"; allow (add,compare,search,read,write,delete) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="cn||ds-pwp-account-disabled||givenName||mail||sn||uid")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=users admin-user=Super Admin"; allow (add,compare,search,read,write,delete) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="isMemberOf||isDirectMemberOf")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=users admin-user=Super Admin"; allow (compare,read,search) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=groupOfNames))")(targetattr="cn||description")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=groups admin-user=Super Admin"; allow (add,compare,search,read,write,delete) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=groupOfNames))")(targetattr="isMemberOf||isDirectMemberOf")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=groups admin-user=Super Admin"; allow (compare,read,search) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=groupOfNames))")(targattrfilters="add=objectclass:(|(objectclass=groupOfNames))")(targetattr="objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OBJECTCLASS - resource=groups admin-user=Super Admin"; allow (add,compare,search,read,write,delete) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=groupOfNames))")(targetattr="member||uniqueMember")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=groups admin-user=Super Admin"; allow (compare,read,search,write,delete) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(isMemberOf=cn=groupadmins,ou=Administrators,dc=bxfinance.xyz)")(targetattr="cn||ds-pwp-account-disabled||givenName||mail||sn||uid||objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OWN ENTRY - resource=users admin-user=Group Admin"; allow (compare,read,search) userdn="ldap:///self";)
+aci: (targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8||1.3.6.1.4.1.30221.2.5.36||1.3.6.1.1.13.2||1.3.6.1.4.1.30221.2.5.58||1.3.6.1.4.1.30221.2.5.40||1.2.840.113556.1.4.1413||1.3.6.1.4.1.30221.2.5.44||1.3.6.1.4.1.30221.2.5.45")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO REQUEST CONTROLS - resource=users admin-user=Super Admin"; allow (all) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8||1.3.6.1.4.1.30221.2.5.36||1.3.6.1.1.13.2||1.3.6.1.4.1.30221.2.5.58||1.3.6.1.4.1.30221.2.5.40||1.2.840.113556.1.4.1413||1.3.6.1.4.1.30221.2.5.44||1.3.6.1.4.1.30221.2.5.45")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO REQUEST CONTROLS - resource=groups admin-user=Super Admin"; allow (all) userdn="ldap:///uid=superadmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8||1.3.6.1.4.1.30221.2.5.36||1.3.6.1.1.13.2||1.3.6.1.4.1.30221.2.5.58||1.3.6.1.4.1.30221.2.5.40||1.2.840.113556.1.4.1413||1.3.6.1.4.1.30221.2.5.44||1.3.6.1.4.1.30221.2.5.45")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO REQUEST CONTROLS - resource=groups admin-user=Group Admin"; allow (all) groupdn="ldap:///cn=groupadmins,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8||1.3.6.1.4.1.30221.2.5.36||1.3.6.1.1.13.2||1.3.6.1.4.1.30221.2.5.58||1.3.6.1.4.1.30221.2.5.40||1.2.840.113556.1.4.1413||1.3.6.1.4.1.30221.2.5.44||1.3.6.1.4.1.30221.2.5.45")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO REQUEST CONTROLS - resource=users admin-user=User Admin"; allow (all) userdn="ldap:///uid=useradmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetcontrol="1.3.6.1.4.1.42.2.27.9.5.8||1.3.6.1.4.1.30221.2.5.36||1.3.6.1.1.13.2||1.3.6.1.4.1.30221.2.5.58||1.3.6.1.4.1.30221.2.5.40||1.2.840.113556.1.4.1413||1.3.6.1.4.1.30221.2.5.44||1.3.6.1.4.1.30221.2.5.45")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO REQUEST CONTROLS - resource=users admin-user=Group Admin"; allow (all) groupdn="ldap:///cn=groupadmins,ou=Administrators,dc=bxfinance.xyz";)
+modifyTimestamp: 20200401145428.948Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 9353df9a-677d-3506-b114-ad80c28ac719
+
+dn: ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: organizationalUnit
+ou: People
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="isMemberOf||isDirectMemberOf")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=users admin-user=User Admin"; allow (compare,read,search) userdn="ldap:///uid=useradmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targattrfilters="add=objectclass:(|(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OBJECTCLASS - resource=users admin-user=User Admin"; allow (add,compare,search,read,write,delete) userdn="ldap:///uid=useradmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="cn||ds-pwp-account-disabled||givenName||mail||sn||uid")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=users admin-user=User Admin"; allow (add,compare,search,read,write,delete) userdn="ldap:///uid=useradmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="userPassword")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=users admin-user=User Admin"; allow (write,delete) userdn="ldap:///uid=useradmin,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="cn||ds-pwp-account-disabled||givenName||mail||sn||uid")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=users admin-user=Group Admin"; allow (compare,search,read) groupdn="ldap:///cn=groupadmins,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targattrfilters="add=objectclass:(|(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OBJECTCLASS - resource=users admin-user=Group Admin"; allow (compare,search,read) groupdn="ldap:///cn=groupadmins,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=inetOrgPerson)(objectclass=pf-connected-identities))")(targetattr="isMemberOf||isDirectMemberOf")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=users admin-user=Group Admin"; allow (compare,read,search) groupdn="ldap:///cn=groupadmins,ou=Administrators,dc=bxfinance.xyz";)
+createTimestamp: 20200401145429.714Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145429.714Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: a0ae25fa-f7fb-4274-b6f7-eed589a34fb6
+
+dn: ou=Groups,dc=bxfinance.xyz
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+aci: (targetfilter="(&(objectclass=groupOfNames))")(targattrfilters="add=objectclass:(|(objectclass=groupOfNames))")(targetattr="objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OBJECTCLASS - resource=groups admin-user=Group Admin"; allow (add,compare,search,read,write,delete) groupdn="ldap:///cn=groupadmins,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=groupOfNames))")(targetattr="member||uniqueMember")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=groups admin-user=Group Admin"; allow (compare,read,search,write,delete) groupdn="ldap:///cn=groupadmins,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=groupOfNames))")(targetattr="isMemberOf||isDirectMemberOf")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=groups admin-user=Group Admin"; allow (compare,read,search) groupdn="ldap:///cn=groupadmins,ou=Administrators,dc=bxfinance.xyz";)
+aci: (targetfilter="(&(objectclass=groupOfNames))")(targetattr="cn||description")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO ATTRIBUTES - resource=groups admin-user=Group Admin"; allow (add,compare,search,read,write,delete) groupdn="ldap:///cn=groupadmins,ou=Administrators,dc=bxfinance.xyz";)
+createTimestamp: 20200401145429.887Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145429.887Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: d982fbff-65eb-40fe-b8da-8c725a2fc609
+
+dn: ou=oauthClients,dc=bxfinance.xyz
+objectClass: top
+objectClass: organizationalUnit
+ou: oauthClients
+createTimestamp: 20200401145430.123Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145430.123Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: fa55b65a-e0b0-498c-8c83-27f6e714b63d
+
+dn: ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: organizationalUnit
+ou: sessions
+createTimestamp: 20200401145430.316Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145430.316Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 2e16c90d-7541-4c6a-8427-027b6baac2ad
+
+dn: ou=Administrators,dc=bxfinance.xyz
+objectClass: top
+objectClass: organizationalunit
+ou: Administrators
+createTimestamp: 20200401145556.804Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145556.804Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 7a6f2eae-b43a-49fd-b299-8819cb3443c5
+
+dn: pf-authn-session-group-id=6GCv1WviFH5rzstQd5icWwTou,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200401160711.186Z
+pf-authn-session-group-last-activity-time: 20200401150711.186Z
+pf-authn-session-group-id: 6GCv1WviFH5rzstQd5icWwTou
+pf-authn-session-group-hashed-session-id: VHiUQoi4BnvTowLAu6niY-6991AXdTUP2WqyG7siMa4
+createTimestamp: 20200401150711.208Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200401150711.208Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 7200fbe0-0257-4dab-8c6f-d589e4c05ca2
+
+dn: ou=Consents,dc=bxfinance.xyz
+objectClass: top
+objectClass: organizationalUnit
+ou: Consents
+createTimestamp: 20200401145429.994Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145429.994Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 4330b8c2-4021-4255-b046-391f2fe10345
+
+dn: pf-authn-session-group-id=PXjPw8464K2PatYaGIz3TzHY0,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200403181505.410Z
+pf-authn-session-group-last-activity-time: 20200403171505.410Z
+pf-authn-session-group-id: PXjPw8464K2PatYaGIz3TzHY0
+pf-authn-session-group-hashed-session-id: rmuFtN1c1WrLwhry3pq_GJ3q74wYvx1g6zJ0JAYclYw
+createTimestamp: 20200403171505.436Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200403171505.436Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 5eb82dfe-7276-404b-b0ca-745955d14f9b
+
+dn: pf-authn-session-group-id=VNyT4DiAuZo1jk987Azmktav2,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200403211342.665Z
+pf-authn-session-group-last-activity-time: 20200403201342.665Z
+pf-authn-session-group-id: VNyT4DiAuZo1jk987Azmktav2
+pf-authn-session-group-hashed-session-id: 4dMuztxSrTUCMBrCd8TcK5SNzw6OYLVd6iCOOkg9UyU
+createTimestamp: 20200403201342.668Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200403201342.668Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: b673b00b-73e9-4bd1-b53e-504a708fe6e0
+
+dn: pf-authn-session-group-id=FhunKKZWUEZUkvQwN9aGI240S,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200403232952.290Z
+pf-authn-session-group-last-activity-time: 20200403222952.290Z
+pf-authn-session-group-id: FhunKKZWUEZUkvQwN9aGI240S
+pf-authn-session-group-hashed-session-id: BC6HB_lWFePW4wZ679DPVBVohOS85Q0Rmzyp8z--CmY
+createTimestamp: 20200403222952.294Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200403222952.294Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 25cd7bb6-36ff-4f7e-b945-35996c3a8a28
+
+dn: cn=groupadmins,ou=Administrators,dc=bxfinance.xyz
+objectClass: top
+objectClass: groupOfNames
+cn: groupadmins
+member: uid=groupadmin,ou=Administrators,dc=bxfinance.xyz
+createTimestamp: 20200401145557.308Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145557.308Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 56f4162a-20f9-43fe-a4fc-070c71e22e0c
+
+dn: uid=user.3,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Beer
+cn: user.3
+givenName: Alec
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.3
+userPassword: {SSHA256}19wC9GRSaBQsHl9JWvIpaEzFxDNTF+3gdY0abRmk8gKGSa/+hAPZ1Q==
+uid: user.3
+createTimestamp: 20200401145431.862Z
+pwdChangedTime: 20200401145431.861Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.862Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: a6f891eb-ad25-441b-8ab8-e3748fcd0046
+
+dn: cn=group.0,ou=Groups,dc=bxfinance.xyz
+objectClass: top
+objectClass: groupOfNames
+cn: group.0
+member: uid=user.0,ou=people,dc=bxfinance.xyz
+createTimestamp: 20200401145432.068Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145432.068Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: f783d6bc-af16-4de7-9dd9-c9ee1642e0d3
+
+dn: pf-oauth-client-id=PingLogon,ou=oauthClients,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-oauth-client
+pf-oauth-client-name: Ping Logon
+pf-oauth-client-last-modified: 1585752968329
+pf-oauth-client-restrict-scopes: FALSE
+pf-oauth-client-require-signed-requests: FALSE
+pf-oauth-client-grant-type: implicit
+pf-oauth-client-grant-type: authorization_code
+pf-oauth-client-redirect-uri: https://httpbin.org/anything
+pf-oauth-client-redirect-uri: http://*/delegator/*
+pf-oauth-client-supplemental-info: 21:CIBA_POLLING_INTERVAL:null
+pf-oauth-client-supplemental-info: 44:BYPASS_ACTIVATION_CODE_CONFIRMATION_OVERRIDE:null
+pf-oauth-client-supplemental-info: 19:DEVICE_FLOW_SETTING:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 18:PAIRWISE_USER_TYPE:false
+pf-oauth-client-supplemental-info: 26:CIBA_NOTIFICATION_ENDPOINT:null
+pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:jwtDefault
+pf-oauth-client-supplemental-info: 23:RESTRICT_RESPONSE_TYPES:false
+pf-oauth-client-supplemental-info: 32:REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:["urn:pingidentity:directory-delegated-admin"]
+pf-oauth-client-supplemental-info: 37:CIBA_REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 28:id_token_signed_response_alg:null
+pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:true
+pf-oauth-client-supplemental-info: 32:DEVICE_POLLING_INTERVAL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 26:PING_ACCESS_LOGOUT_CAPABLE:false
+pf-oauth-client-supplemental-info: 35:REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE:false
+pf-oauth-client-supplemental-info: 21:SECTOR_IDENTIFIER_URI:null
+pf-oauth-client-supplemental-info: 25:RESTRICTED_RESPONSE_TYPES:null
+pf-oauth-client-supplemental-info: 29:ACCESS_SESSION_REVOCATION_API:false
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_alg:null
+pf-oauth-client-supplemental-info: 34:PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_enc:null
+pf-oauth-client-supplemental-info: 32:VALIDATE_USING_ALL_ELIGIBLE_ATMS:false
+pf-oauth-client-supplemental-info: 7:ENABLED:true
+pf-oauth-client-supplemental-info: 23:USER_AUTHZ_URL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 30:PENDING_AUTHZ_TIMEOUT_OVERRIDE:null
+pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:OIDCPolicyDefault
+pf-oauth-client-supplemental-info: 18:pf_ecm_authNexp_00:Basic
+pf-oauth-client-id: PingLogon
+pf-oauth-client-description: This client is used to perform OIDC logons
+pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
+pf-oauth-client-authn-type: SECRET
+pf-oauth-client-hashed-secret: L-XqeNj9-fqzNYF-bnN1UVG9XAh6RC4XAkkQoiQtyUk.cAYIjchm.2
+pf-oauth-client-enforce-replay-prevention: FALSE
+pf-oauth-client-bypass-approval-page: TRUE
+createTimestamp: 20200401145456.465Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145608.343Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 47617177-4cf0-4bc8-a104-2779a7823ee5
+
+dn: uid=superadmin,ou=Administrators,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Administrator
+cn: superadmin
+givenName: Super
+pf-connected-identity: auth-source=pf-local-identity:user-id=superadmin
+userPassword: {SSHA256}Gqetn1LO2fLLeWaFfibzwlNFjFa7SFTxaQQD8zoIgjGGEqTgzvxx1Q==
+uid: superadmin
+aci: (targetattr="cn||ds-pwp-account-disabled||givenName||mail||sn||uid||objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OWN ENTRY - resource=users admin-user=Super Admin"; allow (compare,read,search) userdn="ldap:///self";)
+createTimestamp: 20200401145556.930Z
+pwdChangedTime: 20200401145556.929Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145556.930Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 92a16630-0f7d-4c3a-af78-d52ed3aed081
+
+dn: pf-oauth-client-id=Delegator,ou=oauthClients,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-oauth-client
+pf-oauth-client-name: Delegator
+pf-oauth-client-last-modified: 1585752968630
+pf-oauth-client-restrict-scopes: FALSE
+pf-oauth-client-require-signed-requests: FALSE
+pf-oauth-client-grant-type: implicit
+pf-oauth-client-redirect-uri: http://*/delegator/*
+pf-oauth-client-redirect-uri: https://*/delegator/*
+pf-oauth-client-supplemental-info: 21:CIBA_POLLING_INTERVAL:null
+pf-oauth-client-supplemental-info: 44:BYPASS_ACTIVATION_CODE_CONFIRMATION_OVERRIDE:null
+pf-oauth-client-supplemental-info: 19:DEVICE_FLOW_SETTING:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 18:PAIRWISE_USER_TYPE:false
+pf-oauth-client-supplemental-info: 26:CIBA_NOTIFICATION_ENDPOINT:null
+pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:jwtDefault
+pf-oauth-client-supplemental-info: 23:RESTRICT_RESPONSE_TYPES:false
+pf-oauth-client-supplemental-info: 32:REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:["urn:pingidentity:directory-delegated-admin"]
+pf-oauth-client-supplemental-info: 37:CIBA_REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 28:id_token_signed_response_alg:null
+pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:true
+pf-oauth-client-supplemental-info: 32:DEVICE_POLLING_INTERVAL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 26:PING_ACCESS_LOGOUT_CAPABLE:false
+pf-oauth-client-supplemental-info: 35:REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE:false
+pf-oauth-client-supplemental-info: 21:SECTOR_IDENTIFIER_URI:null
+pf-oauth-client-supplemental-info: 25:RESTRICTED_RESPONSE_TYPES:null
+pf-oauth-client-supplemental-info: 29:ACCESS_SESSION_REVOCATION_API:false
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_alg:null
+pf-oauth-client-supplemental-info: 34:PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_enc:null
+pf-oauth-client-supplemental-info: 32:VALIDATE_USING_ALL_ELIGIBLE_ATMS:false
+pf-oauth-client-supplemental-info: 7:ENABLED:true
+pf-oauth-client-supplemental-info: 23:USER_AUTHZ_URL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 30:PENDING_AUTHZ_TIMEOUT_OVERRIDE:null
+pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:OIDCPolicyDefault
+pf-oauth-client-supplemental-info: 18:pf_ecm_authNexp_00:Basic
+pf-oauth-client-id: Delegator
+pf-oauth-client-description: This client is used to Authenticate to Delegator
+pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
+pf-oauth-client-authn-type: NONE
+pf-oauth-client-enforce-replay-prevention: FALSE
+pf-oauth-client-bypass-approval-page: TRUE
+createTimestamp: 20200401145608.632Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145608.632Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: a61d6845-f8ef-4641-934e-b94c68088a28
+
+dn: uid=administrator,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: PingFederate
+cn: administrator
+givenName: Administrator
+pf-connected-identity: auth-source=pf-local-identity:user-id=administrator
+userPassword: {SSHA256}NL1n7VCmieXagOywce0LnApUu63UyA4hnbWn1B8ssvrkRCrVPb7BaA==
+uid: administrator
+createTimestamp: 20200401145430.404Z
+pwdChangedTime: 20200401145430.404Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145430.404Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 5cfac2dd-35a5-4e35-991d-cf184b70a191
+
+dn: uid=auditor,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: PingFederate
+cn: auditor
+givenName: Auditor
+pf-connected-identity: auth-source=pf-local-identity:user-id=auditor
+userPassword: {SSHA256}oODbh6Y5WIe81bwqyF2eMvFWVmt7o0JHj+xndTKXw0XU7tjBLYMXEg==
+uid: auditor
+createTimestamp: 20200401145430.645Z
+pwdChangedTime: 20200401145430.645Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145430.645Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 283de3ad-cd68-47ed-9b92-200774d271f5
+
+dn: uid=useradmin,ou=Administrators,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Administrator
+cn: useradmin
+givenName: User
+pf-connected-identity: auth-source=pf-local-identity:user-id=useradmin
+userPassword: {SSHA256}2LKx8JI5yAqwYZrovfmCO24+1LoyehCjIdQuESuRY5TWIGg24Hfk+w==
+uid: useradmin
+aci: (targetattr="cn||ds-pwp-account-disabled||givenName||mail||sn||uid||objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OWN ENTRY - resource=users admin-user=User Admin"; allow (compare,read,search) userdn="ldap:///self";)
+createTimestamp: 20200401145557.044Z
+pwdChangedTime: 20200401145557.043Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145557.044Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: bfb0e1a6-602e-4920-b6cf-86513f3480ae
+
+dn: ou=grants,dc=bxfinance.xyz
+objectClass: top
+objectClass: organizationalUnit
+ou: grants
+createTimestamp: 20200401145430.217Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145430.217Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: bf5fc859-9767-4795-b1b3-874200b8aa0d
+
+dn: uid=access2federate,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: PingAccess
+cn: pingFederateAdministrator
+givenName: PingAccess
+pf-connected-identity: auth-source=pf-local-identity:user-id=access2federate
+userPassword: {SSHA256}EjWww0DEmLaMUH/DWq8mY1nXCCsHl7boB2nCfzz7OFBS3euv7lpuHA==
+uid: access2federate
+createTimestamp: 20200401145430.790Z
+pwdChangedTime: 20200401145430.790Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145430.790Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 2c53a5e6-576d-4247-940f-9e2b15c5ff10
+
+dn: cn=PFCryptoGroup,ou=Groups,dc=bxfinance.xyz
+objectClass: top
+objectClass: groupOfNames
+cn: PFCryptoGroup
+member: uid=administrator,ou=People,dc=bxfinance.xyz
+createTimestamp: 20200401145431.049Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.049Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 467024c3-9474-46f7-910d-6e6ede6a49a6
+
+dn: cn=PFAdminGroup,ou=Groups,dc=bxfinance.xyz
+objectClass: top
+objectClass: groupOfNames
+cn: PFAdminGroup
+member: uid=administrator,ou=People,dc=bxfinance.xyz
+member: uid=access2federate,ou=People,dc=bxfinance.xyz
+createTimestamp: 20200401145430.917Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145430.917Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 44d74b6d-3142-4313-a381-52102f680443
+
+dn: cn=PFAuditorGroup,ou=Groups,dc=bxfinance.xyz
+objectClass: top
+objectClass: groupOfNames
+cn: PFAuditorGroup
+member: uid=auditor,ou=People,dc=bxfinance.xyz
+createTimestamp: 20200401145431.167Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.167Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 879ddc36-73f5-4b9b-b307-f836f2446b9d
+
+dn: uid=babybooboo,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+mail: babybooboo@mailinator.com
+sn: Booboo
+cn: Baby BooBoo
+givenName: Baby
+pf-connected-identity: auth-source=pf-local-identity:user-id=babybooboo
+userPassword: {SSHA256}tWT8ACWNHGqceNddaKoiElxHMPzT/4vN483MlYVArLmjy2gZmwwhOg==
+uid: babybooboo
+createTimestamp: 20200403223511.232Z
+pwdChangedTime: 20200403223511.232Z
+creatorsName: uid=useradmin,ou=Administrators,dc=bxfinance.xyz
+modifyTimestamp: 20200403223511.232Z
+modifiersName: uid=useradmin,ou=Administrators,dc=bxfinance.xyz
+entryUUID: b69ca42c-e2df-458e-838a-e5288f1e91b0
+
+dn: uid=user.2,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Ortiz
+cn: user.2
+givenName: Murl
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.2
+userPassword: {SSHA256}70A1oEyIy8bXWR32+lgJQw5Bf5XpyPyNkjKJWyWK6bx3+mEaseaERA==
+uid: user.2
+createTimestamp: 20200401145431.742Z
+pwdChangedTime: 20200401145431.742Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.742Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: f0c55dd1-c6ad-457d-ba94-dc8b55831059
+
+dn: pf-oauth-client-id=PingToken,ou=oauthClients,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-oauth-client
+pf-oauth-client-name: PingToken
+pf-oauth-client-last-modified: 1585934000166
+pf-oauth-client-restrict-scopes: FALSE
+pf-oauth-client-require-signed-requests: FALSE
+pf-oauth-client-grant-type: implicit
+pf-oauth-client-grant-type: authorization_code
+pf-oauth-client-redirect-uri: https://changeme.com
+pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:false
+pf-oauth-client-supplemental-info: 44:BYPASS_ACTIVATION_CODE_CONFIRMATION_OVERRIDE:null
+pf-oauth-client-supplemental-info: 19:DEVICE_FLOW_SETTING:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:jwtDefault
+pf-oauth-client-supplemental-info: 32:DEVICE_POLLING_INTERVAL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 26:PING_ACCESS_LOGOUT_CAPABLE:false
+pf-oauth-client-supplemental-info: 23:RESTRICT_RESPONSE_TYPES:false
+pf-oauth-client-supplemental-info: 35:REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE:false
+pf-oauth-client-supplemental-info: 29:ACCESS_SESSION_REVOCATION_API:false
+pf-oauth-client-supplemental-info: 34:PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_alg:null
+pf-oauth-client-supplemental-info: 32:REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_enc:null
+pf-oauth-client-supplemental-info: 32:VALIDATE_USING_ALL_ELIGIBLE_ATMS:false
+pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:null
+pf-oauth-client-supplemental-info: 7:ENABLED:true
+pf-oauth-client-supplemental-info: 23:USER_AUTHZ_URL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 30:PENDING_AUTHZ_TIMEOUT_OVERRIDE:null
+pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:null
+pf-oauth-client-supplemental-info: 37:TOKEN_ENDPOINT_AUTH_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 28:id_token_signed_response_alg:null
+pf-oauth-client-id: PingToken
+pf-oauth-client-description: Issues tokens
+pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
+pf-oauth-client-authn-type: SECRET
+pf-oauth-client-hashed-secret: V1L-_1CqDsueR69jpkDhjy3mp1gPiOEs6RxmaPVMkig.aoBMOJul.2
+pf-oauth-client-enforce-replay-prevention: FALSE
+pf-oauth-client-bypass-approval-page: TRUE
+createTimestamp: 20200403171320.179Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200403171320.179Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: e2484a8c-63dc-41a9-a0c9-a92d2046baa6
+
+dn: pf-authn-session-attribute-hash=1d849df0271422c77f7bb135e16d0c18066411fb,pf-authn-session-group-id=PXjPw8464K2PatYaGIz3TzHY0,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: 1d849df0271422c77f7bb135e16d0c18066411fb
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..zG4OWqHpv1gKAX3_TeVh2w.OyYRAZaSv5C2ZgZLL-Ca76nzJDeaaVNNVywxpPIq862ByVDIhJxlB_o21_gjv-JDtt_fm9Ubgs0jB2XaViTfDroJ-uWOdfFYJbootoFYqF8YRA-PorhGuhpXhENQS2eBDiKCD2r2XxeWwXogwlPcc2C_Fiy6sFWhGD0hSViolrO9t7Ix6hG0b9Hng4n6dpnMtSD_fAeNhQ9TEa7-f_c4XS-oWOLfffEepDpaivBW9fZWsUuN4GSsxNQw_BQpGn0mEwvLSUL18jBn_nxiACYb4uYtHMIpeejIGmTHhXfUQrF0CpdR7ByMK4L3fOwbtzwireSEh9QqaWVxbU5y_qv9QMf4uTpdtPaeh-wcjVuXsiC2kOfFcJ8KfH6TXpr-2_eHp-ZIXD8kg9Nhem4WtQi6g1YyIEoh1rho-9kqLNlNMJk_Ox-KEZQIgqvd0GFat58vxIZgBAK20R6DF-5TVjtVjCss2y9_VUR2qWoLeEfIvlyb4oKd8SVDKQUZ-LgC1fNQpMUSd0Wh4IbDzwVvAuHNQU90E9HaE8ZTmyrj1JVKh_l-AoeDWB5E0-QNsSThCHb12LmTAPKRL4nTODvSqffv_bTjK_jdSaerz0FLoZN2Oy9gRUKB8X2l3wRi8RU-lPBM7YQ9d76CCsH9TxAasw11a1kpOtkvd0qNclXXcMHN6Qt4d18jDG2lsKuqgahWESmD8rwY4Tc5lAsZIEWtibjYhMuDSGs-d9u2cMXe5sUC_3LDikjvzK4HjcXwNQrvLx74cKVAq7Vsn1eKdJoZSyT6PvKvkek3eT1UzymQBRO0Fg5_ul7VuiLmw4jb3uNmbcwueWecffCH8CO4aLYqNgDfjOojyMbuJoAOYAEwgP_oXCixWmhQ_wMtQsxmHX-ILwK5n0PNvMz0ekdK3cI95M27jq9Yf6LHULBHkal8QfmBZtgkx0-0fXK4jsdSu922sXqYV0KijDhJbR65MKxRSqXQq6qp4USPg4acAJ2q75Q7dcnewqHhyt6Hsfwire4jt5_mTjZZVEvDd8RGLUYPx3eYhemhyj3bF78ksbepSiMRug-CJOkcIgX9bPx-AMWZ1P4z6sTvjV6X4x2GOxTMYJc_a9m6y6T4W-wVNy9numLdRjLJjLfHz5lxROA9ZYJDRXLQxdQXOPAyF9LxbjMk22ckPeqsWYUmVrxgBz-5boLyP1ulMKCV0be8MTooPe8fqnJPs8JN-QKa3RRbw19MBzvkP2MX39Zy3wjNwoNvybMS0O2EGNNkaIslq8UAi6VfktS4XXoqjz38mFT2BCSfFEzxpO1iBGvolPAasHPX8qn98TY.2ITAHfmarWfkWTp9aOPMTw
+createTimestamp: 20200403171505.655Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200403171505.655Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 18b787a9-f9f1-45bb-9cf0-788fb9af664a
+
+dn: pf-authn-session-attribute-hash=1d849df0271422c77f7bb135e16d0c18066411fb,pf-authn-session-group-id=VNyT4DiAuZo1jk987Azmktav2,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: 1d849df0271422c77f7bb135e16d0c18066411fb
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..uMl5mq30kB1vxV-G38X-LQ.SDV7Eu-6BcKeKOfKY_MUpgUw1jvB0s3M11KJs5d0hKYrWBvREQMmBdla-3Zwk_ejbkOZiFKboDDg312kuPh-HA4xcGxrvQ1FP9VftxBNui7g3_fMmi5RNHak1Q2-AOK6xLFezwJlfYp3kvpgIwSG8ywMdANBX98BuPLnJNJAAgJM_DBmqUUS8MJYjpwL_iOrLqc5-e1axx8xabMj9zxA6QK6ssfKWVZsYraHwpcH9hj4ZrK9LUzooY0GRPowszAeVVSBIpy496G8wiGIB32kN-C9TUvVzRUndWqKaYnlyP6_R3JkPO8Uv0jZpiioTdlQ6j3kU9EU4WuAT2OiqcZIpV-wQwQFUwPGV7R7ZWKo0KFEsoRUlhxjwFbIlBdbqDYB9_7NZBkUVUrJK7XtCwJwRV3G_Qtu3y_vh3RVx-IVKJrrH2uZlPbbjzyv3PjSufn-lvvoPNPjeFOqhHKtb6RrDY5rUfyLEKRFD0mLuOWTMiOHozp1jHPKCpgsOE9gPXkW7-9FITNhWuRQ_GMJB6k5h7kJiBQ28rSeFnRkHxEJgIKn5-lZVa9M5cFQ44EF7zJt2_Enmu-R7r6qcfHy0zoAktEqudj-VcQRgObLa-ycr32isNsb7LIQJMBUqjGnHYHa3P653BGFhTVL1_hR0mhY8550PeyiqRl0EfOfGa3VlvOmeZlRj4Auz579kDH2KIX09cyLdjLCdSmhwGsTGGqT_OSp6xHzfP-SGuZ--Fx68W7gPoz864Jz1MdoKX9qMh49wjTyU0Yr_rBUXsA-d3-Y4oD6Aoo330q4oNIruHo8WkJ54DAU_wdfBpAnYYLLw8NiEDx2XOgEPQCXuXP6RNiTba9x48QMJiB92_FoM1zhce4B1IxRRiA2KsSS3ioj_z5bl8cZHQE7_PpPyU-P4JeZruSozZWVjb3EKlXWmjiOiyBVEq5AmDdQRxcbYoVDvYC-VSWQ9Ucv_rWNvtUPxn51DRYzqedyRXmT49kk_w8CrdDRRSDGr7zrIr9e3nLcG4I8G9wxKKRN3itx6zYsxzwJ26WD-LKub-___yaQYqbKB6M_qnZaDhEYR_Kn8ZT0xOntSWCHbMcVlrxPNsC4ToFvWr_qGBAqRfuqWLCFbcJl0fc8dKq4LilpSTvEoh_Y00QH9nO6C-FQe7nKal-KcFb2Niij5uiZXHryUIqLKlF-o6ZsJmdu37ynOu--JrrEOAyDTmI3fMHdsJholIen40bOdvn516R1pTAe7jIxUKwBFmcuSp46QukCRElLn3Z3Oz5bKQzu8aWxQeNKeQ0bhAW9TGY9KOX7KaECCo7Vm-Z4u_w.vmTMlnhUzfFU-gNsGb3dOw
+createTimestamp: 20200403201342.679Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200403201342.679Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 297c2cc4-2563-4750-877c-279159f692a3
+
+dn: uid=user.1,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Walker
+cn: user.1
+givenName: Gudrun
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.1
+userPassword: {SSHA256}H5pVJatnrWSBaugDXBvsNzidiyo2TDABGuUgqWNFGA9n+W04cdHwXQ==
+uid: user.1
+createTimestamp: 20200401145431.546Z
+pwdChangedTime: 20200401145431.546Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.546Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 55ee465d-2542-4c7d-a239-4e4d617c2552
+
+dn: entryUUID=a8b74a49-aba3-4da2-949a-ecc1b4384bb9,ou=consents,dc=bxfinance.xyz
+objectClass: top
+objectClass: ping-consent-record
+ping-consent-audience: audienceId
+ping-consent-definition: { "id":"test-consent", "version":"0.1", "locale":"en-US" }
+ping-consent-actor: user.0
+ping-consent-subject: user.0
+ping-consent-actor-dn: uid=user.0,ou=people,dc=bxfinance.xyz
+ping-consent-subject-dn: uid=user.0,ou=people,dc=bxfinance.xyz
+ping-consent-data: { "relatedPerson":"user.1" }
+ping-consent-state: accepted
+ping-consent-title-text: ConsentTest
+ping-consent-data-text: TestingConsents
+ping-consent-purpose-text: This is to test consent
+createTimestamp: 20200403202522.183Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200403202522.183Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: a8b74a49-aba3-4da2-949a-ecc1b4384bb9
+
+dn: pf-authn-session-attribute-hash=1b662fe5f0e15f599e96c0f5366b40174723cc44,pf-authn-session-group-id=FhunKKZWUEZUkvQwN9aGI240S,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: 1b662fe5f0e15f599e96c0f5366b40174723cc44
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..NFLTlkn29TEgrLlVN017tg.JVF4rxrwl8XrschBm162wYhSp8ReU0jaA8BUpAoPuKug76Mbz0gpAqfSkSwYyuAqy6QNHny_7Vre9ouivvLAgUySBnEa299y7-78PhgIyUvcq4Ef0Mp8_E83-YQugl0318NrzhzidNbzJlKAxp7QGQ5t3nMt8BJiQYpmztlS0G3RkIwOGeuY_B5UuWop4rV4b7poV41MPuwePGkAKIz5J_AO4arlHd_2tsu6hxLBBKg2yjYPbaRYDCzA7b8CYj-W-aWmmAdYJUjUYUJrMMpNeMktrcOT2lghz09EidWEIwJ9aCh2Tfvklpg-UEoup9xq_nnuwREErmTZnnbxXiwz_lgXL8YAAlBLSx3puDoHb82Wg-8d1rJYuQ81bFwwU_-Ei1aPi6gu8DJ56YdXlY2FDsTiYqSJyN-o4VY5bWFnCgngNLvS1HkhAsa78QWYvDCKkCgZ-KEFCAa2VW5tjGqv4hgRSf0CLvJuDC8o3qVe4NyVc--DJiQ2cK6EyEhg03KWaAVCl1pUVonJRQwRyQkazb8lEcWKQfbOynoOmArtUe0qNPtcKG3BpRK1tfLOYHMekqqQT4HMqhZXEHXlGg09UmSf_HzA4lW9tVHlbW7suOKegO9otP4zX2Izt3DxeD_zJ6sQhaXnpbL8qFk07dIUDcAiugzcNn_hj5G_nxBrYaPwtWA8wXF-DbV67zDWOztb--Z-hHOQYVn1qFQfmY24-njEBkJi6vqXyCNE5kTb_dm0XvFdVZxY2LoRN2ESAAEDI81a3THAQCRAkXt8J0tpZvR6NndaGOMWlvbNjg7SDOdZiLZpQVDxGtqBDO-XXrd1FuA_w2R5MkaxtZdjVpUI5HIqyGj-bAz3aKFKp20dNfzvcZ61_MhwshD8w-lJdHi76T4ndJ64K0G0ysp8biDr4OqGmdS1SJYskyGI04Q9t_LRLpNKbJ0JpX7K2pVpEYUsiXtqlPhiiIHFaEtVF0_vAfNo7sb5VM2mhgY4XPaqYstIsggkqqd8qVOJeTGQVnri7hYRa0ya209evVjwBEcaUL2KEk12Hqa1p_H4QpeWWFJaCUMvRA2-9LY2GdvO5-EmVasrWlhcQHrDUb6BnayXj0IJw1ypLazj_BHAMZPR1XRovnILrLd3Wt7AfhtP6hwa7bgU3uOOCtnZyNqgmRqoCTF-op1R_7Db7d02OYooSkDyiXJgsE2J16xfj_GjuPFmqId85eOFWoFvjIoRbEh4wgBqkm-rBGr1_W5ruPRAxRva-XfNhsAiHvoe3jABjY1q_eyXxfzc5rz1PKkoCInXwA4QndKwwUM4FKrIeHWxNYI-181MvcH0EEqyjOls_bBV.2M2DniEcbGpnWUnfDREUbA
+createTimestamp: 20200403222952.311Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200403222952.311Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 06c7e2c4-c5cf-4d28-b079-721f9da15318
+
+dn: pf-oauth-client-id=PingIntrospect,ou=oauthClients,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-oauth-client
+pf-oauth-client-name: Ping Introspect
+pf-oauth-client-last-modified: 1585752896759
+pf-oauth-client-restrict-scopes: FALSE
+pf-oauth-client-require-signed-requests: FALSE
+pf-oauth-client-grant-type: urn:pingidentity.com:oauth2:grant_type:validate_bearer
+pf-oauth-client-supplemental-info: 21:CIBA_POLLING_INTERVAL:null
+pf-oauth-client-supplemental-info: 44:BYPASS_ACTIVATION_CODE_CONFIRMATION_OVERRIDE:null
+pf-oauth-client-supplemental-info: 19:DEVICE_FLOW_SETTING:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 18:PAIRWISE_USER_TYPE:false
+pf-oauth-client-supplemental-info: 26:CIBA_NOTIFICATION_ENDPOINT:null
+pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:jwtDefault
+pf-oauth-client-supplemental-info: 23:RESTRICT_RESPONSE_TYPES:false
+pf-oauth-client-supplemental-info: 32:REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:null
+pf-oauth-client-supplemental-info: 37:CIBA_REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 28:id_token_signed_response_alg:null
+pf-oauth-client-supplemental-info: 32:DEVICE_POLLING_INTERVAL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 26:PING_ACCESS_LOGOUT_CAPABLE:false
+pf-oauth-client-supplemental-info: 35:REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE:false
+pf-oauth-client-supplemental-info: 21:SECTOR_IDENTIFIER_URI:null
+pf-oauth-client-supplemental-info: 25:RESTRICTED_RESPONSE_TYPES:null
+pf-oauth-client-supplemental-info: 29:ACCESS_SESSION_REVOCATION_API:false
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_alg:null
+pf-oauth-client-supplemental-info: 34:PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_enc:null
+pf-oauth-client-supplemental-info: 32:VALIDATE_USING_ALL_ELIGIBLE_ATMS:true
+pf-oauth-client-supplemental-info: 7:ENABLED:true
+pf-oauth-client-supplemental-info: 23:USER_AUTHZ_URL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 30:PENDING_AUTHZ_TIMEOUT_OVERRIDE:null
+pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:null
+pf-oauth-client-id: PingIntrospect
+pf-oauth-client-description: This client is used to Introspect and validate PF-issued access_tokens
+pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
+pf-oauth-client-authn-type: SECRET
+pf-oauth-client-hashed-secret: j5cD3OcEYu_rVGo9PIX3gzI4JT4HQ3i0M2G2RMCeX30.sPCfneic.2
+pf-oauth-client-enforce-replay-prevention: FALSE
+pf-oauth-client-bypass-approval-page: FALSE
+createTimestamp: 20200401145456.761Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145456.761Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 99c247e7-6082-4290-8ebf-e35c9872e6e7
+
+dn: uid=user.4,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Moore
+cn: user.4
+givenName: Ethelyn
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.4
+userPassword: {SSHA256}0sV02K3wkiY3YpRQeSvwNPk3JF2COeIkp70tk7IQC/OOFzFb8uKGyw==
+uid: user.4
+createTimestamp: 20200401145431.972Z
+pwdChangedTime: 20200401145431.971Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.972Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: f8e7bdbe-585e-46bb-8748-83636cab2a36
+
+dn: uid=fancynanze@mailinator.com,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+mail: fancynanze@mailinator.com
+sn: Nanze
+cn: Fancy Nanze
+givenName: Fancy
+pf-connected-identity: auth-source=pf-local-identity:user-id=fancynanze@mailinator.com
+userPassword: {SSHA256}p/KNpGzDncOie/CpGrC/QJa1hlWSIfA+OwENhxEtwQIKpHqpJDo7mg==
+uid: fancynanze@mailinator.com
+createTimestamp: 20200403223021.365Z
+pwdChangedTime: 20200403223021.364Z
+creatorsName: uid=useradmin,ou=Administrators,dc=bxfinance.xyz
+modifyTimestamp: 20200403223021.365Z
+modifiersName: uid=useradmin,ou=Administrators,dc=bxfinance.xyz
+entryUUID: 32d3f8bb-a39b-4f34-a674-1f24ce577457
+
+dn: pf-authn-session-attribute-hash=1b662fe5f0e15f599e96c0f5366b40174723cc44,pf-authn-session-group-id=6GCv1WviFH5rzstQd5icWwTou,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: 1b662fe5f0e15f599e96c0f5366b40174723cc44
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoieUJHSnROWng1WCIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..0lLz_tOH-mewu6iuETcRqQ.XWw3ctvW2ZndEOxkmfL6TAYIQtbWs1B1kn16ykIctcYHHFZTbu1zLVBnUA-QFaoKzY5_Rfry5CcxtuByrpuaNaXPU_Lwon2KAOIGm4xJi0mc4EIVm1eLnKQziLQapsBV8LggD8CAZ4tiZwvUe1fV4-fvDeNCkJKxnxA4qGJiNhCloANjob4GM5925wMSd9Vs0DO49EkiVd2IMug8wF6wq9zalDXBvsegbMNImtf9N_hN6eGAgdbd85PtWB5x29zCsK-cBJK0LUgIZU_yAsGDnBoRHS5yIy2O9nWp0rgqDTuMutBTbSMjy27bizJh_moa4C8DI67pyh5YNBcyebRq328Fffot9oqBgFYiJJf41B-OJoouxyBlM8Tm2wdk2Cf7unjsqwltuauWwsHOTtL790DEBtZOZjBBgHFK-7101v4ZnXsjfDJhy3ohTwmu6NCqa6vaG5A4WUgiGdJMzBKBwvL5mmjP5PFKgSpiZ9D585K1KG2YsXdyG1V02xrxs2hmHF-6LrgkXTmBTdX8tQZGVT-cHmpwhhtTK4BHV6Kz4i4nrXu8dW7Amo8A6AJK35Nj9F_UKwSxfURa_UmeolD4rvC4xxEAJLLWq78OO-wUvkeCph4x_I3kbq02sqXUmXfm-dG6Q79Yny8rCM4ZWDUHpGDC1YeGy1bWbryJ6AYUEnU7WaugUQUVtuzoi6HEUIkwoSt7Btzqw4kPMu1itAIZr-M-VmDjdFBKeaS9QbvvUFiitz-GvGvv6AA-Bh5IJoTQsRYMQV6iuBP_KkYOD3Y_8mB0eDwyMU_EfsCocF4IoFt1qklPeViH0w7FmufRKMV111Z5kLziWGLR0p06CQe3yL7I4ohMCtvWj1Lionmzc4x6C1_L_rPEr331IKZR6tz6LrA7v3DOmg2MdSWiztG7rJz7wnGb_YPc0O8Sm_oksc0bcxV2JCRBZJJTg35_rMmYFo84Q_sX5_xkYXwXM99dncJr3JPwwIEHQ1kjCXV96pXoxGxunH6hfI6vCvqg2qlPZipFVdi_4TRvLPHMgpMxn3n0zitHgifJPpQ4pUAJNzScPXE7xRAKn4oqSicxpgJShuWXV8HxBvtWMByuZBlchRPzzehwaru_Eo9rlqDkzWaFbog9pdHyRyK4YxsgVh9KQ0yFC2aEMOi1ZBguqs6DER2nKI09duHj87lC7WCZ_KAf6z_zYyItycCIwOi8UIUp_FViycfHKdpLp4BCZEXzzV6sIHdItpoDn2vr8DjScz5iqneP8KiqEh-b_YwVnMB0A8JkHwIVGP4B0p_iQIVPhsPNhGSIJdwnhTSz8A8Hl4o2nhGTthHPwxurTvGb7z0E.Dof3_nyVwl7l8y2EAkT-aw
+createTimestamp: 20200401150711.302Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200401150711.302Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 6152eb62-fa71-42ad-899f-67708a7599f4
+
+dn: cn=PFUserAdminGroup,ou=Groups,dc=bxfinance.xyz
+objectClass: top
+objectClass: groupOfNames
+cn: PFUserAdminGroup
+member: uid=administrator,ou=People,dc=bxfinance.xyz
+createTimestamp: 20200401145431.274Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.274Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 5b2f92c2-5d9a-4a3c-8669-ba4a3538bd29
+
+dn: uid=user.0,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Jenkins
+cn: user.0
+givenName: Garnett
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.0
+userPassword: {SSHA256}QHb7H37vZn3J1CSjZo+S+pDcBMEsJNAzIsL6Cbby1aVbZQyjBRO2tA==
+uid: user.0
+createTimestamp: 20200401145431.417Z
+pwdChangedTime: 20200401145431.416Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.417Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 0e898de9-807c-4019-805a-3b52b1d419a6
+
+dn: uid=groupadmin,ou=Administrators,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Administrator
+cn: groupadmin
+givenName: Group
+pf-connected-identity: auth-source=pf-local-identity:user-id=groupadmin
+userPassword: {SSHA256}k4cUrgtD3eGAkm3v7ombX3MIVhxQSzuVP9KGDlO5us3iwDvItDjobw==
+uid: groupadmin
+createTimestamp: 20200401145557.188Z
+pwdChangedTime: 20200401145557.188Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145557.188Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: e100d1c4-a38d-4644-adf3-de855b5099ce
+

@@ -100,7 +100,7 @@ dsconfig create-access-token-validator \
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
-    --set compact-common-parent-dn:ou=People,dc=anycompany.co 
+    --set compact-common-parent-dn:ou=People,dc=bxfinance.xyz 
 
 dsconfig create-consent-definition \
     --definition-name test-consent  \
@@ -122,17 +122,17 @@ dsconfig create-constructed-attribute \
 dsconfig create-delegated-admin-rights \
     --rights-name 'Group Admin'  \
     --set enabled:true  \
-    --set admin-group-dn:cn=groupadmins,ou=Administrators,dc=anycompany.co 
+    --set admin-group-dn:cn=groupadmins,ou=Administrators,dc=bxfinance.xyz 
 
 dsconfig create-delegated-admin-rights \
     --rights-name 'Super Admin'  \
     --set enabled:true  \
-    --set admin-user-dn:uid=superadmin,ou=Administrators,dc=anycompany.co 
+    --set admin-user-dn:uid=superadmin,ou=Administrators,dc=bxfinance.xyz 
 
 dsconfig create-delegated-admin-rights \
     --rights-name 'User Admin'  \
     --set enabled:true  \
-    --set admin-user-dn:uid=useradmin,ou=Administrators,dc=anycompany.co 
+    --set admin-user-dn:uid=useradmin,ou=Administrators,dc=bxfinance.xyz 
 
 dsconfig create-rest-resource-type \
     --type-name groups  \
@@ -140,8 +140,8 @@ dsconfig create-rest-resource-type \
     --set enabled:true  \
     --set resource-endpoint:groups  \
     --set structural-ldap-objectclass:groupOfNames  \
-    --set search-base-dn:dc=anycompany.co  \
-    --set parent-dn:ou=groups,dc=anycompany.co  \
+    --set search-base-dn:dc=bxfinance.xyz  \
+    --set parent-dn:ou=groups,dc=bxfinance.xyz  \
     --set create-rdn-attribute-type:cn  \
     --set display-name:Groups  \
     --set search-filter-pattern:(cn=*%%*)  \
@@ -156,7 +156,7 @@ dsconfig create-delegated-admin-resource-rights \
     --set admin-permission:manage-group-membership  \
     --set admin-permission:read  \
     --set admin-permission:update  \
-    --set resource-subtree:ou=groups,dc=anycompany.co 
+    --set resource-subtree:ou=groups,dc=bxfinance.xyz 
 
 dsconfig create-delegated-admin-resource-rights \
     --rights-name 'Super Admin'  \
@@ -186,8 +186,8 @@ dsconfig create-rest-resource-type \
     --set resource-endpoint:users  \
     --set structural-ldap-objectclass:inetOrgPerson  \
     --set auxiliary-ldap-objectclass:pf-connected-identities  \
-    --set search-base-dn:dc=anycompany.co  \
-    --set parent-dn:ou=people,dc=anycompany.co  \
+    --set search-base-dn:dc=bxfinance.xyz  \
+    --set parent-dn:ou=people,dc=bxfinance.xyz  \
     --set create-rdn-attribute-type:uid  \
     --set post-create-constructed-attribute:pf-connected-identity  \
     --set display-name:Users  \
@@ -199,7 +199,7 @@ dsconfig create-delegated-admin-resource-rights \
     --rest-resource-type users  \
     --set enabled:true  \
     --set admin-permission:read  \
-    --set resource-subtree:ou=people,dc=anycompany.co 
+    --set resource-subtree:ou=people,dc=bxfinance.xyz 
 
 dsconfig create-delegated-admin-resource-rights \
     --rights-name 'Super Admin'  \
@@ -219,7 +219,7 @@ dsconfig create-delegated-admin-resource-rights \
     --set admin-permission:delete  \
     --set admin-permission:read  \
     --set admin-permission:update  \
-    --set resource-subtree:ou=people,dc=anycompany.co 
+    --set resource-subtree:ou=people,dc=bxfinance.xyz 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
@@ -268,7 +268,7 @@ dsconfig create-request-criteria \
     --criteria-name 'Delegated Admin User Creation Request Criteria'  \
     --type simple  \
     --set operation-type:add  \
-    --set included-target-entry-dn:dc=anycompany.co  \
+    --set included-target-entry-dn:dc=bxfinance.xyz  \
     --set any-included-target-entry-filter:(|(objectClass=inetOrgPerson)(objectClass=ubidPerson))  \
     --set 'included-application-name:PingDirectory Delegated Admin' 
 
@@ -381,7 +381,7 @@ dsconfig create-identity-mapper \
 
 dsconfig set-consent-service-prop \
     --set enabled:true  \
-    --set base-dn:ou=consents,dc=anycompany.co  \
+    --set base-dn:ou=consents,dc=bxfinance.xyz  \
     --set bind-dn:cn=dmanager  \
     --set 'consent-record-identity-mapper:User ID Exact Match'  \
     --set unprivileged-consent-scope:urn:pingdirectory:consent  \
@@ -394,7 +394,7 @@ dsconfig create-plugin \
     --set datetime-attribute:pf-authn-session-group-expiry-time  \
     --set 'expiration-offset:1 h'  \
     --set purge-behavior:subtree-delete-entries  \
-    --set base-dn:ou=sessions,dc=anycompany.co  \
+    --set base-dn:ou=sessions,dc=bxfinance.xyz  \
     --set filter:(objectClass=pf-authn-session-groups)  \
     --set 'polling-interval:20 m' 
 
@@ -405,7 +405,7 @@ dsconfig create-plugin \
     --set datetime-attribute:pf-authn-session-group-last-activity-time  \
     --set 'expiration-offset:1 w'  \
     --set purge-behavior:subtree-delete-entries  \
-    --set base-dn:ou=sessions,dc=anycompany.co  \
+    --set base-dn:ou=sessions,dc=bxfinance.xyz  \
     --set filter:(objectClass=pf-authn-session-groups)  \
     --set 'polling-interval:1 d' 
 
