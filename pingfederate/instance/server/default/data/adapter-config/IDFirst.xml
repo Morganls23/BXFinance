@@ -25,7 +25,7 @@
         <urn1:AttributeMap Name="domain" Type="Adapter" Value="domain" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeSource Id="PD" Description="PD" Type="LDAP" DataSourceId="LDAP-PingDirectory" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
             <urn1:Parameter Name="filter" Value="(|(uid=${subject} )(mail=$${subject}))"/>
-            <urn1:Parameter Name="search_base" Value="dc=anycompany.co"/>
+            <urn1:Parameter Name="search_base" Value="dc=bxfinance.xyz"/>
             <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
             <urn1:Parameter Name="memberof_nested_group" Value="false"/>
         </urn1:AttributeSource>

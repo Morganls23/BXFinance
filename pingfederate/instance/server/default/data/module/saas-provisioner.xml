@@ -17,7 +17,7 @@
       <timeout>60</timeout>
       <source dataSourceId="LDAP-PingDirectory">
         <ldapGuidFormatter guidAttributeName="entryUUID" guidIsBinary="false"/>
-        <usersBaseDN>dc=anycompany.co</usersBaseDN>
+        <usersBaseDN>dc=bxfinance.xyz</usersBaseDN>
         <filter>mobile=*</filter>
         <groupMemberAttributeName>uniqueMember</groupMemberAttributeName>
         <changedUsersAlgorithm>Timestamp No Negation</changedUsersAlgorithm>

@@ -3,7 +3,7 @@
     <!--Data store id-->
     <c:item name="PingFederateDSJNDIName">LDAP-PingDirectory</c:item>
     <!--LDAP search base. This should point to your client location. Eg. OU=clients,DC=4s8i6q,DC=global-->
-    <c:item name="SearchBase">ou=oauthClients,dc=anycompany.co</c:item>
+    <c:item name="SearchBase">ou=oauthClients,dc=bxfinance.xyz</c:item>
     <!--Name of the Client objectClass-->
     <c:item name="clientObjectClass">pf-oauth-client</c:item>
     <!--Attribute names that are used to store Client data. These only need to change if they conflict with
