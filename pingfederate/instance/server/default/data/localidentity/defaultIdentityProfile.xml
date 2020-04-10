@@ -61,14 +61,14 @@
     <loc:datastore-mapping>
         <loc:DataSource Description="" Type="LDAP" DataSourceId="LDAP-PingDirectory">
             <urn:Parameter Name="create_pattern" Value="uid=${username}" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
-            <urn:Parameter Name="search_base" Value="dc=bxfinance.xyz" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
-            <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="search_base" Value="dc=anycompany.co" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="search_scope" Value="ONE_LEVEL" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn:Parameter Name="object_class" Value="inetOrgPerson" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
         </loc:DataSource>
-        <loc:Attribute fieldName="fullName" datastore-field="cn"/>
         <loc:Attribute fieldName="firstName" datastore-field="givenName"/>
         <loc:Attribute fieldName="lastName" datastore-field="sn"/>
         <loc:Attribute fieldName="phoneNumber" datastore-field="mobile"/>
+        <loc:Attribute fieldName="fullName" datastore-field="cn"/>
         <loc:Attribute fieldName="email" datastore-field="mail"/>
         <loc:Attribute fieldName="username" datastore-field="uid"/>
     </loc:datastore-mapping>
