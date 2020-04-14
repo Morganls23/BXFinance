@@ -67,7 +67,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AACe0IC3IVa/pA1zkKh1K4w4TON0er4PjVc= 
+    --set password:AACtIJDa7MvWGTJDMni5ttx/1cPavPsaKwo= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -96,7 +96,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AACMVGB6nEu2GFLNeb1dONhmPUOEVggKb6M= 
+    --set client-secret:AADFcraf8cqTcv/3acf6rUsSKJlnLGDdDd8= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
@@ -118,6 +118,14 @@ dsconfig create-constructed-attribute \
     --attribute-name pf-connected-identity  \
     --set attribute-type:pf-connected-identity  \
     --set value-pattern:auth-source=pf-local-identity:user-id={uid} 
+
+dsconfig create-delegated-admin-attribute-category \
+    --display-name 'Profile Information'  \
+    --set display-order-index:0 
+
+dsconfig create-delegated-admin-attribute-category \
+    --display-name 'User Information'  \
+    --set display-order-index:1 
 
 dsconfig create-delegated-admin-rights \
     --rights-name 'Group Admin'  \
@@ -226,41 +234,48 @@ dsconfig create-delegated-admin-attribute \
     --type-name users  \
     --attribute-type bxFinanceUserAccountNumber  \
     --set 'display-name:BXFinance Account Number'  \
+    --set 'attribute-category:User Information'  \
     --set display-order-index:3  \
     --set attribute-presentation:default 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
     --attribute-type cn  \
-    --set 'display-name:Full Name' 
+    --set 'display-name:Full Name'  \
+    --set 'attribute-category:User Information' 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
     --attribute-type ds-pwp-account-disabled  \
-    --set 'display-name:Account Disabled' 
+    --set 'display-name:Account Disabled'  \
+    --set 'attribute-category:Profile Information' 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
     --attribute-type givenName  \
     --set 'display-name:First Name'  \
+    --set 'attribute-category:User Information'  \
     --set display-order-index:1 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
     --attribute-type mail  \
     --set display-name:Email  \
+    --set 'attribute-category:User Information'  \
     --set display-order-index:3 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
     --attribute-type sn  \
     --set 'display-name:Last Name'  \
+    --set 'attribute-category:User Information'  \
     --set display-order-index:2 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
     --attribute-type uid  \
     --set 'display-name:User ID'  \
+    --set 'attribute-category:Profile Information'  \
     --set display-order-index:4 
 
 dsconfig set-connection-handler-prop \
