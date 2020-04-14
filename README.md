@@ -37,16 +37,15 @@
   - rlyle+bxfinance@pingidentity.com / 2FederateM0re
 
 ## Basic User Testing 
-* Access [Delegated Administration] (https://sso.anycompany.co/delegator/)
+* Access [Delegated Administration] (https://demo.bxfinance.xyz/delegator/)
   - useradmin / 2FederateM0re
-* Access [Simple SP Connection] (https://sso.anycompany.co/idp/startSSO.ping?PartnerSpId=Dummy-SAML)
+* Access [Simple SP Connection] (https://demo.bxfinance.xyz/idp/startSSO.ping?PartnerSpId=Dummy-SAML)
   - user.0 / 2FederateM0re
-* Test out [PDG Pass-Through] (https://pingdatagovernance:3443/anything)
-  - user.0 / 2FederateM0re
-  - Obtain AT from PingFederate (https://sso.anycompany.co/as/authorization.oauth2?response_type=token&client_id=PingToken)
-* Test out [PD Consents]  (https://pingdirectory:2443/consent/v1/consents?definition=test-consent&subject=user.1)
-  - Obtain AT from PingFederate or use Basic Authorization
-  - Obtain AT from PingFederate (https://sso.anycompany.co/as/authorization.oauth2?response_type=token&client_id=PingToken&scope=urn:pingdirectory:consent)
+
+# Postman Collections
+* Get Token (https://www.getpostman.com/collections/b609316f6c96f8a9fd8a)
+* PingDataGov Test Calls (https://www.getpostman.com/collections/d37f14000a04af3fe288)
+* PingDirectory Consent APIs (https://www.getpostman.com/collections/d396aa53eaa9fe8e3f82)
 
 
 
