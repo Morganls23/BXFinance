@@ -67,7 +67,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AAAR45v6Qa27InzI+ooMM50taK2QWkXfMjM= 
+    --set password:AACe0IC3IVa/pA1zkKh1K4w4TON0er4PjVc= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -96,7 +96,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AAC5SB3PGosQ+wc/ne69peKejkBO5uQE/u0= 
+    --set client-secret:AACMVGB6nEu2GFLNeb1dONhmPUOEVggKb6M= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
@@ -185,6 +185,7 @@ dsconfig create-rest-resource-type \
     --set enabled:true  \
     --set resource-endpoint:users  \
     --set structural-ldap-objectclass:inetOrgPerson  \
+    --set auxiliary-ldap-objectclass:bxFinanceUser  \
     --set auxiliary-ldap-objectclass:pf-connected-identities  \
     --set search-base-dn:dc=bxfinance.xyz  \
     --set parent-dn:ou=people,dc=bxfinance.xyz  \
@@ -220,6 +221,13 @@ dsconfig create-delegated-admin-resource-rights \
     --set admin-permission:read  \
     --set admin-permission:update  \
     --set resource-subtree:ou=people,dc=bxfinance.xyz 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type bxFinanceUserAccountNumber  \
+    --set 'display-name:BXFinance Account Number'  \
+    --set display-order-index:3  \
+    --set attribute-presentation:default 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
