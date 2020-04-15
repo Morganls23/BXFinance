@@ -67,7 +67,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AACtIJDa7MvWGTJDMni5ttx/1cPavPsaKwo= 
+    --set password:AABheZEJ34NSCxCAmymFT8iaa1IT1eXAvUo= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -81,20 +81,16 @@ dsconfig set-global-configuration-prop \
     --set smtp-server:MailTrap 
 
 dsconfig set-access-control-handler-prop \
+    --remove 'global-aci:(targetattr="userPassword || authPassword")(version 3.0; acl "Prevent clients from retrieving passwords from the server"; deny (read,search,compare) userdn="ldap:///anyone";)'  \
     --add 'global-aci:(extop="1.3.6.1.4.1.30221.2.6.17")(version 3.0;acl "Authenticated access to the multi-update extended request for the Delegated Admin API"; allow (read) userdn="ldap:///all";)'  \
     --add 'global-aci:(extop="1.3.6.1.4.1.30221.2.6.62")(version 3.0; acl "Authenticated access to the generate-password extended request for the Delegated Admin API"; allow (read) userdn="ldap:///all";)'  \
+    --add 'global-aci:(targetattr="*")(version 3.0; acl "Grant full access for the admin user"; allow (all) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
+    --add 'global-aci:(targetattr="userPassword || authPassword")(version 3.0; acl "Grant password access for the admin user"; allow (all) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
     --add 'global-aci:(targetcontrol="1.2.840.113556.1.4.319")(version 3.0; acl "Allow paging for pingfederate"; allow (read) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
     --add 'global-aci:(targetcontrol="1.2.840.113556.1.4.473")(version 3.0; acl "Allow Server Sort for pingfederate"; allow (read) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
     --add 'global-aci:(targetcontrol="1.3.6.1.1.13.2")(version 3.0; acl "Anonymous access to the post-read request control as described in RFC 4527"; allow (read) userdn="ldap:///anyone";)'  \
     --add 'global-aci:(targetcontrol="1.3.6.1.4.1.30221.2.5.40")(version 3.0;acl "Authenticated access to the password validation details request control for the Delegated Admin API"; allow (read) userdn="ldap:///all";)'  \
     --add 'global-aci:(targetcontrol="1.3.6.1.4.1.4203.1.10.2")(version 3.0;acl "Authenticated access to the no-op request control for the Delegated Admin API"; allow (read) userdn="ldap:///all";)' 
-
-dsconfig set-access-control-handler-prop \
-    --add 'global-aci:(targetattr="userPassword || authPassword")(version 3.0; acl "Grant password access for the admin user"; allow (all) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
-    --add 'global-aci:(targetattr="*")(version 3.0; acl "Grant full access for the admin user"; allow (all) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'
-
-dsconfig set-access-control-handler-prop \
-    --remove 'global-aci:(targetattr="userPassword || authPassword")(version 3.0; acl "Prevent clients from retrieving passwords from the server"; deny (read,search,compare) userdn="ldap:///anyone";)' 
 
 dsconfig create-access-token-validator \
     --validator-name PingFederate  \
@@ -103,7 +99,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AADFcraf8cqTcv/3acf6rUsSKJlnLGDdDd8= 
+    --set client-secret:AAB7ynNGXnVhqSw+r+7JZhC485pgqjLmvAk= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
@@ -199,8 +195,7 @@ dsconfig create-rest-resource-type \
     --type user  \
     --set enabled:true  \
     --set resource-endpoint:users  \
-    --set structural-ldap-objectclass:inetOrgPerson  \
-    --set auxiliary-ldap-objectclass:bxFinanceUser  \
+    --set structural-ldap-objectclass:bxFinanceUser  \
     --set auxiliary-ldap-objectclass:pf-connected-identities  \
     --set search-base-dn:dc=bxfinance.xyz  \
     --set parent-dn:ou=people,dc=bxfinance.xyz  \
@@ -242,8 +237,7 @@ dsconfig create-delegated-admin-attribute \
     --attribute-type bxFinanceUserAccountNumber  \
     --set 'display-name:BXFinance Account Number'  \
     --set 'attribute-category:User Information'  \
-    --set display-order-index:3  \
-    --set attribute-presentation:default 
+    --set display-order-index:3 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
