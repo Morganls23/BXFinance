@@ -91,7 +91,10 @@ dsconfig set-access-control-handler-prop \
 
 dsconfig set-access-control-handler-prop \
     --add 'global-aci:(targetattr="userPassword || authPassword")(version 3.0; acl "Grant password access for the admin user"; allow (all) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
-    --add 'global-aci:(targetattr="*")(version 3.0; acl "Grant full access for the admin user"; allow (all) userdn="ldap:///uid=admin,dc=anycompany,dc=org";)'
+    --add 'global-aci:(targetattr="*")(version 3.0; acl "Grant full access for the admin user"; allow (all) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'
+
+dsconfig set-access-control-handler-prop \
+    --remove 'global-aci:(targetattr="userPassword || authPassword")(version 3.0; acl "Prevent clients from retrieving passwords from the server"; deny (read,search,compare) userdn="ldap:///anyone";)' 
 
 dsconfig create-access-token-validator \
     --validator-name PingFederate  \
