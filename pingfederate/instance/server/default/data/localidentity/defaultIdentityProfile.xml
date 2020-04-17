@@ -47,7 +47,7 @@
         <loc:field type="PHONE" default-value="" id="phoneNumber" label="Phone Number">
             <loc:appliesTo profile="true" registration="true"/>
             <loc:parameter param-name="Read-Only" value="false"/>
-            <loc:parameter param-name="Required" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
             <loc:parameter param-name="Unique ID Field" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
@@ -107,7 +107,7 @@
     <loc:datastore-mapping>
         <loc:DataSource Description="" Type="LDAP" DataSourceId="LDAP-PingDirectory">
             <urn:Parameter Name="create_pattern" Value="uid=${username}" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
-            <urn:Parameter Name="search_base" Value="dc=bxfinance.xyz" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn:Parameter Name="search_base" Value="ou=People,dc=bxfinance.xyz" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn:Parameter Name="object_class" Value="bxFinanceUser" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2"/>
         </loc:DataSource>

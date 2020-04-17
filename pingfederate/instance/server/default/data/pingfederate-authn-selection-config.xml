@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urn:AuthnSelectionConfig lastModifiedMillis="1585780483809" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
+<urn:AuthnSelectionConfig lastModifiedMillis="1587135273889" enableAuthnSelection="true" enableSpAuthnSelection="false" failIfNoSelection="false" xmlns:urn="urn:pingidentity.com:pf:authn-selection">
     <urn:AuthnSelectionTrees>
         <urn:AuthnSelectionTree treeName="AuthN Experience Policy" disabled="false" authnApiApp="">
             <urn:AstRoot context="">
@@ -43,6 +43,31 @@
                                 <urn1:AttributeMap Name="subject" Type="Adapter" AttributeSourceId="HTMLFormWithLIP" Value="uid" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
                                 <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
                             </urn:OutboundAttributeMapping>
+                        </urn:AstAction>
+                    </urn:AstChild>
+                </urn:AstChild>
+                <urn:AstChild context="Internal">
+                    <urn:AstAction xsi:type="urn:AuthnSourceActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <urn:AuthnSourceKey type="ADAPTER">htmlSimple</urn:AuthnSourceKey>
+                        <urn:fallbackToSuccess>true</urn:fallbackToSuccess>
+                    </urn:AstAction>
+                    <urn:AstChild context="Fail">
+                        <urn:AstAction noOpType="DONE" xsi:type="urn:NoOpActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    </urn:AstChild>
+                    <urn:AstChild context="Success">
+                        <urn:AstAction apcId="defaultPolicyContract" xsi:type="urn:ApcMappingActionType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <urn:AttributeMapping>
+                                <urn1:AttributeMap Name="ImmutableID" Type="LDAP" AttributeSourceId="PingDirectory" Value="entryUUID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                <urn1:AttributeMap Name="mail" Type="LDAP" AttributeSourceId="PingDirectory" Value="mail" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                <urn1:AttributeMap Name="subject" Type="LDAP" AttributeSourceId="PingDirectory" Value="uid" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                                <urn1:AttributeSource Id="PingDirectory" Description="PingDirectory" Type="LDAP" DataSourceId="LDAP-PingDirectory" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
+                                    <urn1:Parameter Name="filter" Value="uid=${ad.htmlSimple.username}"/>
+                                    <urn1:Parameter Name="search_base" Value="dc=bxfinance.xyz"/>
+                                    <urn1:Parameter Name="search_scope" Value="SUBTREE_SCOPE"/>
+                                    <urn1:Parameter Name="memberof_nested_group" Value="false"/>
+                                </urn1:AttributeSource>
+                                <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+                            </urn:AttributeMapping>
                         </urn:AstAction>
                     </urn:AstChild>
                 </urn:AstChild>
