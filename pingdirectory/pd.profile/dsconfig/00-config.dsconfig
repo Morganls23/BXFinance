@@ -67,7 +67,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AABheZEJ34NSCxCAmymFT8iaa1IT1eXAvUo= 
+    --set password:AACC5nHL2HhjP94rqMJiC4v2Frcj/P0LuHk= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -99,7 +99,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AAB7ynNGXnVhqSw+r+7JZhC485pgqjLmvAk= 
+    --set client-secret:AACL5Fyo39pmd9EkIZUSOWQNyYZTbhH5qY4= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
@@ -306,7 +306,8 @@ dsconfig set-gauge-prop \
 
 dsconfig set-gauge-prop \
     --gauge-name 'License Expiration (Days)'  \
-    --set enabled:false 
+    --set enabled:false  \
+    --set warning-value:10.0 
 
 dsconfig create-http-servlet-cross-origin-policy \
     --policy-name 'Delegated Admin Cross-Origin Policy'  \
@@ -334,6 +335,10 @@ dsconfig create-debug-target \
     --publisher-name 'File-Based Debug Logger'  \
     --target-name com.unboundid.guitools.replicationcli  \
     --set debug-level:verbose 
+
+dsconfig set-monitor-provider-prop \
+    --provider-name 'Host System'  \
+    --reset enabled 
 
 dsconfig set-root-dn-user-prop \
     --user-name 'Directory Manager'  \
