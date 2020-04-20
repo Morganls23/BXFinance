@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" isInheritExtendedContractAttributes="false" name="PingIDSDK" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
     <urn:Fields>
-        <urn:Field name="PingID SDK Properties">I0F1dG8tR2VuZXJhdGVkIGZyb20gUGluZ09uZSwgZG93bmxvYWRlZCBieSBpZD1bMTA4NDQ3Ml0gZW1haWw9W3JseWxlK3RlY2hzdW1taXQwMzIwQHBpbmdpZGVudGl0eS5jb21dCiNUaHUgSmFuIDA5IDExOjE3OjU5IE1TVCAyMDIwCmFwaV9rZXk9WVRkaU1qaGxabVl0T0RRd05TMDBOVGRoTFdJNFl6SXRPVGt6WlRNeU5ESXdaVEk1CnRva2VuPTBkMDMwNzhhZTFlMDRkNTg5MjFiNmZhNzY1MWQ2NzZhCnBpbmdpZHNka191cmw9aHR0cHM6Ly9zZGsucGluZ2lkLmNvbS9waW5naWQKYWNjb3VudF9pZD00NmFkZjQ3Zi02MjJmLTRhNDktYmJmYi0xODc2YWM4MTZlY2E=</urn:Field>
-        <urn:Field name="Application ID">2295d857-3615-4560-8cf5-f53dd3a51dc3</urn:Field>
+        <urn:Field name="PingID SDK Properties">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSIsInppcCI6IkRFRiJ9..o6HeYTyRAgwBdshpMdZv_w.E6qxDmPa5aZgk9e_aIwUAOeeti_mzYNiwnB4z4adFCRlpM90tcY2rpMbB2zQUJXLtIwwnFhBFEx3lT9BtWoZgoaW2xSbZaGaojwIiCRaa8XStYmU85vbH5KwECcjoPycNUoCFYu4uo1he4Mog10_H-Vynldp3558Iz5LHEcFK9uhjo7F6gVikshC94sQc4XYgy9wwIve0-CP6YFTbNAqHI5EIt5ltUd0zcywWAD9u6qu85Rj5rAsp0XhTLdir6prBrmgMWV45L563oKw4YeEJpXpR-JayWyBGHFB7FtKzXDGHSnUc20q4SgjcF4NglgqwZEZBTNmvO6vJz9qviYs2_E0d1neAjIZ9vkMjoqD7Ew.K5RfiWVxHR-Orz-f_BWOPw</urn:Field>
+        <urn:Field name="Application ID">ff8bbe92-d676-4d3c-9580-1afb441d339a</urn:Field>
         <urn:Field name="Device Pairing">automatic</urn:Field>
         <urn:Field name="Unpaired Users - Manual Pairing">bypass</urn:Field>
         <urn:Field name="Unpaired Users - Web Login">bypass</urn:Field>

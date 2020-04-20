@@ -2,8 +2,8 @@
   <saasProvisionerEntity>
     <entityId>PingID SDK Connector</entityId>
     <target id="PingIDForCustomers">
-      <parameter name="applicationId" value="2295d857-3615-4560-8cf5-f53dd3a51dc3"/>
-      <parameter name="pingIdSdkProperties" value="I0F1dG8tR2VuZXJhdGVkIGZyb20gUGluZ09uZSwgZG93bmxvYWRlZCBieSBpZD1bMTA4NDQ3Ml0gZW1haWw9W3JseWxlK3RlY2hzdW1taXQwMzIwQHBpbmdpZGVudGl0eS5jb21dCiNUaHUgSmFuIDA5IDExOjE3OjU5IE1TVCAyMDIwCmFwaV9rZXk9WVRkaU1qaGxabVl0T0RRd05TMDBOVGRoTFdJNFl6SXRPVGt6WlRNeU5ESXdaVEk1CnRva2VuPTBkMDMwNzhhZTFlMDRkNTg5MjFiNmZhNzY1MWQ2NzZhCnBpbmdpZHNka191cmw9aHR0cHM6Ly9zZGsucGluZ2lkLmNvbS9waW5naWQKYWNjb3VudF9pZD00NmFkZjQ3Zi02MjJmLTRhNDktYmJmYi0xODc2YWM4MTZlY2E="/>
+      <parameter name="applicationId" value="ff8bbe92-d676-4d3c-9580-1afb441d339a"/>
+      <parameter name="pingIdSdkProperties" value="eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSIsInppcCI6IkRFRiJ9..GElqYLT7kxqkUrLzhNXs9Q.fASp4QbVgpHzwl6ERbAVAeuDUdvryio1gRcGogKVZz-YnUsAgciRocvOBXBVnEu3hoQjpUgLoC4LUCFiuGjOdKOdo5cPtYClonecjheIZIRw9wL6YxF0EDe05Dr0M4hCcbe2ecZj3UpTxVDYkEbnWeLYnttWmFVjbKXypvfeWXaPzIgQdzZJ9EUwx7TjG2ag5YNV_ANvXd9zs0krLf3nDfZPp9AIpiP2FaNEQM4yUrJeR7BsxRi9XU3ftVINlG_ycxQInq2mW_yMn-bcyzAUJCSjSQjQslWAIRNWlGBaApz0eltublfk8rZhH5hpXwEGtefSyKk7YpPV4fath_GilzDOfSASBmj-r70YFVP0a0M.ArXh5FUwE20WKx1bpyUEdg"/>
       <parameter name="primaryAuthenticationMethodUponCreation" value="SMS Number 1"/>
       <parameter name="Provisioning Options" value=""/>
       <parameter name="createNewUsers" value="true"/>
@@ -17,8 +17,9 @@
       <timeout>60</timeout>
       <source dataSourceId="LDAP-PingDirectory">
         <ldapGuidFormatter guidAttributeName="entryUUID" guidIsBinary="false"/>
-        <usersBaseDN>dc=bxfinance.xyz</usersBaseDN>
-        <filter>mobile=*</filter>
+        <usersBaseDN>ou=People,dc=bxfinance.xyz</usersBaseDN>
+        <filter>&amp;(mobile=*)(objectClass=bxFinanceUser)</filter>
+        <memberOfGroupAttributeName/>
         <groupMemberAttributeName>uniqueMember</groupMemberAttributeName>
         <changedUsersAlgorithm>Timestamp No Negation</changedUsersAlgorithm>
         <timestampAttributeName>modifyTimestamp</timestampAttributeName>
