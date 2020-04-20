@@ -40,7 +40,9 @@
 * Access [Delegated Administration] (https://demo.bxfinance.xyz/delegator/)
   - useradmin / 2FederateM0re
 * Access [Simple SP Connection] (https://demo.bxfinance.xyz/idp/startSSO.ping?PartnerSpId=Dummy-SAML)
-  - user.0 / 2FederateM0re
+  - Enter your user creds
+* LIP Profile Management Link [Prof Mgmt] (https://demo.bxfinance.xyz/pf/idprofile.ping?LocalIdentityProfileID=defaultIdentityProfile)
+  - Enter your user creds
 
 # Postman Collections
 * Get Token (https://www.getpostman.com/collections/b609316f6c96f8a9fd8a)
