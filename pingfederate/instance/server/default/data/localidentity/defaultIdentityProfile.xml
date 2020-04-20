@@ -86,7 +86,7 @@
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
         <loc:field type="DROPDOWN" default-value="Device" id="authnPreferences" label="Authentication Preferences">
-            <loc:appliesTo profile="true" registration="false"/>
+            <loc:appliesTo profile="true" registration="true"/>
             <loc:parameter param-name="Read-Only" value="false"/>
             <loc:parameter param-name="Required" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>

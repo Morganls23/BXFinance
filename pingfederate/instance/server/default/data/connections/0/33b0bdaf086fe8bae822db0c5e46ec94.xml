@@ -15,12 +15,12 @@
                 <urn:AllowAllEntities>false</urn:AllowAllEntities>
                 <urn:AdditionalAllowedEntities/>
             </urn:AdditionalAllowedEntitiesConfiguration>
-            <urn:ExtendedProperties name="authNexp" value="MFA"/>
+            <urn:ExtendedProperties name="authNexp" value="PasswordlessPref"/>
         </urn:EntityExtension>
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="false" SignResponseAsRequired="true">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-04-20T19:32:10.118Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-04-20T20:31:22.194Z">
                 <urn:IncomingBindings Artifact="true" POST="true" Redirect="true" SOAP="true"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="false" SPInitiatedSLO="false"/>
                 <urn:SP AssertionValidityAfterMinutes="5" AssertionValidityBeforeMinutes="5" ConnectionTargetType="Standard" EnableCDCDuringSSO="false">

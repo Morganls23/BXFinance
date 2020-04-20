@@ -9,6 +9,7 @@
         <urn:AttributeName>Basic</urn:AttributeName>
         <urn:AttributeName>Passwordless</urn:AttributeName>
         <urn:AttributeName>Internal</urn:AttributeName>
+        <urn:AttributeName>PasswordlessPref</urn:AttributeName>
         <urn:AttributeName>MFA</urn:AttributeName>
     </urn:ExtendedContractAttributes>
 </urn:PluginConfiguration>
