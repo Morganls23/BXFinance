@@ -16,7 +16,7 @@
         <urn:Field name="Account Unlock">true</urn:Field>
         <urn:Field name="Local Identity Profile">defaultIdentityProfile</urn:Field>
         <urn:Field name="Notification Publisher"/>
-        <urn:Field name="Enable Username Recovery">false</urn:Field>
+        <urn:Field name="Enable Username Recovery">true</urn:Field>
         <urn:Field name="Login Template">html.form.login.template.html</urn:Field>
         <urn:Field name="Logout Path"/>
         <urn:Field name="Logout Redirect"/>

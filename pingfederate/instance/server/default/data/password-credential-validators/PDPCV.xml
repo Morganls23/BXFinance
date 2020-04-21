@@ -10,7 +10,7 @@
         <urn:Field name="Mail Attribute">mail</urn:Field>
         <urn:Field name="SMS Attribute"/>
         <urn:Field name="PingID Username Attribute">uid</urn:Field>
-        <urn:Field name="Mail Search Filter"/>
+        <urn:Field name="Mail Search Filter">mail=${mail}</urn:Field>
         <urn:Field name="Username Attribute">uid</urn:Field>
         <urn:Field name="Mail Verified Attribute"/>
         <urn:Field name="Enable PingDirectory Detailed Password Policy Requirement Messaging">true</urn:Field>
@@ -20,7 +20,7 @@
         <urn:Field name="Mail Attribute">mail</urn:Field>
         <urn:Field name="SMS Attribute"/>
         <urn:Field name="PingID Username Attribute">uid</urn:Field>
-        <urn:Field name="Mail Search Filter"/>
+        <urn:Field name="Mail Search Filter">mail=${mail}</urn:Field>
         <urn:Field name="Username Attribute">uid</urn:Field>
         <urn:Field name="Mail Verified Attribute"/>
         <urn:Field name="Enable PingDirectory Detailed Password Policy Requirement Messaging">true</urn:Field>
