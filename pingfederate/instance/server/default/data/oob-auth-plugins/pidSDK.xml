@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PluginConfiguration isInheritExtendedContractAttributes="false" name="pidSDK" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="PingID SDK Properties">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSIsInppcCI6IkRFRiJ9..A5ZW8T5WnR1bCuRsByiD0g.HYvsxp9yujrZZcvDWWFjxgHxJ2s7N02A7shuyM7IEjM2A5foxtrNqvWUpLx6BJVHNhjdVXcNn35GvBs1L5ToL8ITCgq0tMxbFsJgNCfNZR0-15A2lBb7PB1lTyJuSEk57H9yW04TlS02eQE8etDET4TCVGpIi1c5ChP6SgZMvF_H0_PMzCu3aA6tennIYbeww1-Ox2DPQ3Nw07n2wK1JstbmA6gqW-eh8pZjkk9tu-WQVp_K-xWyTRv6wQ6QKU3UpUldKTeZlC2sCtq5UnV_vxYJxT5kn2FprcULPQZ6xcpvwFeUVLyGxOiyAJ82kOr3zC8CRsXj-T2zenBeW9EK_CG4E9KnxthdZXhqTmoxcWY.mnXJMDizY03zi4xummhc3g</urn:Field>
+        <urn:Field name="Application ID">ff8bbe92-d676-4d3c-9580-1afb441d339a</urn:Field>
+        <urn:Field name="Heartbeat Timeout"/>
+        <urn:Field name="Messages File">pingid-sdk-messages</urn:Field>
+        <urn:Field name="Dynamic Push Message">#set($newline="
+")$LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication", ".push.body.start", $OOBAuthRequestContext.requestingApplication.name)#foreach($scope in $OOBAuthRequestContext.requestedScope.values())$newline$scope #end#if($OOBAuthRequestContext.getUserAuthBindingMessage())$newline$LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication",".push.body.user.binding.msg", $OOBAuthRequestContext.getUserAuthBindingMessage())#end</urn:Field>
+        <urn:Field name="Dynamic Client Context">{
+"transactionType":"OOB"
+#* Commented out examples of using other parameters available to the template
+#if($OOBAuthRequestContext.getUserAuthBindingMessage()) 
+, "bindingMsgMsg":"$JsonHelp.escape($LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication", ".push.body.user.binding.msg", $OOBAuthRequestContext.getUserAuthBindingMessage()))",
+"bindingMsg": "$JsonHelp.escape($OOBAuthRequestContext.getUserAuthBindingMessage())"#end,
+"title":"$JsonHelp.escape($SimpleTitle)",
+"msg":"$JsonHelp.escape($SimpleBody)",
+"attributes" : $JsonHelp.toJSONString($OOBAuthRequestContext.getUserAttributes()),
+"appName":"$JsonHelp.escape($OOBAuthRequestContext.requestingApplication.name)",
+"requestedScopeAndDescriptions": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope),
+"requestedScope": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope.keySet()),
+"requestedScopeDescriptions": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope.values())
+*#}</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="Messages File">pingid-sdk-messages</urn:Field>
+        <urn:Field name="Dynamic Push Message">#set($newline="
+")$LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication", ".push.body.start", $OOBAuthRequestContext.requestingApplication.name)#foreach($scope in $OOBAuthRequestContext.requestedScope.values())$newline$scope #end#if($OOBAuthRequestContext.getUserAuthBindingMessage())$newline$LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication",".push.body.user.binding.msg", $OOBAuthRequestContext.getUserAuthBindingMessage())#end</urn:Field>
+        <urn:Field name="Dynamic Client Context">{
+"transactionType":"OOB"
+#* Commented out examples of using other parameters available to the template
+#if($OOBAuthRequestContext.getUserAuthBindingMessage()) 
+, "bindingMsgMsg":"$JsonHelp.escape($LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication", ".push.body.user.binding.msg", $OOBAuthRequestContext.getUserAuthBindingMessage()))",
+"bindingMsg": "$JsonHelp.escape($OOBAuthRequestContext.getUserAuthBindingMessage())"#end,
+"title":"$JsonHelp.escape($SimpleTitle)",
+"msg":"$JsonHelp.escape($SimpleBody)",
+"attributes" : $JsonHelp.toJSONString($OOBAuthRequestContext.getUserAttributes()),
+"appName":"$JsonHelp.escape($OOBAuthRequestContext.requestingApplication.name)",
+"requestedScopeAndDescriptions": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope),
+"requestedScope": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope.keySet()),
+"requestedScopeDescriptions": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope.values())
+*#}</urn:Field>
+    </urn:AdvancedFields>
+    <urn:Tables/>
+    <urn:ExtendedContractAttributes/>
+</urn:PluginConfiguration>
