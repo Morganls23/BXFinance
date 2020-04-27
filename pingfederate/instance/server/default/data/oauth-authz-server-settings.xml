@@ -4,6 +4,10 @@
         <urn1:AttributeMap Name="sub" Type="Authentication Policy Contract" Value="apc.subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
     </urn:UserKeyToAccessTokenMapping>
+    <urn:UserKeyToAccessTokenMapping contextId="default" tokenManagerId="jwtDefault">
+        <urn1:AttributeMap Name="sub" Type="Persistent Grant" Value="USER_KEY" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:UserKeyToAccessTokenMapping>
     <urn:ApcToUserKeyMapping sourcePluginId="defaultPolicyContract">
         <urn1:AttributeMap Name="USER_NAME" Type="Authentication Policy Contract" Value="subject" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:AttributeMap Name="USER_KEY" Type="Authentication Policy Contract" Value="ImmutableID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>

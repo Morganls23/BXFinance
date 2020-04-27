@@ -5,41 +5,17 @@
         <urn:Field name="Application ID">ff8bbe92-d676-4d3c-9580-1afb441d339a</urn:Field>
         <urn:Field name="Heartbeat Timeout"/>
         <urn:Field name="Messages File">pingid-sdk-messages</urn:Field>
-        <urn:Field name="Dynamic Push Message">#set($newline="
-")$LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication", ".push.body.start", $OOBAuthRequestContext.requestingApplication.name)#foreach($scope in $OOBAuthRequestContext.requestedScope.values())$newline$scope #end#if($OOBAuthRequestContext.getUserAuthBindingMessage())$newline$LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication",".push.body.user.binding.msg", $OOBAuthRequestContext.getUserAuthBindingMessage())#end</urn:Field>
+        <urn:Field name="Dynamic Push Message">Please approve the transaction request for BXFinance</urn:Field>
         <urn:Field name="Dynamic Client Context">{
-"transactionType":"OOB"
-#* Commented out examples of using other parameters available to the template
-#if($OOBAuthRequestContext.getUserAuthBindingMessage()) 
-, "bindingMsgMsg":"$JsonHelp.escape($LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication", ".push.body.user.binding.msg", $OOBAuthRequestContext.getUserAuthBindingMessage()))",
-"bindingMsg": "$JsonHelp.escape($OOBAuthRequestContext.getUserAuthBindingMessage())"#end,
-"title":"$JsonHelp.escape($SimpleTitle)",
-"msg":"$JsonHelp.escape($SimpleBody)",
-"attributes" : $JsonHelp.toJSONString($OOBAuthRequestContext.getUserAttributes()),
-"appName":"$JsonHelp.escape($OOBAuthRequestContext.requestingApplication.name)",
-"requestedScopeAndDescriptions": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope),
-"requestedScope": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope.keySet()),
-"requestedScopeDescriptions": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope.values())
-*#}</urn:Field>
+"msg":"Please approve the transaction for BXFinance"
+}</urn:Field>
     </urn:Fields>
     <urn:AdvancedFields>
         <urn:Field name="Messages File">pingid-sdk-messages</urn:Field>
-        <urn:Field name="Dynamic Push Message">#set($newline="
-")$LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication", ".push.body.start", $OOBAuthRequestContext.requestingApplication.name)#foreach($scope in $OOBAuthRequestContext.requestedScope.values())$newline$scope #end#if($OOBAuthRequestContext.getUserAuthBindingMessage())$newline$LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication",".push.body.user.binding.msg", $OOBAuthRequestContext.getUserAuthBindingMessage())#end</urn:Field>
+        <urn:Field name="Dynamic Push Message">Please approve the transaction request for BXFinance</urn:Field>
         <urn:Field name="Dynamic Client Context">{
-"transactionType":"OOB"
-#* Commented out examples of using other parameters available to the template
-#if($OOBAuthRequestContext.getUserAuthBindingMessage()) 
-, "bindingMsgMsg":"$JsonHelp.escape($LanguagePackMessages.getMessage("pingid.sdk.ciba.authentication", ".push.body.user.binding.msg", $OOBAuthRequestContext.getUserAuthBindingMessage()))",
-"bindingMsg": "$JsonHelp.escape($OOBAuthRequestContext.getUserAuthBindingMessage())"#end,
-"title":"$JsonHelp.escape($SimpleTitle)",
-"msg":"$JsonHelp.escape($SimpleBody)",
-"attributes" : $JsonHelp.toJSONString($OOBAuthRequestContext.getUserAttributes()),
-"appName":"$JsonHelp.escape($OOBAuthRequestContext.requestingApplication.name)",
-"requestedScopeAndDescriptions": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope),
-"requestedScope": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope.keySet()),
-"requestedScopeDescriptions": $JsonHelp.toJSONString($OOBAuthRequestContext.requestedScope.values())
-*#}</urn:Field>
+"msg":"Please approve the transaction for BXFinance"
+}</urn:Field>
     </urn:AdvancedFields>
     <urn:Tables/>
     <urn:ExtendedContractAttributes/>
