@@ -1,0 +1,69 @@
+def request = exc?.request;
+def amounts = request?.getQueryStringParams()?.get("amount");
+
+if (amounts != null && amounts.length == 1)
+{
+   int amount = java.lang.Integer.parseInt(amounts[0]);
+}
+
+if(amount > 1000)
+    pass();
+  else
+    fail();
+
+
+
+
+
+def amounts = exc?.request.getQueryStringParams()?.get("amount");
+
+
+if(amounts != null && amounts.length == 1)
+{
+   def amount = java.lang.Integer.parseInt(amounts[0]);
+}
+
+if(amount > 1000)
+    pass();
+  else
+    fail();
+
+
+
+def request = exc?.request;
+def amounts = request?.getQueryStringParams()?.get("amount");
+int amount = 0;
+
+if (amounts != null)
+      amount = java.lang.Integer.parseInt(amounts);
+
+if (amount > 1000)
+ pass()
+else
+ fail()
+
+
+
+
+ def request = exc?.request;
+def amounts = request?.getQueryStringParams()?.get("amount");
+int amount = 0;
+
+anything()
+
+if (amounts != null && amounts.length == 1)
+      amount = java.lang.Integer.parseInt(amounts[0]);
+
+if (amount > 1000)
+ pass()
+else
+ fail()
+
+
+ int amount = 0;
+def amounts = exc?.request?.getQueryStringParams()?.get("amount");
+if (amounts != null){
+  amount = java.lang.Integer.parseInt(amounts[0]);
+}
+if (amount > 1000) {fail()}
+else {pass()}
