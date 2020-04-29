@@ -1,5 +1,5 @@
 This profile was created with the manage-profile generate-profile subcommand.
-It was generated at 03/Apr/2020:22:53:45.719 +0000 by user root, from the
+It was generated at 29/Apr/2020:14:28:32.394 +0000 by user root, from the
 server in /opt/out/instance.
 
 Certain steps will always need to be taken to use this generated profile with
@@ -26,8 +26,8 @@ generated profile, and can be manually added if necessary. These files can also
 be included by generate-profile with the --includePath argument:
 config/encryption-settings/encryption-settings-db
 config/tools.properties
-config/keystore
 config/keystore.pin
+config/keystore
 config/truststore
 config/ads-truststore.pin
 config/ads-truststore

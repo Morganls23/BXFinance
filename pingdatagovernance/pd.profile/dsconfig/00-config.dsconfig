@@ -9,6 +9,12 @@ dsconfig set-trust-manager-provider-prop \
     --set enabled:true 
 
 dsconfig create-external-server \
+    --server-name beeceptor  \
+    --type api  \
+    --set base-url:https://bxfinance.free.beeceptor.com  \
+    --set hostname-verification-method:allow-all 
+
+dsconfig create-external-server \
     --server-name http-bin  \
     --type api  \
     --set base-url:https://httpbin.org  \
@@ -21,7 +27,7 @@ dsconfig create-external-server \
     --set hostname-verification-method:allow-all  \
     --set key-manager-provider:Null  \
     --set 'trust-manager-provider:Blind Trust'  \
-    --set shared-secret:AAAGJB2GElLmEM2WqVU3fqNyuuq2GUfMQI8=  \
+    --set shared-secret:AAD+wzssXDTepCNccwC1ECmPpOzJF7HiA/c=  \
     --set decision-node:e51688ff-1dc9-4b6c-bb36-8af64d02e9d1  \
     --set branch:defaultPolicies.snapshot 
 
@@ -31,7 +37,7 @@ dsconfig create-external-server \
     --set server-host-name:pingdirectory  \
     --set location:Docker  \
     --set bind-dn:cn=dmanager  \
-    --set password:AAAUOEISmuxmpdddFAcZN3cBsfsTk21mP9M= 
+    --set password:AACpMqAgRfQzizMczkyJNcuuENx4Y8rjyuI= 
 
 dsconfig create-external-server \
     --server-name pingfederate  \
@@ -50,6 +56,7 @@ dsconfig set-store-adapter-prop \
     --adapter-name UserStoreAdapter  \
     --set enabled:true  \
     --set load-balancing-algorithm:dg-lba  \
+    --set structural-ldap-objectclass:bxFinanceUser  \
     --set include-base-dn:ou=People,dc=bxfinance.xyz 
 
 dsconfig create-scim-resource-type \
@@ -65,7 +72,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:pingfederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AAAn3UvuftWp/IaeTS5HGK9duD445iDGn0s= 
+    --set client-secret:AAA/w+giGQFRGj7JUuak1OzS0ZFt6tRMRZM= 
 
 dsconfig create-token-resource-lookup-method \
     --validator-name pingfederateATV  \
@@ -73,7 +80,13 @@ dsconfig create-token-resource-lookup-method \
     --type scim  \
     --set evaluation-order-index:1000  \
     --set scim-resource-type:Users  \
-    --set 'match-filter:uid eq "%Username%"' 
+    --set 'match-filter:uid eq "%sub%"' 
+
+dsconfig create-gateway-api-endpoint \
+    --endpoint-name beeceptor  \
+    --set inbound-base-path:/accounts  \
+    --set outbound-base-path:/accounts  \
+    --set api-server:beeceptor 
 
 dsconfig create-gateway-api-endpoint \
     --endpoint-name httpbin  \
@@ -84,7 +97,10 @@ dsconfig create-gateway-api-endpoint \
 
 dsconfig set-policy-decision-service-prop \
     --set pdp-mode:external  \
-    --set policy-server:pingdatapap 
+    --set policy-server:pingdatapap  \
+    --set decision-response-view:decision-tree  \
+    --set decision-response-view:evaluated-entities  \
+    --set decision-response-view:request 
 
 dsconfig create-sideband-api-endpoint \
     --endpoint-name request  \
@@ -98,7 +114,7 @@ dsconfig create-sideband-api-endpoint \
 
 dsconfig create-sideband-api-shared-secret \
     --secret-name my-ss  \
-    --set shared-secret:AAA565q/ysd2fhM73Fz+rU1KVweyoTZuM94= 
+    --set shared-secret:AADsSZgfdnsKbAoFRBd4AELt7y1AGpcgseA= 
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
@@ -115,6 +131,10 @@ dsconfig set-gauge-prop \
 dsconfig set-gauge-prop \
     --gauge-name 'License Expiration (Days)'  \
     --set enabled:false 
+
+dsconfig set-log-publisher-prop \
+    --publisher-name 'Debug Trace Logger'  \
+    --set enabled:true 
 
 dsconfig set-root-dn-user-prop \
     --user-name 'Directory Manager'  \
