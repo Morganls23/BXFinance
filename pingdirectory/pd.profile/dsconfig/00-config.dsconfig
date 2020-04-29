@@ -4,6 +4,14 @@
 #   Ignore differences on shared host
 #   Ignore differences by instance
 
+dsconfig create-scim-resource-type \
+    --type-name Users  \
+    --type ldap-pass-through  \
+    --set enabled:true  \
+    --set endpoint:Users  \
+    --set structural-ldap-objectclass:bxFinanceUser  \
+    --set include-base-dn:ou=People,dc=bxfinance.xyz 
+
 dsconfig set-trust-manager-provider-prop \
     --provider-name 'Blind Trust'  \
     --set enabled:true 
@@ -67,7 +75,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AACC5nHL2HhjP94rqMJiC4v2Frcj/P0LuHk= 
+    --set password:AAAqQne8cW2ZJ9yftbEN0DfbAETjaKbzaLk= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -99,11 +107,35 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AACL5Fyo39pmd9EkIZUSOWQNyYZTbhH5qY4= 
+    --set client-secret:AAA1CTzVbfiMpPkEPwtoQHTcOoI0OWspt0s= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
     --set compact-common-parent-dn:ou=People,dc=bxfinance.xyz 
+
+dsconfig create-consent-definition \
+    --definition-name share-account-balances  \
+    --set 'display-name:Share Account Balances' 
+
+dsconfig create-consent-definition-localization \
+    --definition-name share-account-balances  \
+    --localization-name en-US  \
+    --set version:0.1  \
+    --set 'title-text:Share Account Balances'  \
+    --set 'data-text:Share Account Balances'  \
+    --set 'purpose-text:Share Account Balances' 
+
+dsconfig create-consent-definition \
+    --definition-name share-comm-preferences  \
+    --set 'display-name:Share Communication Preferences' 
+
+dsconfig create-consent-definition-localization \
+    --definition-name share-comm-preferences  \
+    --localization-name en-US  \
+    --set version:0.1  \
+    --set 'title-text:Sharing Communication Preferences'  \
+    --set 'data-text:Sharing Communication Preferences'  \
+    --set 'purpose-text:Sharing Communication Preferences' 
 
 dsconfig create-consent-definition \
     --definition-name test-consent  \
@@ -322,6 +354,10 @@ dsconfig set-http-servlet-extension-prop \
     --extension-name 'Delegated Admin'  \
     --set 'cross-origin-policy:Delegated Admin Cross-Origin Policy'  \
     --set access-token-scope:urn:pingidentity:directory-delegated-admin 
+
+dsconfig set-http-servlet-extension-prop \
+    --extension-name SCIM2  \
+    --set access-token-validator:PingFederate 
 
 dsconfig set-log-publisher-prop \
     --publisher-name 'Data Recovery Log'  \
