@@ -3,7 +3,7 @@ version: "3"
 services:
   pingfederate:
     image: pingidentity/pingfederate:edge
-    command: wait-for pingdirectory:389 -t 420 -- entrypoint.sh start-server
+    command: wait-for pingdirectory:389 -t 520 -- entrypoint.sh start-server
     env_file:
       - ~/.pingidentity/devops
       - ./env_vars
@@ -35,7 +35,7 @@ services:
       - 8443:8443
   
   pingaccess:
-    image: pingidentity/pingaccess:latest
+    image: pingidentity/pingaccess:6.0.0-edge
     env_file:
      - ~/.pingidentity/devops
      - ./env_vars
@@ -76,7 +76,7 @@ services:
     image: pingidentity/pingdatagovernance:edge
     env_file:
       - ~/.pingidentity/devops
-    command: wait-for pingfederate:9031 -t 620 -- entrypoint.sh start-server
+    command: wait-for pingfederate:9031 -t 720 -- entrypoint.sh start-server
     environment:
       - SERVER_PROFILE_URL=https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
       - SERVER_PROFILE_PATH=pingdatagovernance
