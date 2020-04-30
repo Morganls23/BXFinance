@@ -12,6 +12,14 @@ dsconfig create-scim-resource-type \
     --set structural-ldap-objectclass:bxFinanceUser  \
     --set include-base-dn:ou=People,dc=bxfinance.xyz 
 
+dsconfig create-key-manager-provider \
+    --provider-name pingdirectory  \
+    --type file-based  \
+    --set enabled:true  \
+    --set key-store-file:config/pingdirectory.p12  \
+    --set key-store-type:PKCS12  \
+    --set key-store-pin:AADlMwgxmrZKLZ41KKw3MJ/glCj93nb9GMg= 
+
 dsconfig set-trust-manager-provider-prop \
     --provider-name 'Blind Trust'  \
     --set enabled:true 
@@ -75,7 +83,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AADYeg+XwPOKC1txNkwoS1QxtimK01c9Vc0= 
+    --set password:AAA0VeVj/h82smxgjiImJlqOiq6Pt0NbAJs= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -107,7 +115,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AADmJap/BhsMLkLoEWna695+YqZVIzqp6qg= 
+    --set client-secret:AACr/4NxwA/0pkpFff7ZvQ3V2gCoqZCDcNc= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
@@ -423,14 +431,13 @@ dsconfig create-connection-handler \
     --set enabled:true  \
     --set listen-port:2443  \
     --set use-ssl:true  \
-    --set ssl-cert-nickname:server-cert  \
     --set http-servlet-extension:Consent  \
     --set 'http-servlet-extension:Delegated Admin'  \
     --set 'http-servlet-extension:Directory REST API'  \
     --set http-servlet-extension:SCIM2  \
     --set web-application-extension:Console  \
     --set 'http-operation-log-publisher:HTTP Detailed Access'  \
-    --set key-manager-provider:JKS  \
+    --set key-manager-provider:pingdirectory  \
     --set trust-manager-provider:JKS  \
     --set correlation-id-request-header:Correlation-Id  \
     --set correlation-id-request-header:X-Correlation-Id  \
