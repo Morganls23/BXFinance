@@ -75,7 +75,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AAAqQne8cW2ZJ9yftbEN0DfbAETjaKbzaLk= 
+    --set password:AADYeg+XwPOKC1txNkwoS1QxtimK01c9Vc0= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -107,7 +107,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AAA1CTzVbfiMpPkEPwtoQHTcOoI0OWspt0s= 
+    --set client-secret:AADmJap/BhsMLkLoEWna695+YqZVIzqp6qg= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \

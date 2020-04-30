@@ -1,4 +1,4 @@
-# LDIF export started at 20200417161724.618Z
+# LDIF export started at 20200430030736.478Z
 # Included branch:  dc=bxfinance.xyz
 
 dn: dc=bxfinance.xyz
@@ -91,6 +91,19 @@ modifyTimestamp: 20200401145556.804Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
 entryUUID: 7a6f2eae-b43a-49fd-b299-8819cb3443c5
 
+dn: pf-authn-session-group-id=cIX42pfbAH1XLy7hVs4VGOZFG,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200416182308.207Z
+pf-authn-session-group-last-activity-time: 20200416172308.207Z
+pf-authn-session-group-id: cIX42pfbAH1XLy7hVs4VGOZFG
+pf-authn-session-group-hashed-session-id: BeQNgPJ0itEHGeu_rnXsoaIU9PiNTEgB_o-Ojp4CkNA
+createTimestamp: 20200416172308.209Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416172308.209Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 97e4c9f2-5085-45a6-ab40-8fef49d2098c
+
 dn: pf-authn-session-group-id=6GCv1WviFH5rzstQd5icWwTou,ou=sessions,dc=bxfinance.xyz
 objectClass: top
 objectClass: pf-authn-session-groups
@@ -104,6 +117,32 @@ modifyTimestamp: 20200401150711.208Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
 entryUUID: 7200fbe0-0257-4dab-8c6f-d589e4c05ca2
 
+dn: pf-authn-session-group-id=dg9KxhAQNfiu2uhQNtMsR12Mg,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200416192813.926Z
+pf-authn-session-group-last-activity-time: 20200416182813.926Z
+pf-authn-session-group-id: dg9KxhAQNfiu2uhQNtMsR12Mg
+pf-authn-session-group-hashed-session-id: mzkuA5QvDYsfeWv0n04NLIQv8Beptnt1G0kQYe--FqU
+createTimestamp: 20200416182813.928Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416182813.928Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 0cc91398-ef2e-4729-b0c9-27e157b45cf9
+
+dn: pf-authn-session-group-id=Y3AETR1UneBq8eSl3UsB7SgHF,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200416193256.634Z
+pf-authn-session-group-last-activity-time: 20200416183256.634Z
+pf-authn-session-group-id: Y3AETR1UneBq8eSl3UsB7SgHF
+pf-authn-session-group-hashed-session-id: IIbgj-Sy9LW-JyquUFpwW4jA1Js22-Zzwz3E6OvI4RU
+createTimestamp: 20200416183256.638Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416183256.638Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 7c75e71d-8a2f-4a5f-9612-6d33990152ba
+
 dn: ou=Consents,dc=bxfinance.xyz
 objectClass: top
 objectClass: organizationalUnit
@@ -113,6 +152,45 @@ creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
 modifyTimestamp: 20200401145429.994Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
 entryUUID: 4330b8c2-4021-4255-b046-391f2fe10345
+
+dn: pf-authn-session-group-id=IN3uBldWyJs1pAiG8JuxuVTNZ,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200417001632.176Z
+pf-authn-session-group-last-activity-time: 20200416231632.176Z
+pf-authn-session-group-id: IN3uBldWyJs1pAiG8JuxuVTNZ
+pf-authn-session-group-hashed-session-id: -Toe2Ak8HGpnR7U8uQx9yiB0Uy1rXzNmUluBleyDb88
+createTimestamp: 20200416231632.177Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416231632.177Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 7f0360c6-19d3-4288-92df-2594dfa3f650
+
+dn: pf-authn-session-group-id=FtsCbLyQVewH4Cxa21Mruxg0a,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200417002045.727Z
+pf-authn-session-group-last-activity-time: 20200416232045.727Z
+pf-authn-session-group-id: FtsCbLyQVewH4Cxa21Mruxg0a
+pf-authn-session-group-hashed-session-id: 9QgHglC0GdOdrnIMuuWXnXDvM2_sgj_wV8BzaB5Cfso
+createTimestamp: 20200416232045.735Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416232045.735Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: ea6f0559-6a33-429d-9a02-303c81239bd3
+
+dn: pf-authn-session-group-id=mfmZfw94XBmcPL3eMyNkspIYj,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200417002442.036Z
+pf-authn-session-group-last-activity-time: 20200416232442.036Z
+pf-authn-session-group-id: mfmZfw94XBmcPL3eMyNkspIYj
+pf-authn-session-group-hashed-session-id: E3KNRlebXjqg_pQ_zvFJSpi1InhtkUPIbyRdOQVrgU8
+createTimestamp: 20200416232442.050Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416232442.050Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 3c21244f-abff-414b-a0b4-b6a17b541ce5
 
 dn: pf-authn-session-group-id=PXjPw8464K2PatYaGIz3TzHY0,ou=sessions,dc=bxfinance.xyz
 objectClass: top
@@ -127,6 +205,71 @@ modifyTimestamp: 20200403171505.436Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
 entryUUID: 5eb82dfe-7276-404b-b0ca-745955d14f9b
 
+dn: pf-authn-session-group-id=xs5cqWJOQCQVrOLvjNzAlzfjv,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200417000631.603Z
+pf-authn-session-group-last-activity-time: 20200416230631.603Z
+pf-authn-session-group-id: xs5cqWJOQCQVrOLvjNzAlzfjv
+pf-authn-session-group-hashed-session-id: HsJ3l52xVB0v7VhD7RkyqYT_-f17OzvgXJVYGhKkJr0
+createTimestamp: 20200416230631.610Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416230631.610Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: da1c137f-376d-44bd-93bc-089796725186
+
+dn: pf-authn-session-group-id=RAnWuIROYDQTNEscNx9PuGDWy,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200417155023.193Z
+pf-authn-session-group-last-activity-time: 20200417145023.193Z
+pf-authn-session-group-id: RAnWuIROYDQTNEscNx9PuGDWy
+pf-authn-session-group-hashed-session-id: K1rEPoPzUW9dcntr7eWF11Pw67KVW3YmAhSVYOJefHw
+createTimestamp: 20200417145023.200Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145023.200Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 26bf4b0a-34cf-4ee0-816c-0ea2af90ed51
+
+dn: pf-authn-session-group-id=NBmWc0IX0MiPkEHV3VExhyOH9,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200417155115.844Z
+pf-authn-session-group-last-activity-time: 20200417145115.844Z
+pf-authn-session-group-id: NBmWc0IX0MiPkEHV3VExhyOH9
+pf-authn-session-group-hashed-session-id: CBPqMyoWvfWk8DhO0P1BCSdFYXQDCMhFkqW4z81rHw0
+createTimestamp: 20200417145115.846Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145115.846Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: c214f82a-b724-41f5-b66e-9b1238b74fdd
+
+dn: pf-authn-session-group-id=f7MItOK7qpedrk4FCIceKxnSN,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200417155450.248Z
+pf-authn-session-group-last-activity-time: 20200417145450.248Z
+pf-authn-session-group-id: f7MItOK7qpedrk4FCIceKxnSN
+pf-authn-session-group-hashed-session-id: lv1RczU_yk8DoCmmqqfsyfWFI309LaFbXfcOv2RrrTU
+createTimestamp: 20200417145450.250Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145450.250Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 545ca8ea-c20f-441f-8b1d-39e3d11da568
+
+dn: pf-authn-session-group-id=fkBKuLeINFARvXyoQwR4mpUVl,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200417155749.090Z
+pf-authn-session-group-last-activity-time: 20200417145749.090Z
+pf-authn-session-group-id: fkBKuLeINFARvXyoQwR4mpUVl
+pf-authn-session-group-hashed-session-id: ObLZQkzRZBDAH7o0q-lGWaR-TvPkgT9RK-1vW0bHYBM
+createTimestamp: 20200417145749.092Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145749.092Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 7eec1c79-93db-40e8-9ddd-2ad79a44c9fb
+
 dn: pf-authn-session-group-id=VNyT4DiAuZo1jk987Azmktav2,ou=sessions,dc=bxfinance.xyz
 objectClass: top
 objectClass: pf-authn-session-groups
@@ -139,6 +282,19 @@ creatorsName: cn=pingfederate,cn=Root DNs,cn=config
 modifyTimestamp: 20200403201342.668Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
 entryUUID: b673b00b-73e9-4bd1-b53e-504a708fe6e0
+
+dn: pf-authn-session-group-id=TGD4h9PIo11GgIksK65uQ6XkN,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-session-groups
+pf-authn-session-group-expiry-time: 20200417155600.926Z
+pf-authn-session-group-last-activity-time: 20200417145600.926Z
+pf-authn-session-group-id: TGD4h9PIo11GgIksK65uQ6XkN
+pf-authn-session-group-hashed-session-id: x1utymxCyR4w9rQALyXh_RtQisXK-FOuAsAezqUzZOk
+createTimestamp: 20200417145600.931Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145600.931Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: f2f1871b-7668-4738-86b5-47ea79004c5b
 
 dn: pf-authn-session-group-id=FhunKKZWUEZUkvQwN9aGI240S,ou=sessions,dc=bxfinance.xyz
 objectClass: top
@@ -270,191 +426,79 @@ modifyTimestamp: 20200415221842.268Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
 entryUUID: ca72933a-d3d7-4841-a5f2-bb8649d5ce7b
 
-dn: pf-authn-session-group-id=cIX42pfbAH1XLy7hVs4VGOZFG,ou=sessions,dc=bxfinance.xyz
+dn: pf-authn-session-group-id=zpye0WLgRb9JEK7DIGVrUI7AP,ou=sessions,dc=bxfinance.xyz
 objectClass: top
 objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200416182308.207Z
-pf-authn-session-group-last-activity-time: 20200416172308.207Z
-pf-authn-session-group-id: cIX42pfbAH1XLy7hVs4VGOZFG
-pf-authn-session-group-hashed-session-id: BeQNgPJ0itEHGeu_rnXsoaIU9PiNTEgB_o-Ojp4CkNA
-createTimestamp: 20200416172308.209Z
+pf-authn-session-group-expiry-time: 20200430034225.161Z
+pf-authn-session-group-last-activity-time: 20200430024225.161Z
+pf-authn-session-group-id: zpye0WLgRb9JEK7DIGVrUI7AP
+pf-authn-session-group-hashed-session-id: 96maf_xAhl1lgP-iaDcdVyxhn3Z9eaS_AB4HyhoVhGk
+createTimestamp: 20200430024225.167Z
 creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416172308.209Z
+modifyTimestamp: 20200430024225.167Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 97e4c9f2-5085-45a6-ab40-8fef49d2098c
+entryUUID: dede9a37-2fe5-4f98-85e3-8e17eb28b630
 
-dn: pf-authn-session-group-id=dg9KxhAQNfiu2uhQNtMsR12Mg,ou=sessions,dc=bxfinance.xyz
+dn: pf-authn-session-group-id=r5k6nYm9ispT2h08LFU0MQuZe,ou=sessions,dc=bxfinance.xyz
 objectClass: top
 objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200416192813.926Z
-pf-authn-session-group-last-activity-time: 20200416182813.926Z
-pf-authn-session-group-id: dg9KxhAQNfiu2uhQNtMsR12Mg
-pf-authn-session-group-hashed-session-id: mzkuA5QvDYsfeWv0n04NLIQv8Beptnt1G0kQYe--FqU
-createTimestamp: 20200416182813.928Z
+pf-authn-session-group-expiry-time: 20200430035002.044Z
+pf-authn-session-group-last-activity-time: 20200430025002.044Z
+pf-authn-session-group-id: r5k6nYm9ispT2h08LFU0MQuZe
+pf-authn-session-group-hashed-session-id: UN1KTaP0XwalCUHiSMtJTqTemvIyIFVpLCFsaWK5eBo
+createTimestamp: 20200430025002.046Z
 creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416182813.928Z
+modifyTimestamp: 20200430025002.046Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 0cc91398-ef2e-4729-b0c9-27e157b45cf9
+entryUUID: bdc0918d-2cd8-4798-81af-2a7c07fabcea
 
-dn: pf-authn-session-group-id=Y3AETR1UneBq8eSl3UsB7SgHF,ou=sessions,dc=bxfinance.xyz
+dn: pf-oauth-client-id=cibaClient,ou=oauthClients,dc=bxfinance.xyz
 objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200416193256.634Z
-pf-authn-session-group-last-activity-time: 20200416183256.634Z
-pf-authn-session-group-id: Y3AETR1UneBq8eSl3UsB7SgHF
-pf-authn-session-group-hashed-session-id: IIbgj-Sy9LW-JyquUFpwW4jA1Js22-Zzwz3E6OvI4RU
-createTimestamp: 20200416183256.638Z
+objectClass: pf-oauth-client
+pf-oauth-client-name: cibaClient
+pf-oauth-client-last-modified: 1588215238500
+pf-oauth-client-restrict-scopes: FALSE
+pf-oauth-client-require-signed-requests: FALSE
+pf-oauth-client-grant-type: urn:openid:params:grant-type:ciba
+pf-oauth-client-supplemental-info: 14:CIBA_POLICY_ID:null
+pf-oauth-client-supplemental-info: 21:CIBA_POLLING_INTERVAL:3
+pf-oauth-client-supplemental-info: 44:BYPASS_ACTIVATION_CODE_CONFIRMATION_OVERRIDE:null
+pf-oauth-client-supplemental-info: 19:DEVICE_FLOW_SETTING:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 26:CIBA_NOTIFICATION_ENDPOINT:null
+pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:null
+pf-oauth-client-supplemental-info: 23:RESTRICT_RESPONSE_TYPES:false
+pf-oauth-client-supplemental-info: 32:REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:null
+pf-oauth-client-supplemental-info: 37:CIBA_REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 37:TOKEN_ENDPOINT_AUTH_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 28:id_token_signed_response_alg:null
+pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:false
+pf-oauth-client-supplemental-info: 24:CIBA_USER_CODE_SUPPORTED:false
+pf-oauth-client-supplemental-info: 28:CIBA_REQUIRE_SIGNED_REQUESTS:false
+pf-oauth-client-supplemental-info: 32:DEVICE_POLLING_INTERVAL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 26:PING_ACCESS_LOGOUT_CAPABLE:false
+pf-oauth-client-supplemental-info: 35:REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE:false
+pf-oauth-client-supplemental-info: 29:ACCESS_SESSION_REVOCATION_API:false
+pf-oauth-client-supplemental-info: 34:PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_alg:null
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_enc:null
+pf-oauth-client-supplemental-info: 32:VALIDATE_USING_ALL_ELIGIBLE_ATMS:false
+pf-oauth-client-supplemental-info: 9:CIBA_MODE:poll
+pf-oauth-client-supplemental-info: 7:ENABLED:true
+pf-oauth-client-supplemental-info: 23:USER_AUTHZ_URL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 30:PENDING_AUTHZ_TIMEOUT_OVERRIDE:null
+pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:null
+pf-oauth-client-id: cibaClient
+pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
+pf-oauth-client-authn-type: SECRET
+pf-oauth-client-hashed-secret: SiFHVF8QyLPCQQk80Nm3jHUQsU1dSu_6AoqfzPGKuUk.kT4dnn13.2
+pf-oauth-client-enforce-replay-prevention: FALSE
+pf-oauth-client-bypass-approval-page: TRUE
+createTimestamp: 20200430025358.502Z
 creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416183256.638Z
+modifyTimestamp: 20200430025358.502Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 7c75e71d-8a2f-4a5f-9612-6d33990152ba
-
-dn: pf-authn-session-group-id=xs5cqWJOQCQVrOLvjNzAlzfjv,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200417000631.603Z
-pf-authn-session-group-last-activity-time: 20200416230631.603Z
-pf-authn-session-group-id: xs5cqWJOQCQVrOLvjNzAlzfjv
-pf-authn-session-group-hashed-session-id: HsJ3l52xVB0v7VhD7RkyqYT_-f17OzvgXJVYGhKkJr0
-createTimestamp: 20200416230631.610Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416230631.610Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: da1c137f-376d-44bd-93bc-089796725186
-
-dn: pf-authn-session-group-id=IN3uBldWyJs1pAiG8JuxuVTNZ,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200417001632.176Z
-pf-authn-session-group-last-activity-time: 20200416231632.176Z
-pf-authn-session-group-id: IN3uBldWyJs1pAiG8JuxuVTNZ
-pf-authn-session-group-hashed-session-id: -Toe2Ak8HGpnR7U8uQx9yiB0Uy1rXzNmUluBleyDb88
-createTimestamp: 20200416231632.177Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416231632.177Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 7f0360c6-19d3-4288-92df-2594dfa3f650
-
-dn: pf-authn-session-group-id=FtsCbLyQVewH4Cxa21Mruxg0a,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200417002045.727Z
-pf-authn-session-group-last-activity-time: 20200416232045.727Z
-pf-authn-session-group-id: FtsCbLyQVewH4Cxa21Mruxg0a
-pf-authn-session-group-hashed-session-id: 9QgHglC0GdOdrnIMuuWXnXDvM2_sgj_wV8BzaB5Cfso
-createTimestamp: 20200416232045.735Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416232045.735Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: ea6f0559-6a33-429d-9a02-303c81239bd3
-
-dn: pf-authn-session-group-id=mfmZfw94XBmcPL3eMyNkspIYj,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200417002442.036Z
-pf-authn-session-group-last-activity-time: 20200416232442.036Z
-pf-authn-session-group-id: mfmZfw94XBmcPL3eMyNkspIYj
-pf-authn-session-group-hashed-session-id: E3KNRlebXjqg_pQ_zvFJSpi1InhtkUPIbyRdOQVrgU8
-createTimestamp: 20200416232442.050Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416232442.050Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 3c21244f-abff-414b-a0b4-b6a17b541ce5
-
-dn: pf-authn-session-group-id=RAnWuIROYDQTNEscNx9PuGDWy,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200417155023.193Z
-pf-authn-session-group-last-activity-time: 20200417145023.193Z
-pf-authn-session-group-id: RAnWuIROYDQTNEscNx9PuGDWy
-pf-authn-session-group-hashed-session-id: K1rEPoPzUW9dcntr7eWF11Pw67KVW3YmAhSVYOJefHw
-createTimestamp: 20200417145023.200Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145023.200Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 26bf4b0a-34cf-4ee0-816c-0ea2af90ed51
-
-dn: pf-authn-session-group-id=NBmWc0IX0MiPkEHV3VExhyOH9,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200417155115.844Z
-pf-authn-session-group-last-activity-time: 20200417145115.844Z
-pf-authn-session-group-id: NBmWc0IX0MiPkEHV3VExhyOH9
-pf-authn-session-group-hashed-session-id: CBPqMyoWvfWk8DhO0P1BCSdFYXQDCMhFkqW4z81rHw0
-createTimestamp: 20200417145115.846Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145115.846Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: c214f82a-b724-41f5-b66e-9b1238b74fdd
-
-dn: pf-authn-session-group-id=f7MItOK7qpedrk4FCIceKxnSN,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200417155450.248Z
-pf-authn-session-group-last-activity-time: 20200417145450.248Z
-pf-authn-session-group-id: f7MItOK7qpedrk4FCIceKxnSN
-pf-authn-session-group-hashed-session-id: lv1RczU_yk8DoCmmqqfsyfWFI309LaFbXfcOv2RrrTU
-createTimestamp: 20200417145450.250Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145450.250Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 545ca8ea-c20f-441f-8b1d-39e3d11da568
-
-dn: pf-authn-session-group-id=TGD4h9PIo11GgIksK65uQ6XkN,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200417155600.926Z
-pf-authn-session-group-last-activity-time: 20200417145600.926Z
-pf-authn-session-group-id: TGD4h9PIo11GgIksK65uQ6XkN
-pf-authn-session-group-hashed-session-id: x1utymxCyR4w9rQALyXh_RtQisXK-FOuAsAezqUzZOk
-createTimestamp: 20200417145600.931Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145600.931Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: f2f1871b-7668-4738-86b5-47ea79004c5b
-
-dn: pf-authn-session-group-id=fkBKuLeINFARvXyoQwR4mpUVl,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-session-groups
-pf-authn-session-group-expiry-time: 20200417155749.090Z
-pf-authn-session-group-last-activity-time: 20200417145749.090Z
-pf-authn-session-group-id: fkBKuLeINFARvXyoQwR4mpUVl
-pf-authn-session-group-hashed-session-id: ObLZQkzRZBDAH7o0q-lGWaR-TvPkgT9RK-1vW0bHYBM
-createTimestamp: 20200417145749.092Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145749.092Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 7eec1c79-93db-40e8-9ddd-2ad79a44c9fb
-
-dn: pf-authn-session-attribute-hash=cf25cd80d8182103cd533c7c068e138ccc59d574,pf-authn-session-group-id=fkBKuLeINFARvXyoQwR4mpUVl,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: cf25cd80d8182103cd533c7c068e138ccc59d574
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..fGPEIEp08bp2rX9G_InNrA.O8nFLOw__xOhtstkAC0N-hOlObEdxMBG7DlmFMIpz3v55-UyVIicxTGve0L5mKDEbR67JTfIz9dK8VR62rLJMJt6uWJImytMmiB_AZwexmg-uswai4lGCh5Kpy473qEyDpdtsOP7ygyqeK266GmaKZ9JZFh3bda4ip6vvS_mPlVPg3dld9vFNUbZY-KkFzWGNZ7S70GoWUV9_tIVLjJDPp6uacE3nyBs-cHQNTkPrmN8qxaGYdG2hZaTfuLWaoUyYKYO41FUQtrSUstWYfYcKcakfVSzrH2u4_0VZHOBtjbrPNK739MintdwJaqaZhKMxE6WT9iCkv6w86hG-IiWeypSAuqYrd1ZK6STfAO3OGxeXSGHQvbv_oI3iRYrziGrhZxNRvSGHDzXjKpRNOaCFkhJoWQtkpHfSy7g12R8wrRZ3hRZqxRQz6ynUOXdRS_dtR0T-1jr1JkzCiC2r80FfJngBM_MxNN67VzYsdNxybYSb9a4rfbaxv8kmXNh9QdatQHUTHk5I7P6cw-7u7JRn4v6TQD_Yy7Kj7-kmfG5XeUDIXB_OIXybTtwH8qdBBM0VrFL3PC42WUDtbw03pAuvqxSbrJw05GcApBQPSU0pq1sUB9YuhHb749itVznzd5gebvHUH4ZFF4hZ7MtiqxI3AdxMxBXBnowNOOMLyq8_u5ydIkr_5R0onoL2v__f0VOul0IOePax9bk82_PNijoog-7wmoU7sLnEwGKlEKB4RhGUG0rDhN3OD_GE3ednrnBdXwMh2J-870Xu_KVcR75aBuG13jkdJjrUHJRLw8rRnIU3rAVoc1MMwArr9dtsid2c7WRlfoKFXMNOml8N5tsZmSSRR_cB_vz8lSOS8amj_Xafoc8-LT2gK79i0xJHvwFAtnXYrgcAtdO-3cL9e6mRystjbEKpZFfMWjHN2CGelGYba5gh4UiO9EWGkZnDeBkhV2uUkQCQzxlC5azD-tSy3w59idcpxCjdQ0se1DkCV4g391-J8DrRp3PK8gJ2FKWVZSewPESMT1D89jPArvBYeLFTf4HqwzjBGEL7l2h9-gMnzi4K6qjnGO2Cb7QB6W7-oLah1-GGPgpqD8KZqmossyvH7ZJvPzUuUHleOvAsKWecKV35WCTU7QFMdhmIiH3vsEUx79pN4pVMhPB1wxDD6OlsZ6sX9cuPMGcFdSJYdosGCNMzYG-eMlmOMHH92zzW7LMEOflyqhmH-ncUyZnVurt6V5zNTXLpTiedf2z7bU7i1bB6xXR4w2McL8J_jNU3NUO6VbXdUxz5611FaRVykhpJ1b3X1_lKnWrDJo4YwcMpSdLDMRPECQPYGQJVJtxbk2QD2vqna7mXQPBhDNJRw._rDeVj5g3rDsW46rN7WhuA
-createTimestamp: 20200417145749.104Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145749.104Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: c447e6d3-cfe9-4d22-a1a5-a26f9a64db7e
-
-dn: uid=administrator,ou=People,dc=bxfinance.xyz
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-objectClass: pf-connected-identities
-sn: PingFederate
-cn: administrator
-givenName: Administrator
-pf-connected-identity: auth-source=pf-local-identity:user-id=administrator
-userPassword: {SSHA256}NL1n7VCmieXagOywce0LnApUu63UyA4hnbWn1B8ssvrkRCrVPb7BaA==
-uid: administrator
-createTimestamp: 20200401145430.404Z
-pwdChangedTime: 20200401145430.404Z
-creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
-modifyTimestamp: 20200401145430.404Z
-modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
-entryUUID: 5cfac2dd-35a5-4e35-991d-cf184b70a191
+entryUUID: 9cfb9bdd-d42c-48f4-9861-ddbf772c3afa
 
 dn: ou=grants,dc=bxfinance.xyz
 objectClass: top
@@ -485,6 +529,17 @@ modifyTimestamp: 20200401145430.790Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
 entryUUID: 2c53a5e6-576d-4247-940f-9e2b15c5ff10
 
+dn: pf-authn-session-attribute-hash=cf25cd80d8182103cd533c7c068e138ccc59d574,pf-authn-session-group-id=fkBKuLeINFARvXyoQwR4mpUVl,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: cf25cd80d8182103cd533c7c068e138ccc59d574
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..fGPEIEp08bp2rX9G_InNrA.O8nFLOw__xOhtstkAC0N-hOlObEdxMBG7DlmFMIpz3v55-UyVIicxTGve0L5mKDEbR67JTfIz9dK8VR62rLJMJt6uWJImytMmiB_AZwexmg-uswai4lGCh5Kpy473qEyDpdtsOP7ygyqeK266GmaKZ9JZFh3bda4ip6vvS_mPlVPg3dld9vFNUbZY-KkFzWGNZ7S70GoWUV9_tIVLjJDPp6uacE3nyBs-cHQNTkPrmN8qxaGYdG2hZaTfuLWaoUyYKYO41FUQtrSUstWYfYcKcakfVSzrH2u4_0VZHOBtjbrPNK739MintdwJaqaZhKMxE6WT9iCkv6w86hG-IiWeypSAuqYrd1ZK6STfAO3OGxeXSGHQvbv_oI3iRYrziGrhZxNRvSGHDzXjKpRNOaCFkhJoWQtkpHfSy7g12R8wrRZ3hRZqxRQz6ynUOXdRS_dtR0T-1jr1JkzCiC2r80FfJngBM_MxNN67VzYsdNxybYSb9a4rfbaxv8kmXNh9QdatQHUTHk5I7P6cw-7u7JRn4v6TQD_Yy7Kj7-kmfG5XeUDIXB_OIXybTtwH8qdBBM0VrFL3PC42WUDtbw03pAuvqxSbrJw05GcApBQPSU0pq1sUB9YuhHb749itVznzd5gebvHUH4ZFF4hZ7MtiqxI3AdxMxBXBnowNOOMLyq8_u5ydIkr_5R0onoL2v__f0VOul0IOePax9bk82_PNijoog-7wmoU7sLnEwGKlEKB4RhGUG0rDhN3OD_GE3ednrnBdXwMh2J-870Xu_KVcR75aBuG13jkdJjrUHJRLw8rRnIU3rAVoc1MMwArr9dtsid2c7WRlfoKFXMNOml8N5tsZmSSRR_cB_vz8lSOS8amj_Xafoc8-LT2gK79i0xJHvwFAtnXYrgcAtdO-3cL9e6mRystjbEKpZFfMWjHN2CGelGYba5gh4UiO9EWGkZnDeBkhV2uUkQCQzxlC5azD-tSy3w59idcpxCjdQ0se1DkCV4g391-J8DrRp3PK8gJ2FKWVZSewPESMT1D89jPArvBYeLFTf4HqwzjBGEL7l2h9-gMnzi4K6qjnGO2Cb7QB6W7-oLah1-GGPgpqD8KZqmossyvH7ZJvPzUuUHleOvAsKWecKV35WCTU7QFMdhmIiH3vsEUx79pN4pVMhPB1wxDD6OlsZ6sX9cuPMGcFdSJYdosGCNMzYG-eMlmOMHH92zzW7LMEOflyqhmH-ncUyZnVurt6V5zNTXLpTiedf2z7bU7i1bB6xXR4w2McL8J_jNU3NUO6VbXdUxz5611FaRVykhpJ1b3X1_lKnWrDJo4YwcMpSdLDMRPECQPYGQJVJtxbk2QD2vqna7mXQPBhDNJRw._rDeVj5g3rDsW46rN7WhuA
+createTimestamp: 20200417145749.104Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145749.104Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: c447e6d3-cfe9-4d22-a1a5-a26f9a64db7e
+
 dn: cn=PFAuditorGroup,ou=Groups,dc=bxfinance.xyz
 objectClass: top
 objectClass: groupOfNames
@@ -496,17 +551,24 @@ modifyTimestamp: 20200401145431.167Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
 entryUUID: 879ddc36-73f5-4b9b-b307-f836f2446b9d
 
-dn: cn=PFAdminGroup,ou=Groups,dc=bxfinance.xyz
+dn: uid=administrator,ou=People,dc=bxfinance.xyz
 objectClass: top
-objectClass: groupOfNames
-cn: PFAdminGroup
-member: uid=administrator,ou=People,dc=bxfinance.xyz
-member: uid=access2federate,ou=People,dc=bxfinance.xyz
-createTimestamp: 20200401145430.917Z
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: PingFederate
+cn: administrator
+givenName: Administrator
+pf-connected-identity: auth-source=pf-local-identity:user-id=administrator
+userPassword: {SSHA256}NL1n7VCmieXagOywce0LnApUu63UyA4hnbWn1B8ssvrkRCrVPb7BaA==
+uid: administrator
+createTimestamp: 20200401145430.404Z
+pwdChangedTime: 20200401145430.404Z
 creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
-modifyTimestamp: 20200401145430.917Z
+modifyTimestamp: 20200401145430.404Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
-entryUUID: 44d74b6d-3142-4313-a381-52102f680443
+entryUUID: 5cfac2dd-35a5-4e35-991d-cf184b70a191
 
 dn: uid=user.1,ou=People,dc=bxfinance.xyz
 objectClass: top
@@ -527,6 +589,17 @@ modifyTimestamp: 20200401145431.546Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
 entryUUID: 55ee465d-2542-4c7d-a239-4e4d617c2552
 
+dn: cn=PFCryptoGroup,ou=Groups,dc=bxfinance.xyz
+objectClass: top
+objectClass: groupOfNames
+cn: PFCryptoGroup
+member: uid=administrator,ou=People,dc=bxfinance.xyz
+createTimestamp: 20200401145431.049Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.049Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 467024c3-9474-46f7-910d-6e6ede6a49a6
+
 dn: uid=auditor,ou=People,dc=bxfinance.xyz
 objectClass: top
 objectClass: person
@@ -545,17 +618,6 @@ creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
 modifyTimestamp: 20200401145430.645Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
 entryUUID: 283de3ad-cd68-47ed-9b92-200774d271f5
-
-dn: cn=PFCryptoGroup,ou=Groups,dc=bxfinance.xyz
-objectClass: top
-objectClass: groupOfNames
-cn: PFCryptoGroup
-member: uid=administrator,ou=People,dc=bxfinance.xyz
-createTimestamp: 20200401145431.049Z
-creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
-modifyTimestamp: 20200401145431.049Z
-modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
-entryUUID: 467024c3-9474-46f7-910d-6e6ede6a49a6
 
 dn: pf-oauth-client-id=PingIntrospect,ou=oauthClients,dc=bxfinance.xyz
 objectClass: top
@@ -602,44 +664,6 @@ creatorsName: cn=pingfederate,cn=Root DNs,cn=config
 modifyTimestamp: 20200401145456.761Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
 entryUUID: 99c247e7-6082-4290-8ebf-e35c9872e6e7
-
-dn: uid=user.2,ou=People,dc=bxfinance.xyz
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-objectClass: pf-connected-identities
-sn: Ortiz
-cn: user.2
-givenName: Murl
-pf-connected-identity: auth-source=pf-local-identity:user-id=user.2
-userPassword: {SSHA256}70A1oEyIy8bXWR32+lgJQw5Bf5XpyPyNkjKJWyWK6bx3+mEaseaERA==
-uid: user.2
-createTimestamp: 20200401145431.742Z
-pwdChangedTime: 20200401145431.742Z
-creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
-modifyTimestamp: 20200401145431.742Z
-modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
-entryUUID: f0c55dd1-c6ad-457d-ba94-dc8b55831059
-
-dn: uid=user.4,ou=People,dc=bxfinance.xyz
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-objectClass: pf-connected-identities
-sn: Moore
-cn: user.4
-givenName: Ethelyn
-pf-connected-identity: auth-source=pf-local-identity:user-id=user.4
-userPassword: {SSHA256}0sV02K3wkiY3YpRQeSvwNPk3JF2COeIkp70tk7IQC/OOFzFb8uKGyw==
-uid: user.4
-createTimestamp: 20200401145431.972Z
-pwdChangedTime: 20200401145431.971Z
-creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
-modifyTimestamp: 20200401145431.972Z
-modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
-entryUUID: f8e7bdbe-585e-46bb-8748-83636cab2a36
 
 dn: pf-oauth-client-id=PingToken,ou=oauthClients,dc=bxfinance.xyz
 objectClass: top
@@ -696,6 +720,37 @@ modifyTimestamp: 20200401145431.274Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
 entryUUID: 5b2f92c2-5d9a-4a3c-8669-ba4a3538bd29
 
+dn: uid=user.2,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Ortiz
+cn: user.2
+givenName: Murl
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.2
+userPassword: {SSHA256}70A1oEyIy8bXWR32+lgJQw5Bf5XpyPyNkjKJWyWK6bx3+mEaseaERA==
+uid: user.2
+createTimestamp: 20200401145431.742Z
+pwdChangedTime: 20200401145431.742Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.742Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: f0c55dd1-c6ad-457d-ba94-dc8b55831059
+
+dn: cn=PFAdminGroup,ou=Groups,dc=bxfinance.xyz
+objectClass: top
+objectClass: groupOfNames
+cn: PFAdminGroup
+member: uid=administrator,ou=People,dc=bxfinance.xyz
+member: uid=access2federate,ou=People,dc=bxfinance.xyz
+createTimestamp: 20200401145430.917Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145430.917Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 44d74b6d-3142-4313-a381-52102f680443
+
 dn: entryUUID=a8b74a49-aba3-4da2-949a-ecc1b4384bb9,ou=consents,dc=bxfinance.xyz
 objectClass: top
 objectClass: ping-consent-record
@@ -715,25 +770,6 @@ creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
 modifyTimestamp: 20200403202522.183Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
 entryUUID: a8b74a49-aba3-4da2-949a-ecc1b4384bb9
-
-dn: uid=user.3,ou=People,dc=bxfinance.xyz
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-objectClass: pf-connected-identities
-sn: Beer
-cn: user.3
-givenName: Alec
-pf-connected-identity: auth-source=pf-local-identity:user-id=user.3
-userPassword: {SSHA256}19wC9GRSaBQsHl9JWvIpaEzFxDNTF+3gdY0abRmk8gKGSa/+hAPZ1Q==
-uid: user.3
-createTimestamp: 20200401145431.862Z
-pwdChangedTime: 20200401145431.861Z
-creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
-modifyTimestamp: 20200401145431.862Z
-modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
-entryUUID: a6f891eb-ad25-441b-8ab8-e3748fcd0046
 
 dn: cn=groupadmins,ou=Administrators,dc=bxfinance.xyz
 objectClass: top
@@ -788,16 +824,54 @@ modifyTimestamp: 20200403171505.655Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
 entryUUID: 18b787a9-f9f1-45bb-9cf0-788fb9af664a
 
-dn: pf-authn-session-attribute-hash=1b662fe5f0e15f599e96c0f5366b40174723cc44,pf-authn-session-group-id=6GCv1WviFH5rzstQd5icWwTou,ou=sessions,dc=bxfinance.xyz
+dn: uid=user.4,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Moore
+cn: user.4
+givenName: Ethelyn
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.4
+userPassword: {SSHA256}0sV02K3wkiY3YpRQeSvwNPk3JF2COeIkp70tk7IQC/OOFzFb8uKGyw==
+uid: user.4
+createTimestamp: 20200401145431.972Z
+pwdChangedTime: 20200401145431.971Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.972Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: f8e7bdbe-585e-46bb-8748-83636cab2a36
+
+dn: uid=user.3,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Beer
+cn: user.3
+givenName: Alec
+pf-connected-identity: auth-source=pf-local-identity:user-id=user.3
+userPassword: {SSHA256}19wC9GRSaBQsHl9JWvIpaEzFxDNTF+3gdY0abRmk8gKGSa/+hAPZ1Q==
+uid: user.3
+createTimestamp: 20200401145431.862Z
+pwdChangedTime: 20200401145431.861Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145431.862Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: a6f891eb-ad25-441b-8ab8-e3748fcd0046
+
+dn: pf-authn-session-attribute-hash=1d849df0271422c77f7bb135e16d0c18066411fb,pf-authn-session-group-id=VNyT4DiAuZo1jk987Azmktav2,ou=sessions,dc=bxfinance.xyz
 objectClass: top
 objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: 1b662fe5f0e15f599e96c0f5366b40174723cc44
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoieUJHSnROWng1WCIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..0lLz_tOH-mewu6iuETcRqQ.XWw3ctvW2ZndEOxkmfL6TAYIQtbWs1B1kn16ykIctcYHHFZTbu1zLVBnUA-QFaoKzY5_Rfry5CcxtuByrpuaNaXPU_Lwon2KAOIGm4xJi0mc4EIVm1eLnKQziLQapsBV8LggD8CAZ4tiZwvUe1fV4-fvDeNCkJKxnxA4qGJiNhCloANjob4GM5925wMSd9Vs0DO49EkiVd2IMug8wF6wq9zalDXBvsegbMNImtf9N_hN6eGAgdbd85PtWB5x29zCsK-cBJK0LUgIZU_yAsGDnBoRHS5yIy2O9nWp0rgqDTuMutBTbSMjy27bizJh_moa4C8DI67pyh5YNBcyebRq328Fffot9oqBgFYiJJf41B-OJoouxyBlM8Tm2wdk2Cf7unjsqwltuauWwsHOTtL790DEBtZOZjBBgHFK-7101v4ZnXsjfDJhy3ohTwmu6NCqa6vaG5A4WUgiGdJMzBKBwvL5mmjP5PFKgSpiZ9D585K1KG2YsXdyG1V02xrxs2hmHF-6LrgkXTmBTdX8tQZGVT-cHmpwhhtTK4BHV6Kz4i4nrXu8dW7Amo8A6AJK35Nj9F_UKwSxfURa_UmeolD4rvC4xxEAJLLWq78OO-wUvkeCph4x_I3kbq02sqXUmXfm-dG6Q79Yny8rCM4ZWDUHpGDC1YeGy1bWbryJ6AYUEnU7WaugUQUVtuzoi6HEUIkwoSt7Btzqw4kPMu1itAIZr-M-VmDjdFBKeaS9QbvvUFiitz-GvGvv6AA-Bh5IJoTQsRYMQV6iuBP_KkYOD3Y_8mB0eDwyMU_EfsCocF4IoFt1qklPeViH0w7FmufRKMV111Z5kLziWGLR0p06CQe3yL7I4ohMCtvWj1Lionmzc4x6C1_L_rPEr331IKZR6tz6LrA7v3DOmg2MdSWiztG7rJz7wnGb_YPc0O8Sm_oksc0bcxV2JCRBZJJTg35_rMmYFo84Q_sX5_xkYXwXM99dncJr3JPwwIEHQ1kjCXV96pXoxGxunH6hfI6vCvqg2qlPZipFVdi_4TRvLPHMgpMxn3n0zitHgifJPpQ4pUAJNzScPXE7xRAKn4oqSicxpgJShuWXV8HxBvtWMByuZBlchRPzzehwaru_Eo9rlqDkzWaFbog9pdHyRyK4YxsgVh9KQ0yFC2aEMOi1ZBguqs6DER2nKI09duHj87lC7WCZ_KAf6z_zYyItycCIwOi8UIUp_FViycfHKdpLp4BCZEXzzV6sIHdItpoDn2vr8DjScz5iqneP8KiqEh-b_YwVnMB0A8JkHwIVGP4B0p_iQIVPhsPNhGSIJdwnhTSz8A8Hl4o2nhGTthHPwxurTvGb7z0E.Dof3_nyVwl7l8y2EAkT-aw
-createTimestamp: 20200401150711.302Z
+pf-authn-session-attribute-hash: 1d849df0271422c77f7bb135e16d0c18066411fb
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..uMl5mq30kB1vxV-G38X-LQ.SDV7Eu-6BcKeKOfKY_MUpgUw1jvB0s3M11KJs5d0hKYrWBvREQMmBdla-3Zwk_ejbkOZiFKboDDg312kuPh-HA4xcGxrvQ1FP9VftxBNui7g3_fMmi5RNHak1Q2-AOK6xLFezwJlfYp3kvpgIwSG8ywMdANBX98BuPLnJNJAAgJM_DBmqUUS8MJYjpwL_iOrLqc5-e1axx8xabMj9zxA6QK6ssfKWVZsYraHwpcH9hj4ZrK9LUzooY0GRPowszAeVVSBIpy496G8wiGIB32kN-C9TUvVzRUndWqKaYnlyP6_R3JkPO8Uv0jZpiioTdlQ6j3kU9EU4WuAT2OiqcZIpV-wQwQFUwPGV7R7ZWKo0KFEsoRUlhxjwFbIlBdbqDYB9_7NZBkUVUrJK7XtCwJwRV3G_Qtu3y_vh3RVx-IVKJrrH2uZlPbbjzyv3PjSufn-lvvoPNPjeFOqhHKtb6RrDY5rUfyLEKRFD0mLuOWTMiOHozp1jHPKCpgsOE9gPXkW7-9FITNhWuRQ_GMJB6k5h7kJiBQ28rSeFnRkHxEJgIKn5-lZVa9M5cFQ44EF7zJt2_Enmu-R7r6qcfHy0zoAktEqudj-VcQRgObLa-ycr32isNsb7LIQJMBUqjGnHYHa3P653BGFhTVL1_hR0mhY8550PeyiqRl0EfOfGa3VlvOmeZlRj4Auz579kDH2KIX09cyLdjLCdSmhwGsTGGqT_OSp6xHzfP-SGuZ--Fx68W7gPoz864Jz1MdoKX9qMh49wjTyU0Yr_rBUXsA-d3-Y4oD6Aoo330q4oNIruHo8WkJ54DAU_wdfBpAnYYLLw8NiEDx2XOgEPQCXuXP6RNiTba9x48QMJiB92_FoM1zhce4B1IxRRiA2KsSS3ioj_z5bl8cZHQE7_PpPyU-P4JeZruSozZWVjb3EKlXWmjiOiyBVEq5AmDdQRxcbYoVDvYC-VSWQ9Ucv_rWNvtUPxn51DRYzqedyRXmT49kk_w8CrdDRRSDGr7zrIr9e3nLcG4I8G9wxKKRN3itx6zYsxzwJ26WD-LKub-___yaQYqbKB6M_qnZaDhEYR_Kn8ZT0xOntSWCHbMcVlrxPNsC4ToFvWr_qGBAqRfuqWLCFbcJl0fc8dKq4LilpSTvEoh_Y00QH9nO6C-FQe7nKal-KcFb2Niij5uiZXHryUIqLKlF-o6ZsJmdu37ynOu--JrrEOAyDTmI3fMHdsJholIen40bOdvn516R1pTAe7jIxUKwBFmcuSp46QukCRElLn3Z3Oz5bKQzu8aWxQeNKeQ0bhAW9TGY9KOX7KaECCo7Vm-Z4u_w.vmTMlnhUzfFU-gNsGb3dOw
+createTimestamp: 20200403201342.679Z
 creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200401150711.302Z
+modifyTimestamp: 20200403201342.679Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 6152eb62-fa71-42ad-899f-67708a7599f4
+entryUUID: 297c2cc4-2563-4750-877c-279159f692a3
 
 dn: uid=groupadmin,ou=Administrators,dc=bxfinance.xyz
 objectClass: top
@@ -817,70 +891,6 @@ creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
 modifyTimestamp: 20200401145557.188Z
 modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
 entryUUID: e100d1c4-a38d-4644-adf3-de855b5099ce
-
-dn: pf-authn-session-attribute-hash=1b662fe5f0e15f599e96c0f5366b40174723cc44,pf-authn-session-group-id=FhunKKZWUEZUkvQwN9aGI240S,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: 1b662fe5f0e15f599e96c0f5366b40174723cc44
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..NFLTlkn29TEgrLlVN017tg.JVF4rxrwl8XrschBm162wYhSp8ReU0jaA8BUpAoPuKug76Mbz0gpAqfSkSwYyuAqy6QNHny_7Vre9ouivvLAgUySBnEa299y7-78PhgIyUvcq4Ef0Mp8_E83-YQugl0318NrzhzidNbzJlKAxp7QGQ5t3nMt8BJiQYpmztlS0G3RkIwOGeuY_B5UuWop4rV4b7poV41MPuwePGkAKIz5J_AO4arlHd_2tsu6hxLBBKg2yjYPbaRYDCzA7b8CYj-W-aWmmAdYJUjUYUJrMMpNeMktrcOT2lghz09EidWEIwJ9aCh2Tfvklpg-UEoup9xq_nnuwREErmTZnnbxXiwz_lgXL8YAAlBLSx3puDoHb82Wg-8d1rJYuQ81bFwwU_-Ei1aPi6gu8DJ56YdXlY2FDsTiYqSJyN-o4VY5bWFnCgngNLvS1HkhAsa78QWYvDCKkCgZ-KEFCAa2VW5tjGqv4hgRSf0CLvJuDC8o3qVe4NyVc--DJiQ2cK6EyEhg03KWaAVCl1pUVonJRQwRyQkazb8lEcWKQfbOynoOmArtUe0qNPtcKG3BpRK1tfLOYHMekqqQT4HMqhZXEHXlGg09UmSf_HzA4lW9tVHlbW7suOKegO9otP4zX2Izt3DxeD_zJ6sQhaXnpbL8qFk07dIUDcAiugzcNn_hj5G_nxBrYaPwtWA8wXF-DbV67zDWOztb--Z-hHOQYVn1qFQfmY24-njEBkJi6vqXyCNE5kTb_dm0XvFdVZxY2LoRN2ESAAEDI81a3THAQCRAkXt8J0tpZvR6NndaGOMWlvbNjg7SDOdZiLZpQVDxGtqBDO-XXrd1FuA_w2R5MkaxtZdjVpUI5HIqyGj-bAz3aKFKp20dNfzvcZ61_MhwshD8w-lJdHi76T4ndJ64K0G0ysp8biDr4OqGmdS1SJYskyGI04Q9t_LRLpNKbJ0JpX7K2pVpEYUsiXtqlPhiiIHFaEtVF0_vAfNo7sb5VM2mhgY4XPaqYstIsggkqqd8qVOJeTGQVnri7hYRa0ya209evVjwBEcaUL2KEk12Hqa1p_H4QpeWWFJaCUMvRA2-9LY2GdvO5-EmVasrWlhcQHrDUb6BnayXj0IJw1ypLazj_BHAMZPR1XRovnILrLd3Wt7AfhtP6hwa7bgU3uOOCtnZyNqgmRqoCTF-op1R_7Db7d02OYooSkDyiXJgsE2J16xfj_GjuPFmqId85eOFWoFvjIoRbEh4wgBqkm-rBGr1_W5ruPRAxRva-XfNhsAiHvoe3jABjY1q_eyXxfzc5rz1PKkoCInXwA4QndKwwUM4FKrIeHWxNYI-181MvcH0EEqyjOls_bBV.2M2DniEcbGpnWUnfDREUbA
-createTimestamp: 20200403222952.311Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200403222952.311Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 06c7e2c4-c5cf-4d28-b079-721f9da15318
-
-dn: pf-authn-session-attribute-hash=1d849df0271422c77f7bb135e16d0c18066411fb,pf-authn-session-group-id=VNyT4DiAuZo1jk987Azmktav2,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: 1d849df0271422c77f7bb135e16d0c18066411fb
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..uMl5mq30kB1vxV-G38X-LQ.SDV7Eu-6BcKeKOfKY_MUpgUw1jvB0s3M11KJs5d0hKYrWBvREQMmBdla-3Zwk_ejbkOZiFKboDDg312kuPh-HA4xcGxrvQ1FP9VftxBNui7g3_fMmi5RNHak1Q2-AOK6xLFezwJlfYp3kvpgIwSG8ywMdANBX98BuPLnJNJAAgJM_DBmqUUS8MJYjpwL_iOrLqc5-e1axx8xabMj9zxA6QK6ssfKWVZsYraHwpcH9hj4ZrK9LUzooY0GRPowszAeVVSBIpy496G8wiGIB32kN-C9TUvVzRUndWqKaYnlyP6_R3JkPO8Uv0jZpiioTdlQ6j3kU9EU4WuAT2OiqcZIpV-wQwQFUwPGV7R7ZWKo0KFEsoRUlhxjwFbIlBdbqDYB9_7NZBkUVUrJK7XtCwJwRV3G_Qtu3y_vh3RVx-IVKJrrH2uZlPbbjzyv3PjSufn-lvvoPNPjeFOqhHKtb6RrDY5rUfyLEKRFD0mLuOWTMiOHozp1jHPKCpgsOE9gPXkW7-9FITNhWuRQ_GMJB6k5h7kJiBQ28rSeFnRkHxEJgIKn5-lZVa9M5cFQ44EF7zJt2_Enmu-R7r6qcfHy0zoAktEqudj-VcQRgObLa-ycr32isNsb7LIQJMBUqjGnHYHa3P653BGFhTVL1_hR0mhY8550PeyiqRl0EfOfGa3VlvOmeZlRj4Auz579kDH2KIX09cyLdjLCdSmhwGsTGGqT_OSp6xHzfP-SGuZ--Fx68W7gPoz864Jz1MdoKX9qMh49wjTyU0Yr_rBUXsA-d3-Y4oD6Aoo330q4oNIruHo8WkJ54DAU_wdfBpAnYYLLw8NiEDx2XOgEPQCXuXP6RNiTba9x48QMJiB92_FoM1zhce4B1IxRRiA2KsSS3ioj_z5bl8cZHQE7_PpPyU-P4JeZruSozZWVjb3EKlXWmjiOiyBVEq5AmDdQRxcbYoVDvYC-VSWQ9Ucv_rWNvtUPxn51DRYzqedyRXmT49kk_w8CrdDRRSDGr7zrIr9e3nLcG4I8G9wxKKRN3itx6zYsxzwJ26WD-LKub-___yaQYqbKB6M_qnZaDhEYR_Kn8ZT0xOntSWCHbMcVlrxPNsC4ToFvWr_qGBAqRfuqWLCFbcJl0fc8dKq4LilpSTvEoh_Y00QH9nO6C-FQe7nKal-KcFb2Niij5uiZXHryUIqLKlF-o6ZsJmdu37ynOu--JrrEOAyDTmI3fMHdsJholIen40bOdvn516R1pTAe7jIxUKwBFmcuSp46QukCRElLn3Z3Oz5bKQzu8aWxQeNKeQ0bhAW9TGY9KOX7KaECCo7Vm-Z4u_w.vmTMlnhUzfFU-gNsGb3dOw
-createTimestamp: 20200403201342.679Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200403201342.679Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 297c2cc4-2563-4750-877c-279159f692a3
-
-dn: uid=superadmin,ou=Administrators,dc=bxfinance.xyz
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-objectClass: pf-connected-identities
-sn: Administrator
-cn: superadmin
-givenName: Super
-pf-connected-identity: auth-source=pf-local-identity:user-id=superadmin
-userPassword: {SSHA256}Gqetn1LO2fLLeWaFfibzwlNFjFa7SFTxaQQD8zoIgjGGEqTgzvxx1Q==
-uid: superadmin
-aci: (targetattr="bxFinanceUserAccountNumber||cn||ds-pwp-account-disabled||givenName||mail||sn||uid||objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OWN ENTRY - resource=users admin-user=Super Admin"; allow (compare,read,search) userdn="ldap:///self";)
-createTimestamp: 20200401145556.930Z
-pwdChangedTime: 20200401145556.929Z
-creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
-modifyTimestamp: 20200401145556.930Z
-modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
-entryUUID: 92a16630-0f7d-4c3a-af78-d52ed3aed081
-
-dn: uid=useradmin,ou=Administrators,dc=bxfinance.xyz
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-objectClass: bxFinanceUser
-objectClass: pf-connected-identities
-mail: useradmin@bxfinance.org
-sn: Administrator
-cn: useradmin
-givenName: User
-pf-connected-identity: auth-source=pf-local-identity:user-id=useradmin
-userPassword: {SSHA256}2LKx8JI5yAqwYZrovfmCO24+1LoyehCjIdQuESuRY5TWIGg24Hfk+w==
-uid: useradmin
-aci: (targetattr="bxFinanceUserAccountNumber||cn||ds-pwp-account-disabled||givenName||mail||sn||uid||objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OWN ENTRY - resource=users admin-user=User Admin"; allow (compare,read,search) userdn="ldap:///self";)
-createTimestamp: 20200401145557.044Z
-pwdChangedTime: 20200401145557.043Z
-creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
-modifyTimestamp: 20200415221658.449Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: bfb0e1a6-602e-4920-b6cf-86513f3480ae
 
 dn: pf-authn-session-attribute-hash=c0807afb8520ef5bb600091640cf93b4b0b2ebec,pf-authn-session-group-id=SG0SgW2JrL3fQqYu6ANN0Y2pH,ou=sessions,dc=bxfinance.xyz
 objectClass: top
@@ -904,6 +914,70 @@ modifyTimestamp: 20200414151337.093Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
 entryUUID: 621799f2-93d7-4529-af18-fac24f33200e
 
+dn: pf-authn-session-attribute-hash=1b662fe5f0e15f599e96c0f5366b40174723cc44,pf-authn-session-group-id=FhunKKZWUEZUkvQwN9aGI240S,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: 1b662fe5f0e15f599e96c0f5366b40174723cc44
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..NFLTlkn29TEgrLlVN017tg.JVF4rxrwl8XrschBm162wYhSp8ReU0jaA8BUpAoPuKug76Mbz0gpAqfSkSwYyuAqy6QNHny_7Vre9ouivvLAgUySBnEa299y7-78PhgIyUvcq4Ef0Mp8_E83-YQugl0318NrzhzidNbzJlKAxp7QGQ5t3nMt8BJiQYpmztlS0G3RkIwOGeuY_B5UuWop4rV4b7poV41MPuwePGkAKIz5J_AO4arlHd_2tsu6hxLBBKg2yjYPbaRYDCzA7b8CYj-W-aWmmAdYJUjUYUJrMMpNeMktrcOT2lghz09EidWEIwJ9aCh2Tfvklpg-UEoup9xq_nnuwREErmTZnnbxXiwz_lgXL8YAAlBLSx3puDoHb82Wg-8d1rJYuQ81bFwwU_-Ei1aPi6gu8DJ56YdXlY2FDsTiYqSJyN-o4VY5bWFnCgngNLvS1HkhAsa78QWYvDCKkCgZ-KEFCAa2VW5tjGqv4hgRSf0CLvJuDC8o3qVe4NyVc--DJiQ2cK6EyEhg03KWaAVCl1pUVonJRQwRyQkazb8lEcWKQfbOynoOmArtUe0qNPtcKG3BpRK1tfLOYHMekqqQT4HMqhZXEHXlGg09UmSf_HzA4lW9tVHlbW7suOKegO9otP4zX2Izt3DxeD_zJ6sQhaXnpbL8qFk07dIUDcAiugzcNn_hj5G_nxBrYaPwtWA8wXF-DbV67zDWOztb--Z-hHOQYVn1qFQfmY24-njEBkJi6vqXyCNE5kTb_dm0XvFdVZxY2LoRN2ESAAEDI81a3THAQCRAkXt8J0tpZvR6NndaGOMWlvbNjg7SDOdZiLZpQVDxGtqBDO-XXrd1FuA_w2R5MkaxtZdjVpUI5HIqyGj-bAz3aKFKp20dNfzvcZ61_MhwshD8w-lJdHi76T4ndJ64K0G0ysp8biDr4OqGmdS1SJYskyGI04Q9t_LRLpNKbJ0JpX7K2pVpEYUsiXtqlPhiiIHFaEtVF0_vAfNo7sb5VM2mhgY4XPaqYstIsggkqqd8qVOJeTGQVnri7hYRa0ya209evVjwBEcaUL2KEk12Hqa1p_H4QpeWWFJaCUMvRA2-9LY2GdvO5-EmVasrWlhcQHrDUb6BnayXj0IJw1ypLazj_BHAMZPR1XRovnILrLd3Wt7AfhtP6hwa7bgU3uOOCtnZyNqgmRqoCTF-op1R_7Db7d02OYooSkDyiXJgsE2J16xfj_GjuPFmqId85eOFWoFvjIoRbEh4wgBqkm-rBGr1_W5ruPRAxRva-XfNhsAiHvoe3jABjY1q_eyXxfzc5rz1PKkoCInXwA4QndKwwUM4FKrIeHWxNYI-181MvcH0EEqyjOls_bBV.2M2DniEcbGpnWUnfDREUbA
+createTimestamp: 20200403222952.311Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200403222952.311Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 06c7e2c4-c5cf-4d28-b079-721f9da15318
+
+dn: uid=superadmin,ou=Administrators,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: pf-connected-identities
+sn: Administrator
+cn: superadmin
+givenName: Super
+pf-connected-identity: auth-source=pf-local-identity:user-id=superadmin
+userPassword: {SSHA256}Gqetn1LO2fLLeWaFfibzwlNFjFa7SFTxaQQD8zoIgjGGEqTgzvxx1Q==
+uid: superadmin
+aci: (targetattr="bxFinanceUserAccountNumber||cn||ds-pwp-account-disabled||givenName||mail||sn||uid||objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OWN ENTRY - resource=users admin-user=Super Admin"; allow (compare,read,search) userdn="ldap:///self";)
+createTimestamp: 20200401145556.930Z
+pwdChangedTime: 20200401145556.929Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200401145556.930Z
+modifiersName: cn=Directory Manager,cn=Root DNs,cn=config
+entryUUID: 92a16630-0f7d-4c3a-af78-d52ed3aed081
+
+dn: pf-authn-session-attribute-hash=1b662fe5f0e15f599e96c0f5366b40174723cc44,pf-authn-session-group-id=6GCv1WviFH5rzstQd5icWwTou,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: 1b662fe5f0e15f599e96c0f5366b40174723cc44
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoieUJHSnROWng1WCIsInZlcnNpb24iOiIxMC4wLjAuMTUifQ..0lLz_tOH-mewu6iuETcRqQ.XWw3ctvW2ZndEOxkmfL6TAYIQtbWs1B1kn16ykIctcYHHFZTbu1zLVBnUA-QFaoKzY5_Rfry5CcxtuByrpuaNaXPU_Lwon2KAOIGm4xJi0mc4EIVm1eLnKQziLQapsBV8LggD8CAZ4tiZwvUe1fV4-fvDeNCkJKxnxA4qGJiNhCloANjob4GM5925wMSd9Vs0DO49EkiVd2IMug8wF6wq9zalDXBvsegbMNImtf9N_hN6eGAgdbd85PtWB5x29zCsK-cBJK0LUgIZU_yAsGDnBoRHS5yIy2O9nWp0rgqDTuMutBTbSMjy27bizJh_moa4C8DI67pyh5YNBcyebRq328Fffot9oqBgFYiJJf41B-OJoouxyBlM8Tm2wdk2Cf7unjsqwltuauWwsHOTtL790DEBtZOZjBBgHFK-7101v4ZnXsjfDJhy3ohTwmu6NCqa6vaG5A4WUgiGdJMzBKBwvL5mmjP5PFKgSpiZ9D585K1KG2YsXdyG1V02xrxs2hmHF-6LrgkXTmBTdX8tQZGVT-cHmpwhhtTK4BHV6Kz4i4nrXu8dW7Amo8A6AJK35Nj9F_UKwSxfURa_UmeolD4rvC4xxEAJLLWq78OO-wUvkeCph4x_I3kbq02sqXUmXfm-dG6Q79Yny8rCM4ZWDUHpGDC1YeGy1bWbryJ6AYUEnU7WaugUQUVtuzoi6HEUIkwoSt7Btzqw4kPMu1itAIZr-M-VmDjdFBKeaS9QbvvUFiitz-GvGvv6AA-Bh5IJoTQsRYMQV6iuBP_KkYOD3Y_8mB0eDwyMU_EfsCocF4IoFt1qklPeViH0w7FmufRKMV111Z5kLziWGLR0p06CQe3yL7I4ohMCtvWj1Lionmzc4x6C1_L_rPEr331IKZR6tz6LrA7v3DOmg2MdSWiztG7rJz7wnGb_YPc0O8Sm_oksc0bcxV2JCRBZJJTg35_rMmYFo84Q_sX5_xkYXwXM99dncJr3JPwwIEHQ1kjCXV96pXoxGxunH6hfI6vCvqg2qlPZipFVdi_4TRvLPHMgpMxn3n0zitHgifJPpQ4pUAJNzScPXE7xRAKn4oqSicxpgJShuWXV8HxBvtWMByuZBlchRPzzehwaru_Eo9rlqDkzWaFbog9pdHyRyK4YxsgVh9KQ0yFC2aEMOi1ZBguqs6DER2nKI09duHj87lC7WCZ_KAf6z_zYyItycCIwOi8UIUp_FViycfHKdpLp4BCZEXzzV6sIHdItpoDn2vr8DjScz5iqneP8KiqEh-b_YwVnMB0A8JkHwIVGP4B0p_iQIVPhsPNhGSIJdwnhTSz8A8Hl4o2nhGTthHPwxurTvGb7z0E.Dof3_nyVwl7l8y2EAkT-aw
+createTimestamp: 20200401150711.302Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200401150711.302Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 6152eb62-fa71-42ad-899f-67708a7599f4
+
+dn: uid=useradmin,ou=Administrators,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: bxFinanceUser
+objectClass: pf-connected-identities
+mail: useradmin@bxfinance.org
+sn: Administrator
+cn: useradmin
+givenName: User
+pf-connected-identity: auth-source=pf-local-identity:user-id=useradmin
+userPassword: {SSHA256}2LKx8JI5yAqwYZrovfmCO24+1LoyehCjIdQuESuRY5TWIGg24Hfk+w==
+uid: useradmin
+aci: (targetattr="bxFinanceUserAccountNumber||cn||ds-pwp-account-disabled||givenName||mail||sn||uid||objectclass")(version 3.0; acl "GENERATED D-ADMIN ACCESS DO NOT COPY AND PASTE TO OWN ENTRY - resource=users admin-user=User Admin"; allow (compare,read,search) userdn="ldap:///self";)
+createTimestamp: 20200401145557.044Z
+pwdChangedTime: 20200401145557.043Z
+creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
+modifyTimestamp: 20200415221658.449Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: bfb0e1a6-602e-4920-b6cf-86513f3480ae
+
 dn: uid=user.0,ou=People,dc=bxfinance.xyz
 objectClass: top
 objectClass: person
@@ -924,6 +998,217 @@ creatorsName: cn=Directory Manager,cn=Root DNs,cn=config
 modifyTimestamp: 20200415221735.587Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
 entryUUID: 0e898de9-807c-4019-805a-3b52b1d419a6
+
+dn: pf-authn-session-attribute-hash=ff53867952847be1f442ae5ef94f09ef5dcbc645,pf-authn-session-group-id=cIX42pfbAH1XLy7hVs4VGOZFG,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: ff53867952847be1f442ae5ef94f09ef5dcbc645
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..cHglir8POuU0fxExOdP16A.buwXWoG_2szTr5Sul_cSYQ2WBqcU3eFT88Of5hdjHedSl0-BB622YRiuG49FYYhjuK7UaUNcPvVSFX1MmES7YiAa0PWrTbrYZdJswDnuFJaFRN9qVkfNxTkjlOWOmpBa-Y4eHNhbE_TKKWG1Efs-w3b5TQCrZIGemwHA7Rvd9IyVcnJBj0lTYLaksEowcSPgo_OwOzYc7k7UJPC8dBNb9WUaLLKcMSMH6OiKOK5T6Ns272EDNQalwTvWe9GCmw-yD_G0vQixKu8gXDZNIDSvbMon_PUlMbwLxN4THy2f9uSo4KTdbmvAd8--2AV2HE5EsVijcMBc0jOlArYrzj7LcbFTWqZBe0HXNx5so6MKfq362-z9Ok61fQ7rOpGhJknUTxAJgxweXRo0kgbp8SoCLAw0eXbdj3c3hJwPXANojxOMotffv2u6chnt2tAHPZCGImLdZde9_S7keP6SLoTLZwmxiSY_nJIA_KngIVi3A5HSMWDlofQJ1GWoody6OrlQ5WGiu4HPLtpYvNDt8hIpEr-wXAklb-FbCOo74u1L8Pq7utxI0sgPLm5q1WCT-JvMmBLPRUqCIntsXeedfsAxu7CCPHo-FZ9JAdE2yVydv75bN2oWD6Uu8kZHeZOk7vLzFKzoguJzR1q6A_22iFmp-KWqfcbIiv5jSfThr_J4Bso8OVIkv43rVBt6fWQrc24iL9AG6rGsQDHoKgNsD5hg7dTlXM_qDTnZj6yW8cU_Lv9M-1oLPrgKpGnPqqk9MtU4kV6e3kXCegVTtIYtwMszzkTZj7qdndh5LBDhF87IdwTQ3zMVeIOSwBDktDyG0ePxcP1ypwif_xhi19WHuELEvKS61LQ842zQjW60JKJcBAbFW60f3ajEhSnvAl7CgrIiOD03-eytZSCGDaqvM1FgYpn8E6hVrsuLmXjiExYqk8nhHqS-rbIt7NPaObY60gDDrVoMfCSAFwGciHG0VU1dWeNyVqKYv6J5_udSpHCisq5p3DhQouSUuJnlHoRCYyKst079stLIIVDYfZV8yWMRBZlJCzG7uwDAJOPrAtABCaUMUWFo9eYtYxCpSUEK4UtJa0pvDGZYWb90sCQj9aqjU8v3ml2YMMFWeisp8TdOzkJ6ixqVo_Ft74gc3gff8nplkot3wNwYukQaW8AzPB_pP_hMM6BV874VuQ00T8KDs3wP48F5EaLbaJkcNw1_ewZ5AMnouUqm8KQtXoewquQ4rMNp4q1CR6rW3cUIXgmh0rYyDkBzZnLvbbovdUMCe1JL_BmeItLFOxUSRcVa26fDY0ERl2dK44R3M9hwlbZ-HzfNK1xJ8mxM2GxhJLQWxAVxqHbmDB5WFGK2rSOayiSSgPFh2zA_qrx5ZoXt1Yq9FxUlC1qVO9ofD9v0qNoh40mj.nqfy3AKou2-Vkz2k_dqhgw
+createTimestamp: 20200416172308.244Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416172308.244Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 714cad66-b3b2-457e-906f-568bf070233f
+
+dn: pf-oauth-client-id=PingLogon,ou=oauthClients,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-oauth-client
+pf-oauth-client-name: Ping Logon
+pf-oauth-client-last-modified: 1587061553821
+pf-oauth-client-restrict-scopes: FALSE
+pf-oauth-client-require-signed-requests: FALSE
+pf-oauth-client-grant-type: implicit
+pf-oauth-client-grant-type: authorization_code
+pf-oauth-client-redirect-uri: https://httpbin.org/anything
+pf-oauth-client-redirect-uri: http://*/delegator/*
+pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:true
+pf-oauth-client-supplemental-info: 44:BYPASS_ACTIVATION_CODE_CONFIRMATION_OVERRIDE:null
+pf-oauth-client-supplemental-info: 19:DEVICE_FLOW_SETTING:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:jwtDefault
+pf-oauth-client-supplemental-info: 32:DEVICE_POLLING_INTERVAL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 26:PING_ACCESS_LOGOUT_CAPABLE:false
+pf-oauth-client-supplemental-info: 23:RESTRICT_RESPONSE_TYPES:false
+pf-oauth-client-supplemental-info: 35:REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE:false
+pf-oauth-client-supplemental-info: 29:ACCESS_SESSION_REVOCATION_API:false
+pf-oauth-client-supplemental-info: 34:PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_alg:null
+pf-oauth-client-supplemental-info: 32:REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_enc:null
+pf-oauth-client-supplemental-info: 32:VALIDATE_USING_ALL_ELIGIBLE_ATMS:false
+pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:["urn:pingidentity:directory-delegated-admin"]
+pf-oauth-client-supplemental-info: 7:ENABLED:true
+pf-oauth-client-supplemental-info: 23:USER_AUTHZ_URL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 30:PENDING_AUTHZ_TIMEOUT_OVERRIDE:null
+pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:OIDCPolicyDefault
+pf-oauth-client-supplemental-info: 37:TOKEN_ENDPOINT_AUTH_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 18:pf_ecm_authNexp_00:Basic
+pf-oauth-client-supplemental-info: 28:id_token_signed_response_alg:null
+pf-oauth-client-id: PingLogon
+pf-oauth-client-description: This client is used to perform OIDC logons
+pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
+pf-oauth-client-authn-type: SECRET
+pf-oauth-client-hashed-secret: L-XqeNj9-fqzNYF-bnN1UVG9XAh6RC4XAkkQoiQtyUk.cAYIjchm.2
+pf-oauth-client-enforce-replay-prevention: FALSE
+pf-oauth-client-bypass-approval-page: TRUE
+createTimestamp: 20200401145456.465Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416182553.824Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 47617177-4cf0-4bc8-a104-2779a7823ee5
+
+dn: pf-oauth-client-id=Delegator,ou=oauthClients,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-oauth-client
+pf-oauth-client-name: Delegator
+pf-oauth-client-last-modified: 1587061563829
+pf-oauth-client-restrict-scopes: FALSE
+pf-oauth-client-require-signed-requests: FALSE
+pf-oauth-client-grant-type: implicit
+pf-oauth-client-redirect-uri: http://*/delegator/*
+pf-oauth-client-redirect-uri: https://*/delegator/*
+pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:true
+pf-oauth-client-supplemental-info: 44:BYPASS_ACTIVATION_CODE_CONFIRMATION_OVERRIDE:null
+pf-oauth-client-supplemental-info: 19:DEVICE_FLOW_SETTING:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:jwtDefault
+pf-oauth-client-supplemental-info: 32:DEVICE_POLLING_INTERVAL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 26:PING_ACCESS_LOGOUT_CAPABLE:false
+pf-oauth-client-supplemental-info: 23:RESTRICT_RESPONSE_TYPES:false
+pf-oauth-client-supplemental-info: 35:REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE:false
+pf-oauth-client-supplemental-info: 29:ACCESS_SESSION_REVOCATION_API:false
+pf-oauth-client-supplemental-info: 34:PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE:SERVER_DEFAULT
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_alg:null
+pf-oauth-client-supplemental-info: 32:REQUEST_OBJECT_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_enc:null
+pf-oauth-client-supplemental-info: 32:VALIDATE_USING_ALL_ELIGIBLE_ATMS:false
+pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:["urn:pingidentity:directory-delegated-admin"]
+pf-oauth-client-supplemental-info: 7:ENABLED:true
+pf-oauth-client-supplemental-info: 23:USER_AUTHZ_URL_OVERRIDE:null
+pf-oauth-client-supplemental-info: 30:PENDING_AUTHZ_TIMEOUT_OVERRIDE:null
+pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:OIDCPolicyDefault
+pf-oauth-client-supplemental-info: 37:TOKEN_ENDPOINT_AUTH_SIGNING_ALGORITHM:null
+pf-oauth-client-supplemental-info: 18:pf_ecm_authNexp_00:Internal
+pf-oauth-client-supplemental-info: 28:id_token_signed_response_alg:null
+pf-oauth-client-id: Delegator
+pf-oauth-client-description: This client is used to Authenticate to Delegator
+pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
+pf-oauth-client-authn-type: NONE
+pf-oauth-client-enforce-replay-prevention: FALSE
+pf-oauth-client-bypass-approval-page: TRUE
+createTimestamp: 20200401145608.632Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416182603.831Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: a61d6845-f8ef-4641-934e-b94c68088a28
+
+dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=Y3AETR1UneBq8eSl3UsB7SgHF,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..tgG9NNyss-XPLr-qW1AxMg.-HJQ8S8rNNpOPQm7SanRa9jtdK_JGXI6sc-FRnYx4SpA5Pc2xNsKGLfeXykCLb5K9qqxq_H1MQy6T0c54o4prtsPfJ5oV1V9HIPwm2guxHAo9bziM_iw8SdXVatqHXWqlr2i0gLKq71HQgQm0I3EOq1AdE18Lc3g3vsE8Wk08ARAzYyTGNu0p-vWt7FpMdUJ4VPbEfzlNf0SDuYzFnCC785vs5ogzt5Allj8zBt3NAB_nnyjaFRqtYu4Ii-X453mM5iV0pBq-PyEL6RP3zLzdxvbAIt_LVdtZlvTO2fDt485I7_A9DZ0dUQJDSpEauIPueaQ6_0b0f1cnVyVyxzUMaI9wk27WK2OT8cota9lBgn6utQRS41U7DFIDoTZyHJEI6Bm-XMnYVNzZ9QSljtlJIypVF9w1nMpnzJQaVhbOae0vasLD871PMjrHMqDSAPmiXclEj63UfI2nOX8cp6dHkaQ3Tq-BhPPPgOnK2aoH3OLMfX1vfJwYzkPPdRsVIXYvAe5Y19St9oy3Zxy0nxLJFKlzSMOXWbC9wDyXg4BO6mHvtpzjyiYGSG2Asuy_UtdfLEAzj7G_R_K9tQGzppBNOSWYOKjmg_X3I9ce02miZqmBl2kWttjqBqUaj9gCwD_upGGf8ThyHBOGEjP5c-32sx8WZWW7xafCj883H0JhD6cpd5m86QAqF6fiAnZ-ENxy5tUR3Cl964jbPBUUNPTQBpd4hoDiikZFQzpvpQx149oQTZnH-cE4vSEmb7vIcuhnbBxeOrpVv4iu14JmfJJ2c3qpvQGUtw89gQ17cjmZv-vyHzYdtPdGXntJ5HNngVZCnrReLHbWlDgOcUWnio2lUqigxIYi91x76JSuouRK9uIx9LFoRWI2CgGTFfr-l_HkwE3I1fnpEBlBQw-e_RhlkY9zZk3HCCuAddm9_zfLAfLsyejkT1l7ET1zkqEDqMpEaqdbZ4D3ceEWuL4pUYyDvDd1--Xk8FnfUJwYbY78DfRvorOfa6qv-qNOo0WjYrh7gwp206OvRoAw8xlt7QtMF8BxD1eLXb7DIrKa34Fke8uu3OItXF5OJ_ZvZANp3-j9-IsHMFVhwMYixxAm9G03fYNvEz9uNixObw4hUyAILMpFaW_CoYhcK2qCC0v3ckT1a8QG-tW3qCzbS0RGXqUvSSE-2x0Ak5oxii3h6miPCl2O8MZAr3wlAF4vBHZt3cwHTZmOUz9PbtNWmDlzZB6Nln--sRaYLTMVNQ497OC-AVjmlsNZrFB34W_rraveJ5stSbsxtCmNckCz7Znf7Nj_DYTY6q5RhGghflwzVt4q42KSHKWr1y8wWe4CqZ2FatcEuoHHnzNXfnXrQBksSCZxlAahhMov96BjrdFnVvtCWVANdjDtWLQMObKRYUlXrZ5.t61RN3FcOH-7Y8KLLyyqjA
+createTimestamp: 20200416183256.656Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416183256.656Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 1a1b746b-827a-4c75-a96f-6d7d54803596
+
+dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=xs5cqWJOQCQVrOLvjNzAlzfjv,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..EQRmuUxoj9kGITVnr0fRUQ.82ioWGbhGEt_90WLt9rwK_9zbaBOLYNVey3Ujy4ekqut6Dmkp8Fk1IQ08318tVULniQfKaHe4uaEcxI-7XxBBHqAeQpyX1nD0zkyVr4bJGFbLhjJS8lR1-Y0MIimlkxq1RPnnDnbjfhcM2WYgt6tbhRvjeUZknEJ7v0j-IkEgyw4UVIihZ9LJSpqi2CuvaK5otnpPm8SFJ4lYkJHPrap1sTpFRHtFFdE8RlWUqCqB4ws7E_l4AyPChb8tmubX0y62OBC1ljrMyUgXiabOJJa7Y4zKGdakZBrKjQPc7eCuS3dvchKAxPp6PQQALc7gjTnl-Or9g7Iv-hd2lBHWryHDLto5UCx0UCPtdEU2CRYJES5SSNRNSsfjF1HL2-rTVZNodyXalzBo7qMAN4XO5mJkdWDouO0xVP44sFzuvXRJy8XfzQyh9sWykbu13ewRudpkFjWhbDfYRo60-PTx9vInXHq9OGUGibSa_8bXlHtsTBacvlv6OUddktZBFFLnnJr44ktGFJpW5o2Bis6OFr_-ftMF3zzLTXlY9iK9A7oEIQDBnKPOYbTE-nzbDv7mqFQnn8l8jOCWsl2g-91DUigB1TxKUZOBNTdUh-jD_oTbHZBEI6a0gnDuMW33OnAnsVp__OMc6qPsoF0FBqu20xGgkEZQKDzpl9bVkVAFfIh4Q6KlgU_bNHFiaFlGFtT4TxN9bf9_Q2uvPVyoy-kHt54zxocRvTMYdQGjd6ZtAoQVVLJ3JKRrA81XRQUHaGf4IxmoMR1N7Xj8hVvNll9VmKL6etJtmQ9QymYTkIw9jMh_Cd2sPQUYSca4N1FXp3IS3yvtTAAEnVOYId2SU5HDNBjuwd3fjYqB57NzdbaJQ4tWQFd-A0nGDz-b1yjx0rWXnk4TI7MrdLD_U5nSLpjTVP_HqXeOVxkDiCHWLR2rQ7jmcJvivdCcpAYMK_vS0bjkRElsTyIsxCTCa9JKcmqYgBJKgDHDHY0JRBWpcnP5iYL5KnqQD6itz6E8ucBQ9H058BryY0IQlhQxq-CWgWPfF0nQhtiLlYPh19l3bQNU265jvkE4gRMr6Z4x_pJ5Dsra2R2cLpsyaqwrICDD2aYis1-VJy8J1R_qvApK9JF6xsMdfTicpWhRUC2k6U8wLOs4zzLw_hN6kHEStguE5sjiI-9u9_cs-TXufTTfMx1cAl40z1uF-MU9GjbS9fJ9bg8fRMJKKf3x1iin-HweU6D31LiQahugyUrV7M_ptm_36CgQ1BvakToqKNqbDzXEni8_6rJ1KVCH3Or-ot_1rkHOGrNwc0CdMWwfckiWjcHPUs635Iic0BuQ5mNhawVCyfXO9X4ORMGuqNiu9r5Sv2C1FSwBDnOpECNqWYcbAmLgtJrJQu7ZPmv_uTgm-eZVU_xXwBC.wmILh8DmjpFlSQAkWsEIbg
+createTimestamp: 20200416230631.622Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416230631.622Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 0b45d206-c4ce-4cc3-af3d-6744de3a47a3
+
+dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=dg9KxhAQNfiu2uhQNtMsR12Mg,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..8xCr_s7AfphnYpKVs9mB0A.0ej2C5O3H29j5KL9X2h-6Is-6zAuQnN2mo4khZ-mQQKAGuDM1KqhlLmWH10-myJS4UMI9HiHgTKOEKRfmgd9KboS_5AVGOz3aFsmYuv9HAzDs_gNddCY8Z0RgNtOUi-ULrdZJiyKntpYSyPtSN29It2dYInfCcI2inElQtPBpNUZC_egqxIPAK9wS9Y_QsFc0gDFrPMusdA7rFWh_7L7Qhm52FR-DGYt7wugjfjtH-h2hn9B-KJ2qxWZYf4rIPAcIeahDIZ696LmY27_sJSP6O5lSxXM49TlafgLjQ1QCLYipJMsVHxsnHEEMA-tZXz9f6r064bSkSuMtK-Bat2VcBS-FLjgA5zEbMFMEel6JGTKBfQsidjbl32rb6StjOB11G1hxqx3TAOCsLfSFxKLy0j12Yddnyxn407rOKATst1V0Ft6vfC1sSRBuOUBun8H0_p3AsMmctpPS0xWIBlUhjEoir6MrFs_uXVRUIKLo_lFXm-NH2lGY0ZsEy_jDY-ktlxAO71i5WANE_GSorJOwErQHDLKxU5Vx3nKb_2OhJzBeQ6G5b9FwlKQJzjuAe98kILUpK1wnnbDfovGpz530OFeiiI941iSatWXznWoFq-TDnNJ11FZ7VvpnGfl3LeIgpo8LTdFpvN5TNGFEv2dk1_D3UkjqHS_U3IUHHUPc-o903-U5r36cHGw0I25myGovE7FejWWes7vsJRyRbv6UQeIqzGXtnEf1VWcv2jqOeOSskmKKStUTR2iODogrYrKgU7TNYZrKJNeiHnocR6YRAjfdCzRpJie6p_vmqLyfgMcJliR14Wt1cRBqIimX22RSOWdq-LYu10qALd1Bo22Y5tqyls2JUZFo7hqDTUSUFdeOFLYH8olDEFf0X6oMFnrnJcxqtn5K8mrOwY7oadrGlqXXslqdzfWorjvZEG4MuPnspkoz7mV3dUczwGmqYvzh0mjNIpTk7ltnqQWa6RXRg_c-jz616ZnKz2rggU3J6Qt0t2aB559SyvfHRDx7Die3Lng1AWrgUyJ0PrRtXj5qJyrG4z0WGxBErOT6Qbx5bByJPADtu-qiaizc47q1ttTUjd4719oIK2fNMPTiTsvoc3oR1QPJEDdMd9TKLfe66S4AgUxjj8Htuh99daCxkAjnbayS4BpgPouwhFwmTIKHgowwE9-JCnXvcYnnAhe2nIl0CUUrkJ4VQjuxP6HEDx24NIus4S_x93od4kc5mKAB_01iBjqlNd102oUMePnHLoRBJh5_kqyYKPbrut6UZ8jr2pRAQN_-0ig9sXFl5ISDWheue-PbkHa65HrbGj91EawOSM45VOMC6rxyeBCyNA0rPqa_L35qPWfgFTCv0lXrXCOMYsVSY71Jcce7E-by5wB8ENSJZZ1FpcDJ_LfcWzi.dUAjPlmzK3UDHCtETz22iw
+createTimestamp: 20200416182813.945Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416182813.945Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 93204cb1-cc0a-4632-aebb-e96f945c9f92
+
+dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=mfmZfw94XBmcPL3eMyNkspIYj,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..4v-Cddnjk35fZ4LgrED1oQ.2iH2jyNPHY4bj2qYSANTn5sy-ZoCFZAhxuY-GnM1oIGq288r9Ll736KxmOAzNdstIkssKMyZYucHnf-r9JIqTS3oOugFlUL4vqfgemNUMtt6CGJd2hnCeSVGrkV8R51OjgyLxUvNPnend8gMOIUu5RgJJ2sIqQaPZ_kU2PPUyoGVaO9vavlcDpJfv_62fTM4qiksXX5AT7QhsNcMJw3sI9OebDolPU-zQbjstaOveS4l6QG6Cjj-P2meA7lrrJAWfmu16_uFd9Hk1PHxlrTmbqp9BOeImlu87r_chn9f5jpmU98ZHG_WnH06wfifSqiugaBh0ZBrUrAp-A74vNGlbrk1IaSfE2URSseHttuZLBSvfO6o7LP0OW0FnVooKhippLbfQW8Pf98mLOUrvf8-wY4tTumdrsZZ7de-gk9Ym0QfoxGa5Hw2TtGJStRaRxbL-HkO6KE225GVjxLT033dqDJ1zjKNPfWW341QNj2R57BWkE25e9nsosz4kPdWGiE-j0CqkyHs_DrJuBEvnrGTPdPYJGVGkE0zL-mV8Q5UHneHGn9uz0xS4MwIbWIZocRoWQJqE8PPS4yS5IhGgngfTxs6WDINNMaIG7-Zy1UD2GYnmEQYRYXFvQwmFSQmrTp54vRixbfLH_M4TC-3ajmEokJym1FIfgvu7as9NALOUdbnYyNcleLkbDR6kG-HVjxr_ZuMTfopMtR5rFIO3O4otowDJ1n7drL9spKlXeXdNTtc69ufIRGrNzlRFc1T1P9yUaF52scaLF-XTqiuIrjAW9WG-i52-EHHOtTDQSlXrinBP_ROBG_3oKZGeKOJoFbKu6DIsDEEZXMtxG6pupkTWMIh1xkNh7UMcTcXHQY8sai4MZnWPAQFu5xJ0TGaxJj4Kzxc9kY0FT8KBdXLuLYdMRs0yW5d9nRCfwhXwKSaBMkhCOa_AET3ejmqEixSM-Ady5NLbnSQ1coMUyxzaipEglmuq1AqLZgTNg-nnFyz9vylKCXeC7kxcTy1Hv-dKS8SyIsLyk85b1Qbh3EWPQs6tLgbKK3LsRQm77abFfOvZXEdEJyZdNLHqgrRS2mQbX3igj-iSPVLi1Zjz6TyPuX_7rObd30RQjHswu6MEiMbl0vTpajf0VdbpMHIIM6y11bJsng_4N8rG2Hqb5DW9eoVx8ebPCCC3ym32U6RxwyJQ97Gn1FFv-SLqVgqIUeGzdrGwsUlzoys3mIq8xN3RlUj7OQQyPQznhtpRYohdHsXsASP61gy_MclCJYoxeTDHbwN6eun95aJ3y4mx8un7f3TD4uyEIuoq-GqgScjqzP9j1cV86JTTZX9OOKLenQ_fQIykMV6mXA9YFC4W0Mec3m2GXtAIs5Y7nqpL_yU4MGe4jZY1I0B8PGFc86qgWvOJqGz.DaDfeo5DBRvI4WUQMjWmHQ
+createTimestamp: 20200416232442.080Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416232442.080Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 47315973-3d5e-4f5d-b658-4f33df23269f
+
+dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=NBmWc0IX0MiPkEHV3VExhyOH9,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..4Lu2fY2TKoH99ETRfOSsQw.mFO7Pnq8kq_4TGINZEPMnJC3x5RaGmeSUREQpyjV0Qf0qbuqAKibBe8Z1E_oexcYKWObOLhfJ-dg8ZFF-sHIFjMw_ncvPEXzsnNs3_ioMblS5KnYNDptm30qnIhq4FPShp5SnwmAbN-KpMQs76tv-jOjQ5AXvcPxjAzYg8tH2IAfGkvp2xeXmCzMHtEVxV1kRn2kXc4O5sT50RJI1UD1MEkVV2p68Pgyzy4f_ZVdOEAn6JLAYJqgCzVusNwqRuSBY8NDqYUIz0eWul8mu_U014t5NgBmqkTFyp5M3WFKs1Pc_QmZNqmr1A_6gMMcwxLPjxZhnWq3sr9916ew0-8mBBB9eCE_r4yP7ktlWaDd1lW1-rPiEhIb0ao6muTqsb09T0nJ9bxhKeefvhHNtuQhkDnnCk2DiOfe3heDlGFf6y4Tyf64Rm5xLQp7USZmfPXH9tU0hkk7OBoGJ5DQGFN2ns5dnaM_pzvVYvbVk3GK5rEtryrEX58if7hbTYjGnWKgJt6A7EaKTBmmAWQ4DcViAU9WRVDzPZ_rfUP2boDQHP_1XeapGkW1tLtzqmhqODEwgownHnQ00AD1BMzZ2dw29zOejZsjd_R9FyeDjAe3kllwBcel5V9QxzV1G7MYC15P8S6cMahey_aGTDyK_OMCR4azZGKT3kbyZR09_PToGJ4AYu82tOwzO6knLMAkS46jMi14aWexNYbdzKs205-ofKe_frA01SLKfaDJ4KDBu65FxaH7s58QosNtOJDhTO_O-QM9QdCAHE_7zfVJ_wr23ZtL5UwomCfBIeilmytHm3xvWHAf3cBukxk8cQTZn8_paJnv4TLY_gpWZL8uL6FcuTwbFj8qKqEyORaOStb1RxAn6s1mdoCOyy2rbtsNVBhkixWHe5rR7Zb-vKLdgjFuiGOF8RWJUHm9g6kWCDQOY_DmVo2iR0Ojh_E2asQDu4NQpQlPnXINbDpL0jP-9pW5C3rOKhFeAXCoH6AfNbI0aMaIzCkr8IkFH9Xseg6KUjirbqjq7CDDzwpVNxHX51etZm2TvwcMn3TtU6j57cJXjKvVraLA00we4HjB6gvtFRPYRmBnenzhkLhtopmRDWzJurVX25VNgFqtGYrcWV8km0gcnj3K1CjG1n5KRVSsGBT02maXM5kSzDoITx8S5xH-gg7YbobBVbqUo7Ep-ZBp6HwqjP0xtbcjVmwFsmUIE-SR18Gs2fDJeqvWRp47PcvZy8JiiTgSa0kOE74WTCzhgOHT1fJbf7D4mKhI0kpFCW9zsNBYwNfaQgyXGJhX_3HSfTSp5Dx_9kUc2fIj7LNyyp6W5YX6BTQlv483igEnwAEOMVgvj4d7tEqND89AQCXbczWXkoz6Eo9PmHC00_SQcXLp2bHSnBr8ta3z7WimgK8K.cB8AAxdUsOw6yx4zKigx1A
+createTimestamp: 20200417145115.859Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145115.859Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 3d411359-6219-4960-acca-ec2be7826e91
+
+dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=IN3uBldWyJs1pAiG8JuxuVTNZ,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..opB7MGoQJ8l1CItTtFB-kw.36u_7i98-QklfptUxdxBKajyIiLxkSa3c3zZR9R-JtFaKntdqv2oJbhUQaV120ECRarx6IBPd6nB8mMyml6C1LjHBnnRS8GYcnzDx1AjkQsNNuP-OfU5BiinFTdKKOjZ8NxpgDGPVbpAhg_G4EnqVMGWjAQu74ct5ikFyouWlO6Ws-atwANijT0PAs9OVJPNoohMuVbOyEzLFYoFZeaHXgBvrpiGukAhHdQngWPvVB9bRLIjXZJOxU3inASBIQGQ9Yq60IyPLwqcNr5S5_zSaxAb0SB7jpE0yzdhwZHHKC-dELh5R7CQCA0LxNmX9lGCNiz996098hhmCgWNLOynPWLV8nUtHX05oVY945IjzQJWnJdAh75gxOj45sRdpp0wHIbICluD-u2sggE7t1cR5ntqvbf5o0MHHUYmCueCDihm4hFhTjnWFEhJ-nAr02Qn8FmqLdzFYv_rklN6vMF5G4du_Nus9GgjIC8tL6_iqJIvyYmvRwAVrQCAQl4ErG5desmIdD8NjAgxylTqzjm0sxahnWMi3WFurjfATXX_Ht5_8LUXlJj26i2_PCbK8W5YLtmBIMYjqphDWxaFl0M3nXYOwhgTmryM6XZOzUdOkDH0l8ivqgPi8hg4pnLSsTUnk8xa9KPPgrKCsRIcflLJ0dC5IhnLpb8qT6x3wg9kv4nJDLQePsZOjZndH27Y8pYp93zhO0CM0KOgprm6WiPGUXX-aYKJh_DW_n1TIVFOWbbBnRVuYBo6m535KZSkV3oOqG0iJsgj349nzGivDM1lu3ZJZp7eNa_B5zsA6oRZFP7xWxJp_DVSuUHxJn7Xugs4j7i_Qyq6Y6uGOAJ5USyXuHa3brIatefqHrq7qqizzn97vA_ER1V1qNYzFGsEsegrJuuiKPv5FE0SApwFhmrj2K9mHi9-ZPXSqSh_U-hM9Z8aklXrkcBmr0cLolegxrvjD8e0jAxSEC1auHcLUhXVLrEt-V2q_I25gOgVlVXCOxZk1K1oqOSxKlouFQT5VBOqTLRX30E88ppzf5fpphLS8Wkl6yb1xtkD2V2gOHRW-N7IAKnPz84DHPrOCkAB-8GW3EN-CtdTDBKvFhLjcY6uHJ5hXoDdtazPjsQxSBR8bgXFodcM3-hfrU6D7jAgTunVwOwsNDW8Laf5mludqfAv7AyhhK1vnlvkC-Jy_Rmags1ywEvYxSxpF-bJQJdvftEocvU4KZxQdWw76imdBlKkcJfHpBXAwv0wUvY8lt9y4IFn4Njmk2eZtSYZ98Zn7b5dct9buAI4lE0bWRCPz9yiY6qUjbkQK_Cj-Svd_spM6_1OZU4fTEgfiaUhsXk2SA81uopr7ehHDYbXpmG_ZQFwhTeoCI23hNUm1qKJn6pQd6wi_R4twA3DpW0o1ivKxccV.AievkDcjC2aUtdrMC2xzIQ
+createTimestamp: 20200416231632.190Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416231632.190Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 9d75c307-be64-406e-87d6-3a897e66cb81
+
+dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=RAnWuIROYDQTNEscNx9PuGDWy,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..UrVQDL6lxgSFKWlUV-dt3Q.IredgiHfPH8xbprxqnw2gLWrdGZK2I34sZZgpufRqObdY9P86yhMGpZYooyzbMAU57w-HttjdJhWlt9HeH0Px1hJj8B2XFbud_LOeJ571POSD8wxebo38ySSWuRgh64mHqZ-ZAKd_rSsnAsHxiFgqYron61fF6sE7VDx-vkDDPN3qOAmKKech4Y1KvTL4mUFpia_Bx-PVabfgTXFq4ZEZVbIeFg79RCq1aluuaXdVyyPLIO4LzO96PIOC561KQn13TVwYyrsasgoUC5N8EDAXa2Oy0DPQCJPcQOynV-bhwfGtDQ4tTfZUJiuwXwDlLTabRwAWzl0Hj9LChehGuDD2LIZUxr976V1ft3ThVC-PRqxK1KYOLIpsaUBunQ0tTxWT9JEXGFINtJNM4AHfhWkHF_G2av5IN8aU5t20DBqnEoZzAAwM93OlqzylZmdF8oG7yxQdI2_HZ86lBQIA42vOcuaXEZVVWhyQIP4pX8lSIEp764lO-hXY77iDORJvxixTlTOSFY_v9lIX6T0qYN12pvjvrYbA6teju75h8-8MeWb23AIcbCSFS_plwBQh0Jvm0H1YXq6YlCGIj_chm8yzt0R4abp3ltM9gWebgxNSR9cSLhvQvOw9kThQoLawWbd7wT-S6dC2YlZYk8D9LBblY9R_LZy26OPmOu0OQE3QCmOaBVlf1CZ6qGsJGiQazdlU0mA0Kd46H7WCAdPbELrhaqoXO2p6ZoozHAXin7lKNM5D1WWx7eVCsAmPJlPZ7xLaaDgZPLtJWRIxR88fGTOKuIdi5MTqH7uuSF6BzxNQMHXozY19o8PF4rIcYXhaPb44ERia2euzngk7Ig9zOt9Ds0EKZLMBEqu9PhFNj8VRN4qpKejxz7iLN7kY7XMKeFiJl94OWUfUHDJP7vrsQacmXJLINo41bj48T-RfzZB_SYFZcMQc43DFWIlBqDYcHcJeWgcrvhFMzYtl974VzjE6jPX4Z20EyYSmgnbPx2NSanbs6dqCKiun0fxb27FQs_tXupH2J2ENETrRynzreIpJwOtugnSLrRfDSWQm-eoM76tgxiDQoqARqAQO9SHliD_vsKsKSKYMkeFi8l-ba0tLFMUr0mykD8t_c7coSWeECvhviWHoIc_1lThOBptSq5dhM6Kc44XkFHgoqYxyF5HbJ_YebMd69p5W7WD0VqX4Se-guAnhS98z6p1wUnEH3nSLARf_r4gxu-cdmfhTHMFqOHyQkOwZTSodxRA3OkItuZOXHMMHY6rBhQfcNQkE4HkC4aZ2OCwy3NQDcErpIypu8PKvFM8VYZNCLbnAYCkRY-lsxKvaD9_kldEmOjedKpWOoimPQAJ_0nA-wjJWjYNT3J1G24oZ3RQU7YQp9ZRp1PnZe-8WKqVB-_z4xbxqfry.Yz8SVQZukq58ivtSbwKvHA
+createTimestamp: 20200417145023.243Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145023.243Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: d5029873-acad-44cc-9744-a129e94d2f5e
+
+dn: pf-authn-session-attribute-hash=af8dfd08281c4675c735b31de2ceda79b0ad5672,pf-authn-session-group-id=FtsCbLyQVewH4Cxa21Mruxg0a,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: af8dfd08281c4675c735b31de2ceda79b0ad5672
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..EvFmHiakb9CvawgdGXj2fw.v-1zTZVJpEmMbvLKnvZJuFTe4cVigKDICaBt_llxUIUaqHmjdimWWLV2ARR2KAOCfglLcUrr2_1PGUAGb_aYmVWZ9vF227tOtD9__mHTqc8iFAubr0Jnkqwnkb9KDDbDoUqgXFr_r_7CY5LENz_GNuY2TdKOgFu0Bh8GnlNwMgRDQ8eb0Vbz05SzVLEaRS2MJ8UoOTfB2r-H-8gU836fZDy60-Olu4zC1p-1rlwK6Vih07DQLwvfX63d7lUQNRoXH5bJV8veoAXxSlI1_u3VH2RU2eYn4j240jYt5CCMdpyXHkhECEUnrGKK694rvl7k93JVNYbfSAsUyDnho2GvRXouC7uLrE9PbCbFub9By1sFioZVGcg93eWSKh7YBFZ_u6mFi9gOQvuQO8fLcFoy3ze7fYg_OVFrUiiRKialVF7k-zxuzcGgbYDwQ3UQHYUvExxLEo5Dl4VfVrGeT0drwNwGWe6ZBZQZ_d8MtalU4Gw78KRVFdJ8rHHypG6jyLnwJp9h1wUVMnafQIs5nTKEfXov-L3VW5O3VUg8Rk2SPdaGWHnniHGQOVJIZd5Qnd-FEXpezPfbHiyKI1BVVGjaPu1y7ghKkNh7sdF79U7i_3qediWgVUPmRgp18BIUE4DF9bMOiuf-wk7Eia3CrIthZzNgZYPgOGOu6PBlX-aFel1nRKNE990IEII2CUST9nWfFHzS7H4V8eEHSrkNepi-G-344ub4a8w2p8QM7jXSVJcKOq7Ev1WF7KurCeep20jQLhLx74j39LNWCMbQXePJAsRbQxwpEFjWLg5WG9G01VusuY4WjAXj4pKRbJVy50L2e56TIUTjzjo-fDVnfE7qnNxUCos2p8VCUskLdARWx6B34i3JKaWYHe41U70fS6n9Uy2uYMBc0c184zEGro_wZxeMuv3QfaN2IICw_WFot_ew-3lkaflYaFQUng69nGl8GtKevknKmZFGdd4y3nwoIKZ8R-GpWjzD51GSNQaCnaiRE1RJrl1gFbQeYcVnM9GtIlV8qp_-mt9zd9HxcbxqC8aDUvNK-TCp5CZAL0kgXj5X2QFSSvdBrCX-6gYAXaf1wpr_FdG3dee6fgc-9g2_5T3vjykLH3WMQZtsVQ83nOipI72MD57Z6KuiUu8KNFAtvhkvqlzIUklGTJ-HmRLBu8LeEANqJtQ4tUCUTsFQf-7vn7-JgihK_dZlDzH6JtPH15cNEiHeatkSNKT3sNgK6dUPXmFAEMueP43KcXvkXymHG1espsJe0rExaKl-IVUV6wFePAnu25HqUSHYKbAuWMPnsWXbefgybk_8D700Csy1PDKh1BiXbs1w10w95GGz.wN4uXiRlMlSiHNlHBL6zsw
+createTimestamp: 20200416232045.754Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200416232045.754Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 5982b3e5-06c0-45dd-81f7-28b1a59b22ac
+
+dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=f7MItOK7qpedrk4FCIceKxnSN,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..fjRND9FG9w2bf-GDbasv1A.nWe-rtDoNAKMyLxLSIljbi06Mkoh5W2w4_963mIK-FeAY4eYA8yikpp-b4kW4ii7sn5izexHUym5fAuNgB6GGb2ZfO18re2LPARzYxloMZBPoyvnIsymIVNkGxKwAgwSJVlVsf-W88batuGVZQNNjxFKOeCz2AmZDKo8ZqEr3zTZd4UZXnMe1BgEzJ-oM5Bb8-b46VoCnc9Ud9qC5pWkXFi6dmWIywE6jo0FK6tXitWOFNa0k-83GT9KMK1d9ioG0wvPknYqZ2WgAd-8x0O1Mhy3KRki5PUWVqtK_84HgUblgcO3XHtdgux2cFe14SV_rJtgMk-zj_qGxB9p5rzlVzaAV1Dv2rN0IHYWZkKmbX_FpOvlPtg-CFCMC0bA4Bu7uyE93g2lWoNOKEy0i_6DGWta1R1Lt-InKVbMfRhif2eFvnxFN2AACLc34lC9lv5wBMQ4x56HTj3CYym5oiiik9817kpIcMUHsrtIIEqxFa9_Ty9C2vNqZ5eQHvZPb9sKoOV2R1HNM7YQyXiiC0Pe8GcW2SZd-EhvMrqLgj8hwaOdIYuoVrk5E_-o6JuvxCUNdswUSjw3iGOwx0hFq0ZJXIyNds66rvvLunbEx_FHefOjQ8BD3uePRH0P59ekqlwyh8FtwUbAR-69015Aqa_7Iwo6V353yYxz1vPd78C0t-2v7fvxD3fJU9pTC_DTSfS51nLT9yQyG6IRf-YgbOCSLakk_0vpQLCvyPFasaP29A1ZBcGtNYcri1dUWgbzyvFxsFFfE4Zhc_6Rew04e3yNtcvprKBG58BrmAuCwlXXUisnWlM63IaM6_RCLRsnNltEbgXxsOSCESySjVPyJo1aNhNq-oShlrzS1UXODaZ3jSqSPLia-963DLYhq9ZGsQyPRrTa_6vMGNJW1M-S1FwpOtTeubypztZVGbnXNlplqXSNgAUED7S_graKYMRKSivgsL0TobM2viVTlimm02d4iruaS_ym9J5w5bvWoa9BDtEjDa1kxvinFOP9tkJY3fKQuHzNCnozSiokWMP9lTSbC52d2aCMOznNkCGXd_6vNvpsqX2nLqJ5_gqQLekiE7EIqJBdtgMeG4hL0GxGEi4gALtj-7Lj3jtd5NNWyKQlzGQyn43GZRemHEEZEloBlsEd7P21Wvrw7Qw93FQ2TONF-eiiqJeNrgqx6DZhpKWGMrtHeTyEALWcwNAkjiBy7Ce1mW8KqxISrELE21blz2ZvLEMZxHtfMAD38CDMDi_qKdeOVXPASJTH-OniDkG4bK5DXGI_ccQZ1FwJanO2PiblgorYe3yr6anHYqeNv5i_itGZ6fyIRz4iqwCv7smggyUzjgsAj9tddVnw2N0sKq42VT4tGlFJe7Pl_PuZp6weWrIsEOpU_tQ5HGQGamZ05yO3.9hr6x5-FbrluMIjlJQpb6A
+createTimestamp: 20200417145450.275Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145450.275Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 8d632e4d-1890-4d98-9b4a-9554ef477b47
+
+dn: pf-authn-session-attribute-hash=670d66175260c89db27912cb39907ba0f150105d,pf-authn-session-group-id=TGD4h9PIo11GgIksK65uQ6XkN,ou=sessions,dc=bxfinance.xyz
+objectClass: top
+objectClass: pf-authn-sessions
+pf-authn-session-attribute-hash: 670d66175260c89db27912cb39907ba0f150105d
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..TKZG7z4wWH4yj5j-t-gjhQ.JMnloELyTNebAXqb2pnYRzK-gZlCnS5W2AcxIveyN5pMguJm-XaHT_EGwibw4qmKqXh-xJ2HcyMkAT1vBnWXirrBNnjLF4sZ2W89oOhJ287iT4xhJhTi5cq56XRMedXyytVSKb6VCubuWNhjzjjYAiYulONt7XWOktv0lLw-VxR-gh7pChw-3Lg6X6a8eHcjxZKz51dtIkqaYnWMASkPQ3Vd9I17twqWvrw5TtANC-yjUB1laItyR_rVQaC11TRHofgRh7U12gExELy5S8mZosPHAQkERtYod9DFQCyZER_FINRDheJiX4QnzCypc9-ybCpqrYbU_jIYGWmX0rKPBsNRg0OuWufUn8vgBoND0aqoIrNTa2zrIF1Hr98YvuKQHXaCfQALB8onm4gA1b7FW7rfKipV1NgQZ64_DAu0Oelv1w9cYZbMSnFUOVJgPY6DPY_gg5wC9uQXRJBOjs6BAMey1vMkHIGC8Sz5YjWl3kA7qt1hdWwwC0NcMgDzrl_wkn5-2SQM3qsdCuwtyYBfIh-X4ZVixKnag0_Ri5KyIWTxLVAllJfopXa-XPxD4GHGCeLP-rm6QjrvM7HcUdJQ7N0nvI20WkWwIvFUpu5ylpNdfwRdnyH55QsrxlSJD9KRtJu1HYchPFRdTrnWoVvBSdixy03SuFiHt8kTrdwLd94s9xpJ_buxLoDEoMywaQhwghjqNEwHu5lN5oeK4tyTgdAoFutIsLVBRcT2n0P7nFcLDljTTiVdOarJa6JN2eryyvLMVt92AE8e2URmYMC6s-knT4-oEng1m8Do9YQf0oIr7EnUltXhUt9mlqy03hQ-oUHBC5CJMHdd1z-NLEFBOMVbsYsGhfNNhyVza6TQY6AV54lp2eGHehkRXjsPJAuSrF2x-kBViVUVb9_LfgAux3kW6jQoHdTF5cbnNjJ27-bNofJXltk78rAN1pMt3NXfyYc9NnzQlnGS3lsBm0vwADjx6hK3MkqiU_JpEol2ukjDGRaymS6TOkroZxGzrNoxBR3XbAXiyG-h_t3APAtheEXI-62nh5qSfDVd_U_S5yvx5H3rwHoxC86L2qMQoEcBd11MVZ8RFuQmMNSL4FZDEegXWcb18mlNr8grnHveSL_3eyfG5uFp7z3pO2H905timnCJ0YkdZZI-5im2jMd1_VLpu-T3j--gLTVoQJViiVksnIZy37XH_SBYNloUw1gOgXitgSY_tMXlAQmspttCNmrofK3nXloogRyGZCFx_vJnMkAdQp5M0-1goQJGaK7lrehex7UtnfKlfBVRLSpCcXODyE6xmW81F1EMqb0tpaH6VNLhAtSJefnN5D4k1w2LAOGPr3gZkiCNlHqJCW9Pbtypc0AWjfYdvgIiH-E88ijyyW5-hihpxTDWMYAO-_WZ.bCXbzY8C6LI2SrRqy2rK0w
+createTimestamp: 20200417145600.954Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200417145600.954Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 2c0581d7-86cb-4229-8ae4-d50f9a799c97
 
 dn: pf-authn-session-attribute-hash=83dd6a5efc356389f0b4f248429ca996b8b974d7,pf-authn-session-group-id=blj5D0dfTlmgSbzP5u9SlttzI,ou=sessions,dc=bxfinance.xyz
 objectClass: top
@@ -1002,32 +1287,53 @@ modifyTimestamp: 20200415221801.173Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
 entryUUID: f558b19e-dfb8-4bda-86fa-3fc3558ab468
 
-dn: pf-authn-session-attribute-hash=ff53867952847be1f442ae5ef94f09ef5dcbc645,pf-authn-session-group-id=cIX42pfbAH1XLy7hVs4VGOZFG,ou=sessions,dc=bxfinance.xyz
+dn: uid=branchlyle,ou=People,dc=bxfinance.xyz
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: bxFinanceUser
+objectClass: pf-connected-identities
+bxFinanceUserAuthnPreferences: Device
+mail: rlyle+branchlyle@pingidentity.com
+sn: Lyle
+cn: Branch Lyle
+mobile: (813) 843-0545
+givenName: Branch
+pf-connected-identity: auth-source=pf-local-identity:user-id=branchlyle
+userPassword: {SSHA256}nDe8ollFVdgc+Fful5xF++6lzn7JtJtWDBjZ6I1tMecjkYH0nK2kLQ==
+uid: branchlyle
+createTimestamp: 20200430023856.489Z
+pwdChangedTime: 20200430023856.487Z
+creatorsName: cn=pingfederate,cn=Root DNs,cn=config
+modifyTimestamp: 20200430023856.489Z
+modifiersName: cn=pingfederate,cn=Root DNs,cn=config
+entryUUID: 7c74e382-325f-439d-9249-7f1eec24cde4
+
+dn: pf-authn-session-attribute-hash=61058e25396adc70ac14f82dfe279fc5aba8899a,pf-authn-session-group-id=zpye0WLgRb9JEK7DIGVrUI7AP,ou=sessions,dc=bxfinance.xyz
 objectClass: top
 objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: ff53867952847be1f442ae5ef94f09ef5dcbc645
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..cHglir8POuU0fxExOdP16A.buwXWoG_2szTr5Sul_cSYQ2WBqcU3eFT88Of5hdjHedSl0-BB622YRiuG49FYYhjuK7UaUNcPvVSFX1MmES7YiAa0PWrTbrYZdJswDnuFJaFRN9qVkfNxTkjlOWOmpBa-Y4eHNhbE_TKKWG1Efs-w3b5TQCrZIGemwHA7Rvd9IyVcnJBj0lTYLaksEowcSPgo_OwOzYc7k7UJPC8dBNb9WUaLLKcMSMH6OiKOK5T6Ns272EDNQalwTvWe9GCmw-yD_G0vQixKu8gXDZNIDSvbMon_PUlMbwLxN4THy2f9uSo4KTdbmvAd8--2AV2HE5EsVijcMBc0jOlArYrzj7LcbFTWqZBe0HXNx5so6MKfq362-z9Ok61fQ7rOpGhJknUTxAJgxweXRo0kgbp8SoCLAw0eXbdj3c3hJwPXANojxOMotffv2u6chnt2tAHPZCGImLdZde9_S7keP6SLoTLZwmxiSY_nJIA_KngIVi3A5HSMWDlofQJ1GWoody6OrlQ5WGiu4HPLtpYvNDt8hIpEr-wXAklb-FbCOo74u1L8Pq7utxI0sgPLm5q1WCT-JvMmBLPRUqCIntsXeedfsAxu7CCPHo-FZ9JAdE2yVydv75bN2oWD6Uu8kZHeZOk7vLzFKzoguJzR1q6A_22iFmp-KWqfcbIiv5jSfThr_J4Bso8OVIkv43rVBt6fWQrc24iL9AG6rGsQDHoKgNsD5hg7dTlXM_qDTnZj6yW8cU_Lv9M-1oLPrgKpGnPqqk9MtU4kV6e3kXCegVTtIYtwMszzkTZj7qdndh5LBDhF87IdwTQ3zMVeIOSwBDktDyG0ePxcP1ypwif_xhi19WHuELEvKS61LQ842zQjW60JKJcBAbFW60f3ajEhSnvAl7CgrIiOD03-eytZSCGDaqvM1FgYpn8E6hVrsuLmXjiExYqk8nhHqS-rbIt7NPaObY60gDDrVoMfCSAFwGciHG0VU1dWeNyVqKYv6J5_udSpHCisq5p3DhQouSUuJnlHoRCYyKst079stLIIVDYfZV8yWMRBZlJCzG7uwDAJOPrAtABCaUMUWFo9eYtYxCpSUEK4UtJa0pvDGZYWb90sCQj9aqjU8v3ml2YMMFWeisp8TdOzkJ6ixqVo_Ft74gc3gff8nplkot3wNwYukQaW8AzPB_pP_hMM6BV874VuQ00T8KDs3wP48F5EaLbaJkcNw1_ewZ5AMnouUqm8KQtXoewquQ4rMNp4q1CR6rW3cUIXgmh0rYyDkBzZnLvbbovdUMCe1JL_BmeItLFOxUSRcVa26fDY0ERl2dK44R3M9hwlbZ-HzfNK1xJ8mxM2GxhJLQWxAVxqHbmDB5WFGK2rSOayiSSgPFh2zA_qrx5ZoXt1Yq9FxUlC1qVO9ofD9v0qNoh40mj.nqfy3AKou2-Vkz2k_dqhgw
-createTimestamp: 20200416172308.244Z
+pf-authn-session-attribute-hash: 61058e25396adc70ac14f82dfe279fc5aba8899a
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjIuMiJ9..U4OlX36s96uZqRlKokqeWw.qqynKIvQmZP3LFwy9MWlsvHA6fvpgF2E4H3rE29dsUNs5cl5bb5JSLDwAxdcdAQ7o3Lgd72avmeaQPFua2twmKuQSC_U_iIVrWa1ctuXV3LPdvxhRYcVua65yLJGbSbfqCOzKiF0Zyas0PC1tKs1Bi6yyBaT_3sECzSuA4G2I5px5eFC9qLOjsXmgzTkhG6YwSxB9pHrOJ6HFEel9NSI_APTQI8a0pUCi4rcPSi9PH3FXezIVTuA6SxQTrG0HaB0Yb-CHTl67Gcz9uYCIUqCuca0S8r7Snon4z5dXsK42DhCogOolbZCj_1lCGfgHzkNW_SXog5Y6K40vS8P2VPZioyZGRCa9gQR6f3p5eL53i1_prQrAXeO7-xPnkYYBT5iWMkpMTgP5ZRJUREwVE3EdpCfLEZFeGbzhZD05UU79PANxJfPTkulnoOB9LR6RSkN8QjafEMQ_Vqrkq-eLI6QoPQ1z5aFuhuPv6NnqsGNDSO54tUfjsP7XOfwHIy6YLVk1ZoviDIQvOohPNUHGx4JtI0yqXcBvTdwNr8eyy2T0UVvWTHyt53tSYqqcUMdLLH9c-Zvuuo_-hCBTA4rUHf2IvQUQ_3CmQYpoIpmioGDqS6sYAQATX7_zxl3b7ly6vyRG9hNppVaH9NtOjJcmPjn16Dud_vtYjOjVtEzoqICGLOoQUb9SxmE86m8sPwJpjdwQdyIeM2Iq6P41lAGWCJ1DxJOD1joIEsCpPP92_L3Nly_RxIV-gcSkWqTHdWH_qinjATCvR_-XTqGqRq6xqmV9li2fZrv_J5QkCaXGkxqJGplJvXAaUtzBQvk0WCAU-DOeBXLdd2oNa0ZRY7WHmVKnTLyNNeB-s6ysAL-yDUMiwUUN15IoWhM1oEfZm0wvMZyUTXSZ_9AQJ-xOVHAvfNJYSyIvrJhVbfhgd2MvC7QDXYeJVImivtNrWTLNYvGLyqCoILpDilVnxGlZb0RGwF6Vp7pOgWk840K03whkPMnwlFbSI8vjd4zsaiCEYtX6sHa9j46xmgpLw2BvLH_wbu59uzXI-yzrXvV4AkLPg1PSiqxbecxvPzorAHT-tRSBmsLUlwL7N1ZjZjFVRUKr_cFRmWujqnO6XVI0M3KoFik0hcJVRywpAy2YP9opDDIgJ6lsLPz3iestPBnuWhXbN_4lSFs1jXMTN5i1xZb3dWzVdBkTceqLeMUlDmwnOmNORUtTvDVEvTGeCIPE5LP6PZPmfL-f4Z-8f5pFmtiqb1xfZmRlf5UkPiaqPSB7zwkTvz1ZOR11EdiroIcvhaP4FJrr17Ruc0LgX1-TZ6npghu2hlIhhA3ckkfc569Vtfiby6SI7sT5PVLgi4hdhYgFzHwv_iKIcHfVDflm5RwIPzKcpM.9Ri0E6Wjzn8p5Sh2lh2aEg
+createTimestamp: 20200430024225.222Z
 creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416172308.244Z
+modifyTimestamp: 20200430024225.222Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 714cad66-b3b2-457e-906f-568bf070233f
+entryUUID: b483f09c-f95e-4f4c-9400-7d4a84bdfb72
 
-dn: pf-oauth-client-id=PingLogon,ou=oauthClients,dc=bxfinance.xyz
+dn: pf-oauth-client-id=bxFinanceMobile,ou=oauthClients,dc=bxfinance.xyz
 objectClass: top
 objectClass: pf-oauth-client
-pf-oauth-client-name: Ping Logon
-pf-oauth-client-last-modified: 1587061553821
+pf-oauth-client-name: bxFinanceMobile
+pf-oauth-client-last-modified: 1588214575021
 pf-oauth-client-restrict-scopes: FALSE
 pf-oauth-client-require-signed-requests: FALSE
-pf-oauth-client-grant-type: implicit
 pf-oauth-client-grant-type: authorization_code
-pf-oauth-client-redirect-uri: https://httpbin.org/anything
-pf-oauth-client-redirect-uri: http://*/delegator/*
-pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:true
+pf-oauth-client-redirect-uri: bxfinancemobile://cb
+pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:false
 pf-oauth-client-supplemental-info: 44:BYPASS_ACTIVATION_CODE_CONFIRMATION_OVERRIDE:null
 pf-oauth-client-supplemental-info: 19:DEVICE_FLOW_SETTING:SERVER_DEFAULT
-pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:jwtDefault
+pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:null
 pf-oauth-client-supplemental-info: 32:DEVICE_POLLING_INTERVAL_OVERRIDE:null
 pf-oauth-client-supplemental-info: 26:PING_ACCESS_LOGOUT_CAPABLE:false
 pf-oauth-client-supplemental-info: 23:RESTRICT_RESPONSE_TYPES:false
@@ -1038,178 +1344,33 @@ pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_alg:null
 pf-oauth-client-supplemental-info: 32:REQUEST_OBJECT_SIGNING_ALGORITHM:null
 pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_enc:null
 pf-oauth-client-supplemental-info: 32:VALIDATE_USING_ALL_ELIGIBLE_ATMS:false
-pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:["urn:pingidentity:directory-delegated-admin"]
+pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:null
 pf-oauth-client-supplemental-info: 7:ENABLED:true
 pf-oauth-client-supplemental-info: 23:USER_AUTHZ_URL_OVERRIDE:null
 pf-oauth-client-supplemental-info: 30:PENDING_AUTHZ_TIMEOUT_OVERRIDE:null
-pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:OIDCPolicyDefault
+pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:null
 pf-oauth-client-supplemental-info: 37:TOKEN_ENDPOINT_AUTH_SIGNING_ALGORITHM:null
-pf-oauth-client-supplemental-info: 18:pf_ecm_authNexp_00:Basic
+pf-oauth-client-supplemental-info: 18:pf_ecm_authNexp_00:MFA
 pf-oauth-client-supplemental-info: 28:id_token_signed_response_alg:null
-pf-oauth-client-id: PingLogon
-pf-oauth-client-description: This client is used to perform OIDC logons
-pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
-pf-oauth-client-authn-type: SECRET
-pf-oauth-client-hashed-secret: L-XqeNj9-fqzNYF-bnN1UVG9XAh6RC4XAkkQoiQtyUk.cAYIjchm.2
-pf-oauth-client-enforce-replay-prevention: FALSE
-pf-oauth-client-bypass-approval-page: TRUE
-createTimestamp: 20200401145456.465Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 47617177-4cf0-4bc8-a104-2779a7823ee5
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416182553.824Z
-
-dn: pf-oauth-client-id=Delegator,ou=oauthClients,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-oauth-client
-pf-oauth-client-name: Delegator
-pf-oauth-client-last-modified: 1587061563829
-pf-oauth-client-restrict-scopes: FALSE
-pf-oauth-client-require-signed-requests: FALSE
-pf-oauth-client-grant-type: implicit
-pf-oauth-client-redirect-uri: http://*/delegator/*
-pf-oauth-client-redirect-uri: https://*/delegator/*
-pf-oauth-client-supplemental-info: 22:ALLOW_EXCLUSIVE_SCOPES:true
-pf-oauth-client-supplemental-info: 44:BYPASS_ACTIVATION_CODE_CONFIRMATION_OVERRIDE:null
-pf-oauth-client-supplemental-info: 19:DEVICE_FLOW_SETTING:SERVER_DEFAULT
-pf-oauth-client-supplemental-info: 14:DEFAULT_ATM_ID:jwtDefault
-pf-oauth-client-supplemental-info: 32:DEVICE_POLLING_INTERVAL_OVERRIDE:null
-pf-oauth-client-supplemental-info: 26:PING_ACCESS_LOGOUT_CAPABLE:false
-pf-oauth-client-supplemental-info: 23:RESTRICT_RESPONSE_TYPES:false
-pf-oauth-client-supplemental-info: 35:REQUIRE_PROOF_KEY_FOR_CODE_EXCHANGE:false
-pf-oauth-client-supplemental-info: 29:ACCESS_SESSION_REVOCATION_API:false
-pf-oauth-client-supplemental-info: 34:PERSISTENT_GRANT_IDLE_TIMEOUT_TYPE:SERVER_DEFAULT
-pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_alg:null
-pf-oauth-client-supplemental-info: 32:REQUEST_OBJECT_SIGNING_ALGORITHM:null
-pf-oauth-client-supplemental-info: 31:id_token_encrypted_response_enc:null
-pf-oauth-client-supplemental-info: 32:VALIDATE_USING_ALL_ELIGIBLE_ATMS:false
-pf-oauth-client-supplemental-info: 16:EXCLUSIVE_SCOPES:["urn:pingidentity:directory-delegated-admin"]
-pf-oauth-client-supplemental-info: 7:ENABLED:true
-pf-oauth-client-supplemental-info: 23:USER_AUTHZ_URL_OVERRIDE:null
-pf-oauth-client-supplemental-info: 30:PENDING_AUTHZ_TIMEOUT_OVERRIDE:null
-pf-oauth-client-supplemental-info: 24:vnd.ping.policy_group_id:OIDCPolicyDefault
-pf-oauth-client-supplemental-info: 37:TOKEN_ENDPOINT_AUTH_SIGNING_ALGORITHM:null
-pf-oauth-client-supplemental-info: 18:pf_ecm_authNexp_00:Internal
-pf-oauth-client-supplemental-info: 28:id_token_signed_response_alg:null
-pf-oauth-client-id: Delegator
-pf-oauth-client-description: This client is used to Authenticate to Delegator
+pf-oauth-client-id: bxFinanceMobile
 pf-oauth-client-persistent-grant-exp-type: SERVER_DEFAULT
 pf-oauth-client-authn-type: NONE
 pf-oauth-client-enforce-replay-prevention: FALSE
 pf-oauth-client-bypass-approval-page: TRUE
-createTimestamp: 20200401145608.632Z
+createTimestamp: 20200430024151.516Z
 creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: a61d6845-f8ef-4641-934e-b94c68088a28
+entryUUID: c706b0ec-9695-45fa-a84f-6eed78d0ffa1
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416182603.831Z
+modifyTimestamp: 20200430024255.032Z
 
-dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=dg9KxhAQNfiu2uhQNtMsR12Mg,ou=sessions,dc=bxfinance.xyz
+dn: pf-authn-session-attribute-hash=61058e25396adc70ac14f82dfe279fc5aba8899a,pf-authn-session-group-id=r5k6nYm9ispT2h08LFU0MQuZe,ou=sessions,dc=bxfinance.xyz
 objectClass: top
 objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..8xCr_s7AfphnYpKVs9mB0A.0ej2C5O3H29j5KL9X2h-6Is-6zAuQnN2mo4khZ-mQQKAGuDM1KqhlLmWH10-myJS4UMI9HiHgTKOEKRfmgd9KboS_5AVGOz3aFsmYuv9HAzDs_gNddCY8Z0RgNtOUi-ULrdZJiyKntpYSyPtSN29It2dYInfCcI2inElQtPBpNUZC_egqxIPAK9wS9Y_QsFc0gDFrPMusdA7rFWh_7L7Qhm52FR-DGYt7wugjfjtH-h2hn9B-KJ2qxWZYf4rIPAcIeahDIZ696LmY27_sJSP6O5lSxXM49TlafgLjQ1QCLYipJMsVHxsnHEEMA-tZXz9f6r064bSkSuMtK-Bat2VcBS-FLjgA5zEbMFMEel6JGTKBfQsidjbl32rb6StjOB11G1hxqx3TAOCsLfSFxKLy0j12Yddnyxn407rOKATst1V0Ft6vfC1sSRBuOUBun8H0_p3AsMmctpPS0xWIBlUhjEoir6MrFs_uXVRUIKLo_lFXm-NH2lGY0ZsEy_jDY-ktlxAO71i5WANE_GSorJOwErQHDLKxU5Vx3nKb_2OhJzBeQ6G5b9FwlKQJzjuAe98kILUpK1wnnbDfovGpz530OFeiiI941iSatWXznWoFq-TDnNJ11FZ7VvpnGfl3LeIgpo8LTdFpvN5TNGFEv2dk1_D3UkjqHS_U3IUHHUPc-o903-U5r36cHGw0I25myGovE7FejWWes7vsJRyRbv6UQeIqzGXtnEf1VWcv2jqOeOSskmKKStUTR2iODogrYrKgU7TNYZrKJNeiHnocR6YRAjfdCzRpJie6p_vmqLyfgMcJliR14Wt1cRBqIimX22RSOWdq-LYu10qALd1Bo22Y5tqyls2JUZFo7hqDTUSUFdeOFLYH8olDEFf0X6oMFnrnJcxqtn5K8mrOwY7oadrGlqXXslqdzfWorjvZEG4MuPnspkoz7mV3dUczwGmqYvzh0mjNIpTk7ltnqQWa6RXRg_c-jz616ZnKz2rggU3J6Qt0t2aB559SyvfHRDx7Die3Lng1AWrgUyJ0PrRtXj5qJyrG4z0WGxBErOT6Qbx5bByJPADtu-qiaizc47q1ttTUjd4719oIK2fNMPTiTsvoc3oR1QPJEDdMd9TKLfe66S4AgUxjj8Htuh99daCxkAjnbayS4BpgPouwhFwmTIKHgowwE9-JCnXvcYnnAhe2nIl0CUUrkJ4VQjuxP6HEDx24NIus4S_x93od4kc5mKAB_01iBjqlNd102oUMePnHLoRBJh5_kqyYKPbrut6UZ8jr2pRAQN_-0ig9sXFl5ISDWheue-PbkHa65HrbGj91EawOSM45VOMC6rxyeBCyNA0rPqa_L35qPWfgFTCv0lXrXCOMYsVSY71Jcce7E-by5wB8ENSJZZ1FpcDJ_LfcWzi.dUAjPlmzK3UDHCtETz22iw
-createTimestamp: 20200416182813.945Z
+pf-authn-session-attribute-hash: 61058e25396adc70ac14f82dfe279fc5aba8899a
+pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjIuMiJ9..Kw_XORbUKl95itjcRhS3-A.Ceh7IMf3HnLJETjmy2N_fuOVHQ8I_3HWQ-eIJbh_W9M3RnZXgxefP0KoV2fsrC5DvmwVdqOoXWfrTMEwlLDz24VLdvzX5FKJz9xg4GcZOZ2LmTVZeHUTlSM0OK2DFaIfYaygFsFV2v_Pmsepzt1AKZF0UskGOnuDSneySvAHTDU8PSlDhTN5ea3sY8LMHglrV6oFP8jsmZcIb5ydmf2WpFCLN8eJCg00nz_zBwyGe_2LIgfJdP6XDCNL1OvasF7Cb39c5ZyqNJqrwY-vfwC4o220yGY5M4DrxM2Q5ibdFE1aa-xPBw4Lp1U9rqgNQV4LnXAf-YgI0c3t6lywiUgYaGw8jNM5QCByT3MGG-jAlT32axctgn0WqrclTVt1Y4d3mzW6kXxtShV0xjOVQYBKV5z7gWjo5WNQBhlDvFbPNUoyeS_ZAWCq7nzJIxwR34f1YXemJAh0NDG4r0pNqOIOiztbTtjlHDVaAF168kLN9H9yDtukjIv3VreuhS4F7ekC6G6N2yS7hp2voFDQuCbz-Xk1qlPctSED2xHWfP8z83dQiAnhoXtcKlM0UyhKeMormOHehdTpK6wz744t1zU2adiCbUviVqmMjCGrejaAErlmXUOyt2vM4FVJRNfKr9ix67jGdrt3qE0lVQcPEDHQALZKtscrwOU8qFhQapV5Us4moEQPeveitYGGVe4FJweTyJE9N9sTfVrw5jI5RHdItPXWVSoW31w7hsIWYhsJKLVhEiiFRiAsYog5a9ku2j31xKb8yEroLcwutJSucfb49RPojW40YDq1GxXPpJixnF5WIMglzl25XpfwSMPAWSdrDx4prCyj3JkQLd3W76HRvbVrPj37NEAWxwdmkV2ielaeiPudCsF4t0sz2c-fJL60cTCG1zykpVF31EiynTGwsME-CuPvSZslPn3tEel2uS83XyasstciFFNJbjuhUsFJc2aT5Xd_T0a4aRyDY93gsrhwKmIOwKUjyK1F8lLkW9hL0QMv0ZJtAibIHROuno8JKyKfBEyK0yMR0s7Nhsn9Fqe-IOsu09KswV1zaZwZFlTR9vY5S0KScmXbwzQFbymUazh7QGqRTZnvnSCulhBSugHnLQkVCoJ8gbBKJt_GE2Cr0bIeohR_sZ6D4nMq4n8FAdtV8ErMfuEGL8ppFafOwYNfeB6Tf4jsGlGREjAv5iCTJZb3H8kREO9bBfrmO9vq4bZHSUdLPcbO6G9zN627tZ_SzWOa6Zklkb1s567e2BaEfnoYQH1Rnh5EA6eSCSTP26KGufY56lS8DCYpelJ0kLQPw-CjAMcpcdmQElcDdmns90j7nnrdkRT8fFy12kne2fnJ941FRxKDf3yS-x6_7pT_FVdfwUqCzui5_xYAS2s.nA_6icuSw8L-m-AP827-1w
+createTimestamp: 20200430025002.058Z
 creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416182813.945Z
+modifyTimestamp: 20200430025002.058Z
 modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 93204cb1-cc0a-4632-aebb-e96f945c9f92
-
-dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=Y3AETR1UneBq8eSl3UsB7SgHF,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..tgG9NNyss-XPLr-qW1AxMg.-HJQ8S8rNNpOPQm7SanRa9jtdK_JGXI6sc-FRnYx4SpA5Pc2xNsKGLfeXykCLb5K9qqxq_H1MQy6T0c54o4prtsPfJ5oV1V9HIPwm2guxHAo9bziM_iw8SdXVatqHXWqlr2i0gLKq71HQgQm0I3EOq1AdE18Lc3g3vsE8Wk08ARAzYyTGNu0p-vWt7FpMdUJ4VPbEfzlNf0SDuYzFnCC785vs5ogzt5Allj8zBt3NAB_nnyjaFRqtYu4Ii-X453mM5iV0pBq-PyEL6RP3zLzdxvbAIt_LVdtZlvTO2fDt485I7_A9DZ0dUQJDSpEauIPueaQ6_0b0f1cnVyVyxzUMaI9wk27WK2OT8cota9lBgn6utQRS41U7DFIDoTZyHJEI6Bm-XMnYVNzZ9QSljtlJIypVF9w1nMpnzJQaVhbOae0vasLD871PMjrHMqDSAPmiXclEj63UfI2nOX8cp6dHkaQ3Tq-BhPPPgOnK2aoH3OLMfX1vfJwYzkPPdRsVIXYvAe5Y19St9oy3Zxy0nxLJFKlzSMOXWbC9wDyXg4BO6mHvtpzjyiYGSG2Asuy_UtdfLEAzj7G_R_K9tQGzppBNOSWYOKjmg_X3I9ce02miZqmBl2kWttjqBqUaj9gCwD_upGGf8ThyHBOGEjP5c-32sx8WZWW7xafCj883H0JhD6cpd5m86QAqF6fiAnZ-ENxy5tUR3Cl964jbPBUUNPTQBpd4hoDiikZFQzpvpQx149oQTZnH-cE4vSEmb7vIcuhnbBxeOrpVv4iu14JmfJJ2c3qpvQGUtw89gQ17cjmZv-vyHzYdtPdGXntJ5HNngVZCnrReLHbWlDgOcUWnio2lUqigxIYi91x76JSuouRK9uIx9LFoRWI2CgGTFfr-l_HkwE3I1fnpEBlBQw-e_RhlkY9zZk3HCCuAddm9_zfLAfLsyejkT1l7ET1zkqEDqMpEaqdbZ4D3ceEWuL4pUYyDvDd1--Xk8FnfUJwYbY78DfRvorOfa6qv-qNOo0WjYrh7gwp206OvRoAw8xlt7QtMF8BxD1eLXb7DIrKa34Fke8uu3OItXF5OJ_ZvZANp3-j9-IsHMFVhwMYixxAm9G03fYNvEz9uNixObw4hUyAILMpFaW_CoYhcK2qCC0v3ckT1a8QG-tW3qCzbS0RGXqUvSSE-2x0Ak5oxii3h6miPCl2O8MZAr3wlAF4vBHZt3cwHTZmOUz9PbtNWmDlzZB6Nln--sRaYLTMVNQ497OC-AVjmlsNZrFB34W_rraveJ5stSbsxtCmNckCz7Znf7Nj_DYTY6q5RhGghflwzVt4q42KSHKWr1y8wWe4CqZ2FatcEuoHHnzNXfnXrQBksSCZxlAahhMov96BjrdFnVvtCWVANdjDtWLQMObKRYUlXrZ5.t61RN3FcOH-7Y8KLLyyqjA
-createTimestamp: 20200416183256.656Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416183256.656Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 1a1b746b-827a-4c75-a96f-6d7d54803596
-
-dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=xs5cqWJOQCQVrOLvjNzAlzfjv,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..EQRmuUxoj9kGITVnr0fRUQ.82ioWGbhGEt_90WLt9rwK_9zbaBOLYNVey3Ujy4ekqut6Dmkp8Fk1IQ08318tVULniQfKaHe4uaEcxI-7XxBBHqAeQpyX1nD0zkyVr4bJGFbLhjJS8lR1-Y0MIimlkxq1RPnnDnbjfhcM2WYgt6tbhRvjeUZknEJ7v0j-IkEgyw4UVIihZ9LJSpqi2CuvaK5otnpPm8SFJ4lYkJHPrap1sTpFRHtFFdE8RlWUqCqB4ws7E_l4AyPChb8tmubX0y62OBC1ljrMyUgXiabOJJa7Y4zKGdakZBrKjQPc7eCuS3dvchKAxPp6PQQALc7gjTnl-Or9g7Iv-hd2lBHWryHDLto5UCx0UCPtdEU2CRYJES5SSNRNSsfjF1HL2-rTVZNodyXalzBo7qMAN4XO5mJkdWDouO0xVP44sFzuvXRJy8XfzQyh9sWykbu13ewRudpkFjWhbDfYRo60-PTx9vInXHq9OGUGibSa_8bXlHtsTBacvlv6OUddktZBFFLnnJr44ktGFJpW5o2Bis6OFr_-ftMF3zzLTXlY9iK9A7oEIQDBnKPOYbTE-nzbDv7mqFQnn8l8jOCWsl2g-91DUigB1TxKUZOBNTdUh-jD_oTbHZBEI6a0gnDuMW33OnAnsVp__OMc6qPsoF0FBqu20xGgkEZQKDzpl9bVkVAFfIh4Q6KlgU_bNHFiaFlGFtT4TxN9bf9_Q2uvPVyoy-kHt54zxocRvTMYdQGjd6ZtAoQVVLJ3JKRrA81XRQUHaGf4IxmoMR1N7Xj8hVvNll9VmKL6etJtmQ9QymYTkIw9jMh_Cd2sPQUYSca4N1FXp3IS3yvtTAAEnVOYId2SU5HDNBjuwd3fjYqB57NzdbaJQ4tWQFd-A0nGDz-b1yjx0rWXnk4TI7MrdLD_U5nSLpjTVP_HqXeOVxkDiCHWLR2rQ7jmcJvivdCcpAYMK_vS0bjkRElsTyIsxCTCa9JKcmqYgBJKgDHDHY0JRBWpcnP5iYL5KnqQD6itz6E8ucBQ9H058BryY0IQlhQxq-CWgWPfF0nQhtiLlYPh19l3bQNU265jvkE4gRMr6Z4x_pJ5Dsra2R2cLpsyaqwrICDD2aYis1-VJy8J1R_qvApK9JF6xsMdfTicpWhRUC2k6U8wLOs4zzLw_hN6kHEStguE5sjiI-9u9_cs-TXufTTfMx1cAl40z1uF-MU9GjbS9fJ9bg8fRMJKKf3x1iin-HweU6D31LiQahugyUrV7M_ptm_36CgQ1BvakToqKNqbDzXEni8_6rJ1KVCH3Or-ot_1rkHOGrNwc0CdMWwfckiWjcHPUs635Iic0BuQ5mNhawVCyfXO9X4ORMGuqNiu9r5Sv2C1FSwBDnOpECNqWYcbAmLgtJrJQu7ZPmv_uTgm-eZVU_xXwBC.wmILh8DmjpFlSQAkWsEIbg
-createTimestamp: 20200416230631.622Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416230631.622Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 0b45d206-c4ce-4cc3-af3d-6744de3a47a3
-
-dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=IN3uBldWyJs1pAiG8JuxuVTNZ,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..opB7MGoQJ8l1CItTtFB-kw.36u_7i98-QklfptUxdxBKajyIiLxkSa3c3zZR9R-JtFaKntdqv2oJbhUQaV120ECRarx6IBPd6nB8mMyml6C1LjHBnnRS8GYcnzDx1AjkQsNNuP-OfU5BiinFTdKKOjZ8NxpgDGPVbpAhg_G4EnqVMGWjAQu74ct5ikFyouWlO6Ws-atwANijT0PAs9OVJPNoohMuVbOyEzLFYoFZeaHXgBvrpiGukAhHdQngWPvVB9bRLIjXZJOxU3inASBIQGQ9Yq60IyPLwqcNr5S5_zSaxAb0SB7jpE0yzdhwZHHKC-dELh5R7CQCA0LxNmX9lGCNiz996098hhmCgWNLOynPWLV8nUtHX05oVY945IjzQJWnJdAh75gxOj45sRdpp0wHIbICluD-u2sggE7t1cR5ntqvbf5o0MHHUYmCueCDihm4hFhTjnWFEhJ-nAr02Qn8FmqLdzFYv_rklN6vMF5G4du_Nus9GgjIC8tL6_iqJIvyYmvRwAVrQCAQl4ErG5desmIdD8NjAgxylTqzjm0sxahnWMi3WFurjfATXX_Ht5_8LUXlJj26i2_PCbK8W5YLtmBIMYjqphDWxaFl0M3nXYOwhgTmryM6XZOzUdOkDH0l8ivqgPi8hg4pnLSsTUnk8xa9KPPgrKCsRIcflLJ0dC5IhnLpb8qT6x3wg9kv4nJDLQePsZOjZndH27Y8pYp93zhO0CM0KOgprm6WiPGUXX-aYKJh_DW_n1TIVFOWbbBnRVuYBo6m535KZSkV3oOqG0iJsgj349nzGivDM1lu3ZJZp7eNa_B5zsA6oRZFP7xWxJp_DVSuUHxJn7Xugs4j7i_Qyq6Y6uGOAJ5USyXuHa3brIatefqHrq7qqizzn97vA_ER1V1qNYzFGsEsegrJuuiKPv5FE0SApwFhmrj2K9mHi9-ZPXSqSh_U-hM9Z8aklXrkcBmr0cLolegxrvjD8e0jAxSEC1auHcLUhXVLrEt-V2q_I25gOgVlVXCOxZk1K1oqOSxKlouFQT5VBOqTLRX30E88ppzf5fpphLS8Wkl6yb1xtkD2V2gOHRW-N7IAKnPz84DHPrOCkAB-8GW3EN-CtdTDBKvFhLjcY6uHJ5hXoDdtazPjsQxSBR8bgXFodcM3-hfrU6D7jAgTunVwOwsNDW8Laf5mludqfAv7AyhhK1vnlvkC-Jy_Rmags1ywEvYxSxpF-bJQJdvftEocvU4KZxQdWw76imdBlKkcJfHpBXAwv0wUvY8lt9y4IFn4Njmk2eZtSYZ98Zn7b5dct9buAI4lE0bWRCPz9yiY6qUjbkQK_Cj-Svd_spM6_1OZU4fTEgfiaUhsXk2SA81uopr7ehHDYbXpmG_ZQFwhTeoCI23hNUm1qKJn6pQd6wi_R4twA3DpW0o1ivKxccV.AievkDcjC2aUtdrMC2xzIQ
-createTimestamp: 20200416231632.190Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416231632.190Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 9d75c307-be64-406e-87d6-3a897e66cb81
-
-dn: pf-authn-session-attribute-hash=af8dfd08281c4675c735b31de2ceda79b0ad5672,pf-authn-session-group-id=FtsCbLyQVewH4Cxa21Mruxg0a,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: af8dfd08281c4675c735b31de2ceda79b0ad5672
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..EvFmHiakb9CvawgdGXj2fw.v-1zTZVJpEmMbvLKnvZJuFTe4cVigKDICaBt_llxUIUaqHmjdimWWLV2ARR2KAOCfglLcUrr2_1PGUAGb_aYmVWZ9vF227tOtD9__mHTqc8iFAubr0Jnkqwnkb9KDDbDoUqgXFr_r_7CY5LENz_GNuY2TdKOgFu0Bh8GnlNwMgRDQ8eb0Vbz05SzVLEaRS2MJ8UoOTfB2r-H-8gU836fZDy60-Olu4zC1p-1rlwK6Vih07DQLwvfX63d7lUQNRoXH5bJV8veoAXxSlI1_u3VH2RU2eYn4j240jYt5CCMdpyXHkhECEUnrGKK694rvl7k93JVNYbfSAsUyDnho2GvRXouC7uLrE9PbCbFub9By1sFioZVGcg93eWSKh7YBFZ_u6mFi9gOQvuQO8fLcFoy3ze7fYg_OVFrUiiRKialVF7k-zxuzcGgbYDwQ3UQHYUvExxLEo5Dl4VfVrGeT0drwNwGWe6ZBZQZ_d8MtalU4Gw78KRVFdJ8rHHypG6jyLnwJp9h1wUVMnafQIs5nTKEfXov-L3VW5O3VUg8Rk2SPdaGWHnniHGQOVJIZd5Qnd-FEXpezPfbHiyKI1BVVGjaPu1y7ghKkNh7sdF79U7i_3qediWgVUPmRgp18BIUE4DF9bMOiuf-wk7Eia3CrIthZzNgZYPgOGOu6PBlX-aFel1nRKNE990IEII2CUST9nWfFHzS7H4V8eEHSrkNepi-G-344ub4a8w2p8QM7jXSVJcKOq7Ev1WF7KurCeep20jQLhLx74j39LNWCMbQXePJAsRbQxwpEFjWLg5WG9G01VusuY4WjAXj4pKRbJVy50L2e56TIUTjzjo-fDVnfE7qnNxUCos2p8VCUskLdARWx6B34i3JKaWYHe41U70fS6n9Uy2uYMBc0c184zEGro_wZxeMuv3QfaN2IICw_WFot_ew-3lkaflYaFQUng69nGl8GtKevknKmZFGdd4y3nwoIKZ8R-GpWjzD51GSNQaCnaiRE1RJrl1gFbQeYcVnM9GtIlV8qp_-mt9zd9HxcbxqC8aDUvNK-TCp5CZAL0kgXj5X2QFSSvdBrCX-6gYAXaf1wpr_FdG3dee6fgc-9g2_5T3vjykLH3WMQZtsVQ83nOipI72MD57Z6KuiUu8KNFAtvhkvqlzIUklGTJ-HmRLBu8LeEANqJtQ4tUCUTsFQf-7vn7-JgihK_dZlDzH6JtPH15cNEiHeatkSNKT3sNgK6dUPXmFAEMueP43KcXvkXymHG1espsJe0rExaKl-IVUV6wFePAnu25HqUSHYKbAuWMPnsWXbefgybk_8D700Csy1PDKh1BiXbs1w10w95GGz.wN4uXiRlMlSiHNlHBL6zsw
-createTimestamp: 20200416232045.754Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416232045.754Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 5982b3e5-06c0-45dd-81f7-28b1a59b22ac
-
-dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=mfmZfw94XBmcPL3eMyNkspIYj,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..4v-Cddnjk35fZ4LgrED1oQ.2iH2jyNPHY4bj2qYSANTn5sy-ZoCFZAhxuY-GnM1oIGq288r9Ll736KxmOAzNdstIkssKMyZYucHnf-r9JIqTS3oOugFlUL4vqfgemNUMtt6CGJd2hnCeSVGrkV8R51OjgyLxUvNPnend8gMOIUu5RgJJ2sIqQaPZ_kU2PPUyoGVaO9vavlcDpJfv_62fTM4qiksXX5AT7QhsNcMJw3sI9OebDolPU-zQbjstaOveS4l6QG6Cjj-P2meA7lrrJAWfmu16_uFd9Hk1PHxlrTmbqp9BOeImlu87r_chn9f5jpmU98ZHG_WnH06wfifSqiugaBh0ZBrUrAp-A74vNGlbrk1IaSfE2URSseHttuZLBSvfO6o7LP0OW0FnVooKhippLbfQW8Pf98mLOUrvf8-wY4tTumdrsZZ7de-gk9Ym0QfoxGa5Hw2TtGJStRaRxbL-HkO6KE225GVjxLT033dqDJ1zjKNPfWW341QNj2R57BWkE25e9nsosz4kPdWGiE-j0CqkyHs_DrJuBEvnrGTPdPYJGVGkE0zL-mV8Q5UHneHGn9uz0xS4MwIbWIZocRoWQJqE8PPS4yS5IhGgngfTxs6WDINNMaIG7-Zy1UD2GYnmEQYRYXFvQwmFSQmrTp54vRixbfLH_M4TC-3ajmEokJym1FIfgvu7as9NALOUdbnYyNcleLkbDR6kG-HVjxr_ZuMTfopMtR5rFIO3O4otowDJ1n7drL9spKlXeXdNTtc69ufIRGrNzlRFc1T1P9yUaF52scaLF-XTqiuIrjAW9WG-i52-EHHOtTDQSlXrinBP_ROBG_3oKZGeKOJoFbKu6DIsDEEZXMtxG6pupkTWMIh1xkNh7UMcTcXHQY8sai4MZnWPAQFu5xJ0TGaxJj4Kzxc9kY0FT8KBdXLuLYdMRs0yW5d9nRCfwhXwKSaBMkhCOa_AET3ejmqEixSM-Ady5NLbnSQ1coMUyxzaipEglmuq1AqLZgTNg-nnFyz9vylKCXeC7kxcTy1Hv-dKS8SyIsLyk85b1Qbh3EWPQs6tLgbKK3LsRQm77abFfOvZXEdEJyZdNLHqgrRS2mQbX3igj-iSPVLi1Zjz6TyPuX_7rObd30RQjHswu6MEiMbl0vTpajf0VdbpMHIIM6y11bJsng_4N8rG2Hqb5DW9eoVx8ebPCCC3ym32U6RxwyJQ97Gn1FFv-SLqVgqIUeGzdrGwsUlzoys3mIq8xN3RlUj7OQQyPQznhtpRYohdHsXsASP61gy_MclCJYoxeTDHbwN6eun95aJ3y4mx8un7f3TD4uyEIuoq-GqgScjqzP9j1cV86JTTZX9OOKLenQ_fQIykMV6mXA9YFC4W0Mec3m2GXtAIs5Y7nqpL_yU4MGe4jZY1I0B8PGFc86qgWvOJqGz.DaDfeo5DBRvI4WUQMjWmHQ
-createTimestamp: 20200416232442.080Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200416232442.080Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 47315973-3d5e-4f5d-b658-4f33df23269f
-
-dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=RAnWuIROYDQTNEscNx9PuGDWy,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..UrVQDL6lxgSFKWlUV-dt3Q.IredgiHfPH8xbprxqnw2gLWrdGZK2I34sZZgpufRqObdY9P86yhMGpZYooyzbMAU57w-HttjdJhWlt9HeH0Px1hJj8B2XFbud_LOeJ571POSD8wxebo38ySSWuRgh64mHqZ-ZAKd_rSsnAsHxiFgqYron61fF6sE7VDx-vkDDPN3qOAmKKech4Y1KvTL4mUFpia_Bx-PVabfgTXFq4ZEZVbIeFg79RCq1aluuaXdVyyPLIO4LzO96PIOC561KQn13TVwYyrsasgoUC5N8EDAXa2Oy0DPQCJPcQOynV-bhwfGtDQ4tTfZUJiuwXwDlLTabRwAWzl0Hj9LChehGuDD2LIZUxr976V1ft3ThVC-PRqxK1KYOLIpsaUBunQ0tTxWT9JEXGFINtJNM4AHfhWkHF_G2av5IN8aU5t20DBqnEoZzAAwM93OlqzylZmdF8oG7yxQdI2_HZ86lBQIA42vOcuaXEZVVWhyQIP4pX8lSIEp764lO-hXY77iDORJvxixTlTOSFY_v9lIX6T0qYN12pvjvrYbA6teju75h8-8MeWb23AIcbCSFS_plwBQh0Jvm0H1YXq6YlCGIj_chm8yzt0R4abp3ltM9gWebgxNSR9cSLhvQvOw9kThQoLawWbd7wT-S6dC2YlZYk8D9LBblY9R_LZy26OPmOu0OQE3QCmOaBVlf1CZ6qGsJGiQazdlU0mA0Kd46H7WCAdPbELrhaqoXO2p6ZoozHAXin7lKNM5D1WWx7eVCsAmPJlPZ7xLaaDgZPLtJWRIxR88fGTOKuIdi5MTqH7uuSF6BzxNQMHXozY19o8PF4rIcYXhaPb44ERia2euzngk7Ig9zOt9Ds0EKZLMBEqu9PhFNj8VRN4qpKejxz7iLN7kY7XMKeFiJl94OWUfUHDJP7vrsQacmXJLINo41bj48T-RfzZB_SYFZcMQc43DFWIlBqDYcHcJeWgcrvhFMzYtl974VzjE6jPX4Z20EyYSmgnbPx2NSanbs6dqCKiun0fxb27FQs_tXupH2J2ENETrRynzreIpJwOtugnSLrRfDSWQm-eoM76tgxiDQoqARqAQO9SHliD_vsKsKSKYMkeFi8l-ba0tLFMUr0mykD8t_c7coSWeECvhviWHoIc_1lThOBptSq5dhM6Kc44XkFHgoqYxyF5HbJ_YebMd69p5W7WD0VqX4Se-guAnhS98z6p1wUnEH3nSLARf_r4gxu-cdmfhTHMFqOHyQkOwZTSodxRA3OkItuZOXHMMHY6rBhQfcNQkE4HkC4aZ2OCwy3NQDcErpIypu8PKvFM8VYZNCLbnAYCkRY-lsxKvaD9_kldEmOjedKpWOoimPQAJ_0nA-wjJWjYNT3J1G24oZ3RQU7YQp9ZRp1PnZe-8WKqVB-_z4xbxqfry.Yz8SVQZukq58ivtSbwKvHA
-createTimestamp: 20200417145023.243Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145023.243Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: d5029873-acad-44cc-9744-a129e94d2f5e
-
-dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=NBmWc0IX0MiPkEHV3VExhyOH9,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..4Lu2fY2TKoH99ETRfOSsQw.mFO7Pnq8kq_4TGINZEPMnJC3x5RaGmeSUREQpyjV0Qf0qbuqAKibBe8Z1E_oexcYKWObOLhfJ-dg8ZFF-sHIFjMw_ncvPEXzsnNs3_ioMblS5KnYNDptm30qnIhq4FPShp5SnwmAbN-KpMQs76tv-jOjQ5AXvcPxjAzYg8tH2IAfGkvp2xeXmCzMHtEVxV1kRn2kXc4O5sT50RJI1UD1MEkVV2p68Pgyzy4f_ZVdOEAn6JLAYJqgCzVusNwqRuSBY8NDqYUIz0eWul8mu_U014t5NgBmqkTFyp5M3WFKs1Pc_QmZNqmr1A_6gMMcwxLPjxZhnWq3sr9916ew0-8mBBB9eCE_r4yP7ktlWaDd1lW1-rPiEhIb0ao6muTqsb09T0nJ9bxhKeefvhHNtuQhkDnnCk2DiOfe3heDlGFf6y4Tyf64Rm5xLQp7USZmfPXH9tU0hkk7OBoGJ5DQGFN2ns5dnaM_pzvVYvbVk3GK5rEtryrEX58if7hbTYjGnWKgJt6A7EaKTBmmAWQ4DcViAU9WRVDzPZ_rfUP2boDQHP_1XeapGkW1tLtzqmhqODEwgownHnQ00AD1BMzZ2dw29zOejZsjd_R9FyeDjAe3kllwBcel5V9QxzV1G7MYC15P8S6cMahey_aGTDyK_OMCR4azZGKT3kbyZR09_PToGJ4AYu82tOwzO6knLMAkS46jMi14aWexNYbdzKs205-ofKe_frA01SLKfaDJ4KDBu65FxaH7s58QosNtOJDhTO_O-QM9QdCAHE_7zfVJ_wr23ZtL5UwomCfBIeilmytHm3xvWHAf3cBukxk8cQTZn8_paJnv4TLY_gpWZL8uL6FcuTwbFj8qKqEyORaOStb1RxAn6s1mdoCOyy2rbtsNVBhkixWHe5rR7Zb-vKLdgjFuiGOF8RWJUHm9g6kWCDQOY_DmVo2iR0Ojh_E2asQDu4NQpQlPnXINbDpL0jP-9pW5C3rOKhFeAXCoH6AfNbI0aMaIzCkr8IkFH9Xseg6KUjirbqjq7CDDzwpVNxHX51etZm2TvwcMn3TtU6j57cJXjKvVraLA00we4HjB6gvtFRPYRmBnenzhkLhtopmRDWzJurVX25VNgFqtGYrcWV8km0gcnj3K1CjG1n5KRVSsGBT02maXM5kSzDoITx8S5xH-gg7YbobBVbqUo7Ep-ZBp6HwqjP0xtbcjVmwFsmUIE-SR18Gs2fDJeqvWRp47PcvZy8JiiTgSa0kOE74WTCzhgOHT1fJbf7D4mKhI0kpFCW9zsNBYwNfaQgyXGJhX_3HSfTSp5Dx_9kUc2fIj7LNyyp6W5YX6BTQlv483igEnwAEOMVgvj4d7tEqND89AQCXbczWXkoz6Eo9PmHC00_SQcXLp2bHSnBr8ta3z7WimgK8K.cB8AAxdUsOw6yx4zKigx1A
-createTimestamp: 20200417145115.859Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145115.859Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 3d411359-6219-4960-acca-ec2be7826e91
-
-dn: pf-authn-session-attribute-hash=fb4d5db1bad0c72a7c999fc7e661564dfe4ee374,pf-authn-session-group-id=f7MItOK7qpedrk4FCIceKxnSN,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: fb4d5db1bad0c72a7c999fc7e661564dfe4ee374
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..fjRND9FG9w2bf-GDbasv1A.nWe-rtDoNAKMyLxLSIljbi06Mkoh5W2w4_963mIK-FeAY4eYA8yikpp-b4kW4ii7sn5izexHUym5fAuNgB6GGb2ZfO18re2LPARzYxloMZBPoyvnIsymIVNkGxKwAgwSJVlVsf-W88batuGVZQNNjxFKOeCz2AmZDKo8ZqEr3zTZd4UZXnMe1BgEzJ-oM5Bb8-b46VoCnc9Ud9qC5pWkXFi6dmWIywE6jo0FK6tXitWOFNa0k-83GT9KMK1d9ioG0wvPknYqZ2WgAd-8x0O1Mhy3KRki5PUWVqtK_84HgUblgcO3XHtdgux2cFe14SV_rJtgMk-zj_qGxB9p5rzlVzaAV1Dv2rN0IHYWZkKmbX_FpOvlPtg-CFCMC0bA4Bu7uyE93g2lWoNOKEy0i_6DGWta1R1Lt-InKVbMfRhif2eFvnxFN2AACLc34lC9lv5wBMQ4x56HTj3CYym5oiiik9817kpIcMUHsrtIIEqxFa9_Ty9C2vNqZ5eQHvZPb9sKoOV2R1HNM7YQyXiiC0Pe8GcW2SZd-EhvMrqLgj8hwaOdIYuoVrk5E_-o6JuvxCUNdswUSjw3iGOwx0hFq0ZJXIyNds66rvvLunbEx_FHefOjQ8BD3uePRH0P59ekqlwyh8FtwUbAR-69015Aqa_7Iwo6V353yYxz1vPd78C0t-2v7fvxD3fJU9pTC_DTSfS51nLT9yQyG6IRf-YgbOCSLakk_0vpQLCvyPFasaP29A1ZBcGtNYcri1dUWgbzyvFxsFFfE4Zhc_6Rew04e3yNtcvprKBG58BrmAuCwlXXUisnWlM63IaM6_RCLRsnNltEbgXxsOSCESySjVPyJo1aNhNq-oShlrzS1UXODaZ3jSqSPLia-963DLYhq9ZGsQyPRrTa_6vMGNJW1M-S1FwpOtTeubypztZVGbnXNlplqXSNgAUED7S_graKYMRKSivgsL0TobM2viVTlimm02d4iruaS_ym9J5w5bvWoa9BDtEjDa1kxvinFOP9tkJY3fKQuHzNCnozSiokWMP9lTSbC52d2aCMOznNkCGXd_6vNvpsqX2nLqJ5_gqQLekiE7EIqJBdtgMeG4hL0GxGEi4gALtj-7Lj3jtd5NNWyKQlzGQyn43GZRemHEEZEloBlsEd7P21Wvrw7Qw93FQ2TONF-eiiqJeNrgqx6DZhpKWGMrtHeTyEALWcwNAkjiBy7Ce1mW8KqxISrELE21blz2ZvLEMZxHtfMAD38CDMDi_qKdeOVXPASJTH-OniDkG4bK5DXGI_ccQZ1FwJanO2PiblgorYe3yr6anHYqeNv5i_itGZ6fyIRz4iqwCv7smggyUzjgsAj9tddVnw2N0sKq42VT4tGlFJe7Pl_PuZp6weWrIsEOpU_tQ5HGQGamZ05yO3.9hr6x5-FbrluMIjlJQpb6A
-createTimestamp: 20200417145450.275Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145450.275Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 8d632e4d-1890-4d98-9b4a-9554ef477b47
-
-dn: pf-authn-session-attribute-hash=670d66175260c89db27912cb39907ba0f150105d,pf-authn-session-group-id=TGD4h9PIo11GgIksK65uQ6XkN,ou=sessions,dc=bxfinance.xyz
-objectClass: top
-objectClass: pf-authn-sessions
-pf-authn-session-attribute-hash: 670d66175260c89db27912cb39907ba0f150105d
-pf-authn-session-data: eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiemlwIjoiREVGIiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSJ9..TKZG7z4wWH4yj5j-t-gjhQ.JMnloELyTNebAXqb2pnYRzK-gZlCnS5W2AcxIveyN5pMguJm-XaHT_EGwibw4qmKqXh-xJ2HcyMkAT1vBnWXirrBNnjLF4sZ2W89oOhJ287iT4xhJhTi5cq56XRMedXyytVSKb6VCubuWNhjzjjYAiYulONt7XWOktv0lLw-VxR-gh7pChw-3Lg6X6a8eHcjxZKz51dtIkqaYnWMASkPQ3Vd9I17twqWvrw5TtANC-yjUB1laItyR_rVQaC11TRHofgRh7U12gExELy5S8mZosPHAQkERtYod9DFQCyZER_FINRDheJiX4QnzCypc9-ybCpqrYbU_jIYGWmX0rKPBsNRg0OuWufUn8vgBoND0aqoIrNTa2zrIF1Hr98YvuKQHXaCfQALB8onm4gA1b7FW7rfKipV1NgQZ64_DAu0Oelv1w9cYZbMSnFUOVJgPY6DPY_gg5wC9uQXRJBOjs6BAMey1vMkHIGC8Sz5YjWl3kA7qt1hdWwwC0NcMgDzrl_wkn5-2SQM3qsdCuwtyYBfIh-X4ZVixKnag0_Ri5KyIWTxLVAllJfopXa-XPxD4GHGCeLP-rm6QjrvM7HcUdJQ7N0nvI20WkWwIvFUpu5ylpNdfwRdnyH55QsrxlSJD9KRtJu1HYchPFRdTrnWoVvBSdixy03SuFiHt8kTrdwLd94s9xpJ_buxLoDEoMywaQhwghjqNEwHu5lN5oeK4tyTgdAoFutIsLVBRcT2n0P7nFcLDljTTiVdOarJa6JN2eryyvLMVt92AE8e2URmYMC6s-knT4-oEng1m8Do9YQf0oIr7EnUltXhUt9mlqy03hQ-oUHBC5CJMHdd1z-NLEFBOMVbsYsGhfNNhyVza6TQY6AV54lp2eGHehkRXjsPJAuSrF2x-kBViVUVb9_LfgAux3kW6jQoHdTF5cbnNjJ27-bNofJXltk78rAN1pMt3NXfyYc9NnzQlnGS3lsBm0vwADjx6hK3MkqiU_JpEol2ukjDGRaymS6TOkroZxGzrNoxBR3XbAXiyG-h_t3APAtheEXI-62nh5qSfDVd_U_S5yvx5H3rwHoxC86L2qMQoEcBd11MVZ8RFuQmMNSL4FZDEegXWcb18mlNr8grnHveSL_3eyfG5uFp7z3pO2H905timnCJ0YkdZZI-5im2jMd1_VLpu-T3j--gLTVoQJViiVksnIZy37XH_SBYNloUw1gOgXitgSY_tMXlAQmspttCNmrofK3nXloogRyGZCFx_vJnMkAdQp5M0-1goQJGaK7lrehex7UtnfKlfBVRLSpCcXODyE6xmW81F1EMqb0tpaH6VNLhAtSJefnN5D4k1w2LAOGPr3gZkiCNlHqJCW9Pbtypc0AWjfYdvgIiH-E88ijyyW5-hihpxTDWMYAO-_WZ.bCXbzY8C6LI2SrRqy2rK0w
-createTimestamp: 20200417145600.954Z
-creatorsName: cn=pingfederate,cn=Root DNs,cn=config
-modifyTimestamp: 20200417145600.954Z
-modifiersName: cn=pingfederate,cn=Root DNs,cn=config
-entryUUID: 2c0581d7-86cb-4229-8ae4-d50f9a799c97
+entryUUID: fe4fdd58-c5fb-48c4-8e58-e7b43d8b999b
 
