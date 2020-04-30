@@ -73,7 +73,7 @@ services:
       - 9443:9443
 
   pingdatagovernance:
-    image: pingidentity/pingdatagovernance:edge
+    image: pingidentity/pingdatagovernance:8.1.0.0-EA-edge    
     env_file:
       - ~/.pingidentity/devops
     command: wait-for pingfederate:9031 -t 720 -- entrypoint.sh start-server
