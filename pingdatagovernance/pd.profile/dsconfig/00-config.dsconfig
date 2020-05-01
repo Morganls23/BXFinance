@@ -15,6 +15,12 @@ dsconfig create-external-server \
     --set hostname-verification-method:allow-all 
 
 dsconfig create-external-server \
+    --server-name Heroku  \
+    --type api  \
+    --set base-url:https://demo-openbanking-api-server.herokuapp.com  \
+    --set hostname-verification-method:allow-all 
+
+dsconfig create-external-server \
     --server-name http-bin  \
     --type api  \
     --set base-url:https://httpbin.org  \
@@ -27,7 +33,7 @@ dsconfig create-external-server \
     --set hostname-verification-method:allow-all  \
     --set key-manager-provider:Null  \
     --set 'trust-manager-provider:Blind Trust'  \
-    --set shared-secret:AAD+wzssXDTepCNccwC1ECmPpOzJF7HiA/c=  \
+    --set shared-secret:AADScPG9RHei0yo5ze7D6ypfZDnJoKjQscE=  \
     --set decision-node:e51688ff-1dc9-4b6c-bb36-8af64d02e9d1  \
     --set branch:defaultPolicies.snapshot 
 
@@ -37,7 +43,7 @@ dsconfig create-external-server \
     --set server-host-name:pingdirectory  \
     --set location:Docker  \
     --set bind-dn:cn=dmanager  \
-    --set password:AACpMqAgRfQzizMczkyJNcuuENx4Y8rjyuI= 
+    --set password:AADsWOmRVgvsnyO3JY5rOQtEQmPzOgFlcHQ= 
 
 dsconfig create-external-server \
     --server-name pingfederate  \
@@ -72,7 +78,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:pingfederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AAA/w+giGQFRGj7JUuak1OzS0ZFt6tRMRZM= 
+    --set client-secret:AAA6f+0Gzf0wmNaXU8l8G/Zk74CjgMuT5O4= 
 
 dsconfig create-token-resource-lookup-method \
     --validator-name pingfederateATV  \
@@ -95,6 +101,13 @@ dsconfig create-gateway-api-endpoint \
     --set outbound-base-path:/anything  \
     --set api-server:http-bin 
 
+dsconfig create-gateway-api-endpoint \
+    --endpoint-name openbanking  \
+    --set access-token-validator:pingfederateATV  \
+    --set inbound-base-path:/OpenBanking/v2/balances  \
+    --set outbound-base-path:/OpenBanking/v2/balances  \
+    --set api-server:Heroku 
+
 dsconfig set-policy-decision-service-prop \
     --set pdp-mode:external  \
     --set policy-server:pingdatapap  \
@@ -114,7 +127,7 @@ dsconfig create-sideband-api-endpoint \
 
 dsconfig create-sideband-api-shared-secret \
     --secret-name my-ss  \
-    --set shared-secret:AADsSZgfdnsKbAoFRBd4AELt7y1AGpcgseA= 
+    --set shared-secret:AABDsCRWtIm8zQ3m1iBxMrZkMtLizyyM/as= 
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
@@ -130,11 +143,16 @@ dsconfig set-gauge-prop \
 
 dsconfig set-gauge-prop \
     --gauge-name 'License Expiration (Days)'  \
-    --set enabled:false 
+    --set enabled:false  \
+    --set warning-value:10.0 
 
 dsconfig set-log-publisher-prop \
     --publisher-name 'Debug Trace Logger'  \
     --set enabled:true 
+
+dsconfig set-monitor-provider-prop \
+    --provider-name 'Host System'  \
+    --reset enabled 
 
 dsconfig set-root-dn-user-prop \
     --user-name 'Directory Manager'  \
