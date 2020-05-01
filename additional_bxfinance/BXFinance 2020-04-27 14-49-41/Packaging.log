@@ -1,0 +1,713 @@
+2020-04-27 20:49:34 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fb162067bc0; archive(resolved)='<IDEArchive: 0x7fb181224be0>', distributionTask(resolved)='2', distributionDestination(resolved)='1', distributionMethod(resolved)='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team(resolved)='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	Chain (13, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fb162067bc0; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fb17c69fb40; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fb162054930; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fb18122b110; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fb180702450; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fb1620a33d0; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fb181898ae0; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fb1805e1bb0; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fb1806cc490; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb1795245e0; teamID='6S8CSHGBWG', teamName='Remy Lyle', teamType='(null)', username='(null)', isFreeProvisioningTeam='0'>'>
+	<IDEDistributionContext: 0x7fb17c43a600; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='(null)'>
+	<IDEDistributionContext: 0x7fb180701b70; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='(null)'>
+	<IDEDistributionContext: 0x7fb18059d090; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7fb1625bd3d0>', team='(null)'>
+	<IDEDistributionContext: 0x7fb180797d00; archive = '<IDEArchive: 0x7fb181224be0>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fb162067bc0>
+2020-04-27 20:49:34 +0000  Processing step: IDEDistributionCreateDestRootStep
+2020-04-27 20:49:34 +0000  Processing step: IDEDistributionCopyItemStep
+2020-04-27 20:49:34 +0000  Running /usr/bin/ditto '-V' '/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app'
+2020-04-27 20:49:34 +0000  >>> Copying /Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app 
+2020-04-27 20:49:34 +0000  
+2020-04-27 20:49:34 +0000  copying file ./_CodeSignature/CodeResources ... 
+2020-04-27 20:49:34 +0000  40645 bytes for ./_CodeSignature/CodeResources
+2020-04-27 20:49:34 +0000  copying file ./BXFinance ... 
+2020-04-27 20:49:34 +0000  1811840 bytes for ./BXFinance
+2020-04-27 20:49:34 +0000  copying file ./AppIcon60x60@2x.png ... 
+2020-04-27 20:49:34 +0000  10528 bytes for ./AppIcon60x60@2x.png
+2020-04-27 20:49:34 +0000  copying file ./AppIcon60x60@3x.png ... 
+2020-04-27 20:49:34 +0000  17637 bytes for ./AppIcon60x60@3x.png
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  1231 bytes for ./Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  1231 bytes for ./Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  1231 bytes for ./Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  1177 bytes for ./Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  1177 bytes for ./Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  1177 bytes for ./Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  2557 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  2559 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  2557 bytes for ./Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  6613 bytes for ./Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  6613 bytes for ./Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  6613 bytes for ./Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  5180 bytes for ./Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  5178 bytes for ./Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  5178 bytes for ./Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  6932 bytes for ./Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  6923 bytes for ./Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  6930 bytes for ./Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  5679 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  5677 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  5681 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  7683 bytes for ./Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  7688 bytes for ./Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  7823 bytes for ./Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  3646 bytes for ./Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  3632 bytes for ./Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  3641 bytes for ./Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  973 bytes for ./Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  973 bytes for ./Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  973 bytes for ./Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2020-04-27 20:49:34 +0000  549 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/AuthID.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  1237 bytes for ./Base.lproj/Main.storyboardc/AuthID.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/AuthID.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  1237 bytes for ./Base.lproj/Main.storyboardc/AuthID.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/AuthID.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  1237 bytes for ./Base.lproj/Main.storyboardc/AuthID.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:34 +0000  1567 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/objects-13.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:34 +0000  1567 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/objects-11.0+.nib
+2020-04-27 20:49:34 +0000  copying file ./Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/runtime.nib ... 
+2020-04-27 20:49:34 +0000  1567 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/runtime.nib
+2020-04-27 20:49:34 +0000  copying file ./Localizable.strings ... 
+2020-04-27 20:49:34 +0000  1001 bytes for ./Localizable.strings
+2020-04-27 20:49:34 +0000  copying file ./Assets.car ... 
+2020-04-27 20:49:34 +0000  261887 bytes for ./Assets.car
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/libswiftObjectiveC.dylib ... 
+2020-04-27 20:49:34 +0000  679680 bytes for ./Frameworks/libswiftObjectiveC.dylib
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/_CodeSignature/CodeResources ... 
+2020-04-27 20:49:34 +0000  6324 bytes for ./Frameworks/PingID_SDK.framework/_CodeSignature/CodeResources
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Headers/PingID_SDK-Swift.h ... 
+2020-04-27 20:49:34 +0000  15093 bytes for ./Frameworks/PingID_SDK.framework/Headers/PingID_SDK-Swift.h
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Headers/PingID.h ... 
+2020-04-27 20:49:34 +0000  20483 bytes for ./Frameworks/PingID_SDK.framework/Headers/PingID.h
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios.swiftinterface ... 
+2020-04-27 20:49:34 +0000  24194 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios.swiftinterface
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios.swiftdoc ... 
+2020-04-27 20:49:34 +0000  62632 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios.swiftdoc
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7.swiftinterface ... 
+2020-04-27 20:49:34 +0000  24194 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7.swiftinterface
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftinterface ... 
+2020-04-27 20:49:34 +0000  24194 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftinterface
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7-apple-ios.swiftinterface ... 
+2020-04-27 20:49:34 +0000  24194 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7-apple-ios.swiftinterface
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm.swiftdoc ... 
+2020-04-27 20:49:34 +0000  62632 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm.swiftdoc
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7.swiftdoc ... 
+2020-04-27 20:49:34 +0000  62632 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7.swiftdoc
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftdoc ... 
+2020-04-27 20:49:34 +0000  62632 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftdoc
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7-apple-ios.swiftdoc ... 
+2020-04-27 20:49:34 +0000  62632 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7-apple-ios.swiftdoc
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm.swiftinterface ... 
+2020-04-27 20:49:34 +0000  24194 bytes for ./Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm.swiftinterface
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Modules/module.modulemap ... 
+2020-04-27 20:49:34 +0000  138 bytes for ./Frameworks/PingID_SDK.framework/Modules/module.modulemap
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/Info.plist ... 
+2020-04-27 20:49:34 +0000  717 bytes for ./Frameworks/PingID_SDK.framework/Info.plist
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/PingID_SDK.framework/PingID_SDK ... 
+2020-04-27 20:49:34 +0000  14335760 bytes for ./Frameworks/PingID_SDK.framework/PingID_SDK
+2020-04-27 20:49:34 +0000  copying file ./Frameworks/libswiftCore.dylib ... 
+2020-04-27 20:49:35 +0000  95497584 bytes for ./Frameworks/libswiftCore.dylib
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
+2020-04-27 20:49:35 +0000  2041040 bytes for ./Frameworks/libswiftCoreGraphics.dylib
+copying file ./Frameworks/libswiftDispatch.dylib ... 
+2020-04-27 20:49:35 +0000  4056896 bytes for ./Frameworks/libswiftDispatch.dylib
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/_CodeSignature/CodeResources ... 
+2020-04-27 20:49:35 +0000  12560 bytes for ./Frameworks/AppAuth.framework/_CodeSignature/CodeResources
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/AppAuth ... 
+2020-04-27 20:49:35 +0000  2851904 bytes for ./Frameworks/AppAuth.framework/AppAuth
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDAuthorizationService.h ... 
+2020-04-27 20:49:35 +0000  8079 bytes for ./Frameworks/AppAuth.framework/Headers/OIDAuthorizationService.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentIOS.h ... 
+2020-04-27 20:49:35 +0000  1654 bytes for ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentIOS.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDTokenRequest.h ... 
+2020-04-27 20:49:35 +0000  6915 bytes for ./Frameworks/AppAuth.framework/Headers/OIDTokenRequest.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/AppAuth.h ... 
+2020-04-27 20:49:35 +0000  2578 bytes for ./Frameworks/AppAuth.framework/Headers/AppAuth.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDAuthorizationService+IOS.h ... 
+2020-04-27 20:49:35 +0000  1828 bytes for ./Frameworks/AppAuth.framework/Headers/OIDAuthorizationService+IOS.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDAuthStateChangeDelegate.h ... 
+2020-04-27 20:49:35 +0000  1361 bytes for ./Frameworks/AppAuth.framework/Headers/OIDAuthStateChangeDelegate.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDResponseTypes.h ... 
+2020-04-27 20:49:35 +0000  1144 bytes for ./Frameworks/AppAuth.framework/Headers/OIDResponseTypes.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgent.h ... 
+2020-04-27 20:49:35 +0000  2315 bytes for ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgent.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDTokenResponse.h ... 
+2020-04-27 20:49:35 +0000  4484 bytes for ./Frameworks/AppAuth.framework/Headers/OIDTokenResponse.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDTokenUtilities.h ... 
+2020-04-27 20:49:35 +0000  2354 bytes for ./Frameworks/AppAuth.framework/Headers/OIDTokenUtilities.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDEndSessionRequest.h ... 
+2020-04-27 20:49:35 +0000  4693 bytes for ./Frameworks/AppAuth.framework/Headers/OIDEndSessionRequest.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDServiceConfiguration.h ... 
+2020-04-27 20:49:35 +0000  4865 bytes for ./Frameworks/AppAuth.framework/Headers/OIDServiceConfiguration.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDEndSessionResponse.h ... 
+2020-04-27 20:49:35 +0000  2301 bytes for ./Frameworks/AppAuth.framework/Headers/OIDEndSessionResponse.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDErrorUtilities.h ... 
+2020-04-27 20:49:35 +0000  4922 bytes for ./Frameworks/AppAuth.framework/Headers/OIDErrorUtilities.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDRegistrationResponse.h ... 
+2020-04-27 20:49:35 +0000  4752 bytes for ./Frameworks/AppAuth.framework/Headers/OIDRegistrationResponse.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDAuthorizationResponse.h ... 
+2020-04-27 20:49:35 +0000  5260 bytes for ./Frameworks/AppAuth.framework/Headers/OIDAuthorizationResponse.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDAuthorizationRequest.h ... 
+2020-04-27 20:49:35 +0000  11694 bytes for ./Frameworks/AppAuth.framework/Headers/OIDAuthorizationRequest.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDAuthState+IOS.h ... 
+2020-04-27 20:49:35 +0000  2764 bytes for ./Frameworks/AppAuth.framework/Headers/OIDAuthState+IOS.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDRegistrationRequest.h ... 
+2020-04-27 20:49:35 +0000  6495 bytes for ./Frameworks/AppAuth.framework/Headers/OIDRegistrationRequest.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDAuthStateErrorDelegate.h ... 
+2020-04-27 20:49:35 +0000  2997 bytes for ./Frameworks/AppAuth.framework/Headers/OIDAuthStateErrorDelegate.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDScopeUtilities.h ... 
+2020-04-27 20:49:35 +0000  1682 bytes for ./Frameworks/AppAuth.framework/Headers/OIDScopeUtilities.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDAuthState.h ... 
+2020-04-27 20:49:35 +0000  14221 bytes for ./Frameworks/AppAuth.framework/Headers/OIDAuthState.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDError.h ... 
+2020-04-27 20:49:35 +0000  16186 bytes for ./Frameworks/AppAuth.framework/Headers/OIDError.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDScopes.h ... 
+2020-04-27 20:49:35 +0000  1958 bytes for ./Frameworks/AppAuth.framework/Headers/OIDScopes.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentIOSCustomBrowser.h ... 
+2020-04-27 20:49:35 +0000  4447 bytes for ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentIOSCustomBrowser.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentRequest.h ... 
+2020-04-27 20:49:35 +0000  1607 bytes for ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentRequest.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentCatalyst.h ... 
+2020-04-27 20:49:35 +0000  1544 bytes for ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentCatalyst.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDURLSessionProvider.h ... 
+2020-04-27 20:49:35 +0000  1418 bytes for ./Frameworks/AppAuth.framework/Headers/OIDURLSessionProvider.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDGrantTypes.h ... 
+2020-04-27 20:49:35 +0000  1580 bytes for ./Frameworks/AppAuth.framework/Headers/OIDGrantTypes.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentSession.h ... 
+2020-04-27 20:49:35 +0000  3259 bytes for ./Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentSession.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDServiceDiscovery.h ... 
+2020-04-27 20:49:35 +0000  18660 bytes for ./Frameworks/AppAuth.framework/Headers/OIDServiceDiscovery.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Headers/OIDIDToken.h ... 
+2020-04-27 20:49:35 +0000  3221 bytes for ./Frameworks/AppAuth.framework/Headers/OIDIDToken.h
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Modules/.gitkeep ... 
+2020-04-27 20:49:35 +0000  0 bytes for ./Frameworks/AppAuth.framework/Modules/.gitkeep
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Modules/module.modulemap ... 
+2020-04-27 20:49:35 +0000  95 bytes for ./Frameworks/AppAuth.framework/Modules/module.modulemap
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/AppAuth.framework/Info.plist ... 
+2020-04-27 20:49:35 +0000  814 bytes for ./Frameworks/AppAuth.framework/Info.plist
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
+2020-04-27 20:49:35 +0000  450384 bytes for ./Frameworks/libswiftCoreFoundation.dylib
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/libswiftDarwin.dylib ... 
+2020-04-27 20:49:35 +0000  1091440 bytes for ./Frameworks/libswiftDarwin.dylib
+2020-04-27 20:49:35 +0000  copying file ./Frameworks/libswiftFoundation.dylib ... 
+2020-04-27 20:49:35 +0000  43094320 bytes for ./Frameworks/libswiftFoundation.dylib
+2020-04-27 20:49:35 +0000  copying file ./embedded.mobileprovision ... 
+2020-04-27 20:49:35 +0000  7487 bytes for ./embedded.mobileprovision
+2020-04-27 20:49:35 +0000  copying file ./Info.plist ... 
+2020-04-27 20:49:35 +0000  1556 bytes for ./Info.plist
+2020-04-27 20:49:35 +0000  copying file ./PkgInfo ... 
+2020-04-27 20:49:35 +0000  8 bytes for ./PkgInfo
+2020-04-27 20:49:35 +0000  /usr/bin/ditto exited with 0
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionEmbedProfileStep
+2020-04-27 20:49:35 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb1632f44a0; bundleID='net.openid.AppAuth-iOS', path='<DVTFilePath:0x7fb17dd76150:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/AppAuth.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17cc28410; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17dd93b50; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='net.openid.AppAuth-iOS', executablePath='<DVTFilePath:0x7fb162357ba0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/AppAuth.framework/AppAuth'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb180070030; bundleID='com.pingidentity.pingidsdk', path='<DVTFilePath:0x7fb17a3d0910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/PingID_SDK.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb161d87d00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb16204c010; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.pingidentity.pingidsdk', executablePath='<DVTFilePath:0x7fb161d7e210:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/PingID_SDK.framework/PingID_SDK'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb17dd73370; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fb1803f2370:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb18063f890; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1811824a0; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fb1803f2370:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb18006e9d0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fb1623ce3c0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17c2e4200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17dd93b50; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fb1623ce3c0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb18008ce40; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fb1806e1910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb1812465e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1811824a0; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fb1806e1910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb1800eb120; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fb1623d2140:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17cfbb230; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1794c5200; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fb1623d2140:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb17de454f0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fb180799770:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17c30aaa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1621d6830; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fb180799770:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb18006c010; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fb1623d4410:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb178bf13d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1794c5200; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fb1623d4410:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb17417eec0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fb17a3d9bc0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb18006b920; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1794c5200; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fb17a3d9bc0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionSymbolsStep
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionAppThinningStep
+2020-04-27 20:49:35 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionArchThinningStep
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/AppAuth.framework/AppAuth' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2020-04-27 20:49:35 +0000  Skipping architecture thinning for item "AppAuth" because arch "arm64e" wasn't found
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/PingID_SDK.framework/PingID_SDK' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2020-04-27 20:49:35 +0000  Skipping architecture thinning for item "PingID_SDK" because arch "arm64e" wasn't found
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCore.dylib' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCore.dylib' '-remove' 'arm64e' '-output' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCore.dylib'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Successfully thinned item "libswiftCore.dylib", arch "arm64e"
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib' '-remove' 'arm64e' '-output' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Successfully thinned item "libswiftCoreFoundation.dylib", arch "arm64e"
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib' '-remove' 'arm64e' '-output' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Successfully thinned item "libswiftCoreGraphics.dylib", arch "arm64e"
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDarwin.dylib' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDarwin.dylib' '-remove' 'arm64e' '-output' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDarwin.dylib'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Successfully thinned item "libswiftDarwin.dylib", arch "arm64e"
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDispatch.dylib' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDispatch.dylib' '-remove' 'arm64e' '-output' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDispatch.dylib'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Successfully thinned item "libswiftDispatch.dylib", arch "arm64e"
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftFoundation.dylib' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftFoundation.dylib' '-remove' 'arm64e' '-output' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftFoundation.dylib'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Successfully thinned item "libswiftFoundation.dylib", arch "arm64e"
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftObjectiveC.dylib' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftObjectiveC.dylib' '-remove' 'arm64e' '-output' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 0
+2020-04-27 20:49:35 +0000  Successfully thinned item "libswiftObjectiveC.dylib", arch "arm64e"
+2020-04-27 20:49:35 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/BXFinance' '-verify_arch' 'arm64e'
+2020-04-27 20:49:35 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2020-04-27 20:49:35 +0000  Skipping architecture thinning for item "BXFinance" because arch "arm64e" wasn't found
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionODRStep
+2020-04-27 20:49:35 +0000  Processing step: IDEDistributionStripXattrsStep
+2020-04-27 20:49:35 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fb1632f44a0; bundleID='net.openid.AppAuth-iOS', path='<DVTFilePath:0x7fb17dd76150:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/AppAuth.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17cc28410; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb162169a40; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='net.openid.AppAuth-iOS', executablePath='<DVTFilePath:0x7fb162357ba0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/AppAuth.framework/AppAuth'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fb180070030; bundleID='com.pingidentity.pingidsdk', path='<DVTFilePath:0x7fb17a3d0910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/PingID_SDK.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb161d87d00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17da5b8e0; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.pingidentity.pingidsdk', executablePath='<DVTFilePath:0x7fb161d7e210:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/PingID_SDK.framework/PingID_SDK'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fb17dd73370; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fb1803f2370:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb18063f890; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb18115c2c0; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fb1803f2370:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fb18006e9d0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fb1623ce3c0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17c2e4200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17cc98c20; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fb1623ce3c0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fb18008ce40; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fb1806e1910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb1812465e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17c14e0a0; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fb1806e1910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fb1800eb120; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fb1623d2140:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17cfbb230; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1625f5750; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fb1623d2140:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fb17de454f0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fb180799770:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17c30aaa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17da1b5c0; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fb180799770:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fb18006c010; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fb1623d4410:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb178bf13d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb162338910; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fb1623d4410:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fb17417eec0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fb17a3d9bc0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb18006b920; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17da5b8e0; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fb17a3d9bc0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>
+2020-04-27 20:49:35 +0000  Running /usr/bin/xattr '-crs' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app'
+2020-04-27 20:49:36 +0000  /usr/bin/xattr exited with 0
+2020-04-27 20:49:36 +0000  Processing step: IDEDistributionCodesignStep
+2020-04-27 20:49:36 +0000  Entitlements for <IDEDistributionItem: 0x7fb1632f44a0; bundleID='net.openid.AppAuth-iOS', path='<DVTFilePath:0x7fb17dd76150:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/AppAuth.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17cc28410; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb16204c010; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='net.openid.AppAuth-iOS', executablePath='<DVTFilePath:0x7fb162357ba0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/AppAuth.framework/AppAuth'>', hardenedRuntime='0'>'>: {
+}
+2020-04-27 20:49:36 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb1632f44a0; bundleID='net.openid.AppAuth-iOS', path='<DVTFilePath:0x7fb17dd76150:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/AppAuth.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17cc28410; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17ca1c070; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='net.openid.AppAuth-iOS', executablePath='<DVTFilePath:0x7fb162357ba0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/AppAuth.framework/AppAuth'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~6uJN7H
+2020-04-27 20:49:36 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~6uJN7H' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/AppAuth.framework'
+2020-04-27 20:49:36 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/AppAuth.framework: signed bundle with Mach-O universal (armv7 arm64) [net.openid.AppAuth-iOS]
+2020-04-27 20:49:36 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:36 +0000  Entitlements for <IDEDistributionItem: 0x7fb180070030; bundleID='com.pingidentity.pingidsdk', path='<DVTFilePath:0x7fb17a3d0910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/PingID_SDK.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb161d87d00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17da5b8e0; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.pingidentity.pingidsdk', executablePath='<DVTFilePath:0x7fb161d7e210:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/PingID_SDK.framework/PingID_SDK'>', hardenedRuntime='0'>'>: {
+}
+2020-04-27 20:49:36 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb180070030; bundleID='com.pingidentity.pingidsdk', path='<DVTFilePath:0x7fb17a3d0910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/PingID_SDK.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb161d87d00; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1621b2c10; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.pingidentity.pingidsdk', executablePath='<DVTFilePath:0x7fb161d7e210:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/PingID_SDK.framework/PingID_SDK'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~gocwO5
+2020-04-27 20:49:36 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~gocwO5' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/PingID_SDK.framework'
+2020-04-27 20:49:36 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/PingID_SDK.framework: signed bundle with Mach-O universal (armv7 arm64) [com.pingidentity.pingidsdk]
+2020-04-27 20:49:36 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:36 +0000  Entitlements for <IDEDistributionItem: 0x7fb17dd73370; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fb1803f2370:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb18063f890; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1621b2c10; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fb1803f2370:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'>: {
+}
+2020-04-27 20:49:36 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb17dd73370; bundleID='com.apple.dt.runtime.swiftCore', path='<DVTFilePath:0x7fb1803f2370:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCore.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb18063f890; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb178b0a070; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCore', executablePath='<DVTFilePath:0x7fb1803f2370:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCore.dylib'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~C2fVMm
+2020-04-27 20:49:36 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~C2fVMm' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCore.dylib'
+2020-04-27 20:49:36 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2020-04-27 20:49:36 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:36 +0000  Entitlements for <IDEDistributionItem: 0x7fb18006e9d0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fb1623ce3c0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17c2e4200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1794c5200; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fb1623ce3c0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'>: {
+}
+2020-04-27 20:49:36 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb18006e9d0; bundleID='com.apple.dt.runtime.swiftCoreFoundation', path='<DVTFilePath:0x7fb1623ce3c0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17c2e4200; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1807a4880; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCoreFoundation', executablePath='<DVTFilePath:0x7fb1623ce3c0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~fPqAQL
+2020-04-27 20:49:36 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~fPqAQL' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib'
+2020-04-27 20:49:36 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2020-04-27 20:49:36 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:36 +0000  Entitlements for <IDEDistributionItem: 0x7fb18008ce40; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fb1806e1910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb1812465e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb16205f760; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fb1806e1910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'>: {
+}
+2020-04-27 20:49:36 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb18008ce40; bundleID='com.apple.dt.runtime.swiftCoreGraphics', path='<DVTFilePath:0x7fb1806e1910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb1812465e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1632d5750; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftCoreGraphics', executablePath='<DVTFilePath:0x7fb1806e1910:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~vfz3F8
+2020-04-27 20:49:36 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~vfz3F8' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib'
+2020-04-27 20:49:37 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2020-04-27 20:49:37 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:37 +0000  Entitlements for <IDEDistributionItem: 0x7fb1800eb120; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fb1623d2140:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17cfbb230; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1810f7570; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fb1623d2140:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'>: {
+}
+2020-04-27 20:49:37 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb1800eb120; bundleID='com.apple.dt.runtime.swiftDarwin', path='<DVTFilePath:0x7fb1623d2140:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDarwin.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17cfbb230; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17c14e0a0; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftDarwin', executablePath='<DVTFilePath:0x7fb1623d2140:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDarwin.dylib'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~6pPXrP
+2020-04-27 20:49:37 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~6pPXrP' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDarwin.dylib'
+2020-04-27 20:49:37 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2020-04-27 20:49:37 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:37 +0000  Entitlements for <IDEDistributionItem: 0x7fb17de454f0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fb180799770:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17c30aaa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb17c1aa820; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fb180799770:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'>: {
+}
+2020-04-27 20:49:37 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb17de454f0; bundleID='com.apple.dt.runtime.swiftDispatch', path='<DVTFilePath:0x7fb180799770:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDispatch.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17c30aaa0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb16205f760; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftDispatch', executablePath='<DVTFilePath:0x7fb180799770:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftDispatch.dylib'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~LgVWzQ
+2020-04-27 20:49:37 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~LgVWzQ' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDispatch.dylib'
+2020-04-27 20:49:37 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2020-04-27 20:49:37 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:37 +0000  Entitlements for <IDEDistributionItem: 0x7fb18006c010; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fb1623d4410:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb178bf13d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1621b2c10; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fb1623d4410:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'>: {
+}
+2020-04-27 20:49:37 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb18006c010; bundleID='com.apple.dt.runtime.swiftFoundation', path='<DVTFilePath:0x7fb1623d4410:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftFoundation.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb178bf13d0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1805d6d30; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftFoundation', executablePath='<DVTFilePath:0x7fb1623d4410:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftFoundation.dylib'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~W12mG0
+2020-04-27 20:49:37 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~W12mG0' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftFoundation.dylib'
+2020-04-27 20:49:37 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2020-04-27 20:49:37 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:37 +0000  Entitlements for <IDEDistributionItem: 0x7fb17417eec0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fb17a3d9bc0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb18006b920; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1621b2c10; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fb17a3d9bc0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'>: {
+}
+2020-04-27 20:49:37 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb17417eec0; bundleID='com.apple.dt.runtime.swiftObjectiveC', path='<DVTFilePath:0x7fb17a3d9bc0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb18006b920; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb181157240; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='(null)', teamID='6S8CSHGBWG', identifier='com.apple.dt.runtime.swiftObjectiveC', executablePath='<DVTFilePath:0x7fb17a3d9bc0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~j77R9F
+2020-04-27 20:49:37 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~j77R9F' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftObjectiveC.dylib'
+2020-04-27 20:49:37 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2020-04-27 20:49:37 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:37 +0000  Entitlements for <IDEDistributionItem: 0x7fb162103af0; bundleID='com.pingidentity.sa.demos.bxfinance', path='<DVTFilePath:0x7fb178d73ce0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17a205d70; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb1621b2c10; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='{
+    "application-identifier" = "6S8CSHGBWG.com.pingidentity.sa.demos.bxfinance";
+    "aps-environment" = production;
+    "com.apple.developer.team-identifier" = 6S8CSHGBWG;
+    "get-task-allow" = 0;
+}', teamID='6S8CSHGBWG', identifier='com.pingidentity.sa.demos.bxfinance', executablePath='<DVTFilePath:0x7fb17cc83d40:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/BXFinance'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "6S8CSHGBWG.com.pingidentity.sa.demos.bxfinance";
+    "aps-environment" = production;
+    "com.apple.developer.team-identifier" = 6S8CSHGBWG;
+    "get-task-allow" = 0;
+}
+2020-04-27 20:49:37 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb162103af0; bundleID='com.pingidentity.sa.demos.bxfinance', path='<DVTFilePath:0x7fb178d73ce0:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x7fb17a205d70; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x7fb162610610; name='iPhone Distribution: Remy Lyle (6S8CSHGBWG)', hash='491F75A68D692D8BCFED98204DCEB4BA72C225A6', serialNumber='63CE062DBE658B17', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2020-04-24 15:34:54 +0000''>', entitlements='{
+    "application-identifier" = "6S8CSHGBWG.com.pingidentity.sa.demos.bxfinance";
+    "aps-environment" = production;
+    "com.apple.developer.team-identifier" = 6S8CSHGBWG;
+    "get-task-allow" = 0;
+}', teamID='6S8CSHGBWG', identifier='com.pingidentity.sa.demos.bxfinance', executablePath='<DVTFilePath:0x7fb17cc83d40:'/Users/rlyle/Library/Developer/Xcode/Archives/2020-04-27/BXFinance 4-27-20, 2.49 PM.xcarchive/Products/Applications/BXFinance.app/BXFinance'>', hardenedRuntime='0'>'> to: /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~YCStKV
+2020-04-27 20:49:37 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '491F75A68D692D8BCFED98204DCEB4BA72C225A6' '--entitlements' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/entitlements~~~YCStKV' '--preserve-metadata=identifier,flags,runtime' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app'
+2020-04-27 20:49:38 +0000  /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root/Payload/BXFinance.app: signed app bundle with Mach-O universal (armv7 arm64) [com.pingidentity.sa.demos.bxfinance]
+2020-04-27 20:49:38 +0000  /usr/bin/codesign exited with 0
+2020-04-27 20:49:38 +0000  Processing step: IDEDistributionZipODRItemStep
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2020-04-27 20:49:38 +0000  Processing step: IDEDistributionCreateIPAStep
+2020-04-27 20:49:38 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root' '/var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Packages/BXFinance.ipa'
+2020-04-27 20:49:38 +0000  >>> Copying /var/folders/94/5py6c85d1s5d0g_ydh2vjd914hpvrs/T/XcodeDistPipeline.~~~gpQScL/Root 
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/_CodeSignature/CodeResources ... 
+2020-04-27 20:49:38 +0000  40645 bytes for ./Payload/BXFinance.app/_CodeSignature/CodeResources
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/BXFinance ... 
+2020-04-27 20:49:38 +0000  377488 bytes for ./Payload/BXFinance.app/BXFinance
+copying file ./Payload/BXFinance.app/AppIcon60x60@2x.png ... 
+2020-04-27 20:49:38 +0000  10528 bytes for ./Payload/BXFinance.app/AppIcon60x60@2x.png
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/AppIcon60x60@3x.png ... 
+2020-04-27 20:49:38 +0000  17637 bytes for ./Payload/BXFinance.app/AppIcon60x60@3x.png
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  1231 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  1231 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/objects-11.0+.nib
+copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  1231 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/OneTimePasscodeID.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  1177 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  1177 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/objects-11.0+.nib
+copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  1177 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-B6n-Em-mI7.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  2557 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  2559 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/objects-11.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  2557 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UINavigationController-1gC-tW-2BW.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  6613 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  6613 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/objects-11.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  6613 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BsF-dJ-bi0-view-354-o4-i8g.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  5180 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  5178 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/objects-11.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  5178 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/lD9-aa-mRZ-view-RpS-eJ-r3Q.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  6932 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  6923 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/objects-11.0+.nib
+copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  6930 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/K79-uR-5Cz-view-G5B-v3-XLb.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  5679 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  5677 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  5681 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  7683 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  7688 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/objects-11.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  7823 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/B6n-Em-mI7-view-nJl-na-MOa.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  3646 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  3632 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/objects-11.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  3641 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/RLH-AX-1Pk-view-w4Y-n5-Ugw.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  973 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  973 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/objects-11.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  973 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-RLH-AX-1Pk.nib/runtime.nib
+copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/Info.plist ... 
+2020-04-27 20:49:38 +0000  549 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/Info.plist
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/AuthID.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  1237 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/AuthID.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/AuthID.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  1237 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/AuthID.nib/objects-11.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/AuthID.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  1237 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/AuthID.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/objects-13.0+.nib ... 
+2020-04-27 20:49:38 +0000  1567 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/objects-13.0+.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/objects-11.0+.nib ... 
+2020-04-27 20:49:38 +0000  1567 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/objects-11.0+.nib
+copying file ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/runtime.nib ... 
+2020-04-27 20:49:38 +0000  1567 bytes for ./Payload/BXFinance.app/Base.lproj/Main.storyboardc/UIViewController-BsF-dJ-bi0.nib/runtime.nib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Localizable.strings ... 
+2020-04-27 20:49:38 +0000  1001 bytes for ./Payload/BXFinance.app/Localizable.strings
+copying file ./Payload/BXFinance.app/Assets.car ... 
+2020-04-27 20:49:38 +0000  261887 bytes for ./Payload/BXFinance.app/Assets.car
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/libswiftObjectiveC.dylib ... 
+2020-04-27 20:49:38 +0000  302640 bytes for ./Payload/BXFinance.app/Frameworks/libswiftObjectiveC.dylib
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/_CodeSignature/CodeResources ... 
+2020-04-27 20:49:38 +0000  6324 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/_CodeSignature/CodeResources
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Headers/PingID_SDK-Swift.h ... 
+2020-04-27 20:49:38 +0000  15093 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Headers/PingID_SDK-Swift.h
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Headers/PingID.h ... 
+2020-04-27 20:49:38 +0000  20483 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Headers/PingID.h
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios.swiftinterface ... 
+2020-04-27 20:49:38 +0000  24194 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios.swiftinterface
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios.swiftdoc ... 
+2020-04-27 20:49:38 +0000  62632 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64-apple-ios.swiftdoc
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7.swiftinterface ... 
+2020-04-27 20:49:38 +0000  24194 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7.swiftinterface
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftinterface ... 
+2020-04-27 20:49:38 +0000  24194 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftinterface
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7-apple-ios.swiftinterface ... 
+2020-04-27 20:49:38 +0000  24194 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7-apple-ios.swiftinterface
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm.swiftdoc ... 
+2020-04-27 20:49:38 +0000  62632 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm.swiftdoc
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7.swiftdoc ... 
+2020-04-27 20:49:38 +0000  62632 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7.swiftdoc
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftdoc ... 
+2020-04-27 20:49:38 +0000  62632 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm64.swiftdoc
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7-apple-ios.swiftdoc ... 
+2020-04-27 20:49:38 +0000  62632 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/armv7-apple-ios.swiftdoc
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm.swiftinterface ... 
+2020-04-27 20:49:38 +0000  24194 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/PingID_SDK.swiftmodule/arm.swiftinterface
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/module.modulemap ... 
+2020-04-27 20:49:38 +0000  138 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Modules/module.modulemap
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Info.plist ... 
+2020-04-27 20:49:38 +0000  717 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/Info.plist
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/PingID_SDK ... 
+2020-04-27 20:49:38 +0000  2813760 bytes for ./Payload/BXFinance.app/Frameworks/PingID_SDK.framework/PingID_SDK
+2020-04-27 20:49:38 +0000  copying file ./Payload/BXFinance.app/Frameworks/libswiftCore.dylib ... 
+2020-04-27 20:49:39 +0000  16915040 bytes for ./Payload/BXFinance.app/Frameworks/libswiftCore.dylib
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib ... 
+2020-04-27 20:49:39 +0000  646848 bytes for ./Payload/BXFinance.app/Frameworks/libswiftCoreGraphics.dylib
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/libswiftDispatch.dylib ... 
+2020-04-27 20:49:39 +0000  1018912 bytes for ./Payload/BXFinance.app/Frameworks/libswiftDispatch.dylib
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/_CodeSignature/CodeResources ... 
+2020-04-27 20:49:39 +0000  12560 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/_CodeSignature/CodeResources
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/AppAuth ... 
+2020-04-27 20:49:39 +0000  659616 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/AppAuth
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthorizationService.h ... 
+2020-04-27 20:49:39 +0000  8079 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthorizationService.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentIOS.h ... 
+2020-04-27 20:49:39 +0000  1654 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentIOS.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDTokenRequest.h ... 
+2020-04-27 20:49:39 +0000  6915 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDTokenRequest.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/AppAuth.h ... 
+2020-04-27 20:49:39 +0000  2578 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/AppAuth.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthorizationService+IOS.h ... 
+2020-04-27 20:49:39 +0000  1828 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthorizationService+IOS.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthStateChangeDelegate.h ... 
+2020-04-27 20:49:39 +0000  1361 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthStateChangeDelegate.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDResponseTypes.h ... 
+2020-04-27 20:49:39 +0000  1144 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDResponseTypes.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgent.h ... 
+2020-04-27 20:49:39 +0000  2315 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgent.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDTokenResponse.h ... 
+2020-04-27 20:49:39 +0000  4484 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDTokenResponse.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDTokenUtilities.h ... 
+2020-04-27 20:49:39 +0000  2354 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDTokenUtilities.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDEndSessionRequest.h ... 
+2020-04-27 20:49:39 +0000  4693 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDEndSessionRequest.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDServiceConfiguration.h ... 
+2020-04-27 20:49:39 +0000  4865 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDServiceConfiguration.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDEndSessionResponse.h ... 
+2020-04-27 20:49:39 +0000  2301 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDEndSessionResponse.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDErrorUtilities.h ... 
+2020-04-27 20:49:39 +0000  4922 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDErrorUtilities.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDRegistrationResponse.h ... 
+2020-04-27 20:49:39 +0000  4752 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDRegistrationResponse.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthorizationResponse.h ... 
+2020-04-27 20:49:39 +0000  5260 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthorizationResponse.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthorizationRequest.h ... 
+2020-04-27 20:49:39 +0000  11694 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthorizationRequest.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthState+IOS.h ... 
+2020-04-27 20:49:39 +0000  2764 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthState+IOS.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDRegistrationRequest.h ... 
+2020-04-27 20:49:39 +0000  6495 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDRegistrationRequest.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthStateErrorDelegate.h ... 
+2020-04-27 20:49:39 +0000  2997 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthStateErrorDelegate.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDScopeUtilities.h ... 
+2020-04-27 20:49:39 +0000  1682 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDScopeUtilities.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthState.h ... 
+2020-04-27 20:49:39 +0000  14221 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDAuthState.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDError.h ... 
+2020-04-27 20:49:39 +0000  16186 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDError.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDScopes.h ... 
+2020-04-27 20:49:39 +0000  1958 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDScopes.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentIOSCustomBrowser.h ... 
+2020-04-27 20:49:39 +0000  4447 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentIOSCustomBrowser.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentRequest.h ... 
+2020-04-27 20:49:39 +0000  1607 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentRequest.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentCatalyst.h ... 
+2020-04-27 20:49:39 +0000  1544 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentCatalyst.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDURLSessionProvider.h ... 
+2020-04-27 20:49:39 +0000  1418 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDURLSessionProvider.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDGrantTypes.h ... 
+2020-04-27 20:49:39 +0000  1580 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDGrantTypes.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentSession.h ... 
+2020-04-27 20:49:39 +0000  3259 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDExternalUserAgentSession.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDServiceDiscovery.h ... 
+2020-04-27 20:49:39 +0000  18660 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDServiceDiscovery.h
+copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDIDToken.h ... 
+2020-04-27 20:49:39 +0000  3221 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Headers/OIDIDToken.h
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Modules/.gitkeep ... 
+0 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Modules/.gitkeep
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Modules/module.modulemap ... 
+95 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Modules/module.modulemap
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Info.plist ... 
+2020-04-27 20:49:39 +0000  814 bytes for ./Payload/BXFinance.app/Frameworks/AppAuth.framework/Info.plist
+copying file ./Payload/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib ... 
+2020-04-27 20:49:39 +0000  253776 bytes for ./Payload/BXFinance.app/Frameworks/libswiftCoreFoundation.dylib
+copying file ./Payload/BXFinance.app/Frameworks/libswiftDarwin.dylib ... 
+2020-04-27 20:49:39 +0000  369728 bytes for ./Payload/BXFinance.app/Frameworks/libswiftDarwin.dylib
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/Frameworks/libswiftFoundation.dylib ... 
+2020-04-27 20:49:39 +0000  8479536 bytes for ./Payload/BXFinance.app/Frameworks/libswiftFoundation.dylib
+2020-04-27 20:49:39 +0000  copying file ./Payload/BXFinance.app/embedded.mobileprovision ... 
+2020-04-27 20:49:39 +0000  7487 bytes for ./Payload/BXFinance.app/embedded.mobileprovision
+copying file ./Payload/BXFinance.app/Info.plist ... 
+2020-04-27 20:49:39 +0000  1556 bytes for ./Payload/BXFinance.app/Info.plist
+copying file ./Payload/BXFinance.app/PkgInfo ... 
+2020-04-27 20:49:39 +0000  8 bytes for ./Payload/BXFinance.app/PkgInfo
+2020-04-27 20:49:39 +0000  /usr/bin/ditto exited with 0
+2020-04-27 20:49:39 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2020-04-27 20:49:39 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2020-04-27 20:49:39 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2020-04-27 20:49:39 +0000  Processing step: IDEDistributionCreateManifestStep
