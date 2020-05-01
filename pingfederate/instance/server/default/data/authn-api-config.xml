@@ -3,5 +3,5 @@
     <apiApplications>
         <application description="" id="DefaultAuthNAPIApp" name="Default AuthN API" url="https://demo.bxfinance.xyz/pf-ws/authn/explorer"/>
     </apiApplications>
-    <apiSettings apiEnabled="true" enableApiDescriptions="true"/>
+    <apiSettings apiEnabled="true" defaultApplicationId="DefaultAuthNAPIApp" enableApiDescriptions="true"/>
 </authnApiConfig>
