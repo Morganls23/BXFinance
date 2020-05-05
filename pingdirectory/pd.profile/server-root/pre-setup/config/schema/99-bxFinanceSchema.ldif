@@ -4,4 +4,6 @@ objectClass: ldapSubentry
 objectClass: subschema
 cn: schema
 attributeTypes: ( bxFinanceUserAccountIDs-OID NAME 'bxFinanceUserAccountIDs' DESC 'AccountIDs for BXFinanceUsers' SYNTAX 1.3.6.1.4.1.30221.2.3.4 USAGE userApplications )
+attributeTypes: ( bxFinanceUserType-OID NAME 'bxFinanceUserType' DESC 'Specifies whether User is BXFinance or some other type' USAGE userApplications )
+objectClasses: ( bxFinanceUser-OID NAME 'bxFinanceUser' DESC 'bxFinanceUser' SUP inetOrgPerson STRUCTURAL MUST mail MAY ( bxFinanceUserAccountIDs $ bxFinanceUserAccountNumber $ bxFinanceUserAuthnPreferences $ bxFinanceUserCurrentAccountBalance $ bxFinanceUserDateofBirth $ bxFinanceUserHouseholdIncome $ bxFinanceUserSavingsAccountBalance $ bxFinanceUserType ) )
 
