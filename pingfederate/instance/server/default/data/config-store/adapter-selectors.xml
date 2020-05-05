@@ -3,5 +3,6 @@
     <con:map name="adapter-selectors">
         <con:item name="authnApi">com.pingidentity.pf.selectors.ExtendedPropertyAuthnSelector</con:item>
         <con:item name="authnExp">com.pingidentity.pf.selectors.ExtendedPropertyAuthnSelector</con:item>
+        <con:item name="shareSessions">com.pingidentity.pf.selectors.session.SessionAuthnSelector</con:item>
     </con:map>
 </con:config>
