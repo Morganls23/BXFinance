@@ -21,7 +21,7 @@
     </md:Extensions>
     <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-05-04T22:00:02.196Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-05-05T20:41:50.178Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
                 <urn:IDP AssertionsSigned="false" DefaultTargetResource="">
