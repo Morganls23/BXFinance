@@ -33,7 +33,7 @@ dsconfig create-external-server \
     --set hostname-verification-method:allow-all  \
     --set key-manager-provider:Null  \
     --set 'trust-manager-provider:Blind Trust'  \
-    --set shared-secret:AADScPG9RHei0yo5ze7D6ypfZDnJoKjQscE=  \
+    --set shared-secret:AADiRm5HLBZWoe2Ix6JPQTJsO9Y1GNy2Jzg=  \
     --set decision-node:e51688ff-1dc9-4b6c-bb36-8af64d02e9d1  \
     --set branch:defaultPolicies.snapshot 
 
@@ -43,7 +43,7 @@ dsconfig create-external-server \
     --set server-host-name:pingdirectory  \
     --set location:Docker  \
     --set bind-dn:cn=dmanager  \
-    --set password:AADsWOmRVgvsnyO3JY5rOQtEQmPzOgFlcHQ= 
+    --set password:AACnkTfKnbK29w4q3BUhyIPvFgvHOzcw+gw= 
 
 dsconfig create-external-server \
     --server-name pingfederate  \
@@ -78,7 +78,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:pingfederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AAA6f+0Gzf0wmNaXU8l8G/Zk74CjgMuT5O4= 
+    --set client-secret:AADBhwCj0UzycDGntAWKHpgFvthT4dBw4Kg= 
 
 dsconfig create-token-resource-lookup-method \
     --validator-name pingfederateATV  \
@@ -100,6 +100,13 @@ dsconfig create-gateway-api-endpoint \
     --set inbound-base-path:/anything  \
     --set outbound-base-path:/anything  \
     --set api-server:http-bin 
+
+dsconfig create-gateway-api-endpoint \
+    --endpoint-name menuOptions  \
+    --set access-token-validator:pingfederateATV  \
+    --set inbound-base-path:/menuOptions  \
+    --set outbound-base-path:/menuOptions  \
+    --set api-server:beeceptor 
 
 dsconfig create-gateway-api-endpoint \
     --endpoint-name openbanking  \
@@ -127,7 +134,7 @@ dsconfig create-sideband-api-endpoint \
 
 dsconfig create-sideband-api-shared-secret \
     --secret-name my-ss  \
-    --set shared-secret:AABDsCRWtIm8zQ3m1iBxMrZkMtLizyyM/as= 
+    --set shared-secret:AACpzsWK1jkNa24HhPq6lVUkofxhCCmg1EA= 
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
