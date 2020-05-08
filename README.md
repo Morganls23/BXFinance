@@ -35,6 +35,9 @@
   - Use your own creds to login
 * Access [MailTrap] (https://mailtrap.io/)
   - rlyle+bxfinance@pingidentity.com / 2FederateM0re
+* Apple Developer: 
+  - sa-demo-group@pingidentity.com
+  
 
 ## Basic User Testing 
 * Access [Delegated Administration] (https://demo.bxfinance.xyz/delegator/)
