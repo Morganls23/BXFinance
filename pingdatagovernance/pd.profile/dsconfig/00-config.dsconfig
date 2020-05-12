@@ -33,7 +33,7 @@ dsconfig create-external-server \
     --set hostname-verification-method:allow-all  \
     --set key-manager-provider:Null  \
     --set 'trust-manager-provider:Blind Trust'  \
-    --set shared-secret:AADiRm5HLBZWoe2Ix6JPQTJsO9Y1GNy2Jzg=  \
+    --set shared-secret:AAAsmGjjZc55OFyakz0HlwPvzQf1Q3orRP8=  \
     --set decision-node:e51688ff-1dc9-4b6c-bb36-8af64d02e9d1  \
     --set branch:defaultPolicies.snapshot 
 
@@ -43,7 +43,7 @@ dsconfig create-external-server \
     --set server-host-name:pingdirectory  \
     --set location:Docker  \
     --set bind-dn:cn=dmanager  \
-    --set password:AACnkTfKnbK29w4q3BUhyIPvFgvHOzcw+gw= 
+    --set password:AADaEnGbR9wjHz+OonhldKbxX/kSN/bitOU= 
 
 dsconfig create-external-server \
     --server-name pingfederate  \
@@ -78,7 +78,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:pingfederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AADBhwCj0UzycDGntAWKHpgFvthT4dBw4Kg= 
+    --set client-secret:AAA/73MDYuufTuXruuKv1pv9Bn4SYGRxzok= 
 
 dsconfig create-token-resource-lookup-method \
     --validator-name pingfederateATV  \
@@ -134,7 +134,7 @@ dsconfig create-sideband-api-endpoint \
 
 dsconfig create-sideband-api-shared-secret \
     --secret-name my-ss  \
-    --set shared-secret:AACpzsWK1jkNa24HhPq6lVUkofxhCCmg1EA= 
+    --set shared-secret:AABUqr/b9zH6VnUEiyxlWC8lg57v20xYFcQ= 
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
