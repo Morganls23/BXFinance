@@ -18,7 +18,7 @@ dsconfig create-key-manager-provider \
     --set enabled:true  \
     --set key-store-file:config/pingdirectory.p12  \
     --set key-store-type:PKCS12  \
-    --set key-store-pin:AABQGU48gt2ZJy/0RfoziKVgyyoZSJN7Qc8= 
+    --set key-store-pin:AAC48bPQuyqdcxI7bT4+A22U4iWpRJNtbYM= 
 
 dsconfig set-trust-manager-provider-prop \
     --provider-name 'Blind Trust'  \
@@ -83,7 +83,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AADtH/IFYjCvDsTVSHSu5jvzthLGev1xerQ= 
+    --set password:AAD6b8oQfLA+05W0yFxVdSJzWvCsu0HTdBI= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -115,7 +115,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AAAdfA8OxDN2SKz7QCesnKkNDCRkFQp7FZE= 
+    --set client-secret:AADgbBayeNZMvhVFCP/PzrmYGPo74gwS8iQ= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
@@ -183,7 +183,7 @@ dsconfig create-delegated-admin-rights \
 dsconfig create-delegated-admin-rights \
     --rights-name 'User Admin'  \
     --set enabled:true  \
-    --set admin-user-dn:uid=useradmin,ou=Administrators,dc=bxfinance.xyz 
+    --set admin-user-dn:uid=bankadmin,ou=Administrators,dc=bxfinance.xyz 
 
 dsconfig create-rest-resource-type \
     --type-name groups  \
@@ -275,9 +275,9 @@ dsconfig create-delegated-admin-resource-rights \
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
     --attribute-type bxFinanceUserAccountNumber  \
-    --set 'display-name:BXFinance Account Number'  \
+    --set 'display-name:BXFinance - Account Number'  \
     --set 'attribute-category:User Information'  \
-    --set display-order-index:3 
+    --set display-order-index:4 
 
 dsconfig create-delegated-admin-attribute \
     --type-name users  \
@@ -302,6 +302,13 @@ dsconfig create-delegated-admin-attribute \
     --type-name users  \
     --attribute-type mail  \
     --set display-name:Email  \
+    --set 'attribute-category:User Information'  \
+    --set display-order-index:3 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type mobile  \
+    --set 'display-name:Mobile Phone'  \
     --set 'attribute-category:User Information'  \
     --set display-order-index:3 
 
