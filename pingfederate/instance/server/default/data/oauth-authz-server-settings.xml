@@ -13,6 +13,10 @@
         <urn1:AttributeMap Name="USER_KEY" Type="Authentication Policy Contract" Value="ImmutableID" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
     </urn:ApcToUserKeyMapping>
+    <urn:ClientCredentialsToAccessTokenMapping contextId="client_credentials" tokenManagerId="jwtDefault">
+        <urn1:AttributeMap Name="sub" Type="Text" Value="marketingApp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:ClientCredentialsToAccessTokenMapping>
     <urn:ReuseExistingPersistentGrantForGrant>implicit</urn:ReuseExistingPersistentGrantForGrant>
     <urn:allowedOrigins>http://demo.bxfinance.xyz</urn:allowedOrigins>
     <urn:allowedOrigins>https://demo.bxfinance.xyz</urn:allowedOrigins>
