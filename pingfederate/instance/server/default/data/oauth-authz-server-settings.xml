@@ -14,7 +14,7 @@
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
     </urn:ApcToUserKeyMapping>
     <urn:ClientCredentialsToAccessTokenMapping contextId="client_credentials" tokenManagerId="jwtDefault">
-        <urn1:AttributeMap Name="sub" Type="Text" Value="marketingApp" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="sub" Type="Expression" Value="#this.get(&quot;context.HttpRequest&quot;).getObjectValue().getHeader(&quot;username&quot;)" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
         <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
     </urn:ClientCredentialsToAccessTokenMapping>
     <urn:ReuseExistingPersistentGrantForGrant>implicit</urn:ReuseExistingPersistentGrantForGrant>
