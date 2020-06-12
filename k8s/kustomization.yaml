@@ -1,0 +1,20 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+resources:
+- pingaccess.yaml
+- pingdataconsole.yaml
+- pingdatagovernance.yaml
+- pingdatagovernancepap.yaml
+# - pingdelegator.yaml
+- pingdirectory.yaml
+- pingfederate.yaml
+- secret.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+configMapGenerator:
+- name: shared-vars
+  envs:
+    - shared-vars
