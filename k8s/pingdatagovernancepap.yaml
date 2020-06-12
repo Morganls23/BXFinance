@@ -1,0 +1,91 @@
+apiVersion: v1
+data:
+  # SERVER_PROFILE_URL: https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
+  SERVER_PROFILE_PATH: pingdatagovernancepap
+  REST_API_HOSTNAME: pingdatagovernancepap.samir.ping-devops.com
+  HTTPS_PORT: "9443"
+  DECISION_POINT_SHARED_SECRET: 2Federate
+kind: ConfigMap
+metadata:
+  labels:
+    role: pingdatagovernancepap
+  name: pingdatagovernancepap-environment-variables
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    role: pingdatagovernancepap
+  name: pingdatagovernancepap
+spec:
+  ports:
+  - name: https
+    port: 9443
+  selector:
+    role: pingdatagovernancepap
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    role: pingdatagovernancepap
+  name: pingdatagovernancepap
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      role: pingdatagovernancepap
+  template:
+    metadata:
+      labels:
+        role: pingdatagovernancepap
+      name: pingdatagovernancepap
+    spec:
+      containers:
+      - envFrom:
+        - configMapRef:
+            name: shared-vars
+        - secretRef:
+            name: server-profile-url
+            optional: false
+        - secretRef:
+            name: devops-secret
+            optional: true
+        - configMapRef:
+            name: pingdatagovernancepap-environment-variables
+        image: pingidentity/pingdatagovernancepap:edge
+        name: pingdatagovernancepap
+        ports:
+        - containerPort: 9443
+        resources:
+          limits:
+            cpu: "1"
+            memory: 1Gi
+          requests:
+            cpu: "1"
+            memory: 1Gi
+
+---
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx-public
+    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+  labels:
+    role: pingdatagovernancepap
+  name: pingdatagovernancepap
+spec:
+  rules:
+  - host: pingdatagovernancepap.${PING_IDENTITY_DEVOPS_DNS_ZONE}
+    http:
+      paths:
+      - backend:
+          serviceName: pingdatagovernancepap
+          servicePort: 9443
+        path: /
+  tls:
+  - hosts:
+    - pingdatagovernancepap.${PING_IDENTITY_DEVOPS_DNS_ZONE}
+    secretName: tls-secret

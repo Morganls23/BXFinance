@@ -1,0 +1,10 @@
+PF_BASE_URL=https://pingaccess.samir.ping-devops.com
+PF_HOST=pingaccess.samir.ping-devops.com
+PD_HOST=pingaccess.samir.ping-devops.com
+#PD_PORT=443
+PF_BASE_HOST=pingaccess.samir.ping-devops.com
+PF_CLIENT_ID=Delegator
+PF_LOG_LEVEL=DEBUG
+PF_USER_PWD=2FederateM0re
+#PING_IDENTITY_ACCEPT_EULA=YES
+USER_BASE_DN=dc=bxfinance.xyz

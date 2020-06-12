@@ -1,0 +1,129 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  labels:
+    app: pingdirectory
+  name: pingdirectory-gp2
+mountOptions:
+- discard
+parameters:
+  type: gp2
+provisioner: kubernetes.io/aws-ebs
+
+---
+apiVersion: v1
+data:
+  K8S_STATEFUL_SET_NAME: pingdirectory
+  K8S_STATEFUL_SET_SERVICE_NAME: pingdirectory
+  ORCHESTRATION_TYPE: KUBERNETES
+  # SERVER_PROFILE_URL: https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
+  SERVER_PROFILE_PATH: pingdirectory
+kind: ConfigMap
+metadata:
+  annotations: {}
+  labels:
+    role: pingdirectory
+  name: pingdirectory-environment-variables
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    role: pingdirectory
+  name: pingdirectory
+spec:
+  clusterIP: None
+  ports:
+  - name: ldaps
+    port: 636
+  - name: ssl
+    port: 443
+  - name: ldap
+    port: 389
+  selector:
+    role: pingdirectory
+
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  labels:
+    role: pingdirectory
+  name: pingdirectory
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      role: pingdirectory
+  serviceName: pingdirectory
+  template:
+    metadata:
+      labels:
+        role: pingdirectory
+      name: pingdirectory
+    spec:
+      containers:
+      - envFrom:
+        - configMapRef:
+            name: shared-vars
+        - secretRef:
+            name: server-profile-url
+            optional: false
+        - secretRef:
+            name: devops-secret
+            optional: true
+        - configMapRef:
+            name: pingdirectory-environment-variables
+        image: pingidentity/pingdirectory:edge
+        lifecycle:
+          preStop:
+            exec:
+              command:
+              - /bin/sh
+              - -c
+              - /preStop.sh
+        livenessProbe:
+          exec:
+            command:
+            - /bin/sh
+            - -c
+            - /opt/liveness.sh
+          initialDelaySeconds: 300
+          periodSeconds: 30
+        name: pingdirectory
+        ports:
+        - containerPort: 636
+        - containerPort: 443
+        - containerPort: 389
+        readinessProbe:
+          exec:
+            command:
+            - /bin/sh
+            - -c
+            - /opt/liveness.sh
+        resources:
+          limits:
+            cpu: "4"
+            memory: 8Gi
+          requests:
+            cpu: "4"
+            memory: 8Gi
+        volumeMounts:
+        - mountPath: /opt/out
+          name: out-dir
+      terminationGracePeriodSeconds: 300
+      volumes:
+      - name: out-dir
+        persistentVolumeClaim:
+          claimName: out-dir
+  volumeClaimTemplates:
+  - metadata:
+      name: out-dir
+    spec:
+      accessModes:
+      - ReadWriteOnce
+      resources:
+        requests:
+          storage: 5Gi
+      storageClassName: pingdirectory-gp2
