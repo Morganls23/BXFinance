@@ -59,7 +59,8 @@ is not recommended as it may interfere with expected server behavior.
 
 <body onload="setFocus();isWebAuthnPlatformAuthenticatorAvailable();">
 
-<div class="ping-container ping-signin login-template">
+<!-- added BXFinance card box-->
+<div class="card card-login ping-container ping-signin login-template">
 
     <!--
     if there is a logo present in the 'company-logo' container,
@@ -70,7 +71,7 @@ is not recommended as it may interfere with expected server behavior.
         <!-- adding for BXFinance styling -->
         <img src="assets/images/logo.svg" class="logo" />
         <!-- END OF-->
-
+        <br/><br/>
         $templateMessages.getMessage($messageKeyPrefix, "title")
     </div>
     <!-- .ping-header -->
@@ -154,8 +155,8 @@ is not recommended as it may interfere with expected server behavior.
                         <div class="ping-buttons">
                             <input type="hidden" name="$ok" value="" />
                             <input type="hidden" name="$cancel" value="" />
-
-                            <a onclick="postOk();" class="ping-button normal allow" title="$templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")">
+                            <!-- adding button classes-->
+                            <a onclick="postOk();" class="btn btn-secondary ping-button normal allow" title="$templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")">
                             $templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")
                             </a>
                         </div><!-- .ping-buttons -->
