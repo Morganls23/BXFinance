@@ -1,0 +1,91 @@
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,900|Roboto:300,400,700,900&display=swap");
+
+
+/* Variables */
+
+:root {
+  --primary: #66c5b1;
+  --secondary: #456059;
+  --dark: #1f0f11;
+  --info: #66b0c0;
+}
+
+
+/* Global */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url("../images/background.jpg") center center no-repeat var(--secondary);
+  background-size: cover;
+  font-family: "Rubik";
+}
+
+
+/* Buttons */
+
+.btn-primary,
+.btn-secondary {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 25px;
+  border-radius: 6px;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+}
+
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(102,197,177,.25);
+}
+
+.btn-link {
+  color: var(--info);
+}
+
+.btn-link:focus,
+.btn-link:not(:disabled):not(.disabled):active,
+.btn-link:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102,197,177,.25);
+}
+
+
+/* Forms */
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem rgba(102,197,177,.25);
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.custom-control-input:checked:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(102,197,177,.25);
+}
