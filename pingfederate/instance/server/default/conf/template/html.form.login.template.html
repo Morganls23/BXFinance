@@ -72,12 +72,13 @@ is not recommended as it may interfere with expected server behavior.
         <!-- adding for BXFinance styling -->
         <img src="assets/images/logo.svg" class="logo" />
         <!-- END OF-->
-        <h4>$templateMessages.getMessage($messageKeyPrefix, "title")</h4>
+        
     </div>
     <!-- .ping-header -->
 
     <!-- added BXFinance card box-->
     <div class="card-body">
+        <h4>$templateMessages.getMessage($messageKeyPrefix, "title")</h4>
         <!-- added BXFinance card box-->
         <div class="tab-content"><div class="tab-pane active">
         <div class="form-group-light form-group">
@@ -158,9 +159,11 @@ is not recommended as it may interfere with expected server behavior.
                             <input type="hidden" name="$ok" value="" />
                             <input type="hidden" name="$cancel" value="" />
                             <!-- adding BXFinance button classes-->
+                            <button type="button" class="btn btn-secondary">
                             <a onclick="postOk();" class="btn btn-secondary" title="$templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")">
                             $templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")
                             </a>
+                            </button>
                         </div><!-- .ping-buttons -->
 
                         #if($supportsPasswordChange || $supportsPasswordReset || $supportsUsernameRecovery)
