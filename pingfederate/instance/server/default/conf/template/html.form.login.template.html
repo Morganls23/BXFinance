@@ -88,11 +88,11 @@ is not recommended as it may interfere with expected server behavior.
                     #if($authnMessageKey)
                         <div class="ping-error">$templateMessages.getMessage($authnMessageKey)</div>
                     #end
-                    #*
+            
                     #if($errorMessageKey)
                         <div class="ping-error">$templateMessages.getMessage($messageKeyPrefix, $errorMessageKey)</div>
                     #end
-                    *#
+                    
 
                     ## Uncomment below to display any additional server error:
                     #*
@@ -120,10 +120,12 @@ is not recommended as it may interfere with expected server behavior.
                             #else
                                 <input id="username" type="text" size="36" name="$name" value="$username" disabled="disabled" autocorrect="off" autocapitalize="off" onKeyPress="return postOnReturn(event)"  /><!--#* Username value is explicitly HTML encoded in HtmlFormIdpAuthnAdapter *#-->
                             #end
+                            <!--
                             <div class="place-bottom type-alert tooltip-text" id="username-text">
                                 <div class="icon">!</div>
                                 $templateMessages.getMessage($messageKeyPrefix, "missingField")
                             </div>
+                        -->
                         </div>
 
                         <div class="ping-input-label">
@@ -131,10 +133,12 @@ is not recommended as it may interfere with expected server behavior.
                         </div>
                         <div class="ping-input-container password-container">
                             <input id="password" type="password" size="36" name="$pass" onKeyPress="return postOnReturn(event)" />
+                            <!--
                             <div class="place-bottom type-alert tooltip-text" id="password-text">
                                 <div class="icon">!</div>
                                 $templateMessages.getMessage($messageKeyPrefix, "missingField")
                             </div>
+                        -->
                         </div>
 
                         #if($enableRememberUsername)
