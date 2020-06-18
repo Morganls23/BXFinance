@@ -160,6 +160,7 @@ is not recommended as it may interfere with expected server behavior.
                             </button>
                         </div><!-- .ping-buttons -->
 
+                        <br/>
                         #if($supportsPasswordChange || $supportsPasswordReset || $supportsUsernameRecovery)
                         <div class="ping-input-link ping-pass-change account-actions">
                             #if($supportsPasswordChange)
@@ -178,6 +179,7 @@ is not recommended as it may interfere with expected server behavior.
                         </div>
                         #end
 
+                        <br/>
                         #if($registrationEnabled)
                         <div class="ping-register">
                             <input type="hidden" name="$registrationValue" value=""/>
