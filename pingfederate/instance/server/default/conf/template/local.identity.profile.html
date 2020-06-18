@@ -40,6 +40,17 @@ is not recommended as it may interfere with expected server behavior.
 
 <body onload="isWebAuthnPlatformAuthenticatorAvailable();">
 
+<div class="card card-register">
+
+     <!-- adding for BXFinance styling -->
+     <div class="card-header">
+        <!-- adding for BXFinance styling -->
+        <img src="assets/images/logo.svg" class="logo" />
+        <!-- END OF-->
+        
+    </div>
+    <!-- .ping-header -->
+
 #if($messages)
 <div data-id="messages" class="page-messages full">
     #if($success)
@@ -55,7 +66,6 @@ is not recommended as it may interfere with expected server behavior.
 </div>
 #end
 
-<div class="card card-register">
     <div class="card-body">
         <div>
             <form method="POST" action="$url" autocomplete="off">
