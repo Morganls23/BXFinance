@@ -163,17 +163,17 @@ is not recommended as it may interfere with expected server behavior.
                         #if($supportsPasswordChange || $supportsPasswordReset || $supportsUsernameRecovery)
                         <div class="ping-input-link ping-pass-change account-actions">
                             #if($supportsPasswordChange)
-                            <a href="$changePasswordUrl" class="password-change">$templateMessages.getMessage($messageKeyPrefix, "changePassword")</a>
+                            <!-- <a href="$changePasswordUrl" class="password-change">$templateMessages.getMessage($messageKeyPrefix, "changePassword")</a> -->
                             #end
                             #if($supportsPasswordChange && ($supportsPasswordReset || $supportsUsernameRecovery))
-                            <span class="divider">|</span>
+                            <!-- <span class="divider">|</span> -->
                             #end
                             #if($supportsPasswordReset)
                             <input type="hidden" name="$passwordReset" value=""/>
-                            <a onclick="postForgotPassword();" class="forgot-password">$templateMessages.getMessage($messageKeyPrefix, "forgotPassword")</a>
+                            <a onclick="postForgotPassword();" class="text-info">$templateMessages.getMessage($messageKeyPrefix, "forgotPassword")</a>
                             #elseif($supportsUsernameRecovery)
                             <input type="hidden" name="$usernameRecovery" value=""/>
-                            <a onclick="postRecoverUsername();" class="forgot-password">$templateMessages.getMessage($messageKeyPrefix, "recoverUsername")</a>
+                            <a onclick="postRecoverUsername();" class="text-info">$templateMessages.getMessage($messageKeyPrefix, "recoverUsername")</a>
                             #end
                         </div>
                         #end
@@ -181,7 +181,7 @@ is not recommended as it may interfere with expected server behavior.
                         #if($registrationEnabled)
                         <div class="ping-register">
                             <input type="hidden" name="$registrationValue" value=""/>
-                            $templateMessages.getMessage($messageKeyPrefix, "noAccountMessage") <a onclick="postRegistration();">$templateMessages.getMessage($messageKeyPrefix, "registerAccount")</a>
+                            $templateMessages.getMessage($messageKeyPrefix, "noAccountMessage") <a class="text-info" onclick="postRegistration();">$templateMessages.getMessage($messageKeyPrefix, "registerAccount")</a>
                         </div>
                         #end
 
