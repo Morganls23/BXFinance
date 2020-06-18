@@ -174,7 +174,7 @@ img {
                 #end
 
                 
-                <td style="background:#fff;text-align: center;padding:20px 40px;"><p style="font-family:Helvetica, Arial,sans-serif">You're all set up and ready to begin using your BXFinance account online at <a href="http://www.bxfinance.com">www.bxfinance.com</a> and with the BXFinance app, with these credentials:</p>
+                <td style="background:#fff;text-align: center;padding:20px 40px;"><p style="font-family:Helvetica, Arial,sans-serif">You're all set up and ready to begin using your BXFinance account online at <a href="#">bxfinance.org</a> and with the BXFinance app, with these credentials:</p>
                 <ul style="font-family:Helvetica, Arial,sans-serif;list-style-type:none; background: #eeeeee; padding:20px;margin: 10px 0;">
                 
                   #if($password)
@@ -183,18 +183,17 @@ img {
                           Your account has been created with a username of <strong>$username</strong>.
                     #end
                   </ul>
+                #if($profile_management_url)
+                <p style="margin-top:60px;color: #fff;font-size:18px;font-weight: bold;"><a target="_blank" href="$profile_management_url" style="font-family:Helvetica, Arial,sans-serif;background:#66c5b1;padding:20px 40px;border-radius: 6px;text-decoration:none;color: #fff"> Manage Your Profile</a></p>
+                #else
                 <p style="margin-top:60px;color: #fff;font-size:18px;font-weight: bold;"><a target="_blank" href="#" style="font-family:Helvetica, Arial,sans-serif;background:#66c5b1;padding:20px 40px;border-radius: 6px;text-decoration:none;color: #fff"> Sign In</a></p>
+                #end
                 </td></tr></table>
 
               </td>
             </tr>
             <tr>
               <td class="container-padding footer-text" align="center" style="text-align: center;font-family:Helvetica, Arial, sans-serif;line-height:16px;font-size:14px;padding-left:24px;padding-right:24px;padding-top:20px;padding-bottom:40px;">
-                #if($profile_management_url)
-    <p>
-      <a href="$profile_management_url">Manage your profile</a>
-    </p>
-#end | <a href="#">Get BXFinance App</a>
                 <br><br>
                 © BXFinance, 2020<br>
                 <a href="#">bxfinance.org</a>
