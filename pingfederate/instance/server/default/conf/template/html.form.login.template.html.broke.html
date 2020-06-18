@@ -46,7 +46,12 @@ is not recommended as it may interfere with expected server behavior.
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+    <!-- adding for BXFinance styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <!-- END OF -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/main.css"/> -->
     #if($captchaEnabled)
         <script src='https://www.google.com/recaptcha/api.js' async defer></script>
     #end
@@ -54,30 +59,40 @@ is not recommended as it may interfere with expected server behavior.
 
 <body onload="setFocus();isWebAuthnPlatformAuthenticatorAvailable();">
 
-<div class="ping-container ping-signin login-template">
+<!-- added BXFinance card box-->
+<div class="card card-login">
 
     <!--
     if there is a logo present in the 'company-logo' container,
     then 'has-logo' class should be added to 'ping-header' container.
     -->
-    <div class="ping-header">
-        <span class="company-logo"><!-- client company logo here --></span>
-        $templateMessages.getMessage($messageKeyPrefix, "title")
+    
+    <!-- adding for BXFinance styling -->
+    <div class="card-header">
+        <!-- adding for BXFinance styling -->
+        <img src="assets/images/logo.svg" class="logo" />
+        <!-- END OF-->
+        
     </div>
     <!-- .ping-header -->
 
-    <div class="ping-body-container">
-
-        <div>
+    <!-- added BXFinance card box-->
+    <div class="card-body">
+        <h4>$templateMessages.getMessage($messageKeyPrefix, "title")</h4>
+        <!-- added BXFinance card box-->
+        <div class="tab-content"><div class="tab-pane active">
+        <div class="form-group-light form-group">
             <form method="POST" action="$url" autocomplete="off">
 
                 <div class="ping-messages">
                     #if($authnMessageKey)
                         <div class="ping-error">$templateMessages.getMessage($authnMessageKey)</div>
                     #end
+            
                     #if($errorMessageKey)
                         <div class="ping-error">$templateMessages.getMessage($messageKeyPrefix, $errorMessageKey)</div>
                     #end
+                    
 
                     ## Uncomment below to display any additional server error:
                     #*
@@ -105,21 +120,26 @@ is not recommended as it may interfere with expected server behavior.
                             #else
                                 <input id="username" type="text" size="36" name="$name" value="$username" disabled="disabled" autocorrect="off" autocapitalize="off" onKeyPress="return postOnReturn(event)"  /><!--#* Username value is explicitly HTML encoded in HtmlFormIdpAuthnAdapter *#-->
                             #end
+                            <!--
                             <div class="place-bottom type-alert tooltip-text" id="username-text">
                                 <div class="icon">!</div>
                                 $templateMessages.getMessage($messageKeyPrefix, "missingField")
                             </div>
+                        -->
                         </div>
+                        <br/>
 
                         <div class="ping-input-label">
                             $templateMessages.getMessage($messageKeyPrefix, "passwordTitle")
                         </div>
                         <div class="ping-input-container password-container">
                             <input id="password" type="password" size="36" name="$pass" onKeyPress="return postOnReturn(event)" />
+                            <!--
                             <div class="place-bottom type-alert tooltip-text" id="password-text">
                                 <div class="icon">!</div>
                                 $templateMessages.getMessage($messageKeyPrefix, "missingField")
                             </div>
+                        -->
                         </div>
 
                         #if($enableRememberUsername)
@@ -141,14 +161,15 @@ is not recommended as it may interfere with expected server behavior.
                                 </div>
                             </label>
                         #end
-
+                        <br/><br/>
                         <div class="ping-buttons">
                             <input type="hidden" name="$ok" value="" />
                             <input type="hidden" name="$cancel" value="" />
-
-                            <a onclick="postOk();" class="ping-button normal allow" title="$templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")">
+                            <!-- adding BXFinance button classes-->
+                            <a onclick="postOk();" class="btn btn-secondary normal allow" title="$templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")">
                             $templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")
                             </a>
+                            
                         </div><!-- .ping-buttons -->
 
                         #if($supportsPasswordChange || $supportsPasswordReset || $supportsUsernameRecovery)
@@ -218,17 +239,17 @@ is not recommended as it may interfere with expected server behavior.
                 <input type="hidden" name="$adapterIdField" id="$adapterIdField" value="$adapterId" />
             </form>
         </div><!-- .ping-body// blank div -->
-        
+        </div></div>
     </div><!-- .ping-body-container -->
 
+    <!-- Removing Ping Footer-->
+    <!--
     <div class="ping-footer-container">
         <div class="ping-footer">
             <div class="ping-credits"></div>
             <div class="ping-copyright">$templateMessages.getMessage("global.footerMessage")</div>
         </div>
-        <!-- .ping-footer -->
-    </div>
-    <!-- .ping-footer-container -->
+    </div> -->
 
 </div><!-- .ping-container -->
 
