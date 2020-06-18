@@ -153,9 +153,9 @@ is not recommended as it may interfere with expected server behavior.
                             <input type="hidden" name="$ok" value="" />
                             <input type="hidden" name="$cancel" value="" />
 
-                            <a onclick="postOk();" class="ping-button normal allow" title="$templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")">
+                            <button onclick="postOk();" class="ping-button normal allow" title="$templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")">
                             $templateMessages.getMessage($messageKeyPrefix, "signInButtonTitle")
-                            </a>
+                            </button>
                         </div><!-- .ping-buttons -->
 
                         #if($supportsPasswordChange || $supportsPasswordReset || $supportsUsernameRecovery)
