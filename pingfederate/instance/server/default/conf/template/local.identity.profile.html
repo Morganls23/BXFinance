@@ -438,15 +438,15 @@ is not recommended as it may interfere with expected server behavior.
                                                 </div>
                                                 #end
 
-                                                <div class="ping-input-label">
+                                                <div class="ping-input-label" style="font-family:Rubik;">
                                                     $templateMessages.getMessage($messageKeyPrefix, "newPasswordTitle")
                                                 </div>
-                                                <div class="ping-input-container required" style="font-family:Rubik;" id="container-password">
+                                                <div class="ping-input-container required" id="container-password">
                                                     <input id="password" class="pass-required reveal" type="password" name="$pass" autocomplete="user-password" onKeyUp="return postChangePassOnReturn(event)" />
                                                     <a id="reveal" class="password-show-button icon-view" onclick="revealPassword();"></a>
                                                 </div>
                                                 <div class="button-group">
-                                                    <button type="button" onclick="return postChangePass();" class="primary" style="background-color:#67c5b1;">$templateMessages.getMessage($messageKeyPrefix, "changePasswordButtonTitle")</button>
+                                                    <button type="button" onclick="return postChangePass();" class="primary" style="background-color:#67c5b1; font-family:Rubik;">$templateMessages.getMessage($messageKeyPrefix, "changePasswordButtonTitle")</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -623,7 +623,7 @@ is not recommended as it may interfere with expected server behavior.
             </a>
         -->
 
-            <button onclick="postSave();" class="btn btn-primary ping-button normal allow" style="background-color:#67c5b1;" title='$templateMessages.getMessage($messageKeyPrefix, "saveButtonTitle")'>
+            <button onclick="postSave();" class="btn btn-primary ping-button normal allow" style="background-color:#67c5b1; font-family:Rubik;" title='$templateMessages.getMessage($messageKeyPrefix, "saveButtonTitle")'>
                 $templateMessages.getMessage($messageKeyPrefix, "saveButtonTitle")
             </button>
         </div>
