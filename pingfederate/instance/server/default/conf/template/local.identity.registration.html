@@ -304,6 +304,7 @@ is not recommended as it may interfere with expected server behavior.
                         </label>
                         #end
 
+                        <p align="center">
                         <div class="ping-buttons" style="margin:0 auto; font-family:Rubik;">
                             <input type="hidden" name="$ok" value=""/>
                             <input type="hidden" name="$cancel" value=""/>
@@ -325,6 +326,8 @@ is not recommended as it may interfere with expected server behavior.
                                 $templateMessages.getMessage($messageKeyPrefix, "login")
                             </a>
                         </div>
+
+                        </p>
 
                 #if($altAuthSources.size() > 0 && $isLocalRegistration)
                     </div>
