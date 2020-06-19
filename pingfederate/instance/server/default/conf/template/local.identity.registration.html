@@ -48,7 +48,7 @@ is not recommended as it may interfere with expected server behavior.
     document.body.style.display = "none";
 </script>
 
-<div class="card card-register" style="margin:auto; width:50%; font-family:Rubik">
+<div class="card card-register" style="margin:auto; width:30%; font-family:Rubik">
 
     <!-- adding for BXFinance styling -->
     <div class="card-header">
@@ -284,7 +284,7 @@ is not recommended as it may interfere with expected server behavior.
                                 $templateMessages.getMessage($messageKeyPrefix, "passwordTitle")
                             </div>
                             <div class="required" id="container-password">
-                                <input id="password" class="required $validateRequired reveal" style="width:50px;"  autocomplete="user-password" type="password"  name="$pass" onkeyup="return postOnReturn(event)"/>
+                                <input id="password" class="required $validateRequired reveal" style="width:400px;"  autocomplete="user-password" type="password"  name="$pass" onkeyup="return postOnReturn(event)"/>
                                 #if($altAuthSources.size() > 0 && $isLocalRegistration)
                                     <a id="reveal" class="password-show-button icon-view" onclick="revealPassword();"></a>
                                 #else
