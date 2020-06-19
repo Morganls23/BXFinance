@@ -48,7 +48,7 @@ is not recommended as it may interfere with expected server behavior.
     document.body.style.display = "none";
 </script>
 
-<div class="card card-register" style="margin:auto; width:50%; font-family:Rubik">
+<div class="card card-register" style="margin:auto; width:40%; font-family:Rubik">
 
     <!-- adding for BXFinance styling -->
     <div class="card-header">
@@ -310,18 +310,18 @@ is not recommended as it may interfere with expected server behavior.
                             <input type="hidden" name="$signOn" value=""/>
                             <input type="hidden" id="field" name="field">
 
-                            <a onclick="postOk();" class="ping-button normal allow" title="$templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")">
+                            <a onclick="postOk();" class="ping-button normal allow" style="background-color:#67c5b1; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")">
                                 $templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")
                             </a>
 
-                            <a href="javascript:void(0)" onclick="postCancel();" class="ping-button blue deny" title="$templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")">
+                            <a href="javascript:void(0)" onclick="postCancel();" class="ping-button blue deny" style="background-color:#3b8190; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")">
                             $templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")
                             </a>
                         </div>
 
                         <div class="account-actions ping-register">
                             $templateMessages.getMessage($messageKeyPrefix, "accountAlreadyCreated")
-                            <a href="javascript:void(0)" onclick="postSignOn();" title="$templateMessages.getMessage($messageKeyPrefix, "login")">
+                            <a class="text-info" href="javascript:void(0)" onclick="postSignOn();" title="$templateMessages.getMessage($messageKeyPrefix, "login")">
                                 $templateMessages.getMessage($messageKeyPrefix, "login")
                             </a>
                         </div>
