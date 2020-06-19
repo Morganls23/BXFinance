@@ -241,9 +241,9 @@ is not recommended as it may interfere with expected server behavior.
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </span>
                                 <label class="input-select $required $fieldDisabled" id="container-$escapedFieldId">
-                                    <div class="input-container">
+                                    <div class="input-container" style="width:100px">
                                         <div class="wrapper">
-                                            <select id="$escapedFieldId" name="$escapedFieldId" style="width:50px" class="$required $validateRequired" onkeyup="return postOnReturn(event)" $fieldDisabled>
+                                            <select id="$escapedFieldId" name="$escapedFieldId"  class="$required $validateRequired" onkeyup="return postOnReturn(event)" $fieldDisabled>
                                                 #if($field.getData().getDefaultValue().equals(""))
                                                 <option selected $disabledSelect value="">$templateMessages.getMessage($messageKeyPrefix, "dropDownDefault")</option>
                                                 #end
