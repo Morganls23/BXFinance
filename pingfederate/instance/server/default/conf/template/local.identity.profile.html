@@ -483,10 +483,10 @@ is not recommended as it may interfere with expected server behavior.
                                             <span class="details-close" onclick="hideTooltip()">
 
                                             </span>
-                                            <div class="details-title">
+                                            <div class="details-title" style="font-family:Rubik;">
                                                 $templateMessages.getMessage($messageKeyPrefix, "setPasswordTitle")
                                             </div>
-                                            <div class="details-body">
+                                            <div class="details-body" style="font-family:Rubik;">
                                                 #if($passwordMessage)
                                                 <div class="ping-messages">
                                                     <div class="ping-error">$templateMessages.getMessage($passwordMessage.getMessageKey(), $passwordMessage.getParams())</div>
@@ -556,7 +556,7 @@ is not recommended as it may interfere with expected server behavior.
                                                     <a id="reveal" class="password-show-button icon-view" onclick="revealPassword();"></a>
                                                 </div>
                                                 <div class="button-group">
-                                                    <button type="button" onclick="return postSetPass();" class="primary">$templateMessages.getMessage($messageKeyPrefix, "setPasswordButtonTitle")</button>
+                                                    <button type="button" onclick="return postSetPass();" class="primary" style="background-color:#67c5b1;"> $templateMessages.getMessage($messageKeyPrefix, "setPasswordButtonTitle")</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -623,7 +623,7 @@ is not recommended as it may interfere with expected server behavior.
             </a>
         -->
 
-            <button onclick="postSave();" class="btn btn-primary ping-button normal allow" style="background-color: blueviolet;" title='$templateMessages.getMessage($messageKeyPrefix, "saveButtonTitle")'>
+            <button onclick="postSave();" class="btn btn-primary ping-button normal allow" style="background-color:#67c5b1;" title='$templateMessages.getMessage($messageKeyPrefix, "saveButtonTitle")'>
                 $templateMessages.getMessage($messageKeyPrefix, "saveButtonTitle")
             </button>
         </div>
