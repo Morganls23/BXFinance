@@ -383,10 +383,10 @@ is not recommended as it may interfere with expected server behavior.
                                                     </div>
                                                 </span>
 
-                                                <div class="ping-input-label">
+                                                <div class="ping-input-label" style="font-family:Rubik;">
                                                     $templateMessages.getMessage($messageKeyPrefix, "currentPasswordTitle")
                                                 </div>
-                                                <div class="ping-input-container required" id="container-currentPassword">
+                                                <div class="ping-input-container required" id="container-currentPassword" style="font-family:Rubik;">
                                                     <input id="currentPassword" class="pass-required" type="password" name="$currentPass" autocomplete="off" onKeyUp="return postChangePassOnReturn(event)" />
                                                 </div>
 
@@ -441,12 +441,12 @@ is not recommended as it may interfere with expected server behavior.
                                                 <div class="ping-input-label">
                                                     $templateMessages.getMessage($messageKeyPrefix, "newPasswordTitle")
                                                 </div>
-                                                <div class="ping-input-container required" id="container-password">
+                                                <div class="ping-input-container required" style="font-family:Rubik;" id="container-password">
                                                     <input id="password" class="pass-required reveal" type="password" name="$pass" autocomplete="user-password" onKeyUp="return postChangePassOnReturn(event)" />
                                                     <a id="reveal" class="password-show-button icon-view" onclick="revealPassword();"></a>
                                                 </div>
                                                 <div class="button-group">
-                                                    <button type="button" onclick="return postChangePass();" class="primary">$templateMessages.getMessage($messageKeyPrefix, "changePasswordButtonTitle")</button>
+                                                    <button type="button" onclick="return postChangePass();" class="primary" style="background-color:#67c5b1;">$templateMessages.getMessage($messageKeyPrefix, "changePasswordButtonTitle")</button>
                                                 </div>
                                             </div>
                                         </div>
