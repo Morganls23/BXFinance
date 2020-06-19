@@ -164,7 +164,7 @@ is not recommended as it may interfere with expected server behavior.
                                         <div class="confirmation-text" id="email-verification-text">$templateMessages.getMessage($messageKeyPrefix, "emailAddressVerified")</div>
                                     </div>
                                 #else
-                                <div class="form-control $required" id="container-$escapedFieldId">
+                                <div class="$required" id="container-$escapedFieldId">
                                     #end
                                     <input class="$required $validateRequired" id="$escapedFieldId" type="text" autocomplete="off" name="$escapedFieldId" value="$fieldValue" onKeyPress="return postOnReturn(event)" $fieldDisabled/>
                                 </div>
