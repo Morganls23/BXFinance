@@ -133,18 +133,18 @@ is not recommended as it may interfere with expected server behavior.
                                     #end
                                 #end
                                 #if( $field.getName() == "Date" )
-                                    <div class="ping-input-label input-label ">
+                                    <div class="input-label ">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </div>
-                                    <div class="ping-input-container $required" id="container-$escapedFieldId">
+                                    <div class="$required" id="container-$escapedFieldId">
                                         <input class="$required $validateRequired" id="$escapedFieldId" autocomplete="user-date" type="date" name="$escapedFieldId" value="$fieldValue" placeholder="yyyy-mm-dd" onkeyup="return postOnReturn(event)" $fieldDisabled/>
                                     </div>
                                     
                                 #elseif( $field.getName() == "Text" )
-                                    <div class="ping-input-label">
+                                    <div class="">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </div>
-                                    <div class="ping-input-container $required" id="container-$escapedFieldId">
+                                    <div class="$required" id="container-$escapedFieldId">
                                         <input class="$required $validateRequired" id="$escapedFieldId" autocomplete="user-text" type="text" name="$escapedFieldId" value="$fieldValue" onkeyup="return postOnReturn(event)" $fieldDisabled/>
                                     </div>
                                     
@@ -153,7 +153,7 @@ is not recommended as it may interfere with expected server behavior.
                                         <span class="icon-alert"></span>
                                         $templateMessages.getMessage($messageKeyPrefix, "missingCheckbox")
                                     </div>
-                                    <label class="ping-input-container">
+                                    <label class="">
                                         <div class="ping-checkbox-container stacked $required" id="container-$escapedFieldId">
                                             #if( $fieldValue.equalsIgnoreCase("true") || $fieldValue.equalsIgnoreCase("on") )
                                                 <input class="$required" id="$escapedFieldId" type="checkbox" name="$escapedFieldId" checked $fieldDisabled/>
@@ -170,7 +170,7 @@ is not recommended as it may interfere with expected server behavior.
                                         <span class="icon-alert"></span>
                                         $templateMessages.getMessage($messageKeyPrefix, "missingCheckboxGroup")
                                     </div>
-                                    <div class="ping-input-label detached">
+                                    <div class="detached">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </div>
                                     #foreach( $option in $field.getData().getOptions() )
@@ -189,7 +189,7 @@ is not recommended as it may interfere with expected server behavior.
                                 <br/>
                                     
                                 #elseif( $field.getName() == "Email" )
-                                    <div class="ping-input-label">
+                                    <div class="">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </div>
                                     <div class="ping-input-container $required" id="container-$escapedFieldId">
@@ -197,18 +197,18 @@ is not recommended as it may interfere with expected server behavior.
                                     </div>
                                     
                                 #elseif( $field.getName() == "Phone" )
-                                    <div class="ping-input-label">
+                                    <div class="">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </div>
-                                    <div class="ping-input-container $required" id="container-$escapedFieldId">
+                                    <div class="$required" id="container-$escapedFieldId">
                                         <input class="$required $validateRequired" id="$escapedFieldId" autocomplete="user-phone" type="tel"  name="$escapedFieldId" value="$fieldValue" size="36" onkeyup="return postOnReturn(event)" $fieldDisabled/>
                                     </div>
                                     
                                 #elseif( $field.getName() == "Dropdown" )
-                                    <span class="ping-input-label detached">
+                                    <span class="detached">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </span>
-                                    <label class="input-select ping-input-container $required" id="container-$escapedFieldId">
+                                    <label class="input-select $required" id="container-$escapedFieldId">
                                         <div class="input-container">
                                             <div class="wrapper">
                                                 <select id="$escapedFieldId" name="$escapedFieldId" class="$required $validateRequired" onkeyup="return postOnReturn(event)" $fieldDisabled>
@@ -245,7 +245,7 @@ is not recommended as it may interfere with expected server behavior.
                             #end
 
                         #if( $isShowPasswordRequirements )
-                        <div class="ping-input-container">
+                        <div class="">
                             <div class="place-top type-requirements requirements tooltip-text" id="password-requirements">
                                 <div class="title" onclick="showHideRequirements();">
                                     $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementTitle")
@@ -280,10 +280,10 @@ is not recommended as it may interfere with expected server behavior.
                         #end
 
                         <div>
-                            <div class="ping-input-label">
+                            <div class="">
                                 $templateMessages.getMessage($messageKeyPrefix, "passwordTitle")
                             </div>
-                            <div class="ping-input-container required" id="container-password">
+                            <div class="required" id="container-password">
                                 <input id="password" class="required $validateRequired reveal" autocomplete="user-password" type="password" size="36" name="$pass" onkeyup="return postOnReturn(event)"/>
                                 #if($altAuthSources.size() > 0 && $isLocalRegistration)
                                     <a id="reveal" class="password-show-button icon-view" onclick="revealPassword();"></a>
@@ -375,14 +375,7 @@ is not recommended as it may interfere with expected server behavior.
 
     
 
-    <div class="ping-footer-container">
-        <div class="ping-footer">
-            <div class="ping-credits"></div>
-            <div class="ping-copyright">$templateMessages.getMessage("global.footerMessage")</div>
-        </div>
-        <!-- .ping-footer -->
-    </div>
-    <!-- .ping-footer-container -->
+   
 
 </div><!-- .ping-container -->
 
