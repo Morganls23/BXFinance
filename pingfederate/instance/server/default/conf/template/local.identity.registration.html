@@ -310,18 +310,18 @@ is not recommended as it may interfere with expected server behavior.
                             <input type="hidden" name="$signOn" value=""/>
                             <input type="hidden" id="field" name="field">
 
-                            <a onclick="postOk();" class="ping-button normal allow" style="margin:auto; background-color:#67c5b1; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")">
+                            <a onclick="postOk();" class="ping-button normal allow" style="text-align:center; background-color:#67c5b1; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")">
                                 $templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")
                             </a>
 
-                            <a href="javascript:void(0)" onclick="postCancel();" class="ping-button blue deny" style="font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")">
+                            <a href="javascript:void(0)" onclick="postCancel();" class="ping-button blue deny" style="text-align:center; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")">
                             $templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")
                             </a>
                         </div>
 
                         <div class="account-actions ping-register">
                             $templateMessages.getMessage($messageKeyPrefix, "accountAlreadyCreated")
-                            <a class="text-info" href="javascript:void(0)" onclick="postSignOn();" title="$templateMessages.getMessage($messageKeyPrefix, "login")">
+                            <a class="text-info" style="text-align:center; font-family:Rubik;" href="javascript:void(0)" onclick="postSignOn();" title="$templateMessages.getMessage($messageKeyPrefix, "login")">
                                 $templateMessages.getMessage($messageKeyPrefix, "login")
                             </a>
                         </div>
