@@ -243,7 +243,7 @@ is not recommended as it may interfere with expected server behavior.
                                 <label class="input-select $required $fieldDisabled" id="container-$escapedFieldId">
                                     <div class="input-container" style="width:80px">
                                         <div class="wrapper">
-                                            <select id="$escapedFieldId" name="$escapedFieldId"  class="$required $validateRequired" onkeyup="return postOnReturn(event)" $fieldDisabled>
+                                            <select id="$escapedFieldId" name="$escapedFieldId"  class="$required $validateRequired"  style="font-family:Rubik;" onkeyup="return postOnReturn(event)" $fieldDisabled>
                                                 #if($field.getData().getDefaultValue().equals(""))
                                                 <option selected $disabledSelect value="">$templateMessages.getMessage($messageKeyPrefix, "dropDownDefault")</option>
                                                 #end

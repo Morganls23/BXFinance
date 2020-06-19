@@ -16,10 +16,10 @@
             <loc:parameter param-name="Unique ID Field" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
-        <loc:field type="TEXT" default-value="" id="fullName" label="Full Name">
+        <loc:field type="EMAIL" default-value="" id="email" label="Email Address">
             <loc:appliesTo profile="true" registration="true"/>
             <loc:parameter param-name="Read-Only" value="false"/>
-            <loc:parameter param-name="Required" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
             <loc:parameter param-name="Unique ID Field" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
@@ -44,10 +44,10 @@
             <loc:parameter param-name="Unique ID Field" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
-        <loc:field type="EMAIL" default-value="" id="email" label="Email Address">
+        <loc:field type="TEXT" default-value="" id="fullName" label="Preferred Name">
             <loc:appliesTo profile="true" registration="true"/>
             <loc:parameter param-name="Read-Only" value="false"/>
-            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Required" value="false"/>
             <loc:parameter param-name="Unique ID Field" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
@@ -85,7 +85,7 @@
             <loc:parameter param-name="Unique ID Field" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
-        <loc:field type="DROPDOWN" default-value="Device" id="authnPreferences" label="Authentication Preferences">
+        <loc:field type="DROPDOWN" default-value="Device" id="authnPreferences" label="How would you like to sign in?">
             <loc:appliesTo profile="true" registration="true"/>
             <loc:parameter param-name="Read-Only" value="false"/>
             <loc:parameter param-name="Required" value="false"/>
