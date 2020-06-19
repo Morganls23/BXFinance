@@ -146,7 +146,7 @@ is not recommended as it may interfere with expected server behavior.
                             <div class="content-column" style="font-family:Rubik">
 
                                 #if( $field.getName() == "Date" )
-                                <div class="form-group input-label">
+                                <div class="input-label">
                                     $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                 </div>
                                 <div class="$required" id="container-$escapedFieldId">
@@ -154,7 +154,7 @@ is not recommended as it may interfere with expected server behavior.
                                 </div>
 
                                 #elseif( $field.getName() == "Text" )
-                                <div class="form-group">
+                                <div class="">
                                     $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                 </div>
                                 #if($fieldId == $emailVerifyFieldId)
@@ -194,7 +194,7 @@ is not recommended as it may interfere with expected server behavior.
                                         <span class="icon-alert"></span>
                                         $templateMessages.getMessage($messageKeyPrefix, "missingCheckboxGroup")
                                     </div>
-                                    <div class="form-group detached">
+                                    <div class="detached">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </div>
                                     #foreach( $option in $field.getData().getOptions() )
@@ -213,7 +213,7 @@ is not recommended as it may interfere with expected server behavior.
                                 </div>
 
                                 #elseif( $field.getName() == "Email" )
-                                <div class="form-group">
+                                <div class="">
                                     $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                 </div>
                                     #if($fieldId == $emailVerifyFieldId)
@@ -229,7 +229,7 @@ is not recommended as it may interfere with expected server behavior.
                                 </div>
 
                                 #elseif( $field.getName() == "Phone" )
-                                <div class="form-group">
+                                <div class="">
                                     $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                 </div>
                                 <div class="$required" id="container-$escapedFieldId">
@@ -237,7 +237,7 @@ is not recommended as it may interfere with expected server behavior.
                                 </div>
 
                                 #elseif( $field.getName() == "Dropdown" )
-                                <span class="form-group detached">
+                                <span class="detached">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </span>
                                 <label class="input-select $required $fieldDisabled" id="container-$escapedFieldId">
