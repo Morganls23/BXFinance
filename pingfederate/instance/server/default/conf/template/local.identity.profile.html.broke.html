@@ -29,18 +29,27 @@ is not recommended as it may interfere with expected server behavior.
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <!-- adding for BXFinance styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <!-- END OF -->
 
-     <!-- adding for BXFinance styling -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-     <link rel="stylesheet" href="assets/css/styles.css">
-     <link rel="stylesheet" href="assets/css/login.css">
-     <!-- END OF -->
-
-
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+   <link rel="stylesheet" type="text/css" href="assets/css/main.css"/> 
 </head>
 
-<body class="columns-layout" onload="isWebAuthnPlatformAuthenticatorAvailable();">
+<body onload="isWebAuthnPlatformAuthenticatorAvailable();">
+
+<div class="card card-register">
+
+     <!-- adding for BXFinance styling -->
+     <div class="card-header">
+        <!-- adding for BXFinance styling -->
+        <img src="assets/images/logo.svg" class="logo" />
+        <!-- END OF-->
+        
+    </div>
+    <!-- .ping-header -->
 
 #if($messages)
 <div data-id="messages" class="page-messages full">
@@ -57,8 +66,7 @@ is not recommended as it may interfere with expected server behavior.
 </div>
 #end
 
-<div class="ping-container ping-signin">
-    <div class="ping-body-container">
+    <div class="card-body">
         <div>
             <form method="POST" action="$url" autocomplete="off">
 
@@ -623,14 +631,7 @@ is not recommended as it may interfere with expected server behavior.
 </div>
 <!-- .ping-body-container -->
 
-<div class="ping-footer-container">
-    <div class="ping-footer">
-        <div class="ping-credits"></div>
-        <div class="ping-copyright">$templateMessages.getMessage("global.footerMessage")</div>
-    </div>
-    <!-- .ping-footer -->
-</div>
-<!-- .ping-footer-container -->
+
 
 </div>
 <!-- .ping-container -->
