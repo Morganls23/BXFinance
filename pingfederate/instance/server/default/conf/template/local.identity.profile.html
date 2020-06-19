@@ -141,9 +141,9 @@ is not recommended as it may interfere with expected server behavior.
                         #end
 
                         #if($count == 1)
-                        <div class="content-columns columns-2">
+                        <div class="content-columns columns-2" style="font-family:Rubik">
                             #end
-                            <div class="content-column form-control">
+                            <div class="content-column" style="font-family:Rubik">
 
                                 #if( $field.getName() == "Date" )
                                 <div class="ping-input-label input-label">
@@ -154,7 +154,7 @@ is not recommended as it may interfere with expected server behavior.
                                 </div>
 
                                 #elseif( $field.getName() == "Text" )
-                                <div class="ping-input-label">
+                                <div class="ping-input-label form-control">
                                     $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                 </div>
                                 #if($fieldId == $emailVerifyFieldId)
