@@ -284,7 +284,7 @@ is not recommended as it may interfere with expected server behavior.
                                 $templateMessages.getMessage($messageKeyPrefix, "passwordTitle")
                             </div>
                             <div class="required" id="container-password">
-                                <input id="password" class="required $validateRequired reveal" autocomplete="user-password" type="password" size="36" name="$pass" onkeyup="return postOnReturn(event)"/>
+                                <input id="password" class="required $validateRequired reveal" autocomplete="user-password" type="password"  name="$pass" onkeyup="return postOnReturn(event)"/>
                                 #if($altAuthSources.size() > 0 && $isLocalRegistration)
                                     <a id="reveal" class="password-show-button icon-view" onclick="revealPassword();"></a>
                                 #else
@@ -314,7 +314,7 @@ is not recommended as it may interfere with expected server behavior.
                                 $templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")
                             </a>
 
-                            <a href="javascript:void(0)" onclick="postCancel();" class="ping-button blue deny" style="background-color:#3b8190; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")">
+                            <a href="javascript:void(0)" onclick="postCancel();" class="ping-button blue deny" style="font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")">
                             $templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")
                             </a>
                         </div>
