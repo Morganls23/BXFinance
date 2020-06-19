@@ -617,13 +617,15 @@ is not recommended as it may interfere with expected server behavior.
             <input type="hidden" name="$logout" value=""/>
             <input type="hidden" name="$delete" value=""/>
 
-            <a href="javascript:void(0)" onclick="postLogout();" class="ping-button secondary" title='$templateMessages.getMessage($messageKeyPrefix, "logoutButtonTitle")'>
+           <!--
+                <a href="javascript:void(0)" onclick="postLogout();" class="ping-button secondary" title='$templateMessages.getMessage($messageKeyPrefix, "logoutButtonTitle")'>
                 $templateMessages.getMessage($messageKeyPrefix, "logoutButtonTitle")
             </a>
+        -->
 
-            <a onclick="postSave();" class="ping-button normal allow" title='$templateMessages.getMessage($messageKeyPrefix, "saveButtonTitle")'>
+            <button onclick="postSave();" class="btn btn-secondary ping-button normal allow" title='$templateMessages.getMessage($messageKeyPrefix, "saveButtonTitle")'>
                 $templateMessages.getMessage($messageKeyPrefix, "saveButtonTitle")
-            </a>
+            </button>
         </div>
 
         </form>
