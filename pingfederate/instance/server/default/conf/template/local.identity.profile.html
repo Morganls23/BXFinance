@@ -146,10 +146,10 @@ is not recommended as it may interfere with expected server behavior.
                             <div class="content-column" style="font-family:Rubik">
 
                                 #if( $field.getName() == "Date" )
-                                <div class="ping-input-label input-label">
+                                <div class="form-group input-label">
                                     $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                 </div>
-                                <div class="ping-input-container $required" id="container-$escapedFieldId">
+                                <div class="$required" id="container-$escapedFieldId">
                                     <input class="$required $validateRequired" id="$escapedFieldId" type="date" name="$escapedFieldId" value="$fieldValue" placeholder="yyyy-mm-dd" onchange="return postOnReturn(event)" $fieldDisabled/>
                                 </div>
 
@@ -158,13 +158,13 @@ is not recommended as it may interfere with expected server behavior.
                                     $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                 </div>
                                 #if($fieldId == $emailVerifyFieldId)
-                                <div class="ping-input-container input-controls $required" id="container-$escapedFieldId">
+                                <div class="input-controls $required" id="container-$escapedFieldId">
                                     <div class="inline-confirmation">
                                         <div class="icon-approve" id="icon-email-verification"></div>
                                         <div class="confirmation-text" id="email-verification-text">$templateMessages.getMessage($messageKeyPrefix, "emailAddressVerified")</div>
                                     </div>
                                 #else
-                                <div class="form-control $required" id="container-$escapedFieldId">
+                                <div class="$required" id="container-$escapedFieldId">
                                     #end
                                     <input class="form-control $required $validateRequired" id="$escapedFieldId" type="text" autocomplete="off" name="$escapedFieldId" value="$fieldValue" onKeyPress="return postOnReturn(event)" $fieldDisabled/>
                                 </div>
@@ -175,7 +175,7 @@ is not recommended as it may interfere with expected server behavior.
                                     <span class="icon-alert"></span>
                                     $templateMessages.getMessage($messageKeyPrefix, "missingCheckbox")
                                 </div>
-                                <label class="ping-input-container">
+                                <label class="">
                                     <div class="ping-checkbox-container stacked $required" id="container-$escapedFieldId">
                                         #if( $fieldValue.equalsIgnoreCase("true") || $fieldValue.equalsIgnoreCase("on") )
                                         <input class="$required" id="$escapedFieldId" type="checkbox" name="$escapedFieldId" checked $fieldDisabled/>
@@ -194,7 +194,7 @@ is not recommended as it may interfere with expected server behavior.
                                         <span class="icon-alert"></span>
                                         $templateMessages.getMessage($messageKeyPrefix, "missingCheckboxGroup")
                                     </div>
-                                    <div class="ping-input-label detached">
+                                    <div class="form-group detached">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </div>
                                     #foreach( $option in $field.getData().getOptions() )
@@ -213,31 +213,31 @@ is not recommended as it may interfere with expected server behavior.
                                 </div>
 
                                 #elseif( $field.getName() == "Email" )
-                                <div class="ping-input-label">
+                                <div class="form-group">
                                     $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                 </div>
                                     #if($fieldId == $emailVerifyFieldId)
-                                <div class="ping-input-container input-controls $required" id="container-$escapedFieldId">
+                                <div class="input-controls $required" id="container-$escapedFieldId">
                                     <div class="inline-confirmation">
                                         <div class="icon-approve" id="icon-email-verification"></div>
                                         <div class="confirmation-text" id="email-verification-text">$templateMessages.getMessage($messageKeyPrefix, "emailAddressVerified")</div>
                                     </div>
                                     #else
-                                <div class="ping-input-container $required" id="container-$escapedFieldId">
+                                <div class="$required" id="container-$escapedFieldId">
                                     #end
                                     <input class="$required $validateRequired" id="$escapedFieldId" type="email" autocomplete="off" name="$escapedFieldId" value="$fieldValue" size="36" onkeyup="return postOnReturn(event)" $fieldDisabled/>
                                 </div>
 
                                 #elseif( $field.getName() == "Phone" )
-                                <div class="ping-input-label">
+                                <div class="form-group">
                                     $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                 </div>
-                                <div class="ping-input-container $required" id="container-$escapedFieldId">
+                                <div class="$required" id="container-$escapedFieldId">
                                     <input class="$required $validateRequired" id="$escapedFieldId" type="tel" autocomplete="off" name="$escapedFieldId" value="$fieldValue" size="36" onkeyup="return postOnReturn(event)" $fieldDisabled/>
                                 </div>
 
                                 #elseif( $field.getName() == "Dropdown" )
-                                <span class="ping-input-label detached">
+                                <span class="form-group detached">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
                                     </span>
                                 <label class="input-select $required $fieldDisabled" id="container-$escapedFieldId">
