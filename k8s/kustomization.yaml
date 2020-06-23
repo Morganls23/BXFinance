@@ -6,10 +6,10 @@ resources:
 - pingdataconsole.yaml
 - pingdatagovernance.yaml
 - pingdatagovernancepap.yaml
-# - pingdelegator.yaml
+- pingdelegator.yaml
 - pingdirectory.yaml
 - pingfederate.yaml
-- secret.yaml
+# - secret.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
