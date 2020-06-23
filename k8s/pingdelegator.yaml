@@ -33,7 +33,7 @@ spec:
         name: pingdelegator
         envFrom:
         - configMapRef:
-            name: env_vars
+            name: shared-vars
         ports:
         - containerPort: 80
         resources:

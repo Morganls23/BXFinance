@@ -1,16 +1,18 @@
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  labels:
-    app: pingdirectory
-  name: pingdirectory-gp2
-mountOptions:
-- discard
-parameters:
-  type: gp2
-provisioner: kubernetes.io/aws-ebs
+# apiVersion: storage.k8s.io/v1
+# kind: StorageClass
+# metadata:
+#   labels:
+#     app: pingdirectory
+#   name: pingdirectory-gp2
+# mountOptions:
+# - discard
+# parameters:
+#   type: gp2
+# provisioner: kubernetes.io/aws-ebs
+# reclaimPolicy: Delete
+# volumeBindingMode: WaitForFirstConsumer
 
----
+# ---
 apiVersion: v1
 data:
   K8S_STATEFUL_SET_NAME: pingdirectory

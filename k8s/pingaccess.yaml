@@ -92,7 +92,7 @@ spec:
           serviceName: pingaccess
           servicePort: 9000
         path: /
-  - host: BXFinance-${PING_IDENTITY_DEVOPS_DNS_ZONE}
+  - host: bxfinance-${PING_IDENTITY_DEVOPS_DNS_ZONE}
     http:
       paths:
       - backend:
