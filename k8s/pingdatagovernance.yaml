@@ -59,11 +59,11 @@ spec:
         - containerPort: 443
         resources:
           limits:
-            cpu: "1"
-            memory: 2Gi
+            cpu: "2"
+            memory: 2.5Gi
           requests:
-            cpu: "1"
-            memory: 2Gi
+            cpu: "2"
+            memory: 2.5Gi
       initContainers:
       - name: init
         image: curlimages/curl:latest
