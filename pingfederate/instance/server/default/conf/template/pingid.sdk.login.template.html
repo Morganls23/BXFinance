@@ -27,6 +27,10 @@ version: 1.1
   <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="/pingid-sdk-web/js/functions.js"></script>
+
+  
+  
+
   <link rel="stylesheet" media="all" type="text/css" href="/pingid-sdk-web/css/main.css" />
 </head>
 #if($status == "in_progress")
@@ -45,7 +49,8 @@ version: 1.1
 
 <div id="modal" class="modal">
     <div class="modal-content">
-        <img class="ping-logo modal-logo" src="/pingid-sdk-web/images/ping-logo.gif" />
+        <!-- <img class="ping-logo modal-logo" src="/pingid-sdk-web/images/ping-logo.gif" /> -->
+        <img src="/pingid-sdk-web/images/icon-bxfinance.png" class="ping-logo modal-logo logo" />
         <div class="dialog">
 #if($status == "in_progress")
             <!-- AUTHENTICATING SECTION BEGIN-------------------------------------------------------------------------------------->
@@ -505,8 +510,9 @@ version: 1.1
 #end
         </div>
         <footer>
-                <div class="powered-by-pingidentity"></div>
-                <div class="copyright">Copyright &copy; 2003 - 2019 Ping Identity Corporation. All rights reserved.</div>
+            <img src="/pingid-sdk-web/images/smaller-white.png"/>
+            <div class="copyright">Copyright &copy; BXFinance 2020. All rights reserved.</div>
+            <div class="copyright">Member FDIC, Equal Housing Lender</div>
         </footer>
     </div>
 </div>
