@@ -36,6 +36,7 @@ services:
   
   pingaccess:
     image: pingidentity/pingaccess:edge
+    command: wait-for pingfederate:9999 -t 900 -- entrypoint.sh start-server
     env_file:
      - ~/.pingidentity/devops
      - ./env_vars
