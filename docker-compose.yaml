@@ -2,7 +2,7 @@ version: "3"
 
 services:
   pingfederate:
-    image: pingidentity/pingfederate:10.0.2
+    image: pingidentity/pingfederate:edge
     command: wait-for pingdirectory:389 -t 520 -- entrypoint.sh start-server
     env_file:
       - ~/.pingidentity/devops
@@ -35,7 +35,7 @@ services:
       - 8443:8443
   
   pingaccess:
-    image: pingidentity/pingaccess:6.0.0-edge
+    image: pingidentity/pingaccess:edge
     env_file:
      - ~/.pingidentity/devops
      - ./env_vars
