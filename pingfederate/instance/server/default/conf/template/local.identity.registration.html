@@ -42,7 +42,7 @@ is not recommended as it may interfere with expected server behavior.
         <a href="/" class="btn btn-link btn-back">Back</a>
         <img src="assets/images/logo.svg" class="logo" />
 
-        if($messages)
+        #if($messages)
         <div data-id="messages" class="page-messages full">
             #foreach ($message in $messages.getBannerMessages())
             <div class="message show $message.getCssString()">
