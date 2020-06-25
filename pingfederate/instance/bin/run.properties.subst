@@ -127,7 +127,8 @@ pf.secondary.https.port=-1
 # multiple network interfaces are installed on the machine running PingFederate.
 # The bind addresses can be ipv6 compliant: use "::" as a replacement
 # for "0.0.0.0".
-pf.engine.bind.address=0.0.0.0
+# pf.engine.bind.address=0.0.0.0
+pf.engine.bind.address=10.101.21.230
 
 #
 # This property defines the IP address over which an SNMP agent and JMX
