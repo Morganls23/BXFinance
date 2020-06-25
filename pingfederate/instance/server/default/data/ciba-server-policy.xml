@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urn:CibaServerPolicy defaultRequestHandlingPolicyId="cibaPolicy" xmlns:urn="urn:pingidentity.com:pf:openid:ciba">
-    <urn:CibaRequestHandlingPolicy id="cibaPolicy" name="CIBA Policy" pluginId="pidSDK" transactionLifeInSeconds="120" allowUnsignedLoginHintToken="false" requireHintToken="false" userCodePcvId="PDPCV">
+    <urn:CibaRequestHandlingPolicy id="cibaPolicy" name="CIBA Policy" pluginId="emailCIBA" transactionLifeInSeconds="120" allowUnsignedLoginHintToken="false" requireHintToken="false" userCodePcvId="PDPCV">
         <urn:EnhanceRequestHintContractMapping>
             <urn1:AttributeMap Name="IDENTITY_HINT_SUBJECT" Type="Expression" Value="#this.get(&quot;IDENTITY_HINT_SUBJECT&quot;).toString().replaceAll(&quot;\&quot;&quot;, &quot;&quot;)" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn1:AttributeSource Id="PingDirectory" Description="PingDirectory" Type="LDAP" DataSourceId="LDAP-PingDirectory" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
@@ -14,7 +14,7 @@
         <urn:HintContractToOOBAuthPluginMapping>
             <urn1:AttributeMap Name="USER_CODE_USER_NAME" Type="LDAP" AttributeSourceId="PingDirectory" Value="uid" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn1:AttributeMap Name="USER_KEY" Type="Request" Value="IDENTITY_HINT_SUBJECT" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
-            <urn1:AttributeMap Name="username" Type="Request" Value="IDENTITY_HINT_SUBJECT" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+            <urn1:AttributeMap Name="email" Type="Text" Value="test" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
             <urn1:AttributeSource Id="PingDirectory" Description="PingDirectory" Type="LDAP" DataSourceId="LDAP-PingDirectory" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2">
                 <urn1:Parameter Name="filter" Value="uid=${IDENTITY_HINT_SUBJECT}"/>
                 <urn1:Parameter Name="search_base" Value="ou=People,dc=bxfinance.xyz"/>
