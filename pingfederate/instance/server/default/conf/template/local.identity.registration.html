@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="assets/css/register.css">
 
     <title>$templateMessages.getMessage($messageKeyPrefix, "title")</title>
-    <base href="$CurrentPingFedBaseURL"/>
   </head>
   <body>
     <div class="card card-register">
@@ -23,7 +22,7 @@
         <img src="assets/images/logo.svg" class="logo" />
       </div>
       <div class="card-body">
-        <form action="/?register=true">
+        <form method="POST" action="$url" autocomplete="off">
           <h4>Let's Create Your Online Account</h4>
           <div class="form-group">
             <label for="account_type" class="text-dark">Which type of account would you like to access online?</label>
@@ -35,7 +34,7 @@
           </div>
           <div class="form-row-light form-row">
             <div class="col-md-6">
-              <div class="form-group"><label for="account_number" class="">Account Number</label><input name="account_number" id="account_number" placeholder="Account Number" type="text" class="form-control" /></div>
+              <div class="form-group"><label for="account_number" class="">Account Number</label><input name="account_number" id="bxFinanceUserAccountNumber" placeholder="Account Number" type="text" class="form-control" /></div>
             </div>
             <div class="col-md-6">
               <div class="form-group"><label for="username" class="">Username</label><input name="username" id="username" placeholder="Username" type="text" class="form-control" /></div>
@@ -43,10 +42,10 @@
           </div>
           <div class="form-row-light form-row">
             <div class="col-md-6">
-              <div class="form-group"><label for="firstname" class="">First Name</label><input name="firstname" id="firstname" placeholder="First Name" type="text" class="form-control" /></div>
+              <div class="form-group"><label for="firstname" class="">First Name</label><input name="firstname" id="firstName" placeholder="First Name" type="text" class="form-control" /></div>
             </div>
             <div class="col-md-6">
-              <div class="form-group"><label for="lastname" class="">Last Name</label><input name="lastname" id="lastname" placeholder="Last Name" type="text" class="form-control" /></div>
+              <div class="form-group"><label for="lastname" class="">Last Name</label><input name="lastname" id="lastName" placeholder="Last Name" type="text" class="form-control" /></div>
             </div>
           </div>
           <div class="form-row-light form-row">
@@ -54,7 +53,7 @@
               <div class="form-group"><label for="email" class="">Email Address</label><input name="email" id="email" placeholder="Email" type="email" class="form-control" /></div>
             </div>
             <div class="col-md-6">
-              <div class="form-group"><label for="phone" class="">Phone Number</label><input name="phone" id="phone" placeholder="(555) 555-5555" type="tel" class="form-control" /></div>
+              <div class="form-group"><label for="phone" class="">Phone Number</label><input name="phone" id="phoneNumber" placeholder="(555) 555-5555" type="tel" class="form-control" /></div>
             </div>
           </div>
           <div class="form-row-light form-row">
@@ -78,8 +77,8 @@
               <div class="form-group mb-0">
                 <select name="login" id="login" class="form-control">
                   <option>Choose your Method</option>
-                  <option value="mobile">With my Mobile Device or One-Time Password</option>
-                  <option value="password">With my Password</option>
+                  <option value="Device">With my Mobile Device or One-Time Password</option>
+                  <option value="Password">With my Password</option>
                 </select>
               </div>
             </div>
