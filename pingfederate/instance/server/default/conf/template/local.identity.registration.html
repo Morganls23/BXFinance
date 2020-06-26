@@ -22,35 +22,38 @@
         <img src="assets/images/logo.svg" class="logo" />
       </div>
 
-      #if($messages)
-        <div data-id="messages" class="page-messages full">
-            #foreach ($message in $messages.getBannerMessages())
-            <div class="message show $message.getCssString()">
-                $templateMessages.getMessage($message.getMessageKey(), $message.getParams())<a class="close"></a>
-            </div>
-            #end
-        </div>
-        #end
-
-        <div class="ping-messages">
-          #if($messages)
-              #foreach ($errorMessage in $messages.getStandardMessages())
-                  <div class="ping-error">
-                      $templateMessages.getMessage($errorMessage.getMessageKey(), $errorMessage.getParams())
-                  </div>
-              #end
-          #end
-      </div>
-      <div class="ping-messages">
-          <div class="ping-error" style="display:none" id="required-field-error">
-              <span class="icon-alert"></span>
-              $templateMessages.getMessage($messageKeyPrefix, "required.fields.missing")
-          </div>
-      </div>
+     
 
       <div class="card-body">
         <form method="POST" action="$url" autocomplete="off">
           <h4>Let's Create Your Online Account</h4>
+          #if($messages)
+          <div data-id="messages" class="page-messages full">
+              #foreach ($message in $messages.getBannerMessages())
+              <div class="message show $message.getCssString()">
+                  $templateMessages.getMessage($message.getMessageKey(), $message.getParams())<a class="close"></a>
+              </div>
+              #end
+          </div>
+          #end
+  
+          <div class="ping-messages">
+            #if($messages)
+                #foreach ($errorMessage in $messages.getStandardMessages())
+                    <div class="ping-error">
+                        $templateMessages.getMessage($errorMessage.getMessageKey(), $errorMessage.getParams())
+                    </div>
+                #end
+            #end
+        </div>
+        <div class="ping-messages">
+            <div class="ping-error" style="display:none" id="required-field-error">
+                <span class="icon-alert"></span>
+                $templateMessages.getMessage($messageKeyPrefix, "required.fields.missing")
+            </div>
+        </div>
+
+        
           <div class="form-group">
             <label for="account_type" class="text-dark">Which type of account would you like to access online?</label>
             <div>
