@@ -61,7 +61,7 @@
           </div>
           <div class="form-row-light form-row">
             <div class="col-md-6">
-              <div class="form-group"><label for="account_number" class="">Account Number</label><input name="account_number" id="bxFinanceUserAccountNumber" placeholder="Account Number" type="text" class="form-control" /></div>
+              <div class="form-group"><label for="account_number" class="">Account Number</label><input name="bxFinanceUserAccountNumber" id="bxFinanceUserAccountNumber" placeholder="Account Number" type="text" class="form-control" /></div>
             </div>
             <div class="col-md-6">
               <div class="form-group"><label for="username" class="">Username</label><input name="username" id="username" placeholder="Username" type="text" class="form-control" /></div>
@@ -69,10 +69,10 @@
           </div>
           <div class="form-row-light form-row">
             <div class="col-md-6">
-              <div class="form-group"><label for="firstname" class="">First Name</label><input name="firstname" id="firstName" placeholder="First Name" type="text" class="form-control" /></div>
+              <div class="form-group"><label for="firstname" class="">First Name</label><input name="firstName" id="firstName" placeholder="First Name" type="text" class="form-control" /></div>
             </div>
             <div class="col-md-6">
-              <div class="form-group"><label for="lastname" class="">Last Name</label><input name="lastname" id="lastName" placeholder="Last Name" type="text" class="form-control" /></div>
+              <div class="form-group"><label for="lastname" class="">Last Name</label><input name="lastName" id="lastName" placeholder="Last Name" type="text" class="form-control" /></div>
             </div>
           </div>
           <div class="form-row-light form-row">
@@ -80,7 +80,7 @@
               <div class="form-group"><label for="email" class="">Email Address</label><input name="email" id="email" placeholder="Email" type="email" class="form-control" /></div>
             </div>
             <div class="col-md-6">
-              <div class="form-group"><label for="phone" class="">Phone Number</label><input name="phone" id="phoneNumber" placeholder="(555) 555-5555" type="tel" class="form-control" /></div>
+              <div class="form-group"><label for="phone" class="">Phone Number</label><input name="phoneNumber" id="phoneNumber" placeholder="(555) 555-5555" type="tel" class="form-control" /></div>
             </div>
           </div>
           <div class="form-row-light form-row">
@@ -91,6 +91,7 @@
               <div class="form-group"><label for="password_confirm" class="">Confirm Password</label><input name="password_confirm" id="password_confirm" placeholder="Confirm Password" type="password" class="form-control" /></div>
             </div>
           </div>
+          
           <div class="form-row-login form-row">
             <div class="col-md-6">
               <div class="form-group mb-0">
@@ -100,41 +101,41 @@
                 </label>
               </div>
             </div>
-            <div class="ping-buttons" style="margin:0 auto; font-family:Rubik;">
-                            <input type="hidden" name="$ok" value=""/>
-                            <input type="hidden" name="$cancel" value=""/>
-                            <input type="hidden" name="$signOn" value=""/>
-                            <input type="hidden" id="field" name="field">
-
-                            <div class="form-row-light form-row">
-
-                                <a onclick="postOk();" class="ping-button normal allow" style="text-align:center; background-color:#67c5b1; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")">
-                                    $templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")
-                                </a>
-                                
-                                &nbsp;&nbsp;&nbsp;
-
-                                <a href="javascript:void(0)" onclick="postCancel();" class="ping-button blue deny" style="text-align:center; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")">
-                                $templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="account-actions ping-register">
-                            $templateMessages.getMessage($messageKeyPrefix, "accountAlreadyCreated")
-                            <a class="text-info" style="text-align:center; font-family:Rubik;" href="javascript:void(0)" onclick="postSignOn();" title="$templateMessages.getMessage($messageKeyPrefix, "login")">
-                                $templateMessages.getMessage($messageKeyPrefix, "login")
-                            </a>
-                        </div>
-          </div>
-          <div class="form-row-light form-row">
-            <div class="col-md-6"></div>
             <div class="col-md-6">
-              <button type="submit" class="btn btn-primary">Submit</button>
-              <a href="/" class="btn btn-link ml-3">Cancel</a>
+              <div class="form-group mb-0">
+                <select name="login" id="login" class="form-control">
+                  <option>Choose your Method</option>
+                  <option value="mobile">With my Mobile Device or One-Time Password</option>
+                  <option value="password">With my Password</option>
+                </select>
+              </div>
             </div>
           </div>
+
+
+
+
+          <div class="ping-buttons" style="margin:0 auto; font-family:Rubik;">
+            <input type="hidden" name="$ok" value=""/>
+            <input type="hidden" name="$cancel" value=""/>
+            <input type="hidden" name="$signOn" value=""/>
+            <input type="hidden" id="field" name="field">
+
+            <div class="form-row-light form-row">
+
+                <a onclick="postOk();" class="ping-button normal allow" style="text-align:center; background-color:#67c5b1; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")">
+                    $templateMessages.getMessage($messageKeyPrefix, "signUpButtonTitle")
+                </a>
+                
+                &nbsp;&nbsp;&nbsp;
+
+                <a href="javascript:void(0)" onclick="postCancel();" class="ping-button blue deny" style="text-align:center; font-family:Rubik;" title="$templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")">
+                $templateMessages.getMessage($messageKeyPrefix, "cancelButtonTitle")
+                </a>
+            </div>
+
+        </div>
+        
         </form>
       </div>
     </div>
