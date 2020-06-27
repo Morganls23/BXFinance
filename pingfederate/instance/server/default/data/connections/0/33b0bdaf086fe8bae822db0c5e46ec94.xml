@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<md:EntityDescriptor entityID="Dummy-SAML" urn:name="Dummy SAML (HTTPBIN)" ID="Dummy-SAML" urn:LogLevel="STANDARD" urn:isActive="true" urn:applicationName="Dummy-SAML" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2">
+<md:EntityDescriptor entityID="https://demo.bxfinance.xyz" urn:name="BXFinance Banking" ID="Dummy-SAML" urn:baseUrl="https://demo.bxfinance.xyz" urn:LogLevel="STANDARD" urn:isActive="true" urn:applicationName="BXFinance Banking" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2">
     <md:Extensions>
-        <urn:EntityExtension PFVersion="10.0.1.5" LicenseGroup="">
+        <urn:EntityExtension PFVersion="10.0.3.0" LicenseGroup="">
             <urn:DigitialSignatureAliases SigningKeyAlias="signing-cert" includeX509inXmlSig="false" includeRawKeyInXmlSig="false" SigningAlgorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
             <urn:Encryption>
                 <urn:EncryptionPolicy EncryptionAlgorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" KeyTransportAlgorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p" EncryptAssertion="false" EncryptSubjectNameID="false" SLOEncryptSubjectNameID="false"/>
@@ -20,9 +20,9 @@
     </md:Extensions>
     <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="false" SignResponseAsRequired="true">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-04-28T15:19:35.165Z">
-                <urn:IncomingBindings Artifact="true" POST="true" Redirect="true" SOAP="true"/>
-                <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="false" SPInitiatedSLO="false"/>
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-06-27T00:43:49.045Z">
+                <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
+                <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
                 <urn:SP AssertionValidityAfterMinutes="5" AssertionValidityBeforeMinutes="5" ConnectionTargetType="Standard" EnableCDCDuringSSO="false">
                     <urn:C2cContractToAssertionMapping AbortIfNotFoundInAnyDataSources="false" RestrictVirtualServerIds="false" C2cContractId="defaultPolicyContract" C2cContractName="Default Policy Contract">
                         <urn:DefaultAttributeMapping>
@@ -35,8 +35,11 @@
             </urn:RoleExtension>
         </md:Extensions>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
-        <md:AssertionConsumerService index="0" Location="https://httpbin.org/anything" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" isDefault="true"/>
+        <md:AssertionConsumerService index="0" Location="https://httpbin.org/anything" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"/>
+        <md:AssertionConsumerService index="1" Location="/sp/ACS.saml2" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" isDefault="true"/>
     </md:SPSSODescriptor>
     <md:RoleDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" xsi:type="urn:PFAvailableCertsRoleDescriptorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-    <md:ContactPerson contactType="administrative"/>
+    <md:ContactPerson contactType="administrative">
+        <md:Company>BXFinance</md:Company>
+    </md:ContactPerson>
 </md:EntityDescriptor>
