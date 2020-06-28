@@ -96,6 +96,55 @@
               <div class="form-group"><label for="phone" class="">Phone Number</label><input name="phoneNumber" id="phoneNumber" placeholder="(555) 555-5555" type="tel" class="form-control" /></div>
             </div>
           </div>
+
+            #set( $passwordRequirementOne = $templateMessages.getMessageWithDefault($messageKeyPrefix, "passwordRequirementOne", "") )
+            #set( $passwordRequirementTwo =  $templateMessages.getMessageWithDefault($messageKeyPrefix, "passwordRequirementTwo", "") )
+            #set( $passwordRequirementThree =  $templateMessages.getMessageWithDefault($messageKeyPrefix, "passwordRequirementThree", "") )
+            #set( $passwordRequirementFour =  $templateMessages.getMessageWithDefault($messageKeyPrefix, "passwordRequirementFour", "") )
+                #if( $passwordRequirementOne && $passwordRequirementOne.trim() != "" ||
+                        $passwordRequirementTwo && $passwordRequirementTwo.trim() != "" ||
+                        $passwordRequirementThree && $passwordRequirementThree.trim() != "" ||
+                        $passwordRequirementFour && $passwordRequirementFour.trim() != "")
+                    #set( $isShowPasswordRequirements = true )
+                #else
+                    #set( $isShowPasswordRequirements = false )
+                #end
+
+                #if( $isShowPasswordRequirements )
+                        <div class="">
+                            <div class="place-top type-requirements requirements tooltip-text" id="password-requirements">
+                                <div class="title" onclick="showHideRequirements();">
+                                    $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementTitle")
+                                </div>
+                                <div class="requirements-text">
+                                    <div class="requirements-contain">
+                                        $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementsContain")
+                                    </div>
+                                    #if( $passwordRequirementOne && $passwordRequirementOne.trim() != "" )
+                                    <div>
+                                        $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementOne")
+                                    </div>
+                                    #end
+                                    #if( $passwordRequirementTwo && $passwordRequirementTwo.trim() != "" )
+                                    <div>
+                                        $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementTwo")
+                                    </div>
+                                    #end
+                                    #if( $passwordRequirementThree && $passwordRequirementThree.trim() != "" )
+                                    <div>
+                                        $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementThree")
+                                    </div>
+                                    #end
+                                    #if( $passwordRequirementFour && $passwordRequirementFour.trim() != "" )
+                                    <div>
+                                        $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementFour")
+                                    </div>
+                                    #end
+                                </div>
+                            </div>
+                        </div>
+                        #end
+
           
           <div class="form-row-light form-row">
             <div class="col-md-6">
@@ -119,8 +168,8 @@
               <div class="form-group mb-0">
                 <select name="login" id="login" class="form-control">
                   <option>Choose your Method</option>
-                  <option value="mobile">With my Mobile Device or One-Time Password</option>
-                  <option value="password">With my Password</option>
+                  <option value="Device">With my Mobile Device or One-Time Password</option>
+                  <option value="Password">With my Password</option>
                 </select>
               </div>
             </div>
