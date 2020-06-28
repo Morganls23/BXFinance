@@ -112,10 +112,11 @@
 
                 #if( $isShowPasswordRequirements )
                         <div class="">
-                            <div id="password-requirements">
+                            
                                 <div class="title" onclick="showHideRequirements();">
                                     $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementTitle")
                                 </div>
+                                <div id="password-requirements">
                                 <div class="requirements-text">
                                     <div class="requirements-contain">
                                         $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementsContain")
@@ -141,7 +142,7 @@
                                     </div>
                                     #end
                                 </div>
-                            </div>
+                                </div>
                         </div>
                         #end
 
