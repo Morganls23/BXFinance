@@ -88,7 +88,7 @@
         <loc:field type="DROPDOWN" default-value="Device" id="authnPreferences" label="How would you like to sign in?">
             <loc:appliesTo profile="true" registration="true"/>
             <loc:parameter param-name="Read-Only" value="false"/>
-            <loc:parameter param-name="Required" value="true"/>
+            <loc:parameter param-name="Required" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
             <loc:options>Device</loc:options>
             <loc:options>Password</loc:options>
