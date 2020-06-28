@@ -113,9 +113,9 @@
                 #if( $isShowPasswordRequirements )
                         <div class="">
                             
-                                <a href="#" class="title" onclick="showHideRequirements();">
+                                <button onclick="showHideRequirements();">
                                     $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementTitle")
-                                </a>
+                                </button>
                                 <div id="password-requirements">
                                 <div class="requirements-text">
                                     <div class="requirements-contain">
@@ -215,13 +215,17 @@
       function showHideRequirements() {
           var tips = document.getElementById('password-requirements');
   
-  
-          if (tips.className.search(/\bopen\b/) === -1) {
-              tips.className += ' open';
-          }
-          else {
-              tips.className = tips.className.replace(/\bopen\b/,'');
-          }
+          if (tips.style.display === "none") {
+                    if (tips.className.search(/\bopen\b/) === -1) {
+                        tips.className += ' open';
+                    }
+                    else {
+                        tips.className = tips.className.replace(/\bopen\b/,'');
+                    }
+                  }
+                  else {
+                    tips.style.display = "none";
+                  }
       }
   
       function submitForm()
