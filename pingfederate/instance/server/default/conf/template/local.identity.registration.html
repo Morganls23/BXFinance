@@ -124,26 +124,7 @@
                                     <div class="requirements-contain">
                                         $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementsContain")
                                     </div>
-                                    #if( $passwordRequirementOne && $passwordRequirementOne.trim() != "" )
-                                    <div>
-                                        $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementOne")
-                                    </div>
-                                    #end
-                                    #if( $passwordRequirementTwo && $passwordRequirementTwo.trim() != "" )
-                                    <div>
-                                        $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementTwo")
-                                    </div>
-                                    #end
-                                    #if( $passwordRequirementThree && $passwordRequirementThree.trim() != "" )
-                                    <div>
-                                        $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementThree")
-                                    </div>
-                                    #end
-                                    #if( $passwordRequirementFour && $passwordRequirementFour.trim() != "" )
-                                    <div>
-                                        $templateMessages.getMessage($messageKeyPrefix, "passwordRequirementFour")
-                                    </div>
-                                    #end
+                                    Test test
                                 </div>
                                 </div>
                 #end
@@ -222,12 +203,8 @@
   
           if (tips.style.display == "none") {
                   tips.style.display = "block";
-                    if (tips.className.search(/\bopen\b/) === -1) {
-                        tips.className += ' open';
-                    }
-                    else {
-                        tips.className = tips.className.replace(/\bopen\b/,'');
-                    }
+                  else {
+                      x.style.display = "none";
                   }
                   
       }
