@@ -179,16 +179,17 @@
   
     <script type="text/javascript">
 
-      function showHideRequirements() {
-          var tips = document.getElementById('password-requirements');
-  
-          if (tips.style.display == "none") {
-                  tips.style.display = "block";
-                  else {
-                      x.style.display = "none";
-                  }
-                  
-      }
+function showHideRequirements() {
+        var tips = document.getElementById('password-requirements');
+
+
+        if (tips.className.search(/\bopen\b/) === -1) {
+            tips.className += ' open';
+        }
+        else {
+            tips.className = tips.className.replace(/\bopen\b/,'');
+        }
+    }
   
       function submitForm()
       {
