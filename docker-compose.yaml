@@ -49,11 +49,11 @@ services:
      - 9000:9000
 
   pingdelegator:
-    image: pricecs/pingdelegator:4.0
+    image: pingidentity/pingdelegator:edge
     env_file:
      - ./env_vars
     ports:
-     - 8088:80
+     - 6080:80
    
   #smtp:
    # image: bytemark/smtp
