@@ -50,6 +50,8 @@ services:
 
   pingdelegator:
     image: pingidentity/pingdelegator:edge
+    environment: 
+      - VERBOSE=true
     env_file:
      - ./env_vars
     ports:
