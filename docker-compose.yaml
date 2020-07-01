@@ -53,7 +53,7 @@ services:
     env_file:
      - ./env_vars
     ports:
-     - 6080:80
+     - 6080:6080
    
   #smtp:
    # image: bytemark/smtp
