@@ -22,18 +22,18 @@
     </md:Extensions>
     <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-06-27T00:38:09.772Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-07-02T00:38:31.197Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
                 <urn:IDP AssertionsSigned="false" DefaultTargetResource="https://demo.bxfinance.xyz/app/banking">
                     <urn:TargetAttributeMapping AdapterInstanceId="BXFSPRefID" RestrictVirtualServerIds="false">
-                        <urn:AttributeMap Name="Email" Type="Assertion" Value="Email"/>
-                        <urn:AttributeMap Name="ImmutableID" Type="Assertion" Value="ImmutableID"/>
+                        <urn:AttributeMap Name="Email" Type="LDAP" Value="mail"/>
+                        <urn:AttributeMap Name="ImmutableID" Type="Assertion" Value="SAML_SUBJECT"/>
                         <urn:AttributeMap Name="FirstName" Type="LDAP" Value="givenName"/>
                         <urn:AttributeMap Name="subject" Type="Assertion" Value="SAML_SUBJECT"/>
                         <urn:AttributeMap Name="LastName" Type="LDAP" Value="sn"/>
                         <urn:AttributeSource Description="LDAP" Type="LDAP" DataSourceId="LDAP-PingDirectory">
-                            <urn:Parameter Name="filter" Value="(|(uid=${SAML_SUBJECT})(mail=${SAML_SUBJECT}))"/>
+                            <urn:Parameter Name="filter" Value="(|(entryUUID=${SAML_SUBJECT})(uid=${SAML_SUBJECT}))"/>
                             <urn:Parameter Name="search_base" Value="ou=People,dc=bxfinance.xyz"/>
                             <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE"/>
                             <urn:Parameter Name="memberof_nested_group" Value="false"/>
@@ -48,6 +48,8 @@
         <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="/idp/SSO.saml2"/>
         <saml:Attribute Name="Email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
         <saml:Attribute Name="ImmutableID" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="FirstName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="LastName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
     </md:IDPSSODescriptor>
     <md:RoleDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" xsi:type="urn:PFAvailableCertsRoleDescriptorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <urn:availableCert>
