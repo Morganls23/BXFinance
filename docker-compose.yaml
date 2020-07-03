@@ -62,7 +62,7 @@ services:
    # restart: always
 
   pingdatapap:
-    image: pingidentity/pingdatagovernancepap:8.1.0.0-EA-edge
+    image: pingidentity/pingdatagovernancepap:edge
     env_file:
       - ~/.pingidentity/devops
     environment:
