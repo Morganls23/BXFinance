@@ -18,7 +18,7 @@ dsconfig create-key-manager-provider \
     --set enabled:true  \
     --set key-store-file:config/pingdirectory.p12  \
     --set key-store-type:PKCS12  \
-    --set key-store-pin:AAA2EN/nB9n2PPvKsyIQwHhaK4cQEhDbv7Q= 
+    --set key-store-pin:AADgwd5+gZfgC6g+n55n4Twn/kBsqb8jk8o= 
 
 dsconfig set-trust-manager-provider-prop \
     --provider-name 'Blind Trust'  \
@@ -83,7 +83,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AADyHrFqGDDkAuhEcdUvBy+NYyPfw06kjqg= 
+    --set password:AABdjUmE30qSpguxfljiQjWXf4ohnlgveEQ= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -115,7 +115,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AACLyImMzoax/EUSQYvoi3Mq4RZ0i9knVZc= 
+    --set client-secret:AACrrTUosFXwj3XvNkxBCwRR84jkfGWdPIM= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
