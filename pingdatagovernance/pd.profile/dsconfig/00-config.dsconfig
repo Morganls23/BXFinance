@@ -122,6 +122,8 @@ dsconfig set-policy-decision-service-prop \
     --set decision-response-view:evaluated-entities  \
     --set decision-response-view:request 
 
+dsconfig set-policy-decision-service-prop --set trust-framework-version:v2
+
 dsconfig create-sideband-api-endpoint \
     --endpoint-name request  \
     --set access-token-validator:pingfederateATV  \
