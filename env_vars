@@ -30,6 +30,9 @@ PF_USER_PWD=2FederateM0re
 # Base Hostname of the PingFed service being used for Delegated Admin
 #PF_BASE_HOST=demo.bxfinance.xyz
 
+# NEEDED FOR PING_DATA 
+MAX_HEAP_SIZE=768m
+
 #
 # Delegator App (PD DelAdmin)
 #  
