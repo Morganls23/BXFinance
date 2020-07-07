@@ -18,7 +18,7 @@ dsconfig create-key-manager-provider \
     --set enabled:true  \
     --set key-store-file:config/pingdirectory.p12  \
     --set key-store-type:PKCS12  \
-    --set key-store-pin:AADgwd5+gZfgC6g+n55n4Twn/kBsqb8jk8o= 
+    --set key-store-pin:AACoK/SX8A+erOsdB2r/ne+ZwV/4QKq2PaM= 
 
 dsconfig set-trust-manager-provider-prop \
     --provider-name 'Blind Trust'  \
@@ -83,7 +83,7 @@ dsconfig create-external-server \
     --type smtp  \
     --set server-host-name:smtp.mailtrap.io  \
     --set user-name:572ee1077900a7  \
-    --set password:AABdjUmE30qSpguxfljiQjWXf4ohnlgveEQ= 
+    --set password:AAD4TEEOlYdbiK7ngfmZqC0KYMN6eDrxHQI= 
 
 dsconfig create-external-server \
     --server-name PingFederate  \
@@ -115,7 +115,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:PingFederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AACrrTUosFXwj3XvNkxBCwRR84jkfGWdPIM= 
+    --set client-secret:AABqYXnb60SC6y9N0Za683cyBIxrq8GgeSA= 
 
 dsconfig set-backend-prop \
     --backend-name userRoot  \
@@ -391,6 +391,15 @@ dsconfig set-monitor-provider-prop \
     --provider-name 'Host System'  \
     --reset enabled 
 
+dsconfig create-password-generator \
+    --generator-name BXFinance-PasswordGen  \
+    --type random  \
+    --set enabled:true  \
+    --set password-character-set:alpha:abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ  \
+    --set password-character-set:numeric:0123456789  \
+    --set password-character-set:special:!@#$%^&*()  \
+    --set password-format:alpha:7,numeric:3,special:2 
+
 dsconfig set-root-dn-user-prop \
     --user-name 'Directory Manager'  \
     --add alternate-bind-dn:cn=administrator 
@@ -432,7 +441,8 @@ dsconfig set-password-policy-prop \
     --policy-name 'Default Password Policy'  \
     --set 'account-status-notification-handler:Multi-Part Email'  \
     --set 'password-validator:Character Set'  \
-    --set 'password-validator:Minimum Password Length of 12 Characters' 
+    --set 'password-validator:Minimum Password Length of 12 Characters'  \
+    --set password-generator:BXFinance-PasswordGen 
 
 dsconfig create-connection-handler \
     --handler-name 'HTTPS Connection Handler - PD Services'  \
