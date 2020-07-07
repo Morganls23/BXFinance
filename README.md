@@ -37,6 +37,10 @@
   - rlyle+bxfinance@pingidentity.com / 2FederateM0re
 * Apple Developer: 
   - sa-demo-group@pingidentity.com
+* GoDaddy Domain: 
+  - owner: anycompany.ping@gmail.com
+  - customer number: 200002473
+  - domains: bxfinance.xyz
   
 
 ## Basic User Testing 
