@@ -3,7 +3,7 @@
     <urn:Fields>
         <urn:Field name="Authentication Endpoint">https://demo.bxfinance.xyz/app</urn:Field>
         <urn:Field name="User Name">react-user</urn:Field>
-        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..hqOpj6qFuioNONq3JOsw7A.cW1QeJeYM10OjiCkh6V_dQ.kh9tX9ifdp6tpGaZPEBbEA</urn:Field>
+        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..rJulm0SrTYGYB_PcEdoFFA.SwnKyJ-RcrFelaV78hHmbQ.HJrEXyv7muSDhtLS_qYIzQ</urn:Field>
         <urn:Field name="Allowed Subject DN"/>
         <urn:Field name="Allowed Issuer DN"/>
         <urn:Field name="Logout Service Endpoint"/>
@@ -29,8 +29,8 @@
     </urn:AdvancedFields>
     <urn:Tables/>
     <urn:ExtendedContractAttributes>
+        <urn:AttributeName>uid</urn:AttributeName>
         <urn:AttributeName>Email</urn:AttributeName>
-        <urn:AttributeName>ImmutableID</urn:AttributeName>
         <urn:AttributeName>FirstName</urn:AttributeName>
         <urn:AttributeName>LastName</urn:AttributeName>
     </urn:ExtendedContractAttributes>
