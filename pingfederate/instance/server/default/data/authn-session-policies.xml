@@ -3,7 +3,7 @@
     <applicationPolicy idleTimeoutMins="60" maxTimeoutMins="480"/>
     <globalPolicy enableSessions="true" idleTimeoutDisplayUnit="MINUTES" idleTimeoutMins="60" maxTimeoutDisplayUnit="MINUTES" maxTimeoutMins="480" persistentSessions="true"/>
     <sourcePolicies>
-        <policy authnContextSensitive="false" authnSourceId="PingIDSDK" authnSourceType="ADAPTER" enableSessions="false" id="PingIDSDKSessionOverride" persistent="false" timeoutDisplayUnit="MINUTES"/>
         <policy authnContextSensitive="false" authnSourceId="RuM4riNDFG4ShQO1KpCRp1TAffX" authnSourceType="IDP_CONN" enableSessions="true" id="rntYHzKPBFoeCepyTceU0hJQY" persistent="true" timeoutDisplayUnit="MINUTES"/>
+        <policy authnContextSensitive="false" authnSourceId="PingIDSDK" authnSourceType="ADAPTER" enableSessions="false" id="Oxn5FcE6IuSRnJHD2IxYQKyl2" persistent="false" timeoutDisplayUnit="MINUTES"/>
     </sourcePolicies>
 </authnSessionPolicies>
