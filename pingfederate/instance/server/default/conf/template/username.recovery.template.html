@@ -45,7 +45,7 @@ is not recommended as it may interfere with expected server behavior.
            <img src="assets/images/logo.svg" class="logo" />
            <!-- END OF-->
            
-       
+        <br/>
         $pluginTemplateMessages.getMessage($messageKeyPrefix, "title")
     </div>
     ## .ping-header **
@@ -75,10 +75,10 @@ is not recommended as it may interfere with expected server behavior.
                     </div>
                 </div>
                 
-                <div class="ping-input-label">
+                <div class="ping-input-label" style="font-family:Rubik;">
                     $pluginTemplateMessages.getMessage($messageKeyPrefix, "emailTitle")
                 </div>
-                <div class="ping-input-container">
+                <div class="ping-input-container" style="font-family:Rubik;">
                     <input id="savedReferrer" type="hidden" name="$returnInfoField" value="$returnInfo" />
                     <input id="email" type="email" size="36" name="$email" value="$savedEmail" autocorrect="off" autocapitalize="off" onKeyPress="return postOnReturn(event)" placeholder="$pluginTemplateMessages.getMessage($messageKeyPrefix, "emailTitle")" />
                 </div>
