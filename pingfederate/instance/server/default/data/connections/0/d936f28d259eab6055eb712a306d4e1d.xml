@@ -2,7 +2,7 @@
 <md:EntityDescriptor entityID="https://demo.bxfinance.xyz" urn:name="BXFinance IdP" ID="F5WkxCNpVEYMEtEQzNd89TcjD3W" urn:baseUrl="https://demo.bxfinance.xyz" urn:LogLevel="STANDARD" urn:isActive="true" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2">
     <md:Extensions>
         <urn:EntityExtension PFVersion="10.0.3.0" LicenseGroup="">
-            <urn:DigitialSignatureAliases>
+            <urn:DigitialSignatureAliases SigningKeyAlias="signing-cert" includeX509inXmlSig="false" includeRawKeyInXmlSig="false" SigningAlgorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256">
                 <urn:ActiveVerificationCertAlias>u5qvvkgh00qidi08zxavq3epi</urn:ActiveVerificationCertAlias>
             </urn:DigitialSignatureAliases>
             <urn:Encryption>
@@ -22,9 +22,9 @@
     </md:Extensions>
     <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-07-08T20:45:45.222Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-07-21T23:21:50.018Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
-                <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
+                <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="true"/>
                 <urn:IDP AssertionsSigned="false" DefaultTargetResource="https://demo.bxfinance.xyz/app/banking">
                     <urn:TargetAttributeMapping AdapterInstanceId="BXFSPRefID" RestrictVirtualServerIds="false">
                         <urn:AttributeMap Name="uid" Type="LDAP" Value="uid"/>
@@ -45,6 +45,7 @@
                 </urn:IDP>
             </urn:RoleExtension>
         </md:Extensions>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="/idp/SLO.saml2" ResponseLocation="/app"/>
         <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="/idp/SSO.saml2"/>
         <saml:Attribute Name="uid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
         <saml:Attribute Name="Email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
