@@ -33,8 +33,7 @@ dsconfig create-external-server \
     --set hostname-verification-method:allow-all  \
     --set key-manager-provider:Null  \
     --set 'trust-manager-provider:Blind Trust'  \
-    --set shared-secret:AACwLeCJRWJ0eZHx88ANCs1sCZptOUJFij8=  \
-    --set decision-node:e51688ff-1dc9-4b6c-bb36-8af64d02e9d1  \
+    --set shared-secret:AADNDliAcmkiub8BZ3hVdIhEnYPBYYmxSYE=  \
     --set branch:defaultPolicies.snapshot 
 
 dsconfig create-external-server \
@@ -43,7 +42,7 @@ dsconfig create-external-server \
     --set server-host-name:pingdirectory  \
     --set location:Docker  \
     --set bind-dn:cn=dmanager  \
-    --set password:AAAziOM23id4WigPelBPKNMKkTJBx1T+Tyg= 
+    --set password:AAD4NST6KpKi4RM/x60hVUvXleXuAC10TGE= 
 
 dsconfig create-external-server \
     --server-name pingfederate  \
@@ -78,7 +77,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:pingfederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AADTx8kWav1+mpL4b/4H/J/S9dIo7MGLB1U= 
+    --set client-secret:AADRuJuO4cgSwUU0qKQ4AZYinBlwqgU/HVw= 
 
 dsconfig create-token-resource-lookup-method \
     --validator-name pingfederateATV  \
@@ -118,11 +117,10 @@ dsconfig create-gateway-api-endpoint \
 dsconfig set-policy-decision-service-prop \
     --set pdp-mode:external  \
     --set policy-server:pingdatapap  \
+    --set trust-framework-version:v2  \
     --set decision-response-view:decision-tree  \
     --set decision-response-view:evaluated-entities  \
     --set decision-response-view:request 
-
-dsconfig set-policy-decision-service-prop --set trust-framework-version:v2
 
 dsconfig create-sideband-api-endpoint \
     --endpoint-name request  \
@@ -136,7 +134,7 @@ dsconfig create-sideband-api-endpoint \
 
 dsconfig create-sideband-api-shared-secret \
     --secret-name my-ss  \
-    --set shared-secret:AABEXz98iq/eV9CbLYfVY4gX+85M4LPiwo4= 
+    --set shared-secret:AAAL72BJqndRTwWtz66Oqx7sr2AajbF0kRk= 
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
