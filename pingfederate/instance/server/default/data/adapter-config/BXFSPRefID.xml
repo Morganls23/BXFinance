@@ -3,13 +3,13 @@
     <urn:Fields>
         <urn:Field name="Authentication Endpoint">https://demo.bxfinance.xyz/app</urn:Field>
         <urn:Field name="User Name">react-user</urn:Field>
-        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..rJulm0SrTYGYB_PcEdoFFA.SwnKyJ-RcrFelaV78hHmbQ.HJrEXyv7muSDhtLS_qYIzQ</urn:Field>
+        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..D8IqG8pKUVsj1nvh8vtmNA.kTehd5olIBymZAg4acsOFA.KkMCX5LQzZTUc0QQ1fMU-w</urn:Field>
         <urn:Field name="Allowed Subject DN"/>
         <urn:Field name="Allowed Issuer DN"/>
-        <urn:Field name="Logout Service Endpoint"/>
+        <urn:Field name="Logout Service Endpoint">https://demo.bxfinance.xyz/app</urn:Field>
         <urn:Field name="Account Linking Authentication Endpoint"/>
         <urn:Field name="Transport Mode">0</urn:Field>
-        <urn:Field name="Reference Duration">3</urn:Field>
+        <urn:Field name="Reference Duration">5</urn:Field>
         <urn:Field name="Reference Length">30</urn:Field>
         <urn:Field name="Require SSL/TLS">true</urn:Field>
         <urn:Field name="Outgoing Attribute Format">JSON</urn:Field>
@@ -19,7 +19,7 @@
     </urn:Fields>
     <urn:AdvancedFields>
         <urn:Field name="Transport Mode">0</urn:Field>
-        <urn:Field name="Reference Duration">3</urn:Field>
+        <urn:Field name="Reference Duration">5</urn:Field>
         <urn:Field name="Reference Length">30</urn:Field>
         <urn:Field name="Require SSL/TLS">true</urn:Field>
         <urn:Field name="Outgoing Attribute Format">JSON</urn:Field>
