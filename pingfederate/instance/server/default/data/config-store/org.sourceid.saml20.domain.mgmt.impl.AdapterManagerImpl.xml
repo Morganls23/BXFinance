@@ -9,5 +9,9 @@
     </con:map>
     <con:map name="SpAuthnAdapterInstances">
         <con:item name="BXFSPRefID">com.pingidentity.pf.adapters.referenceid.SpBackchannelReferenceAuthnAdapter</con:item>
+        <con:item name="AdvisorSPRefID">com.pingidentity.pf.adapters.referenceid.SpBackchannelReferenceAuthnAdapter</con:item>
+    </con:map>
+    <con:map name="SpAdapterInstanceParents">
+        <con:item name="AdvisorSPRefID">BXFSPRefID</con:item>
     </con:map>
 </con:config>

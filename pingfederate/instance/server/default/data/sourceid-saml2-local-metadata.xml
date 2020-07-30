@@ -35,7 +35,6 @@
                 </sid:SPLocalPaths>
             </sid:LocalPathsDescriptor>
             <sid:ApplicationURLs/>
-            <sid:UrlToAdapterMap Url="https://httpbin.bxfinance.xyz" TargetType="SP_CONN" AdapterInstance="sUIRbP3P_kTokvOXAzCBehZ5_Fb"/>
             <sid:IdpDiscovery CommonDomainServer="false" IdPCommonDomainClient="false" SPCommonDomainClient="false" WriteCookiePath="/writecookie.cdc" ReadCookiePath="/readcookie.cdc">
                 <sid:CommonDomainClient CommonDomainServiceBaseUrl=""/>
                 <sid:CommonDomainService CommonDomain="" CookieLifeDays="365"/>
