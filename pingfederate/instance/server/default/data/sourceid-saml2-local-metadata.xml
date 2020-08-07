@@ -35,6 +35,7 @@
                 </sid:SPLocalPaths>
             </sid:LocalPathsDescriptor>
             <sid:ApplicationURLs/>
+            <sid:UrlToAdapterMap Url="https://demo.bxfinance.xyz/app/*" TargetType="ADAPTER" AdapterInstance="AdvisorSPRefID"/>
             <sid:IdpDiscovery CommonDomainServer="false" IdPCommonDomainClient="false" SPCommonDomainClient="false" WriteCookiePath="/writecookie.cdc" ReadCookiePath="/readcookie.cdc">
                 <sid:CommonDomainClient CommonDomainServiceBaseUrl=""/>
                 <sid:CommonDomainService CommonDomain="" CookieLifeDays="365"/>

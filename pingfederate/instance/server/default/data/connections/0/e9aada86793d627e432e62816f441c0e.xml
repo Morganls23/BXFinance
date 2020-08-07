@@ -21,10 +21,10 @@
     </md:Extensions>
     <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-08-07T16:14:38.839Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-08-07T18:12:36.747Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
-                <urn:IDP AssertionsSigned="false" DefaultTargetResource="https://demo.bxfinance.xyz/app/advisor">
+                <urn:IDP AssertionsSigned="false" DefaultTargetResource="">
                     <urn:TargetAttributeMapping AdapterInstanceId="AdvisorSPRefID" RestrictVirtualServerIds="false">
                         <urn:AttributeMap Name="uid" Type="Assertion" Value="SAML_SUBJECT"/>
                         <urn:AttributeMap Name="Email" Type="Assertion" Value="email"/>
