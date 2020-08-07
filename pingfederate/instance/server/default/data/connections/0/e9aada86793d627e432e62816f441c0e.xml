@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<md:EntityDescriptor entityID="https://pingone.com/idp/cd-1635691986.pingidentity" urn:name="PingOne - AnyWealthAdvisor" ID="RuM4riNDFG4ShQO1KpCRp1TAffX" urn:baseUrl="https://sso.connect.pingidentity.com" urn:LogLevel="STANDARD" urn:isActive="true" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2">
+<md:EntityDescriptor entityID="https://pingone.com/idp/cd-1635691986.pingidentity" urn:name="PingOne - AnyWealthAdvisor - AnyMarketing" ID="RuM4riNDFG4ShQO1KpCRp1TAffX" urn:baseUrl="https://sso.connect.pingidentity.com" urn:LogLevel="STANDARD" urn:isActive="true" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2">
     <md:Extensions>
         <urn:EntityExtension PFVersion="10.0.3.0" LicenseGroup="">
             <urn:DigitialSignatureAliases>
@@ -21,7 +21,7 @@
     </md:Extensions>
     <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-07-30T19:06:11.250Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-08-07T16:14:38.839Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
                 <urn:IDP AssertionsSigned="false" DefaultTargetResource="https://demo.bxfinance.xyz/app/advisor">
@@ -32,7 +32,7 @@
                         <urn:AttributeMap Name="subject" Type="Assertion" Value="SAML_SUBJECT"/>
                         <urn:AttributeMap Name="bxFinanceUserType" Type="LDAP" Value="bxFinanceUserType"/>
                         <urn:AttributeMap Name="LastName" Type="Assertion" Value="lastName"/>
-                        <urn:AttributeSource Description="" Type="LDAP" DataSourceId="LDAP-PingDirectory">
+                        <urn:AttributeSource Description="LDAP" Type="LDAP" DataSourceId="LDAP-PingDirectory">
                             <urn:Parameter Name="filter" Value="(|(uid=${SAML_SUBJECT})(mail=${SAML_SUBJECT}))"/>
                             <urn:Parameter Name="search_base" Value="ou=People,dc=bxfinance.xyz"/>
                             <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE"/>
@@ -43,7 +43,7 @@
                     <urn:UserProvisioning AttributeQuery="false" ErrorHandling="ContinueSSO" EventTrigger="NewUserOnly" SqlMethod="Table">
                         <urn:AttributeMap Name="uid" Type="Assertion" Value="SAML_SUBJECT"/>
                         <urn:AttributeMap Name="mail" Type="Assertion" Value="email"/>
-                        <urn:AttributeMap Name="bxFinanceUserType" Type="Text" Value="AnyWealthAdvisor"/>
+                        <urn:AttributeMap Name="bxFinanceUserType" Type="Assertion" Value="bxFinanceUserType"/>
                         <urn:AttributeMap Name="givenName" Type="Assertion" Value="firstName"/>
                         <urn:AttributeMap Name="objectClass" Type="Text" Value="bxFinanceUser"/>
                         <urn:AttributeMap Name="cn" Type="Assertion" Value="SAML_SUBJECT"/>
