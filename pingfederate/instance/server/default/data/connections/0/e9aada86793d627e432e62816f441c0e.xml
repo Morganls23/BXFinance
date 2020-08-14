@@ -21,33 +21,27 @@
     </md:Extensions>
     <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
         <md:Extensions>
-            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-08-07T18:12:36.747Z">
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-08-07T20:17:22.977Z">
                 <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
                 <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="false"/>
                 <urn:IDP AssertionsSigned="false" DefaultTargetResource="">
                     <urn:TargetAttributeMapping AdapterInstanceId="AdvisorSPRefID" RestrictVirtualServerIds="false">
                         <urn:AttributeMap Name="uid" Type="Assertion" Value="SAML_SUBJECT"/>
-                        <urn:AttributeMap Name="Email" Type="Assertion" Value="email"/>
-                        <urn:AttributeMap Name="FirstName" Type="Assertion" Value="firstName"/>
+                        <urn:AttributeMap Name="Email" Type="Assertion" Value="Email"/>
+                        <urn:AttributeMap Name="FirstName" Type="Assertion" Value="FirstName"/>
                         <urn:AttributeMap Name="subject" Type="Assertion" Value="SAML_SUBJECT"/>
-                        <urn:AttributeMap Name="bxFinanceUserType" Type="LDAP" Value="bxFinanceUserType"/>
-                        <urn:AttributeMap Name="LastName" Type="Assertion" Value="lastName"/>
-                        <urn:AttributeSource Description="LDAP" Type="LDAP" DataSourceId="LDAP-PingDirectory">
-                            <urn:Parameter Name="filter" Value="(|(uid=${SAML_SUBJECT})(mail=${SAML_SUBJECT}))"/>
-                            <urn:Parameter Name="search_base" Value="ou=People,dc=bxfinance.xyz"/>
-                            <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE"/>
-                            <urn:Parameter Name="memberof_nested_group" Value="false"/>
-                        </urn:AttributeSource>
+                        <urn:AttributeMap Name="bxFinanceUserType" Type="Assertion" Value="bxFinanceUserType"/>
+                        <urn:AttributeMap Name="LastName" Type="Assertion" Value="LastName"/>
                         <urn:TokenAuthorizationIssuanceCriteria/>
                     </urn:TargetAttributeMapping>
                     <urn:UserProvisioning AttributeQuery="false" ErrorHandling="ContinueSSO" EventTrigger="NewUserOnly" SqlMethod="Table">
                         <urn:AttributeMap Name="uid" Type="Assertion" Value="SAML_SUBJECT"/>
-                        <urn:AttributeMap Name="mail" Type="Assertion" Value="email"/>
+                        <urn:AttributeMap Name="mail" Type="Assertion" Value="Email"/>
                         <urn:AttributeMap Name="bxFinanceUserType" Type="Assertion" Value="bxFinanceUserType"/>
-                        <urn:AttributeMap Name="givenName" Type="Assertion" Value="firstName"/>
+                        <urn:AttributeMap Name="givenName" Type="Assertion" Value="FirstName"/>
                         <urn:AttributeMap Name="objectClass" Type="Text" Value="bxFinanceUser"/>
                         <urn:AttributeMap Name="cn" Type="Assertion" Value="SAML_SUBJECT"/>
-                        <urn:AttributeMap Name="sn" Type="Assertion" Value="lastName"/>
+                        <urn:AttributeMap Name="sn" Type="Assertion" Value="LastName"/>
                         <urn:AttributeSource Description="LDAP" Type="LDAP" DataSourceId="LDAP-PingDirectory">
                             <urn:Parameter Name="filter" Value="uid=${SAML_SUBJECT}"/>
                             <urn:Parameter Name="search_base" Value="ou=People,dc=bxfinance.xyz"/>
@@ -61,12 +55,13 @@
         </md:Extensions>
         <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="/sso/idp/SSO.saml2?idpid=ffbe37af-b039-4fae-964e-f7daacaf9919"/>
         <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="/sso/idp/SSO.saml2?idpid=ffbe37af-b039-4fae-964e-f7daacaf9919"/>
-        <saml:Attribute Name="firstName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
-        <saml:Attribute Name="lastName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="uid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="Email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="FirstName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
         <saml:Attribute Name="bxFinanceUserType" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
+        <saml:Attribute Name="LastName" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
         <saml:Attribute Name="PingOne.idpid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
         <saml:Attribute Name="PingOne.AuthenticatingAuthority" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
-        <saml:Attribute Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"/>
     </md:IDPSSODescriptor>
     <md:RoleDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" xsi:type="urn:PFAvailableCertsRoleDescriptorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <urn:availableCert>

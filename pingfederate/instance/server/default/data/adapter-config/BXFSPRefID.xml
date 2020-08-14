@@ -3,7 +3,7 @@
     <urn:Fields>
         <urn:Field name="Authentication Endpoint">https://demo.bxfinance.xyz/app</urn:Field>
         <urn:Field name="User Name">react-user</urn:Field>
-        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..wGirvlUFmam-1zs4ovd_0A.nHnGHwrhVPD-ekOybBw7XQ.GCNbSfUo3VGkfV-U4HYN6Q</urn:Field>
+        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..QZJbDsPmfVRfuGRgH26jqA.uw9CEYXJp0O9q2wSDfM9Fw.6E0PQs3dogdd1UEoKK6WuQ</urn:Field>
         <urn:Field name="Allowed Subject DN"/>
         <urn:Field name="Allowed Issuer DN"/>
         <urn:Field name="Logout Service Endpoint">https://demo.bxfinance.xyz/app</urn:Field>
