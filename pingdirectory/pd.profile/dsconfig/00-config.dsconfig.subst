@@ -1,0 +1,507 @@
+# Configuration changes to bring source (config-postSetup.gz) to target (config.ldif)
+# Comparison options:
+#   Ignore differences in configuration that is part of the topology registry
+#   Ignore differences on shared host
+#   Ignore differences by instance
+
+dsconfig create-scim-resource-type \
+    --type-name Users  \
+    --type ldap-pass-through  \
+    --set enabled:true  \
+    --set endpoint:Users  \
+    --set structural-ldap-objectclass:bxFinanceUser  \
+    --set include-base-dn:ou=People,${USER_BASE_DN} 
+
+dsconfig create-key-manager-provider \
+    --provider-name pingdirectory  \
+    --type file-based  \
+    --set enabled:true  \
+    --set key-store-file:config/pingdirectory.p12  \
+    --set key-store-type:PKCS12  \
+    --set key-store-pin:AAAfJZcdrX7mcKkdPst796z6mxB2SITl4KI= 
+
+dsconfig set-trust-manager-provider-prop \
+    --provider-name 'Blind Trust'  \
+    --set enabled:true 
+
+dsconfig set-backend-prop \
+    --backend-name changelog  \
+    --set enabled:true  \
+    --set 'changelog-maximum-age:2 h' 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantClientId  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantExpires  \
+    --set index-type:ordering 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantGuid  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantHashedRefreshTokenValue  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name accessGrantUniqueUserIdentifier  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name pf-connected-identity  \
+    --set index-type:equality 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name pf-oauth-client-id  \
+    --set index-type:equality  \
+    --set index-type:ordering  \
+    --set index-type:substring 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name pf-oauth-client-last-modified  \
+    --set index-type:ordering 
+
+dsconfig create-local-db-index \
+    --backend-name userRoot  \
+    --index-name pf-oauth-client-name  \
+    --set index-type:equality  \
+    --set index-type:ordering  \
+    --set index-type:substring 
+
+dsconfig create-external-server \
+    --server-name MailTrap  \
+    --type smtp  \
+    --set server-host-name:smtp.mailtrap.io  \
+    --set user-name:572ee1077900a7  \
+    --set password:AAA5Xp0KrDO5l2VPpGs2ONypK5JgtF31S4c= 
+
+dsconfig create-external-server \
+    --server-name PingFederate  \
+    --type http  \
+    --set base-url:https://pingfederate:9031  \
+    --set hostname-verification-method:allow-all  \
+    --set key-manager-provider:Null  \
+    --set 'trust-manager-provider:Blind Trust' 
+
+dsconfig set-global-configuration-prop \
+    --set smtp-server:MailTrap 
+
+dsconfig set-access-control-handler-prop \
+    --remove 'global-aci:(targetattr="userPassword || authPassword")(version 3.0; acl "Prevent clients from retrieving passwords from the server"; deny (read,search,compare) userdn="ldap:///anyone";)'  \
+    --add 'global-aci:(extop="1.3.6.1.4.1.30221.2.6.17")(version 3.0;acl "Authenticated access to the multi-update extended request for the Delegated Admin API"; allow (read) userdn="ldap:///all";)'  \
+    --add 'global-aci:(extop="1.3.6.1.4.1.30221.2.6.62")(version 3.0; acl "Authenticated access to the generate-password extended request for the Delegated Admin API"; allow (read) userdn="ldap:///all";)'  \
+    --add 'global-aci:(targetattr="*")(version 3.0; acl "Grant full access for the admin user"; allow (all) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
+    --add 'global-aci:(targetattr="userPassword || authPassword")(version 3.0; acl "Grant password access for the admin user"; allow (all) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
+    --add 'global-aci:(targetcontrol="1.2.840.113556.1.4.319")(version 3.0; acl "Allow paging for pingfederate"; allow (read) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
+    --add 'global-aci:(targetcontrol="1.2.840.113556.1.4.473")(version 3.0; acl "Allow Server Sort for pingfederate"; allow (read) userdn="ldap:///cn=pingfederate,cn=Root DNs,cn=config";)'  \
+    --add 'global-aci:(targetcontrol="1.3.6.1.1.13.2")(version 3.0; acl "Anonymous access to the post-read request control as described in RFC 4527"; allow (read) userdn="ldap:///anyone";)'  \
+    --add 'global-aci:(targetcontrol="1.3.6.1.4.1.30221.2.5.40")(version 3.0;acl "Authenticated access to the password validation details request control for the Delegated Admin API"; allow (read) userdn="ldap:///all";)'  \
+    --add 'global-aci:(targetcontrol="1.3.6.1.4.1.4203.1.10.2")(version 3.0;acl "Authenticated access to the no-op request control for the Delegated Admin API"; allow (read) userdn="ldap:///all";)' 
+
+dsconfig create-access-token-validator \
+    --validator-name PingFederate  \
+    --type ping-federate  \
+    --set 'identity-mapper:Exact Match'  \
+    --set enabled:true  \
+    --set authorization-server:PingFederate  \
+    --set client-id:PingIntrospect  \
+    --set client-secret:AACKfRDxgQ6Pw36342qC0IeoLJ9NTaA8DRI= 
+
+dsconfig set-backend-prop \
+    --backend-name userRoot  \
+    --set compact-common-parent-dn:ou=People,${USER_BASE_DN} 
+
+dsconfig create-consent-definition \
+    --definition-name share-account-balances  \
+    --set 'display-name:Share Account Balances' 
+
+dsconfig create-consent-definition-localization \
+    --definition-name share-account-balances  \
+    --localization-name en-US  \
+    --set version:0.1  \
+    --set 'title-text:Share Account Balances'  \
+    --set 'data-text:Share Account Balances'  \
+    --set 'purpose-text:Share Account Balances' 
+
+dsconfig create-consent-definition \
+    --definition-name share-comm-preferences  \
+    --set 'display-name:Share Communication Preferences' 
+
+dsconfig create-consent-definition-localization \
+    --definition-name share-comm-preferences  \
+    --localization-name en-US  \
+    --set version:0.1  \
+    --set 'title-text:Sharing Communication Preferences'  \
+    --set 'data-text:Sharing Communication Preferences'  \
+    --set 'purpose-text:Sharing Communication Preferences' 
+
+dsconfig create-consent-definition \
+    --definition-name test-consent  \
+    --set display-name:TestConsents 
+
+dsconfig create-consent-definition-localization \
+    --definition-name test-consent  \
+    --localization-name en-US  \
+    --set version:0.1  \
+    --set title-text:TestConsent  \
+    --set data-text:TestConsent  \
+    --set purpose-text:TestConsent 
+
+dsconfig create-constructed-attribute \
+    --attribute-name pf-connected-identity  \
+    --set attribute-type:pf-connected-identity  \
+    --set value-pattern:auth-source=pf-local-identity:user-id={uid} 
+
+dsconfig create-delegated-admin-attribute-category \
+    --display-name 'Profile Information'  \
+    --set display-order-index:0 
+
+dsconfig create-delegated-admin-attribute-category \
+    --display-name 'User Information'  \
+    --set display-order-index:1 
+
+dsconfig create-delegated-admin-rights \
+    --rights-name 'Group Admin'  \
+    --set enabled:true  \
+    --set admin-group-dn:cn=groupadmins,ou=Administrators,${USER_BASE_DN} 
+
+dsconfig create-delegated-admin-rights \
+    --rights-name 'Super Admin'  \
+    --set enabled:true  \
+    --set admin-user-dn:uid=superadmin,ou=Administrators,${USER_BASE_DN} 
+
+dsconfig create-delegated-admin-rights \
+    --rights-name 'User Admin'  \
+    --set enabled:true  \
+    --set admin-user-dn:uid=bankadmin,ou=Administrators,${USER_BASE_DN} 
+
+dsconfig create-rest-resource-type \
+    --type-name groups  \
+    --type group  \
+    --set enabled:true  \
+    --set resource-endpoint:groups  \
+    --set structural-ldap-objectclass:groupOfNames  \
+    --set search-base-dn:${USER_BASE_DN}  \
+    --set parent-dn:ou=groups,${USER_BASE_DN}  \
+    --set create-rdn-attribute-type:cn  \
+    --set display-name:Groups  \
+    --set search-filter-pattern:(cn=*%%*)  \
+    --set primary-display-attribute-type:cn 
+
+dsconfig create-delegated-admin-resource-rights \
+    --rights-name 'Group Admin'  \
+    --rest-resource-type groups  \
+    --set enabled:true  \
+    --set admin-permission:create  \
+    --set admin-permission:delete  \
+    --set admin-permission:manage-group-membership  \
+    --set admin-permission:read  \
+    --set admin-permission:update  \
+    --set resource-subtree:ou=groups,${USER_BASE_DN} 
+
+dsconfig create-delegated-admin-resource-rights \
+    --rights-name 'Super Admin'  \
+    --rest-resource-type groups  \
+    --set enabled:true  \
+    --set admin-permission:create  \
+    --set admin-permission:delete  \
+    --set admin-permission:manage-group-membership  \
+    --set admin-permission:read  \
+    --set admin-permission:update  \
+    --set admin-scope:all-resources-in-base 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name groups  \
+    --attribute-type cn  \
+    --set display-name:Group 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name groups  \
+    --attribute-type description  \
+    --set display-name:Description 
+
+dsconfig create-rest-resource-type \
+    --type-name users  \
+    --type user  \
+    --set enabled:true  \
+    --set resource-endpoint:users  \
+    --set structural-ldap-objectclass:bxFinanceUser  \
+    --set auxiliary-ldap-objectclass:pf-connected-identities  \
+    --set search-base-dn:${USER_BASE_DN}  \
+    --set parent-dn:ou=people,${USER_BASE_DN}  \
+    --set create-rdn-attribute-type:uid  \
+    --set post-create-constructed-attribute:pf-connected-identity  \
+    --set display-name:Users  \
+    --set search-filter-pattern:(|(cn=*%%*)(mail=%%*)(uid=%%*)(sn=*%%*))  \
+    --set primary-display-attribute-type:cn 
+
+dsconfig create-delegated-admin-resource-rights \
+    --rights-name 'Group Admin'  \
+    --rest-resource-type users  \
+    --set enabled:true  \
+    --set admin-permission:read  \
+    --set resource-subtree:ou=people,${USER_BASE_DN} 
+
+dsconfig create-delegated-admin-resource-rights \
+    --rights-name 'Super Admin'  \
+    --rest-resource-type users  \
+    --set enabled:true  \
+    --set admin-permission:create  \
+    --set admin-permission:delete  \
+    --set admin-permission:read  \
+    --set admin-permission:update  \
+    --set admin-scope:all-resources-in-base 
+
+dsconfig create-delegated-admin-resource-rights \
+    --rights-name 'User Admin'  \
+    --rest-resource-type users  \
+    --set enabled:true  \
+    --set admin-permission:create  \
+    --set admin-permission:delete  \
+    --set admin-permission:read  \
+    --set admin-permission:update  \
+    --set resource-subtree:ou=people,${USER_BASE_DN} 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type bxFinanceUserAccountNumber  \
+    --set 'display-name:BXFinance - Account Number'  \
+    --set 'attribute-category:User Information'  \
+    --set display-order-index:4 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type cn  \
+    --set 'display-name:Full Name'  \
+    --set 'attribute-category:User Information' 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type ds-pwp-account-disabled  \
+    --set 'display-name:Account Disabled'  \
+    --set 'attribute-category:Profile Information' 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type givenName  \
+    --set 'display-name:First Name'  \
+    --set 'attribute-category:User Information'  \
+    --set display-order-index:1 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type mail  \
+    --set display-name:Email  \
+    --set 'attribute-category:User Information'  \
+    --set display-order-index:3 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type mobile  \
+    --set 'display-name:Mobile Phone'  \
+    --set 'attribute-category:User Information'  \
+    --set display-order-index:3 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type sn  \
+    --set 'display-name:Last Name'  \
+    --set 'attribute-category:User Information'  \
+    --set display-order-index:2 
+
+dsconfig create-delegated-admin-attribute \
+    --type-name users  \
+    --attribute-type uid  \
+    --set 'display-name:User ID'  \
+    --set 'attribute-category:Profile Information'  \
+    --set display-order-index:4 
+
+dsconfig set-connection-handler-prop \
+    --handler-name 'HTTPS Connection Handler'  \
+    --remove http-servlet-extension:Consent  \
+    --remove 'http-servlet-extension:Directory REST API'  \
+    --remove http-servlet-extension:Documentation  \
+    --remove http-servlet-extension:SCIM2  \
+    --remove 'http-servlet-extension:Swagger UI'  \
+    --reset web-application-extension 
+
+dsconfig create-request-criteria \
+    --criteria-name 'Delegated Admin User Creation Request Criteria'  \
+    --type simple  \
+    --set operation-type:add  \
+    --set included-target-entry-dn:${USER_BASE_DN}  \
+    --set any-included-target-entry-filter:(|(objectClass=inetOrgPerson)(objectClass=ubidPerson))  \
+    --set 'included-application-name:PingDirectory Delegated Admin' 
+
+dsconfig set-gauge-prop \
+    --gauge-name 'Available File Descriptors'  \
+    --set enabled:false 
+
+dsconfig set-gauge-prop \
+    --gauge-name 'CPU Usage (Percent)'  \
+    --set enabled:false 
+
+dsconfig set-gauge-prop \
+    --gauge-name 'License Expiration (Days)'  \
+    --set enabled:false  \
+    --set warning-value:10.0 
+
+dsconfig create-http-servlet-cross-origin-policy \
+    --policy-name 'Delegated Admin Cross-Origin Policy'  \
+    --set 'cors-allowed-methods: DELETE'  \
+    --set 'cors-allowed-methods: GET'  \
+    --set 'cors-allowed-methods: OPTIONS'  \
+    --set 'cors-allowed-methods: PATCH'  \
+    --set 'cors-allowed-methods: POST'  \
+    --set 'cors-allowed-origins: *' 
+
+dsconfig set-http-servlet-extension-prop \
+    --extension-name 'Delegated Admin'  \
+    --set 'cross-origin-policy:Delegated Admin Cross-Origin Policy'  \
+    --set access-token-scope:urn:pingidentity:directory-delegated-admin 
+
+dsconfig set-http-servlet-extension-prop \
+    --extension-name SCIM2  \
+    --set access-token-validator:PingFederate 
+
+dsconfig set-log-publisher-prop \
+    --publisher-name 'Data Recovery Log'  \
+    --set enabled:false 
+
+dsconfig set-log-publisher-prop \
+    --publisher-name 'File-Based Debug Logger'  \
+    --set enabled:true 
+
+dsconfig create-debug-target \
+    --publisher-name 'File-Based Debug Logger'  \
+    --target-name com.unboundid.guitools.replicationcli  \
+    --set debug-level:verbose 
+
+dsconfig set-monitor-provider-prop \
+    --provider-name 'Host System'  \
+    --reset enabled 
+
+dsconfig create-password-generator \
+    --generator-name BXFinance-PasswordGen  \
+    --type random  \
+    --set enabled:true  \
+    --set password-character-set:alpha:abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ  \
+    --set password-character-set:numeric:0123456789  \
+    --set password-character-set:special:!@#$%^&*()  \
+    --set password-format:alpha:7,numeric:3,special:2 
+
+dsconfig set-root-dn-user-prop \
+    --user-name 'Directory Manager'  \
+    --add alternate-bind-dn:cn=administrator 
+
+dsconfig create-root-dn-user \
+    --user-name pingdatasync  \
+    --set alternate-bind-dn:cn=datasync  \
+    --set alternate-bind-dn:cn=sync  \
+    --set password:{PBKDF2}ABDqoNIBvwE5zPKAk1+Q1FrbJxB03RqbaHTCr6Sh0sghzSE7iB5Z9Di40XDjzyE+jd6lAw==  \
+    --set inherit-default-root-privileges:false  \
+    --set privilege:bypass-acl  \
+    --set privilege:bypass-pw-policy  \
+    --set privilege:config-read  \
+    --set privilege:password-reset  \
+    --set privilege:unindexed-search 
+
+dsconfig create-root-dn-user \
+    --user-name pingfederate  \
+    --set alternate-bind-dn:cn=fed  \
+    --set alternate-bind-dn:cn=pf  \
+    --set alternate-bind-dn:cn=pingfederate  \
+    --set password:{PBKDF2}ABCs4HY7Wk+HWUvY+kRV/PCiJxDOjlYdEyqyLeuKfjtvS7peEHpD2Bd3g6hEfVDcwL5zyw==  \
+    --set inherit-default-root-privileges:false  \
+    --set privilege:config-read  \
+    --set privilege:password-reset  \
+    --set privilege:permit-get-password-policy-state-issues  \
+    --set privilege:proxied-auth  \
+    --set privilege:unindexed-search  \
+    --set is-proxyable:prohibited 
+
+dsconfig set-account-status-notification-handler-prop \
+    --handler-name 'Multi-Part Email'  \
+    --set enabled:true  \
+    --set asynchronous:false  \
+    --set 'account-creation-notification-request-criteria:Delegated Admin User Creation Request Criteria'  \
+    --set account-created-message-template:config/account-status-notification-email-templates/delegated-admin-account-created.template 
+
+dsconfig set-password-policy-prop \
+    --policy-name 'Default Password Policy'  \
+    --set 'account-status-notification-handler:Multi-Part Email'  \
+    --set 'password-validator:Character Set'  \
+    --set 'password-validator:Minimum Password Length of 12 Characters'  \
+    --set password-generator:BXFinance-PasswordGen 
+
+dsconfig create-connection-handler \
+    --handler-name 'HTTPS Connection Handler - PD Services'  \
+    --type http  \
+    --set enabled:true  \
+    --set listen-port:2${PD_ENGINE_PUBLIC_PORT}  \
+    --set use-ssl:true  \
+    --set http-servlet-extension:Consent  \
+    --set 'http-servlet-extension:Delegated Admin'  \
+    --set 'http-servlet-extension:Directory REST API'  \
+    --set http-servlet-extension:SCIM2  \
+    --set web-application-extension:Console  \
+    --set 'http-operation-log-publisher:HTTP Detailed Access'  \
+    --set key-manager-provider:pingdirectory  \
+    --set trust-manager-provider:JKS  \
+    --set correlation-id-request-header:Correlation-Id  \
+    --set correlation-id-request-header:X-Correlation-Id  \
+    --set correlation-id-request-header:X-CorrelationID  \
+    --set correlation-id-request-header:X-MS-Correlation-Id  \
+    --set correlation-id-request-header:X-Request-Id  \
+    --set correlation-id-request-header:X-Amzn-Trace 
+
+dsconfig create-identity-mapper \
+    --mapper-name 'User ID Exact Match'  \
+    --type exact-match  \
+    --set enabled:true 
+
+dsconfig set-consent-service-prop \
+    --set enabled:true  \
+    --set base-dn:ou=consents,${USER_BASE_DN}  \
+    --set bind-dn:cn=dmanager  \
+    --set 'consent-record-identity-mapper:User ID Exact Match'  \
+    --set unprivileged-consent-scope:urn:pingdirectory:consent  \
+    --set privileged-consent-scope:urn:pingdirectory:consent_admin 
+
+dsconfig create-plugin \
+    --plugin-name ExpiredSessionAutoPurge  \
+    --type purge-expired-data  \
+    --set enabled:true  \
+    --set datetime-attribute:pf-authn-session-group-expiry-time  \
+    --set 'expiration-offset:1 h'  \
+    --set purge-behavior:subtree-delete-entries  \
+    --set base-dn:ou=sessions,${USER_BASE_DN}  \
+    --set filter:(objectClass=pf-authn-session-groups)  \
+    --set 'polling-interval:20 m' 
+
+dsconfig create-plugin \
+    --plugin-name IdleSessionAutoPurge  \
+    --type purge-expired-data  \
+    --set enabled:true  \
+    --set datetime-attribute:pf-authn-session-group-last-activity-time  \
+    --set 'expiration-offset:1 w'  \
+    --set purge-behavior:subtree-delete-entries  \
+    --set base-dn:ou=sessions,${USER_BASE_DN}  \
+    --set filter:(objectClass=pf-authn-session-groups)  \
+    --set 'polling-interval:1 d' 
+
+dsconfig set-plugin-prop \
+    --plugin-name 'Referential Integrity'  \
+    --set enabled:true 
+
+
