@@ -52,7 +52,7 @@ spec:
             optional: true
         - configMapRef:
             name: pingfederate-environment-variables
-        image: pingidentity/pingfederate:edge
+        image: pingidentity/pingfederate:2006-10.0.4
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 1

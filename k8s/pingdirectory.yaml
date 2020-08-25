@@ -20,6 +20,7 @@ data:
   ORCHESTRATION_TYPE: KUBERNETES
   # SERVER_PROFILE_URL: https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
   SERVER_PROFILE_PATH: pingdirectory
+  MAX_HEAP_SIZE: 768m
 kind: ConfigMap
 metadata:
   annotations: {}
@@ -39,10 +40,16 @@ spec:
   ports:
   - name: ldaps
     port: 636
+    targetPort: 1636
   - name: ssl
     port: 443
+    targetPort: 1443
+  - name: consent
+    port: 2443
+    targetPort: 2443
   - name: ldap
     port: 389
+    targetPort: 389
   selector:
     role: pingdirectory
 
@@ -97,6 +104,7 @@ spec:
         ports:
         - containerPort: 636
         - containerPort: 443
+        - containerPort: 2443
         - containerPort: 389
         readinessProbe:
           exec:
