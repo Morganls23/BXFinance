@@ -51,7 +51,7 @@
             <loc:parameter param-name="Unique ID Field" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
-        <loc:field type="PHONE" default-value="" id="phoneNumber" label="Phone Number">
+        <loc:field type="PHONE" default-value="" id="phoneNumber" label="Mobile Phone Number">
             <loc:appliesTo profile="true" registration="true"/>
             <loc:parameter param-name="Read-Only" value="false"/>
             <loc:parameter param-name="Required" value="true"/>
@@ -64,7 +64,7 @@
             <loc:parameter param-name="Required" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
-        <loc:field type="TEXT" default-value="" id="street" label="Street">
+        <loc:field type="TEXT" default-value="" id="street" label="Street Address">
             <loc:appliesTo profile="true" registration="false"/>
             <loc:parameter param-name="Read-Only" value="false"/>
             <loc:parameter param-name="Required" value="true"/>
