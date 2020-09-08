@@ -23,7 +23,7 @@ spec:
     targetPort: 3000
   - name: pa-insecure
     port: 8080
-    targetPort: 80
+    targetPort: 8080
   selector:
     role: pingaccess
 ---
@@ -56,7 +56,7 @@ spec:
             optional: true
         - configMapRef:
             name: pingaccess-environment-variables
-        image: pingidentity/pingaccess:6.0.0-edge
+        image: pingidentity/pingaccess:2008-6.1.0
         name: pingaccess
         ports:
         - containerPort: 9000
@@ -93,10 +93,10 @@ spec:
       paths:
       - backend:
           serviceName: pingaccess
-          servicePort: 443
-        path: /
+          servicePort: 8080
+        path: /.well-known/acme-challenge
       - backend:
           serviceName: pingaccess
-          servicePort: 8080
+          servicePort: 443
         path: /
       

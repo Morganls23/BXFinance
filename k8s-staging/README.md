@@ -21,16 +21,6 @@ kubectl create secret generic server-profile-url --from-literal=SERVER_PROFILE_U
   ping-devops generate devops-secret | k apply -f -
   ```
 
-2. b. `gcr.io/ping-gte/bxfinanceapp` is a private image and needs an 'imagePullSecret': 
-  ```
-  kubectl create secret docker-registry gcr-pull-secret \
-  --docker-server=https://gcr.io \
-  --docker-username=_json_key \
-  --docker-email=devops_program@pingidentity.com \
-  --docker-password="$(cat gcloud-key.json)"
-  ```
-  > the gcloud-key.json file needs to be provided by the registry admin. 
-
 
 3. The files have some variables that will need to be filled when deploying. 
   - in the `shared-vars` file - replace domains as necessary. 
