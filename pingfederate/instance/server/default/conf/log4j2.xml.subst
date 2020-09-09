@@ -1213,7 +1213,7 @@
         -->
         <Logger name="com.jolbox" level="OFF" />
         <Logger name="com.pingidentity.crypto.CertificateServiceImpl" level="INFO" />
-        <!-- Adjust the priority value to ${PF_LOG_LEVEL} to get additional logging to help troubleshoot XML Signature problems -->
+        <!-- Adjust the priority value to DEBUG to get additional logging to help troubleshoot XML Signature problems -->
         <Logger name="org.sourceid.common.dsig" level="INFO" />
         <Logger name="org.sourceid.saml20.domain.mgmt.impl.PluginSupport" level="INFO" />
         <Logger name="com.pingidentity" level="${PF_LOG_LEVEL}" />
