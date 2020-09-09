@@ -30,6 +30,190 @@ is not recommended as it may interfere with expected server behavior.
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+    <link rel="icon" href="https://demo.bxfinance.xyz/app/favicon.ico">
+
+    <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,900|Roboto:300,400,700,900&display=swap);</style>
+    <style>
+        body, label, .ping-input-label, .ping-input-container, .ping-header {
+            font-family: "Rubik", sans-serif;
+        }
+
+        html {
+            background-image: url('https://demo.bxfinance.xyz//app/images/home-hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: none;
+
+        }
+
+        body .ping-signin .ping-body-container {
+            max-width: 1200px;
+            border-radius: 0 0 10px 10px;
+        }
+        body .ping-signin .ping-header {
+            max-width: 1200px;
+            border-radius: 10px 10px 0 0;
+            font-size: 30px;
+            color: #1F0F11;
+            position: relative;
+
+        }
+        .ping-input-label.detached {
+            color: #1F0F11;
+            font-size: 16px;
+            margin-top: 35px !important;
+        }
+
+        .ping-body-container form > div .ping-input-label:nth-child(4n - 3) + .ping-input-container.input-select {
+            float: right !important;
+            clear: right !important;
+            margin-top: 40px !important;
+        }
+
+        .input-select .wrapper {
+            overflow: visible !important;
+            border-radius: none !important;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .ping-header .company-logo {
+            display: block;
+            background-image: url(https://demo.bxfinance.xyz/app/images/logo.svg);
+            height: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 40px;
+        }
+
+
+        .ping-body-container form > div .ping-input-label:nth-child(4n - 3) {
+            /* background: red; */
+            float: left !important;
+            clear: left;
+        }
+        .ping-body-container form > div .ping-input-label {
+            width: calc(50% - 20px);
+            margin: 0;
+            margin-bottom: 5px;
+            padding-top: 20px;
+        }
+
+
+        .ping-body-container form > div .ping-input-label:nth-child(4n - 3) + .ping-input-container {
+            /* background: pink !important; */
+            float: left !important;
+            clear: left;
+        }
+        .ping-body-container form > div .ping-input-container {
+            width: calc(50% - 20px) !important;
+            margin: 0 !important;
+            /* margin-bottom: 10px !important; */
+        }
+
+        .ping-buttons {
+            width: calc(50% - 20px) !important;
+            float: right;
+            display: flex;
+            margin: 0;
+            margin-top: 20px;
+        }
+        .ping-button.deny {
+            margin-left: 20px;
+        }
+        input, select {
+            background: white !important;
+            border: 1px solid #C6CDCF !important;
+            border-radius: 3px !important;
+        }
+        select {
+            width: 100% !important;
+        }
+
+        .account-type {
+            font-weight: normal;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .account-type label{
+            display: inline-block;
+            color: #1F0F11;
+        }
+        .account-type input {
+            margin-top: 0 !important;
+            margin-right: 5px !important;
+        }
+
+        .account-type-radios {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            line-height: 13px;
+
+        }
+
+        label, .ping-input-label, .ping-input-container {
+            text-transform: none;
+        }
+
+        .ping-input-label:nth-child(4n - 1) {
+            float: right;
+            /* background: blue; */
+            clear: right;
+            margin-top: -39px !important;
+        }
+        .ping-input-label:nth-child(4n - 1) + .ping-input-container {
+            /* background-color: lightblue !important; */
+            float: right;
+            clear: right;
+        }
+        .type-requirements {
+            margin-top: 30px !important;
+            margin-bottom: -20px !important
+        }
+
+
+        a, .ping-input-container .tooltip-text.type-requirements.place-top .title {
+
+            color: #66b0c0 !important;
+
+    }
+
+        .ping-button.normal {
+            background-color: #66c5b1 !important;
+            border-color: #66c5b1 !important;
+            color: white !important;
+        }
+        .ping-button.normal:hover, .ping-button.normal:focus {
+            background-color: #456059 !important;
+            border-color: #456059 !important;
+        }
+
+
+        .account-actions {
+                float: left;
+                width: 100%;
+                margin-top: 20px;
+        }
+
+        .ping-input-container.form-error input[type=text], .ping-input-container.form-error input[type=password], .ping-input-container.form-error input[type=tel], .ping-input-container.form-error input[type=email], .ping-input-container.form-error input[type=date] {
+            border: 1px solid #ed3a03 !important;
+        }
+        .back-link {
+            position:absolute;
+            left: 40px;
+            font-size: 18px;
+            top: 40px;
+            font-weight: normal;
+        }
+
+
+    </style>
+
+
     #if($captchaEnabled)
         <script src='https://www.google.com/recaptcha/api.js' async defer></script>
     #end
@@ -57,6 +241,7 @@ is not recommended as it may interfere with expected server behavior.
     then 'has-logo' class should be added to 'ping-header' container.
     -->
     <div class="ping-header">
+        <a class="back-link" href="./app/">< Back</a>
         <span class="company-logo"><!-- client company logo here --></span>
         $templateMessages.getMessage($messageKeyPrefix, "title")
     </div>
@@ -65,6 +250,14 @@ is not recommended as it may interfere with expected server behavior.
     <div class="ping-body-container">
 
         <div>
+            <div class="account-type">
+            <div>Which type of account would you like to access online?</div>
+            <div class="account-type-radios">
+                <input type="radio" name="account-type" id="personal" /><label for="personal">Personal</label>
+                <input type="radio" name="account-type" id="business" /><label for="business">Business</label>
+                <input type="radio" name="account-type" id="corporate" /><label for="corporate">Corporate</label>
+            </div>
+            </div>
             <form method="POST" action="$url" autocomplete="off">
                 <input type="hidden" name="isRegisterForm" value="true"/>
 
@@ -92,7 +285,7 @@ is not recommended as it may interfere with expected server behavior.
                                 $templateMessages.getMessage($messageKeyPrefix, "required.fields.missing")
                             </div>
                         </div>
-                        
+
                         <div>
                             #foreach ($field in $fields)
                                 #set( $fieldId = $field.getData().getId() )
@@ -131,7 +324,7 @@ is not recommended as it may interfere with expected server behavior.
                                     <div class="ping-input-container $required" id="container-$escapedFieldId">
                                         <input class="$required $validateRequired" id="$escapedFieldId" autocomplete="user-date" type="date" name="$escapedFieldId" value="$fieldValue" placeholder="yyyy-mm-dd" onkeyup="return postOnReturn(event)" $fieldDisabled/>
                                     </div>
-                                    
+
                                 #elseif( $field.getName() == "Text" )
                                     <div class="ping-input-label">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
@@ -139,7 +332,7 @@ is not recommended as it may interfere with expected server behavior.
                                     <div class="ping-input-container $required" id="container-$escapedFieldId">
                                         <input class="$required $validateRequired" id="$escapedFieldId" autocomplete="user-text" type="text" name="$escapedFieldId" value="$fieldValue" onkeyup="return postOnReturn(event)" $fieldDisabled/>
                                     </div>
-                                    
+
                                 #elseif( $field.getName() == "Checkbox" )
                                     <div class="error-text ping-alert" id="required-$escapedFieldId">
                                         <span class="icon-alert"></span>
@@ -179,7 +372,7 @@ is not recommended as it may interfere with expected server behavior.
                                         </label>
                                     #end
                                 <br/>
-                                    
+
                                 #elseif( $field.getName() == "Email" )
                                     <div class="ping-input-label">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
@@ -187,7 +380,7 @@ is not recommended as it may interfere with expected server behavior.
                                     <div class="ping-input-container $required" id="container-$escapedFieldId">
                                         <input class="$required $validateRequired" id="$escapedFieldId" autocomplete="user-email" type="email" name="$escapedFieldId" value="$fieldValue" size="36" onkeyup="return postOnReturn(event)" $fieldDisabled/>
                                     </div>
-                                    
+
                                 #elseif( $field.getName() == "Phone" )
                                     <div class="ping-input-label">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
@@ -195,7 +388,7 @@ is not recommended as it may interfere with expected server behavior.
                                     <div class="ping-input-container $required" id="container-$escapedFieldId">
                                         <input class="$required $validateRequired" id="$escapedFieldId" autocomplete="user-phone" type="tel"  name="$escapedFieldId" value="$fieldValue" size="36" onkeyup="return postOnReturn(event)" $fieldDisabled/>
                                     </div>
-                                    
+
                                 #elseif( $field.getName() == "Dropdown" )
                                     <span class="ping-input-label detached">
                                         $templateMessages.getMessageWithDefault($messageKeyPrefix, "$fieldId", "$field.getData().getLabel()")
@@ -342,11 +535,11 @@ is not recommended as it may interfere with expected server behavior.
                         </div>
                     </div>
                     <!-- content-column column-2 -->
-                    
+
                 </div>
                 <!-- content-columns -->
                 #end
-                
+
                 <!-- #recaptcha -->
                 #if($captchaEnabled)
                     <div id="recaptcha"
@@ -358,14 +551,14 @@ is not recommended as it may interfere with expected server behavior.
                 #end
 
             </form>
-            
+
         </div>
         <!-- .ping-body/ blank div -->
-        
+
     </div>
     <!-- .ping-body-container -->
 
-    
+
 
     <div class="ping-footer-container">
         <div class="ping-footer">
