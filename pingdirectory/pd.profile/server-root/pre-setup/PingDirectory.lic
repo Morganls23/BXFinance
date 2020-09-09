@@ -1,0 +1,10 @@
+ID=00074050
+Product=PingDirectory
+Version=8.1
+EnforcementType=3
+Tier=Perpetual
+IssueDate=2020-07-23
+ExpirationDate=2021-08-31
+DeploymentMethod=Traditional
+SignCode=FF
+Signature=302D021415CDBDD0754C9DBF2804E8F9656FB863A51D64B2021500962F20AA857B1E7F7EAE81550488851C0B3B98B4

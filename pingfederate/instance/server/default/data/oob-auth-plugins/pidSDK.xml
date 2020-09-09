@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:PluginConfiguration isInheritExtendedContractAttributes="false" name="pidSDK" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="PingID SDK Properties">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjEuNSIsInppcCI6IkRFRiJ9..A5ZW8T5WnR1bCuRsByiD0g.HYvsxp9yujrZZcvDWWFjxgHxJ2s7N02A7shuyM7IEjM2A5foxtrNqvWUpLx6BJVHNhjdVXcNn35GvBs1L5ToL8ITCgq0tMxbFsJgNCfNZR0-15A2lBb7PB1lTyJuSEk57H9yW04TlS02eQE8etDET4TCVGpIi1c5ChP6SgZMvF_H0_PMzCu3aA6tennIYbeww1-Ox2DPQ3Nw07n2wK1JstbmA6gqW-eh8pZjkk9tu-WQVp_K-xWyTRv6wQ6QKU3UpUldKTeZlC2sCtq5UnV_vxYJxT5kn2FprcULPQZ6xcpvwFeUVLyGxOiyAJ82kOr3zC8CRsXj-T2zenBeW9EK_CG4E9KnxthdZXhqTmoxcWY.mnXJMDizY03zi4xummhc3g</urn:Field>
+        <urn:Field name="Application ID">ff8bbe92-d676-4d3c-9580-1afb441d339a</urn:Field>
+        <urn:Field name="Heartbeat Timeout"/>
+        <urn:Field name="Messages File">pingid-sdk-messages</urn:Field>
+        <urn:Field name="Dynamic Push Message">Please approve the transaction request for BXFinance</urn:Field>
+        <urn:Field name="Dynamic Client Context">{
+"msg":"Please approve the transaction for BXFinance"
+}</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="Messages File">pingid-sdk-messages</urn:Field>
+        <urn:Field name="Dynamic Push Message">Please approve the transaction request for BXFinance</urn:Field>
+        <urn:Field name="Dynamic Client Context">{
+"msg":"Please approve the transaction for BXFinance"
+}</urn:Field>
+    </urn:AdvancedFields>
+    <urn:Tables/>
+    <urn:ExtendedContractAttributes/>
+</urn:PluginConfiguration>
