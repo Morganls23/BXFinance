@@ -2,6 +2,7 @@ apiVersion: v1
 data:
   # SERVER_PROFILE_URL: https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
   SERVER_PROFILE_PATH: pingaccess
+  PING_IDENTITY_PASSWORD: "2FederateM0re"
 kind: ConfigMap
 metadata:
   labels:

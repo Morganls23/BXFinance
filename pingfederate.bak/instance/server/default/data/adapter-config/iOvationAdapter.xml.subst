@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urn:AdapterConfiguration authnCtxClassRef="" isInheritAttributeSettings="false" isInheritAttributeMapping="false" maskOgnlValues="false" isInheritExtendedContractAttributes="false" name="iOvationAdapter" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
+    <urn:Fields>
+        <urn:Field name="Subscriber ID">1047602</urn:Field>
+        <urn:Field name="Subscriber Account">OLTP</urn:Field>
+        <urn:Field name="Subscriber Passcode">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjIuMiJ9..Khg-bGJ--UqkYhtgLuH4fw.KJm_98rCoXYiL-81A-fLrDBaUmnN1SZ19LkXQzAQwg79EPQgJ_a6UMy1_eIZi1PR.vG6_7g_o2OdXZGzjW79eIQ</urn:Field>
+        <urn:Field name="iovation Integration Point">bxFinance</urn:Field>
+        <urn:Field name="iovation API Base URL">https://ci-api.iovation.com</urn:Field>
+        <urn:Field name="Device Profiling Method">Captured by this adapter</urn:Field>
+        <urn:Field name="Device Profiling Timeout">2000</urn:Field>
+        <urn:Field name="Blackbox Cookie Name Prefix">iovation_bb</urn:Field>
+        <urn:Field name="Fraud Check API Endpoint">/fraud/v1/subs/${subscriberId}/checks</urn:Field>
+        <urn:Field name="Failure Mode">Continue with fallback risk result</urn:Field>
+        <urn:Field name="Fallback Risk Result Value">review</urn:Field>
+        <urn:Field name="API Request Timeout">2000</urn:Field>
+        <urn:Field name="Connection Timeout">2000</urn:Field>
+        <urn:Field name="Proxy Settings">System Defaults</urn:Field>
+        <urn:Field name="Custom Proxy Host"/>
+        <urn:Field name="Custom Proxy Port"/>
+        <urn:Field name="Verify HTTPS Hostname">true</urn:Field>
+    </urn:Fields>
+    <urn:AdvancedFields>
+        <urn:Field name="Device Profiling Timeout">2000</urn:Field>
+        <urn:Field name="Blackbox Cookie Name Prefix">iovation_bb</urn:Field>
+        <urn:Field name="Fraud Check API Endpoint">/fraud/v1/subs/${subscriberId}/checks</urn:Field>
+        <urn:Field name="Failure Mode">Continue with fallback risk result</urn:Field>
+        <urn:Field name="Fallback Risk Result Value">review</urn:Field>
+        <urn:Field name="API Request Timeout">2000</urn:Field>
+        <urn:Field name="Connection Timeout">2000</urn:Field>
+        <urn:Field name="Proxy Settings">System Defaults</urn:Field>
+        <urn:Field name="Custom Proxy Host"/>
+        <urn:Field name="Custom Proxy Port"/>
+        <urn:Field name="Verify HTTPS Hostname">true</urn:Field>
+    </urn:AdvancedFields>
+    <urn:Tables>
+        <urn:Table name="Optional Transaction Insight Parameters"/>
+        <urn:Table name="Optional iovation Attributes"/>
+    </urn:Tables>
+    <urn:ExtendedContractAttributes/>
+    <urn:UniqueKeyField>transactionRiskResult</urn:UniqueKeyField>
+    <urn:AttributeMapping>
+        <urn1:AttributeMap Name="blackbox" Type="Adapter" Value="blackbox" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:AttributeMap Name="transactionRiskResult" Type="Adapter" Value="transactionRiskResult" xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+        <urn1:TokenAuthorizationIssuanceCriteria xmlns:urn1="urn:sourceid.org:saml2:metadata-extension:v2"/>
+    </urn:AttributeMapping>
+</urn:AdapterConfiguration>

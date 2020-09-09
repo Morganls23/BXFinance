@@ -13,3 +13,7 @@ configMapGenerator:
   behavior: replace
   envs:
     - shared-vars
+
+images:
+- name: gcr.io/ping-gte/bxfinanceapp
+  newName: gcr.io/ping-gte/bxfinanceapp-staging

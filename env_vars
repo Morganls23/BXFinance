@@ -20,7 +20,7 @@ PF_USER_PWD=2FederateM0re
 # PF details for the Delegated Admin OIDC app
 # PF_HOST && PF_PORT are used to construct the allowed `Issuer` of the id_token
 # Delegator will prepend "https://", you only need the port if if it's not `:443`
-#PF_HOST=demo.bxfinance.xyz
+PF_HOST=demo.bxfinance.xyz
 #PF_CLIENT_ID=Delegator
 #
 # PD details for Delegator API calls
