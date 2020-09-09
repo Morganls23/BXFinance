@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<c2c:c2cContract id="defaultPolicyContract" name="Default Policy Contract" xmlns:c2c="http://pingidentity.com/2014/10/c2cContracts">
-    <c2c:extendedAttributes>
-        <c2c:attr name="ImmutableID"/>
-        <c2c:attr name="mail"/>
-    </c2c:extendedAttributes>
-</c2c:c2cContract>
