@@ -53,7 +53,7 @@ spec:
             optional: true
         - configMapRef:
             name: pingdatagovernancepap-environment-variables
-        image: pingidentity/pingdatagovernancepap:edge
+        image: pingidentity/pingdatagovernancepap:2008-8.1.0.0
         name: pingdatagovernancepap
         ports:
         - containerPort: 9443

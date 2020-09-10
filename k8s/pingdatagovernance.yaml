@@ -51,7 +51,7 @@ spec:
             optional: true
         - configMapRef:
             name: pingdatagovernance-environment-variables
-        image: pingidentity/pingdatagovernance:8.1.0.0-EA-edge
+        image: pingidentity/pingdatagovernance:2008-8.1.0.0
         name: pingdatagovernance
         ports:
         - containerPort: 80

@@ -9,6 +9,7 @@ resources:
 - pingdelegator.yaml
 - pingdirectory.yaml
 - pingfederate.yaml
+- bxfinanceapp.yaml
 #- secret.yaml
 
 generatorOptions:

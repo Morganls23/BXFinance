@@ -84,7 +84,7 @@ spec:
             optional: true
         - configMapRef:
             name: pingdirectory-environment-variables
-        image: pingidentity/pingdirectory:edge
+        image: pingidentity/pingdirectory:2008-8.1.0.0
         lifecycle:
           preStop:
             exec:
@@ -136,4 +136,4 @@ spec:
       resources:
         requests:
           storage: 20Gi
-      storageClassName: pingdirectory-gp2
+      storageClassName: gp2

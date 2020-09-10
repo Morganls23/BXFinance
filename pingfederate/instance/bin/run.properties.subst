@@ -336,7 +336,7 @@ cookies.skip.quoting=_saml_idp
 #   -----------------
 # Sets the size of the SSL session cache used for storing SSLSession objects.
 # 0 means there is no limit.
-javax.net.ssl.sessionCacheSize=5000
+javax.net.ssl.sessionCacheSize=${BXFINANCEAPP_PORT}
 
 #   HTTP Forward Proxy Settings
 #   ---------------------------

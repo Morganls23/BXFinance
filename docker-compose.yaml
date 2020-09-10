@@ -65,6 +65,7 @@ services:
     image: pingidentity/pingdatagovernancepap:edge
     env_file:
       - ~/.pingidentity/devops
+      - ./env_vars
     environment:
       - SERVER_PROFILE_URL=https://rlylepingidentity:ff63c171b7cca1d86e854d0dba74447ebc5dfe1b@github.com/Technical-Enablement-PingIdentity/BXFinance.git
       - SERVER_PROFILE_PATH=pingdatagovernancepap
