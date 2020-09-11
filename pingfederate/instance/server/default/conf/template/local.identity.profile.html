@@ -342,6 +342,7 @@ is not recommended as it may interfere with expected server behavior.
                         #if($hasLocalIdentity)
                         <div class="your-account-container">
                             <input type="hidden" name="$changepass" value=""/>
+				<p><a class="back-link" href="./app/">&lt; Back</a></p>
                             ##Pop up the tooltip if there is an error message to show.
                             #if($passwordMessage)
                                 #if($socialConnections.size() > 0)
