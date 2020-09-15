@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor entityID="https://demo.bxfinance.xyz" urn:name="BXFinance Banking" ID="Dummy-SAML" urn:baseUrl="https://demo.bxfinance.xyz" urn:LogLevel="STANDARD" urn:isActive="true" urn:applicationName="BXFinance Banking" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:urn="urn:sourceid.org:saml2:metadata-extension:v2">
+    <md:Extensions>
+        <urn:EntityExtension PFVersion="10.0.3.0" LicenseGroup="">
+            <urn:DigitialSignatureAliases SigningKeyAlias="signing-cert" includeX509inXmlSig="false" includeRawKeyInXmlSig="false" SigningAlgorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256">
+                <urn:ActiveVerificationCertAlias>msvmhpww613nnzbez78gyvc8s</urn:ActiveVerificationCertAlias>
+            </urn:DigitialSignatureAliases>
+            <urn:Encryption>
+                <urn:EncryptionPolicy EncryptionAlgorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" KeyTransportAlgorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p" EncryptAssertion="false" EncryptSubjectNameID="false" SLOEncryptSubjectNameID="false"/>
+                <urn:DecryptionPolicy AssertionEncrypted="false" SubjectNameIDEncrypted="false" AttributeEncrypted="false" SLOSubjectNameIDEncrypted="false"/>
+            </urn:Encryption>
+            <urn:ConnectionTemplateProperties/>
+            <urn:MetadataUrlId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+            <urn:enableAutoMetadataUpdate>false</urn:enableAutoMetadataUpdate>
+            <urn:AdditionalAllowedEntitiesConfiguration>
+                <urn:AllowAdditionalEntities>false</urn:AllowAdditionalEntities>
+                <urn:AllowAllEntities>false</urn:AllowAllEntities>
+                <urn:AdditionalAllowedEntities/>
+            </urn:AdditionalAllowedEntitiesConfiguration>
+            <urn:ExtendedProperties name="authNexp" value="PasswordlessPref"/>
+        </urn:EntityExtension>
+    </md:Extensions>
+    <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="false" SignResponseAsRequired="true">
+        <md:Extensions>
+            <urn:RoleExtension ArtifactTimeoutSeconds="60" LastModified="2020-07-22T19:47:05.234Z">
+                <urn:IncomingBindings Artifact="false" POST="true" Redirect="true" SOAP="false"/>
+                <urn:EnabledProfiles IDPInitiatedSSO="true" IDPInitiatedSLO="false" SPInitiatedSSO="true" SPInitiatedSLO="true"/>
+                <urn:SP AssertionValidityAfterMinutes="5" AssertionValidityBeforeMinutes="5" ConnectionTargetType="Standard" EnableCDCDuringSSO="false">
+                    <urn:C2cContractToAssertionMapping AbortIfNotFoundInAnyDataSources="false" RestrictVirtualServerIds="false" C2cContractId="defaultPolicyContract" C2cContractName="Default Policy Contract">
+                        <urn:DefaultAttributeMapping>
+                            <urn:AttributeMap Name="SAML_SUBJECT" Type="Authentication Policy Contract" Value="ImmutableID"/>
+                            <urn:TokenAuthorizationIssuanceCriteria/>
+                        </urn:DefaultAttributeMapping>
+                    </urn:C2cContractToAssertionMapping>
+                    <urn:NameIdentifierMappingType IncludeAdditionalAttributes="false" IncludeAdditionalTransientAttributes="false"/>
+                </urn:SP>
+            </urn:RoleExtension>
+        </md:Extensions>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="/sp/SLO.saml2"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:AssertionConsumerService index="0" Location="https://httpbin.org/anything" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"/>
+        <md:AssertionConsumerService index="1" Location="/sp/ACS.saml2" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" isDefault="true"/>
+    </md:SPSSODescriptor>
+    <md:RoleDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" xsi:type="urn:PFAvailableCertsRoleDescriptorType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <urn:availableCert>
+            <urn:Base64EncodedCert>MIIC9jCCAd6gAwIBAgIGAXE34b+IMA0GCSqGSIb3DQEBCwUAMDwxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1QaW5nIElkZW50aXR5MRUwEwYDVQQDEwxwaW5nZmVkZXJhdGUwHhcNMjAwNDAxMjIzNDMzWhcNMjUwMzMxMjIzNDMzWjA8MQswCQYDVQQGEwJVUzEWMBQGA1UEChMNUGluZyBJZGVudGl0eTEVMBMGA1UEAxMMcGluZ2ZlZGVyYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhukmBlkUfEWmznd4YQZDJTNKqwUZ76haQINEsKCReWW5jayRII0Va/VDpUNHx4GDDnEZP/hNSi7yPjFApZzl3Q/fMuFrtUNf34TqZcMS6eWgEag+0+C4xzKbWnOeyi29NV34gEIJ9YugZlQuOQPY+WUN8Kra1YZpA2+dgtpUR3I1SQIXZLqksn5kImbuXcF5xQuMzrOE1YyU9500tDyNwhWW4N2YObrSVl19aOsBOhqJEF7nuNLBc+2i7UW9Z7Nfh+XyViokDgktug2kv5JBgk3++JbcBORIqKwemNvhY01VD/crX82sVKbHLzkkejgdmXbYz2GxhfkceOPZROikyQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQABxN7sKJUaRiCJBXQ2tgY2eZpeuW7wgU2cAhYGcRnVPG1/6WugxkfvX2QsXfmBCq7Z5PJpQUQkuZ+vM8SCLDuIPbISRftfezDB7Ub1qcNxboTaS1RJHrHPI4t13ZST+QqkiCqEMoIhPbYb3aQ0o0la6ryVos4m3pmRBzslRVsmvvQkUEs351PVPepLP4P5Ccwla8cIdkn3k6j1Zg2HDUvVFH6G5yjzLbMVMNwMJ9NP3r5qXeQdGWJpvJEGz5Krwec8jVjbWlQh4eBClhjteQrAIG9dqT9MgFJYTaufeD5qnDUM4x7jRVUM4AMj4a+Qj5nUjuoXLXWdg8HnMcucJl6m</urn:Base64EncodedCert>
+            <urn:alias>msvmhpww613nnzbez78gyvc8s</urn:alias>
+        </urn:availableCert>
+    </md:RoleDescriptor>
+    <md:ContactPerson contactType="administrative">
+        <md:Company>BXFinance</md:Company>
+    </md:ContactPerson>
+</md:EntityDescriptor>
