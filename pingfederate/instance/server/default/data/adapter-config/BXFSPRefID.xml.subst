@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urn:AdapterConfiguration isInheritTargetApplicationInfo="false" applicationName="BXFinance Banking" applicationIcon="${PF_BASE_URL}/app/images/logo-white.png" isInheritExtendedContractAttributes="false" name="BXF SP RefID" xmlns:urn="urn:sourceid.org:saml2:adapter:conf">
     <urn:Fields>
-        <urn:Field name="Authentication Endpoint">${PF_BASE_URL}/app</urn:Field>
+        <urn:Field name="Authentication Endpoint">${PF_BASE_URL}/app/</urn:Field>
         <urn:Field name="User Name">react-user</urn:Field>
-        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..QZJbDsPmfVRfuGRgH26jqA.uw9CEYXJp0O9q2wSDfM9Fw.6E0PQs3dogdd1UEoKK6WuQ</urn:Field>
+        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..pEg7sTs9jNek2N0MlBXJcw.u4kUo0M0ZApZ14-543y1wg.deRlp2AT8ks2J5edO0DuPA</urn:Field>
         <urn:Field name="Allowed Subject DN"/>
         <urn:Field name="Allowed Issuer DN"/>
-        <urn:Field name="Logout Service Endpoint">${PF_BASE_URL}/app</urn:Field>
+        <urn:Field name="Logout Service Endpoint">${PF_BASE_URL}/app/</urn:Field>
         <urn:Field name="Account Linking Authentication Endpoint"/>
         <urn:Field name="Transport Mode">0</urn:Field>
         <urn:Field name="Reference Duration">5</urn:Field>

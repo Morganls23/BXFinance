@@ -3,7 +3,7 @@
     <con:list name="whitelist">
         <con:ListItem>${PF_HOST}|/app/advisor|false|true|true|false|false|false</con:ListItem>
         <con:ListItem>${PF_HOST}|/app/any-marketing|false|true|true|false|false|false</con:ListItem>
-        <con:ListItem>${PF_HOST}|/app/|false|true|true|true|false|false</con:ListItem>
+        <con:ListItem>${PF_HOST}|/app/?letme=in|false|true|true|true|false|false</con:ListItem>
     </con:list>
     <con:item name="enable-validation">true</con:item>
     <con:item name="enable-validation-target-resource-slo">true</con:item>
