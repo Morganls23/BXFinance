@@ -16,7 +16,7 @@ kind: Service
 metadata:
   labels:
     role: pingdatagovernancepap
-  name: pingdatagovernancepap
+  name: pingdatapap
 spec:
   ports:
   - name: https

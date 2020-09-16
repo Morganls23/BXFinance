@@ -3,7 +3,7 @@
     <urn:Fields>
         <urn:Field name="Authentication Endpoint">${PF_BASE_URL}/app/</urn:Field>
         <urn:Field name="User Name">react-user</urn:Field>
-        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..pEg7sTs9jNek2N0MlBXJcw.u4kUo0M0ZApZ14-543y1wg.deRlp2AT8ks2J5edO0DuPA</urn:Field>
+        <urn:Field name="Pass Phrase">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..0lgiDdsEJ4ZuzsmD3J1tpQ.gK3zXO1UN7g06SshVvFsgg.7HqbiNcvUDF0eZvEswKhRw</urn:Field>
         <urn:Field name="Allowed Subject DN"/>
         <urn:Field name="Allowed Issuer DN"/>
         <urn:Field name="Logout Service Endpoint">${PF_BASE_URL}/app/</urn:Field>
