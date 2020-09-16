@@ -17,7 +17,7 @@ dsconfig create-external-server \
 dsconfig create-external-server \
     --server-name Heroku  \
     --type api  \
-    --set base-url:https://demo-openbanking-api-server.herokuapp.com  \
+    --set base-url:https://babbtx-aspsp.herokuapp.com/  \
     --set hostname-verification-method:allow-all 
 
 dsconfig create-external-server \
@@ -33,7 +33,7 @@ dsconfig create-external-server \
     --set hostname-verification-method:allow-all  \
     --set key-manager-provider:Null  \
     --set 'trust-manager-provider:Blind Trust'  \
-    --set shared-secret:AAAjWrPaVhtC4INP3YRQWU7GAWECeN38+0U=  \
+    --set shared-secret:AABYLWM2yklKDMVY0a7yWznhTURhSQJ4cgo=  \
     --set branch:defaultPolicies.snapshot 
 
 dsconfig create-external-server \
@@ -42,7 +42,7 @@ dsconfig create-external-server \
     --set server-host-name:pingdirectory  \
     --set location:Docker  \
     --set bind-dn:cn=dmanager  \
-    --set password:AAAcr6ax5TlbplpBdYRv0nJlBYUycGUXvo8= 
+    --set password:AABVXKZ2val2CiMLBZZJqNMIJiNiQc7sz50= 
 
 dsconfig create-external-server \
     --server-name pingfederate  \
@@ -77,7 +77,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:pingfederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AABN0m2LuEWU3qgFlIUuA1go+lduLNDf+N4= 
+    --set client-secret:AAAKVioqlXVhzAVFTn0pGqtcjlKS4Mn4iPw= 
 
 dsconfig create-token-resource-lookup-method \
     --validator-name pingfederateATV  \
@@ -134,7 +134,7 @@ dsconfig create-sideband-api-endpoint \
 
 dsconfig create-sideband-api-shared-secret \
     --secret-name my-ss  \
-    --set shared-secret:AAChtk+xkQpMn7agITfcBlMakzGOsPBKp80= 
+    --set shared-secret:AADH5/7iNLCdalEQyP3v0beHmcGXLB9XIiI= 
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
