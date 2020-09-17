@@ -19,6 +19,9 @@ spec:
   - name: https
     port: 3443
     targetPort: 443
+  - name: ldaps
+    port: 636
+    targetPort: 636
   selector:
     role: pingdatagovernance
 ---
@@ -56,6 +59,7 @@ spec:
         ports:
         - containerPort: 80
         - containerPort: 443
+        - containerPort: 636
         resources:
           limits:
             cpu: "2"
