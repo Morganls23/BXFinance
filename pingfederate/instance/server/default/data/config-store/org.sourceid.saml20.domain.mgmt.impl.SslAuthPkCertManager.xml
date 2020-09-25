@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:config xmlns:con="http://www.sourceid.org/2004/05/config">
+    <con:map name="PingID SDK Connector"/>
+    <con:map name="Dummy-SAML"/>
+    <con:map name="httpbin-bxfinance"/>
+    <con:map name="https://pingone.com/idp/cd-1635691986.pingidentity"/>
+    <con:map name="https://demo.bxfinance.xyz"/>
+</con:config>

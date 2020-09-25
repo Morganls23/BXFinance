@@ -8,7 +8,7 @@
     <!--
     Maximum number of statistic objects to cache.
     -->
-    <con:item name="ResponseStatisticsWindowSize">${BXFINANCEAPP_PORT}</con:item>
+    <con:item name="ResponseStatisticsWindowSize">5000</con:item>
 
     <!--
     Statistics are cached for a short amount of time. This helps
