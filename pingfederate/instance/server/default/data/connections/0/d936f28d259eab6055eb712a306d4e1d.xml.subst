@@ -38,7 +38,7 @@
                         <urn:AttributeMap Name="LastName" Type="LDAP" Value="sn"/>
                         <urn:AttributeSource Description="LDAP" Type="LDAP" DataSourceId="LDAP-PingDirectory">
                             <urn:Parameter Name="filter" Value="(|(entryUUID=${SAML_SUBJECT})(uid=${SAML_SUBJECT})(mail=${SAML_SUBJECT}))"/>
-                            <urn:Parameter Name="search_base" Value="ou=People,${USER_BASE_DN}"/>
+                            <urn:Parameter Name="search_base" Value="ou=People,dc=bxfinance.org"/>
                             <urn:Parameter Name="search_scope" Value="ONELEVEL_SCOPE"/>
                             <urn:Parameter Name="memberof_nested_group" Value="false"/>
                         </urn:AttributeSource>
