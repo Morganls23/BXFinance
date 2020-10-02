@@ -16,4 +16,4 @@ configMapGenerator:
 
 images:
 - name: gcr.io/ping-gte/bxfinanceapp
-  newName: gcr.io/ping-gte/bxfinanceapp-staging
+  newName: gcr.io/ping-gte/bxfinanceapp-qa
