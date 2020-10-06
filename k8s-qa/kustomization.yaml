@@ -1,0 +1,19 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+resources:
+- ../k8s
+#- secret.yaml
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+configMapGenerator:
+- name: shared-vars
+  behavior: replace
+  envs:
+    - shared-vars
+
+images:
+- name: gcr.io/ping-gte/bxfinanceapp
+  newName: gcr.io/ping-gte/bxfinanceapp-qa
