@@ -3,7 +3,7 @@
     <urn:Fields>
         <urn:Field name="Subscriber ID">1047602</urn:Field>
         <urn:Field name="Subscriber Account">OLTP</urn:Field>
-        <urn:Field name="Subscriber Passcode">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjMuMCJ9..sFgjqOFWBLU4RxGDsrPElA._Ok6KQjush1xrHcpTCztbyXjlmW3WyXprddVz3pENKDcbeKPqB1HiMEShydmcedv.MAMOT0U4xHZ2a5r0Bcag3w</urn:Field>
+        <urn:Field name="Subscriber Passcode">eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRmQ3WmhZNWo0ayIsInZlcnNpb24iOiIxMC4wLjQuMSJ9..HGVrWqerXS2mM2-vzJQkaA.8XKURThV472DPI2T9-MS9rk-oHkgiSmBChOm7_1rASouwOO1i1FdXU1mXRL3O3cs.bKUFajxaUk9yNIZdkm5b6g</urn:Field>
         <urn:Field name="iovation Integration Point">bxFinance</urn:Field>
         <urn:Field name="iovation API Base URL">https://ci-api.iovation.com</urn:Field>
         <urn:Field name="Device Profiling Method">Captured by this adapter</urn:Field>
