@@ -45,9 +45,9 @@
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
         <loc:field type="TEXT" default-value="" id="fullName" label="Preferred Name">
-            <loc:appliesTo profile="true" registration="false"/>
+            <loc:appliesTo profile="true" registration="true"/>
             <loc:parameter param-name="Read-Only" value="false"/>
-            <loc:parameter param-name="Required" value="false"/>
+            <loc:parameter param-name="Required" value="true"/>
             <loc:parameter param-name="Unique ID Field" value="false"/>
             <loc:parameter param-name="Mask Log Values" value="false"/>
         </loc:field>
