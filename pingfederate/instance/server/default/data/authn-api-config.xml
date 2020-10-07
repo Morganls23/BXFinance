@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<authnApiConfig>
-    <apiApplications>
-        <application description="" id="zpKCPcAi883ccAFRt1aMEQeuu" name="BXFinance" url="https://demo.bxfinance.xyz/app/"/>
-        <application description="" id="DefaultAuthNAPIApp" name="Default AuthN API" url="https://demo.bxfinance.xyz/pf-ws/authn/explorer"/>
-    </apiApplications>
-    <apiSettings apiEnabled="true" enableApiDescriptions="true"/>
-</authnApiConfig>
