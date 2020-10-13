@@ -8,7 +8,7 @@ PF_BASE_URL=https://demo.bxfinance.xyz
 #
 # PD User BASE DN
 # Used when PD starts up to create the User Store
-USER_BASE_DN=dc=bxfinance.xyz
+USER_BASE_DN=dc=bxfinance.org
 #
 # PF Admin Password
 # Note - this should match `pfAdminPwd` in postman_vars.json
