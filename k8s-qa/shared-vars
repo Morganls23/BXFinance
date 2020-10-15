@@ -1,0 +1,57 @@
+######################################################################
+#
+#  This file should be just like ../k8s/shared-vars but:
+#   1. demo.bxfinance.org > bxfinance-qa.ping-devops.com
+#   2. SERVER_PROFILE_BRANCH=qa
+#
+######################################################################
+
+PING_IDENTITY_ACCEPT_EULA=YES
+#
+# PF Logging Level
+PF_LOG_LEVEL=DEBUG
+#
+# BaseURL of the PingFed service - Used in the PD Email Notification
+PF_BASE_URL=https://bxfinance-qa.ping-devops.com
+#
+# PD User BASE DN
+# Used when PD starts up to create the User Store
+USER_BASE_DN=dc=bxfinance.org
+#
+# PF Admin Password
+# Note - this should match `pfAdminPwd` in postman_vars.json
+PF_USER_PWD=2FederateM0re
+#
+# Adding DelegatedAdmin
+# 
+#
+# PF details for the Delegated Admin OIDC app
+# PF_HOST && PF_PORT are used to construct the allowed `Issuer` of the id_token
+# Delegator will prepend "https://", you only need the port if if it's not `:443`
+PF_HOST=bxfinance-qa.ping-devops.com
+PF_CLIENT_ID=Delegator
+#
+# PD details for Delegator API calls
+PD_HOST=bxfinance-qa.ping-devops.com
+PD_PORT=443
+#
+# Delegator App (PD DelAdmin)
+#  
+PD_DELEGATOR_PUBLIC_HOSTNAME=bxfinance-qa.ping-devops.com
+PD_DELEGATOR_HTTP_PORT=6080
+PD_DELEGATOR_HTTPS_PORT=6443
+PF_ENGINE_PUBLIC_HOSTNAME=bxfinance-qa.ping-devops.com
+PF_ENGINE_PUBLIC_PORT=
+PF_DELEGATOR_CLIENTID=Delegator
+PD_ENGINE_PUBLIC_HOSTNAME=bxfinance-qa.ping-devops.com
+PD_ENGINE_PUBLIC_PORT=443
+#
+# necessary pap variable
+PING_EXTERNAL_BASE_URL=pingdatagovernancepap:9443
+#
+# Base Hostname of the PingFed service being used for Delegated Admin
+PF_BASE_HOST=bxfinance-qa.ping-devops.com
+SERVER_PROFILE_BRANCH=qa
+# bxfinance react app host
+BXFINANCEAPP_HOST=bxfinanceapp
+BXFINANCEAPP_PORT=5000
