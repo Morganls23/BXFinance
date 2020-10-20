@@ -26,6 +26,7 @@ dsconfig create-external-server \
     --set base-url:https://httpbin.org  \
     --set hostname-verification-method:allow-all
 
+#Hard coded port because variable was not converting
 dsconfig create-external-server \
     --server-name pingdatapap  \
     --type policy  \
