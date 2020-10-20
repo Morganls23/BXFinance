@@ -10,6 +10,9 @@ services:
     environment:
     - SERVER_PROFILE_URL=https://github.com/Morganls23/BXFinance.git
     - SERVER_PROFILE_PATH=pingfederate
+    volumes:
+      - ./pingfederate-out:/opt/out:retail
+      - ./pingfederate:/opt/in:retail
     ports:
       - 9031:9031
       - 9999:9999
@@ -22,6 +25,9 @@ services:
     environment:
       - SERVER_PROFILE_URL=https://github.com/Morganls23/BXFinance.git
       - SERVER_PROFILE_PATH=pingdirectory
+    volumes:
+      - ./pingdirectory-out:/opt/out:retail
+      - ./pingdirectory:/opt/in:retail
     ports:
       - 389:389
       - 1636:636
@@ -43,6 +49,9 @@ services:
     environment:
      - SERVER_PROFILE_URL=https://github.com/Morganls23/BXFinance.git
      - SERVER_PROFILE_PATH=pingaccess
+    volumes:
+      - ./pingaccess-out:/opt/out:retail
+      - ./pingaccess:/opt/in:retail
     ports:
      - 80:8080
      - 443:3000
@@ -52,6 +61,9 @@ services:
     image: pingidentity/pingdelegator:edge
     environment:
       - VERBOSE=true
+    volumes:
+      - ./pingdelegator-out:/opt/out:retail
+      - ./pingdelegator:/opt/in:retail
     env_file:
      - ./env_vars
     ports:
@@ -69,6 +81,9 @@ services:
       - REST_API_HOSTNAME=pingdatapap
       - HTTPS_PORT=9443
       - DECISION_POINT_SHARED_SECRET=2Federate
+    volumes:
+      - ./pingdatapap-out:/opt/out:retail
+      - ./pingdatapap:/opt/in:retail
     ports:
       - 9443:9443
 
@@ -81,6 +96,9 @@ services:
       - SERVER_PROFILE_URL=https://github.com/Morganls23/BXFinance.git
       - SERVER_PROFILE_PATH=pingdatagovernance
       - PING_IDENTITY_ACCEPT_EULA=YES
+    volumes:
+      - ./pingdatagovernance-out:/opt/out:retail
+      - ./pingdatagovernance:/opt/in:retail
     env_file:
       - ~/.pingidentity/devops
     ports:
