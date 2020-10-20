@@ -6,35 +6,35 @@
 
 dsconfig set-trust-manager-provider-prop \
     --provider-name 'Blind Trust'  \
-    --set enabled:true 
+    --set enabled:true
 
 dsconfig create-external-server \
     --server-name beeceptor  \
     --type api  \
     --set base-url:https://bxfinance.free.beeceptor.com  \
-    --set hostname-verification-method:allow-all 
+    --set hostname-verification-method:allow-all
 
 dsconfig create-external-server \
     --server-name Heroku  \
     --type api  \
     --set base-url:https://babbtx-aspsp.herokuapp.com/  \
-    --set hostname-verification-method:allow-all 
+    --set hostname-verification-method:allow-all
 
 dsconfig create-external-server \
     --server-name http-bin  \
     --type api  \
     --set base-url:https://httpbin.org  \
-    --set hostname-verification-method:allow-all 
+    --set hostname-verification-method:allow-all
 
 dsconfig create-external-server \
     --server-name pingdatapap  \
     --type policy  \
-    --set base-url:https://pingdatapap:9${PD_ENGINE_PUBLIC_PORT}  \
+    --set base-url:https://pingdatapap:${PD_ENGINE_PUBLIC_PORT}  \
     --set hostname-verification-method:allow-all  \
     --set key-manager-provider:Null  \
     --set 'trust-manager-provider:Blind Trust'  \
     --set shared-secret:AACuxS6iOu83HQO3Nu5Ttp3ZnNEW+gfN6JA=  \
-    --set branch:defaultPolicies.snapshot 
+    --set branch:defaultPolicies.snapshot
 
 dsconfig create-external-server \
     --server-name pingdirectory  \
@@ -42,34 +42,34 @@ dsconfig create-external-server \
     --set server-host-name:pingdirectory  \
     --set location:Docker  \
     --set bind-dn:cn=dmanager  \
-    --set password:AAD3lAb+Kmjfzp3SikELgXXbyRsT+Xr4gJg= 
+    --set password:AAD3lAb+Kmjfzp3SikELgXXbyRsT+Xr4gJg=
 
 dsconfig create-external-server \
     --server-name pingfederate  \
     --type http  \
     --set base-url:https://pingfederate:9031  \
     --set hostname-verification-method:allow-all  \
-    --set 'trust-manager-provider:Blind Trust' 
+    --set 'trust-manager-provider:Blind Trust'
 
 dsconfig create-load-balancing-algorithm \
     --algorithm-name dg-lba  \
     --type failover  \
     --set enabled:true  \
-    --set backend-server:pingdirectory 
+    --set backend-server:pingdirectory
 
 dsconfig set-store-adapter-prop \
     --adapter-name UserStoreAdapter  \
     --set enabled:true  \
     --set load-balancing-algorithm:dg-lba  \
     --set structural-ldap-objectclass:bxFinanceUser  \
-    --set include-base-dn:ou=People,${USER_BASE_DN} 
+    --set include-base-dn:ou=People,${USER_BASE_DN}
 
 dsconfig create-scim-resource-type \
     --type-name Users  \
     --type pass-through  \
     --set enabled:true  \
     --set endpoint:Users  \
-    --set primary-store-adapter:UserStoreAdapter 
+    --set primary-store-adapter:UserStoreAdapter
 
 dsconfig create-access-token-validator \
     --validator-name pingfederateATV  \
@@ -77,7 +77,7 @@ dsconfig create-access-token-validator \
     --set enabled:true  \
     --set authorization-server:pingfederate  \
     --set client-id:PingIntrospect  \
-    --set client-secret:AAAqoaWN9qOwvnhIxLnG59lITqimiYr+vgs= 
+    --set client-secret:AAAqoaWN9qOwvnhIxLnG59lITqimiYr+vgs=
 
 dsconfig create-token-resource-lookup-method \
     --validator-name pingfederateATV  \
@@ -85,34 +85,34 @@ dsconfig create-token-resource-lookup-method \
     --type scim  \
     --set evaluation-order-index:1000  \
     --set scim-resource-type:Users  \
-    --set 'match-filter:uid eq "%sub%"' 
+    --set 'match-filter:uid eq "%sub%"'
 
 dsconfig create-gateway-api-endpoint \
     --endpoint-name beeceptor  \
     --set inbound-base-path:/accounts  \
     --set outbound-base-path:/accounts  \
-    --set api-server:beeceptor 
+    --set api-server:beeceptor
 
 dsconfig create-gateway-api-endpoint \
     --endpoint-name httpbin  \
     --set access-token-validator:pingfederateATV  \
     --set inbound-base-path:/anything  \
     --set outbound-base-path:/anything  \
-    --set api-server:http-bin 
+    --set api-server:http-bin
 
 dsconfig create-gateway-api-endpoint \
     --endpoint-name menuOptions  \
     --set access-token-validator:pingfederateATV  \
     --set inbound-base-path:/menuOptions  \
     --set outbound-base-path:/menuOptions  \
-    --set api-server:beeceptor 
+    --set api-server:beeceptor
 
 dsconfig create-gateway-api-endpoint \
     --endpoint-name openbanking  \
     --set access-token-validator:pingfederateATV  \
     --set inbound-base-path:/OpenBanking/v2/balances  \
     --set outbound-base-path:/OpenBanking/v2/balances  \
-    --set api-server:Heroku 
+    --set api-server:Heroku
 
 dsconfig set-policy-decision-service-prop \
     --set pdp-mode:external  \
@@ -120,49 +120,47 @@ dsconfig set-policy-decision-service-prop \
     --set trust-framework-version:v2  \
     --set decision-response-view:decision-tree  \
     --set decision-response-view:evaluated-entities  \
-    --set decision-response-view:request 
+    --set decision-response-view:request
 
 dsconfig create-sideband-api-endpoint \
     --endpoint-name request  \
     --set access-token-validator:pingfederateATV  \
-    --set base-path:/request 
+    --set base-path:/request
 
 dsconfig create-sideband-api-endpoint \
     --endpoint-name response  \
     --set access-token-validator:pingfederateATV  \
-    --set base-path:/response 
+    --set base-path:/response
 
 dsconfig create-sideband-api-shared-secret \
     --secret-name my-ss  \
-    --set shared-secret:AABU4JSVChmFlYcs3IfntkHL3wvNb0QZsBA= 
+    --set shared-secret:AABU4JSVChmFlYcs3IfntkHL3wvNb0QZsBA=
 
 dsconfig set-connection-handler-prop \
     --handler-name 'HTTPS Connection Handler'  \
-    --reset web-application-extension 
+    --reset web-application-extension
 
 dsconfig set-gauge-prop \
     --gauge-name 'Available File Descriptors'  \
-    --set enabled:false 
+    --set enabled:false
 
 dsconfig set-gauge-prop \
     --gauge-name 'CPU Usage (Percent)'  \
-    --set enabled:false 
+    --set enabled:false
 
 dsconfig set-gauge-prop \
     --gauge-name 'License Expiration (Days)'  \
     --set enabled:false  \
-    --set warning-value:10.0 
+    --set warning-value:10.0
 
 dsconfig set-log-publisher-prop \
     --publisher-name 'Debug Trace Logger'  \
-    --set enabled:true 
+    --set enabled:true
 
 dsconfig set-monitor-provider-prop \
     --provider-name 'Host System'  \
-    --reset enabled 
+    --reset enabled
 
 dsconfig set-root-dn-user-prop \
     --user-name 'Directory Manager'  \
-    --add alternate-bind-dn:cn=administrator 
-
-
+    --add alternate-bind-dn:cn=administrator
