@@ -8,7 +8,7 @@ services:
       - ~/.pingidentity/devops
       - ./env_vars
     environment:
-    - SERVER_PROFILE_URL=https://github.com/Technical-Enablement-PingIdentity/BXFinance.git
+    - SERVER_PROFILE_URL=https://github.com/Morganls23/BXFinance.git
     - SERVER_PROFILE_PATH=pingfederate
     ports:
       - 9031:9031
@@ -20,20 +20,20 @@ services:
       - ~/.pingidentity/devops
       - ./env_vars
     environment:
-      - SERVER_PROFILE_URL=https://github.com/Technical-Enablement-PingIdentity/BXFinance.git
+      - SERVER_PROFILE_URL=https://github.com/Morganls23/BXFinance.git
       - SERVER_PROFILE_PATH=pingdirectory
     ports:
       - 389:389
       - 1636:636
       - 1443:443
       - 2443:2443
-  
+
   pingdataconsole:
     image: pingidentity/pingdataconsole:latest
     ports:
       - 8080:8080
       - 8443:8443
-  
+
   pingaccess:
     image: pingidentity/pingaccess:edge
     command: wait-for pingfederate:9999 -t 900 -- entrypoint.sh start-server
@@ -41,7 +41,7 @@ services:
      - ~/.pingidentity/devops
      - ./env_vars
     environment:
-     - SERVER_PROFILE_URL=https://github.com/Technical-Enablement-PingIdentity/BXFinance.git
+     - SERVER_PROFILE_URL=https://github.com/Morganls23/BXFinance.git
      - SERVER_PROFILE_PATH=pingaccess
     ports:
      - 80:8080
@@ -50,7 +50,7 @@ services:
 
   pingdelegator:
     image: pingidentity/pingdelegator:edge
-    environment: 
+    environment:
       - VERBOSE=true
     env_file:
      - ./env_vars
@@ -63,7 +63,7 @@ services:
       - ~/.pingidentity/devops
       - ./env_vars
     environment:
-      - SERVER_PROFILE_URL=https://github.com/Technical-Enablement-PingIdentity/BXFinance.git
+      - SERVER_PROFILE_URL=https://github.com/Morganls23/BXFinance.git
       - SERVER_PROFILE_PATH=pingdatagovernancepap
       - PING_IDENTITY_ACCEPT_EULA=YES
       - REST_API_HOSTNAME=pingdatapap
@@ -73,19 +73,15 @@ services:
       - 9443:9443
 
   pingdatagovernance:
-    image: pingidentity/pingdatagovernance:edge    
+    image: pingidentity/pingdatagovernance:edge
     env_file:
       - ~/.pingidentity/devops
     command: wait-for pingfederate:9031 -t 720 -- entrypoint.sh start-server
     environment:
-      - SERVER_PROFILE_URL=https://github.com/Technical-Enablement-PingIdentity/BXFinance.git
+      - SERVER_PROFILE_URL=https://github.com/Morganls23/BXFinance.git
       - SERVER_PROFILE_PATH=pingdatagovernance
       - PING_IDENTITY_ACCEPT_EULA=YES
     env_file:
       - ~/.pingidentity/devops
     ports:
       - 3443:443
-
-  
-
-  
