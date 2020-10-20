@@ -13,6 +13,7 @@ services:
     volumes:
       - ./pingfederate-out:/opt/out
       - ./pingfederate:/opt/in
+    restart: always
     ports:
       - 9031:9031
       - 9999:9999
@@ -28,6 +29,7 @@ services:
     volumes:
       - ./pingdirectory-out:/opt/out
       - ./pingdirectory:/opt/in
+    restart: always
     ports:
       - 389:389
       - 1636:636
@@ -52,6 +54,7 @@ services:
     volumes:
       - ./pingaccess-out:/opt/out
       - ./pingaccess:/opt/in
+    restart: always
     ports:
      - 80:8080
      - 443:3000
@@ -66,6 +69,7 @@ services:
       - ./pingdelegator:/opt/in
     env_file:
      - ./env_vars
+    restart: always
     ports:
      - 6080:6080
 
@@ -84,6 +88,7 @@ services:
     volumes:
       - ./pingdatapap-out:/opt/out
       - ./pingdatapap:/opt/in
+    restart: always
     ports:
       - 9443:9443
 
@@ -101,5 +106,6 @@ services:
       - ./pingdatagovernance:/opt/in
     env_file:
       - ~/.pingidentity/devops
+    restart: always
     ports:
       - 3443:443
